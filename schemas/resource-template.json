@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "resource-template",
+  "type": "object",
+  "title": "Sinopia BFF Resource Template Schema",
+  "version": "0.0.1",
+  "description": "A Resource Template construct (or hash) describes one of the various Sinopia entities (Works, Instances, Agent, etc.) associated with a given entity type and set of properties asserted against the entity.",
+  "required": [
+    "author",
+    "date",
+    "id",
+    "resourceURI"
+  ],
+  "properties": {
+    "adherence": {
+      "type": "string",
+      "title": "Adherence",
+      "description": "The standards or rules that this resource template adheres to.",
+      "example": [
+        "PCC",
+        "PCC RDA Working Group"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "title": "Author",
+      "description": "Contact information associated with the resource template.",
+      "example": [
+        "PCC",
+        "Michelle Futornick",
+        "Cornell University Cataloging Department"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date",
+      "description": "Date associated with the resource template.",
+      "example": [
+        "2017-05-20"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Textual description associated with the resource template.",
+      "example": [
+        "Metadata for a BIBFRAME Work Abstract entity."
+      ]
+    },
+    "id": {
+      "type": "string",
+      "title": "Resource Template Identifier",
+      "description": "Identifier associated with a resource template. Eventually, a URI.",
+      "example": [
+        "profile:bf2:AdminMetadata",
+        "http://sinopia.io/resources/common/AbstractResourceTemplate"
+      ]
+    },
+    "propertyTemplates": {
+      "$ref": "property-templates-array"
+    },
+    "remark": {
+      "type": "string",
+      "title": "Remark",
+      "description": "Comment or guiding statement intended to be presented as supplementary information in user display."
+    },
+    "resourceLabel": {
+      "type": "string",
+      "title": "Resource Label",
+      "description": "Localized label associated with the class.",
+      "example": [
+        "BIBFRAME 2.0 Admin Metadata"
+      ]
+    },
+    "resourceURI": {
+      "type": "string",
+      "format": "uri",
+      "title": "Resource URI",
+      "description": "URI of the RDF resource type associated with the entity managed by this Resource Template.",
+      "example": [
+        "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "title": "Source URL",
+      "description": "URL or URI that for the resource template in the owner's source repository or space."
+    },
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "Textual title associated with the resource template.",
+      "example": [
+        "BIBFRAME 2.0 Admin Metadata"
+      ]
+    }
+  }
+}
