@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "profile-schema.json",
   "type": "object",
   "title": "Sinopia BFF Profile Schema",
   "required": [
@@ -12,84 +11,75 @@
   ],
   "properties": {
     "adherence": {
-      "$id": "/properties/adherence",
       "type": "string",
       "title": "Adherence",
       "description": "The standards or rules that this profile adheres to.",
-      "examples": [
+      "example": [
         "PCC",
         "PCC RDA Working Group"
       ]
     },
     "author": {
-      "$id": "/properties/author",
       "type": "string",
       "title": "Author",
       "description": "Contact information associated with the profile.",
-      "examples": [
+      "example": [
         "PCC",
         "Michelle Futornick",
         "Cornell University Cataloging Department"
       ]
     },
     "date": {
-      "$id": "/properties/date",
       "type": "string",
       "format": "date",
       "title": "Date",
       "description": "Date associated with the profile",
-      "examples": [
+      "example": [
         "2017-05-20"
       ]
     },
     "description": {
-      "$id": "/properties/description",
       "type": "string",
       "title": "Description",
       "description": "Textual description associated with the profile.",
-      "examples": [
+      "example": [
         "Metadata for BIBFRAME Resources"
       ]
     },
     "id": {
-      "$id": "/properties/id",
       "type": "string",
       "title": "Identifier",
       "description": "Unique identifier associated with the profile.",
-      "examples": [
+      "example": [
         "profile:bf2:AdminMetadata"
       ]
     },
     "remark": {
-      "$id": "/properties/remark",
       "type": "string",
       "title": "Remark",
       "description": "Comment or guiding statement intended to be presented as supplementary information in user display.",
-      "examples": [
+      "example": [
         "profile:bf2:AdminMetadata"
       ]
     },
     "source": {
-      "$id": "/properties/source",
       "type": "string",
       "format": "uri",
       "title": "Source URL",
       "description": "URL or URI that for the profile in the owner's source repository or space.",
-      "examples": [
+      "example": [
         "https://raw.githubusercontent.com/LD4P/sinopia_sample_profiles/master/verso/BIBFRAME%202.0%20Admin%20Metadata.json"
       ]
     },
     "title": {
-      "$id": "/properties/title",
       "type": "string",
       "title": "Title",
       "description": "Textual title associated with the profile.",
-      "examples": [
+      "example": [
         "BIBFRAME 2.0 Admin Metadata"
       ]
     },
     "resourceTemplates": {
-      "$id": "/properties/resourceTemplates",
       "title": "Resource Templates",
       "description": "Array of Resource Templates that are managed by this profile.",
       "type": "array",
@@ -100,110 +90,97 @@
   },
   "definitions": {
     "resourceTemplate": {
-      "$id": "#/definitions/resourceTemplate",
       "title": "Resource Template",
       "description": "A Resource Template construct (or hash) describes one of the various Sinopia entities (Works, Instances, Agent, etc.) associated with a given Profile and set of properties asserted against the entity.",
       "type": "object",
       "required": [ "id", "resourceURI" ],
       "properties": {
         "propertyTemplates": {
-          "$id": "#/definitions/resourceTemplates/properties/propertyTemplates",
           "type": "array",
           "items": {
             "$ref": "#/definitions/propertyTemplate"
           }
         },
         "id": {
-          "$id": "#/definitions/resourceTemplates/properties/id",
           "type": "string",
           "title": "Resource Template Identifier",
           "description": "Identifier associated with a resource template.",
-          "examples": [
+          "example": [
             "profile:bf2:AdminMetadata"
           ]
         },
         "resourceURI": {
-          "$id": "#/definitions/resourceTemplates/properties/resourceURI",
           "type": "string",
           "format": "uri",
           "title": "Resource URI",
           "description": "URI of the RDF resource type associated with the entity managed by this Resource Template.",
-          "examples": [
+          "example": [
             "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
           ]
         },
         "resourceLabel": {
-          "$id": "#/definitions/resourceTemplates/properties/resourceLabel",
           "type": "string",
           "title": "Resource Label",
           "description": "Localized label associated with the class.",
-          "examples": [
+          "example": [
             "BIBFRAME 2.0 Admin Metadata"
           ]
         }
       }
     },
     "propertyTemplate": {
-      "$id": "#/definitions/propertyTemplate",
       "title": "Property Template",
       "description": "Property template associated with the resource.",
       "type": "object",
       "required": [ "id" ],
       "properties": {
         "mandatory": {
-          "$id": "#/definitions/resourceTemplates/properties/mandatory",
           "type": "boolean",
           "title": "Mandatory",
           "description": "Indication that the property is mandatory."
         },
         "repeatable": {
-          "$id": "#/definitions/resourceTemplates/properties/repeatable",
           "type": "boolean",
           "title": "Repeatable",
           "description": "Indication that the property is repeatable."
         },
         "type": {
-          "$id": "#/definitions/resourceTemplates/properties/type",
           "type": "string",
           "enum": ["literal", "lookup", "resource", "target"],
           "title": "Type",
           "description": "Type of value (literal / resource) that is allowed by this property."
         },
         "resourceTemplates": {
-          "$id": "#/definitions/resourceTemplates/properties/propertyTemplate/resourceTemplates",
           "type": "array",
           "items": {
             "$ref": "#/definitions/resourceTemplate"
           }
         },
         "valueConstraint": {
-          "$id": "/valueConstraint",
           "type": "object",
           "title": "Value Constraint",
           "description": "Constraint associated with the value.",
-          "required": [],
+          "required": [ "valueTemplateRefs", "useValuesFrom", "valueDataType" ],
           "properties": {
             "valueTemplateRefs": "",
             "useValuesFrom": "",
-            "valueDataType": {}
+            "valueDataType": ""
           }
         },
         "propertyURI": {
-          "$id": "#/definitions/resourceTemplates/properties/resourceURI",
           "type": "string",
           "format": "uri",
           "title": "Resource URI",
           "description": "URI of the RDF resource type associated with the entity managed by this Resource Template.",
-          "examples": [
+          "example": [
             "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
           ]
         },
         "propertyLabel": {
-          "$id": "#/definitions/resourceTemplates/properties/resourceLabel",
           "type": "string",
           "title": "Resource Label",
           "description": "Localized label associated with the class.",
-          "examples": [
+          "example": [
             "BIBFRAME 2.0 Admin Metadata"
           ]
         }
