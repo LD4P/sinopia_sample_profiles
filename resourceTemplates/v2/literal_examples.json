@@ -1,0 +1,43 @@
+{
+  "Profile": {
+    "id": "http://sinopia.io/resources/profile/some-uuid-here",
+    "title": "Sinopia Profile for ResourceTemplate with literal propertyTemplate examples",
+    "description": "keep this, kill title?  Example resourceTemplate with propertyTemplate examples of type literal",
+    "date": "2018-12-10",
+    "author": "Sinopia template JSON police",
+    "adherence": "http reference to JSON schema?",
+    "source": "required? URL or URI for this profile in the owner's source repository or space.",
+    "remark": "optional.  will/should this get displayed in BFF?",
+    "schemaVersion": "2.0",
+    "resourceTemplates": [
+      {
+        "id": "http://sinopia.io/resources/resourceTemplate/uuid-here",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/wingnut",
+        "resourceLabel": "Used as button label for resource modal",
+        "description": "Example resourceTemplate adhering to LC bibframe wingnut ontology with propertyTemplates of type literal",
+        "date": "2018-12-10",
+        "author": "Sinopia template JSON police",
+        "adherence": "http reference to JSON schema?",
+        "source": "required? URL or URI for this resourceTemplate in the owner's source repository or space.",
+        "remark": "optional.  will/should this get displayed in BFF?",
+        "schemaVersion": "2.0",
+        "propertyTemplates": [
+          {
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "propertyLabel": "Label associated with text input field in UI",
+            "remark": "do we need to support remarks at propertyTemplate level?",
+            "mandatory": "false",
+            "repeatable": "false",
+            "editable": "true"
+          },
+          {
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/classificationPortion",
+            "propertyLabel": "LC Classification Number"
+          }
+        ]
+      }
+    ]
+  }
+}
