@@ -27,7 +27,7 @@
               "valueTemplateRefs": [],
               "useValuesFrom": [],
               "valueDataType": {
-                "dataTypeLabelHint": "Date or date and time on which the original metadata first created."
+                "dataTypeLabelHint": "MY RAD NEW LABEL HINT."
               },
               "editable": "false"
             },
