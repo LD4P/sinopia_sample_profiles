@@ -14,13 +14,14 @@
                 "http://id.loc.gov/vocabulary/languages"
               ],
               "valueDataType": {
-                "dataTypeURI": "",
-                "remark": "http://id.loc.gov/ontologies/bibframe/Language"
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language",
+                "remark": ""
               },
               "valueLanguage": "",
               "remark": "",
               "editable": "true",
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Language of Expression (RDA 6.11)",
@@ -36,7 +37,8 @@
                 "profile:bf2:Note"
               ],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
             "propertyLabel": "Language of Content (RDA 7.12)",
@@ -60,7 +62,8 @@
                 "profile:bf2:Note"
               ],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
             "propertyLabel": "Language of Content"
@@ -71,7 +74,7 @@
         "resourceLabel": "Language of Content"
       }
     ],
-    "id": "profile:bf2:Language",
+    "id": "bf2:Language",
     "title": "BIBFRAME 2.0 Language",
     "date": "2017-05-13",
     "description": "Language"

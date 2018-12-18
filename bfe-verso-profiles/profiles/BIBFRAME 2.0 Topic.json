@@ -18,7 +18,8 @@
                 "dataTypeURI": ""
               },
               "repeatable": "false",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
             "propertyLabel": "Search LCSH/LCNAF"
@@ -43,8 +44,11 @@
                 "profile:bf2:Topic:madsGenreForm"
               ],
               "useValuesFrom": [],
-              "valueDataType": {},
-              "repeatable": "false"
+              "valueDataType": {
+                "dataTypeURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject"
+              },
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
             "propertyLabel": "Search Subject Components"
@@ -66,7 +70,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "editable": "true",
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
             "propertyLabel": "Input Subject + Subdivision string"
@@ -84,8 +89,12 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Source"
               },
-              "defaultURI": "http://id.loc.gov/vocabulary/subjectSchemes/lcsh",
-              "defaultLiteral": "LCSH"
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/subjectSchemes/lcsh",
+                  "defaultLiteral": "LCSH"
+                }
+              ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
             "propertyLabel": "Subject source"
@@ -112,7 +121,8 @@
                 "dataTypeURI": ""
               },
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyLabel": "Search LCSH/LCNAF",
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
@@ -138,7 +148,8 @@
                 "dataTypeURI": ""
               },
               "editable": "true",
-              "repeatable": "true"
+              "repeatable": "true",
+              "defaults": []
             },
             "propertyLabel": "Search LCSH",
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
@@ -164,7 +175,8 @@
                 "dataTypeURI": ""
               },
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyLabel": "Search LCSH",
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
@@ -191,7 +203,8 @@
                 "dataTypeURI": ""
               },
               "editable": "true",
-              "repeatable": "true"
+              "repeatable": "true",
+              "defaults": []
             },
             "propertyLabel": "Search LCNAF/LCSH",
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel"
@@ -206,7 +219,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "editable": "true",
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
             "propertyLabel": "Input Geographic Term"
@@ -233,7 +247,8 @@
                 "dataTypeURI": ""
               },
               "editable": "true",
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyLabel": "Search LCSH/LCNAF",
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#Topic"
@@ -256,7 +271,8 @@
                 "dataTypeURI": ""
               },
               "editable": "true",
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
             "propertyLabel": "Search Subject Components"
@@ -273,7 +289,8 @@
                 "dataTypeURI": ""
               },
               "repeatable": "false",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
             "propertyLabel": "Input Subject + Subdivision string"
@@ -293,7 +310,8 @@
               },
               "defaultURI": "",
               "repeatable": "false",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
             "propertyLabel": "Subject source"
@@ -304,10 +322,10 @@
         "resourceLabel": "Subject of Work"
       }
     ],
-    "id": "profile:bf2:Topic",
+    "id": "bf2:Topic",
     "title": "BIBFRAME 2.0 Topic",
     "description": "Subject of Work",
     "date": "2017-05-13",
-    "contact": "NDMSO"
+    "author": "NDMSO"
   }
 }

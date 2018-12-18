@@ -15,7 +15,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
             "propertyLabel": "Place",
@@ -33,7 +34,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
             "propertyLabel": "Name",
@@ -47,15 +49,32 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
             "propertyLabel": "Date (RDA 2.8.6)",
             "remark": "http://access.rdatoolkit.org/2.8.6.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "profile:bf2:Note"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Note about publisher"
           }
         ],
         "id": "profile:bf2:PublicationInformation",
-        "contact": "",
+        "author": "NDMSO",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
         "resourceLabel": "Publication Activity"
       },
@@ -73,7 +92,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
             "propertyLabel": "Place",
@@ -91,7 +111,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
             "propertyLabel": "Name",
@@ -105,7 +126,8 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
             "propertyLabel": "Date (RDA 2.9.6)",
@@ -121,11 +143,28 @@
                 "profile:bf2:Note"
               ],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
             "propertyLabel": "Statement of Function (RDA 2.9.4.4)",
             "remark": "http://access.rdatoolkit.org/2.9.4.4.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "profile:bf2:Note"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Note about distributor"
           }
         ],
         "resourceLabel": "Distribution Activity",
@@ -148,7 +187,8 @@
                 "dataTypeURI": ""
               },
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
             "propertyLabel": "Place",
@@ -168,7 +208,8 @@
                 "dataTypeURI": ""
               },
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
             "propertyLabel": "Name",
@@ -182,11 +223,28 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
             "propertyLabel": "Date (RDA 2.10.6)",
             "remark": "http://access.rdatoolkit.org/2.10.6.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "profile:bf2:Note"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Note about manufacturer"
           }
         ],
         "id": "profile:bf2:ManufactureInformation",
@@ -205,7 +263,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
             "propertyLabel": "Place (RDA 2.10.2)",
@@ -228,7 +287,8 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "repeatable": "true",
-              "editable": "true"
+              "editable": "true",
+              "defaults": []
             },
             "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
             "propertyLabel": "Name (RDA 2.8.4)",
@@ -251,7 +311,8 @@
                 "profile:bf2:Provision:PlaceTest"
               ],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
             "propertyLabel": "Place"
@@ -266,7 +327,8 @@
                 "profile:bf2:Provision:NameTest"
               ],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
             "propertyLabel": "Name"
@@ -279,7 +341,8 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
             "propertyLabel": "Date"
@@ -292,7 +355,8 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {}
+              "valueDataType": {},
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivityStatement",
             "propertyLabel": "Provision activity statement"
@@ -314,7 +378,10 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {}
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+              },
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Place"
@@ -336,7 +403,10 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {}
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
             "propertyLabel": "Name"
@@ -351,6 +421,6 @@
     "title": "BIBFRAME 2.0 Publication, Distribution, Manufacturer Activity",
     "description": "Publication, Distribution, Manufacture Activity",
     "date": "2017-06-02",
-    "contact": "NDMSO"
+    "author": "NDMSO"
   }
 }
