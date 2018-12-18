@@ -6,7 +6,7 @@
           {
             "mandatory": "false",
             "repeatable": "false",
-            "type": "lookup",
+            "type": "target",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -18,10 +18,11 @@
                 "remark": "",
                 "dataTypeURI": ""
               },
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyLabel": "Search LCNAF/LCSH",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/Place"
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
           },
           {
             "mandatory": "false",
@@ -35,7 +36,8 @@
                 "dataTypeURI": "",
                 "remark": "http://id.loc.gov/ontologies/bibframe/Place"
               },
-              "repeatable": "false"
+              "repeatable": "false",
+              "defaults": []
             },
             "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
             "propertyLabel": "Record Place (if it does not appear above)",
@@ -45,12 +47,13 @@
         "id": "profile:bf2:Place",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Place",
         "resourceLabel": "Place Associated with a Work",
-        "contact": ""
+        "author": "NDMSO"
       }
     ],
-    "id": "profile:bf2:Place",
+    "id": "bf2:Place",
     "title": "BIBFRAME 2.0 Place",
     "date": "2017-05-13",
-    "description": "Place Associated with a Resource"
+    "description": "Place Associated with a Resource",
+    "author": "NDMSO"
   }
 }
