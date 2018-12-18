@@ -28,8 +28,7 @@
             "propertyLabel": "Label associated with text input field in UI",
             "remark": "do we need to support remarks at propertyTemplate level?",
             "mandatory": "false",
-            "repeatable": "false",
-            "editable": "true"
+            "repeatable": "false"
           },
           {
             "type": "literal",

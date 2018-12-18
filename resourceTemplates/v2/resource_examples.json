@@ -31,8 +31,7 @@
               "profile:bf2:Note"
             ],
             "mandatory": "false",
-            "repeatable": "true",
-            "editable": "true"
+            "repeatable": "true"
           },
           {
             "type": "resource",
