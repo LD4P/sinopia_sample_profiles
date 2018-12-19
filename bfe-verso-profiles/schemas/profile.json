@@ -12,7 +12,6 @@
       "title": "Profile" ,
       "description": "Profile key always at top level of a LC BFE / Sinopia BFF Profile.",
       "required": [
-        "author",
         "date",
         "description",
         "id",
