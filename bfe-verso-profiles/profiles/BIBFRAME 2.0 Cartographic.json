@@ -375,7 +375,7 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "Related Works (RDA Chapter 25 and Appendix J)",
+            "type": "resource",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
@@ -386,7 +386,7 @@
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
-            "propertyLabel": "Related Works",
+            "propertyLabel": "Related Works (RDA Chapter 25 and Appendix J)",
             "remark": ""
           },
           {
