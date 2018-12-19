@@ -6,5 +6,6 @@
   "type": "array",
   "items": {
     "$ref": "resource-template"
-  }
+  },
+  "minItems": 1
 }
