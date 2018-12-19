@@ -14,10 +14,6 @@
                 "http://id.loc.gov/authorities/names",
                 "http://id.loc.gov/authorities/subjects"
               ],
-              "valueDataType": {
-                "remark": "",
-                "dataTypeURI": ""
-              },
               "repeatable": "false",
               "defaults": []
             },
@@ -32,10 +28,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": "",
-                "remark": "http://id.loc.gov/ontologies/bibframe/Place"
-              },
               "repeatable": "false",
               "defaults": []
             },

@@ -1058,12 +1058,6 @@
                 "profile:bf2:Resolution"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeLabel": "",
-                "dataTypeURI": "",
-                "dataTypeLabelHint": "",
-                "remark": ""
-              },
               "defaults": []
             },
             "propertyLabel": "Digital File Characteristics",

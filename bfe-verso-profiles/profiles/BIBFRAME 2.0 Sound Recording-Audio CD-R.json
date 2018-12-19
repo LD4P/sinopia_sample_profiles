@@ -567,9 +567,6 @@
                 "profile:bf2:SoundCDR:Work"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "mandatory": "false",
