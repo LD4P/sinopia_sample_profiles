@@ -55,7 +55,7 @@
     "id": "profile:bf2:EditionInformation",
     "title": "BIBFRAME 2.0 Edition Information",
     "description": "Edition (unused)",
-    "contact": "NDMSO",
+    "author": "NDMSO",
     "date": "2017-06-08"
   }
 }
