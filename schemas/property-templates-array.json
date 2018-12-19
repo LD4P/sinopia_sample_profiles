@@ -6,5 +6,6 @@
   "type": "array",
   "items": {
     "$ref": "property-template"
-  }
+  },
+  "minItems": 1
 }
