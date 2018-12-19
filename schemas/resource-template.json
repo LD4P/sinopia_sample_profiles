@@ -9,6 +9,7 @@
     "author",
     "date",
     "id",
+    "propertyTemplates",
     "resourceURI"
   ],
   "properties": {
