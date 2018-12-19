@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "resource-templates-array",
-  "title": "Sinopia BFF Resource Template Schema Array (i.e. All Resource Templates)",
+  "title": "LC Resource Template Array Schema (i.e. Multiple Resource Templates) (by Sinopia)",
   "version": "0.0.1",
   "type": "array",
   "items": {

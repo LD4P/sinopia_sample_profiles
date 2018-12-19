@@ -565,9 +565,6 @@
                 "profile:bf2:SoundRecording:Work"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "mandatory": "false",
@@ -928,10 +925,6 @@
                 "profile:bf2:FileSize"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeLabelHint": "",
-                "dataTypeURI": ""
-              },
               "editable": "true",
               "defaultLiteral": "",
               "defaults": []

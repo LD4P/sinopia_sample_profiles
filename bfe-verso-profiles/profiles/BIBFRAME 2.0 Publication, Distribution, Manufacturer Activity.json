@@ -183,9 +183,6 @@
                 "profile:bf2:Provision:Place"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "editable": "true",
               "defaults": []
@@ -204,9 +201,6 @@
                 "profile:bf2:Provision:Name"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "editable": "true",
               "defaults": []

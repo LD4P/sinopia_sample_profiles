@@ -14,9 +14,6 @@
                 "http://id.loc.gov/authorities/names"
               ],
               "valueTemplateRefs": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "valueLanguage": "",
               "defaults": [],
               "editable": "true"
@@ -194,9 +191,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "defaults": [],
               "editable": "true"
@@ -438,9 +432,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "defaults": [],
               "editable": "true"
@@ -698,9 +689,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "defaults": [],
               "editable": "true"
@@ -961,9 +949,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "defaults": [],
               "editable": "true"
@@ -1524,9 +1509,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/vocabulary/relators"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "false",
               "defaults": []
             },
@@ -1541,9 +1523,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "false",
               "defaults": []
             },

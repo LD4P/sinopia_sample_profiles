@@ -13,9 +13,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/genreForms"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "false",
               "defaults": []
             },
@@ -41,10 +38,6 @@
                 "http://id.loc.gov/authorities/names",
                 "http://id.loc.gov/authorities/subjects"
               ],
-              "valueDataType": {
-                "dataTypeURI": "",
-                "remark": ""
-              },
               "repeatable": "false",
               "remark": "",
               "defaults": []

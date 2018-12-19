@@ -14,9 +14,6 @@
                 "http://id.loc.gov/authorities/subjects",
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "false",
               "editable": "true",
               "defaults": []
@@ -117,9 +114,6 @@
                 "http://id.loc.gov/authorities/subjects",
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "editable": "true",
               "defaults": []
@@ -144,9 +138,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/subjects"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "editable": "true",
               "repeatable": "true",
               "defaults": []
@@ -171,9 +162,6 @@
               "useValuesFrom": [
                 "http://id.loc.gov/authorities/subjects"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "true",
               "editable": "true",
               "defaults": []
@@ -199,9 +187,6 @@
                 "http://id.loc.gov/authorities/names",
                 "http://id.loc.gov/authorities/subjects"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "editable": "true",
               "repeatable": "true",
               "defaults": []
@@ -243,9 +228,6 @@
                 "http://id.loc.gov/authorities/subjects",
                 "http://id.loc.gov/authorities/names"
               ],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "editable": "true",
               "repeatable": "false",
               "defaults": []
@@ -266,10 +248,6 @@
                 "profile:bf2:Topic:madsGenreForm"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "remark": "",
-                "dataTypeURI": ""
-              },
               "editable": "true",
               "repeatable": "false",
               "defaults": []
@@ -285,9 +263,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "repeatable": "false",
               "editable": "true",
               "defaults": []

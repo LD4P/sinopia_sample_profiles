@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "profile",
   "type": "object",
-  "title": "Sinopia BFF Profile Schema",
+  "title": "LC Profile Schema (by Sinopia)",
   "description": "Profile, or array of Resource Templates with some top-level metadata.",
   "version": "0.0.1",
   "required": [ "Profile" ],
@@ -12,7 +12,6 @@
       "title": "Profile" ,
       "description": "Profile key always at top level of a LC BFE / Sinopia BFF Profile.",
       "required": [
-        "author",
         "date",
         "description",
         "id",
@@ -20,15 +19,6 @@
         "title"
       ],
       "properties": {
-        "adherence": {
-          "type": "string",
-          "title": "Adherence",
-          "description": "The standards or rules that this profile adheres to.",
-          "example": [
-            "PCC",
-            "PCC RDA Working Group"
-          ]
-        },
         "author": {
           "type": "string",
           "title": "Author",
@@ -72,15 +62,6 @@
         },
         "resourceTemplates": {
           "$ref": "resource-templates-array"
-        },
-        "source": {
-          "type": "string",
-          "format": "uri",
-          "title": "Source URL",
-          "description": "URL or URI that for the profile in the owner's source repository or space.",
-          "example": [
-            "https://raw.githubusercontent.com/LD4P/sinopia_sample_profiles/master/verso/BIBFRAME%202.0%20Admin%20Metadata.json"
-          ]
         },
         "title": {
           "type": "string",

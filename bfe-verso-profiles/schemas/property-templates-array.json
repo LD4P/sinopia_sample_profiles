@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "property-templates-array",
-  "title": "Sinopia BFF Property Template Schema Array (i.e. All Property Templates)",
+  "title": "LC Property Template Array Schema (i.e. Multiple Property Templates) (by Sinopia)",
   "version": "0.0.1",
   "type": "array",
   "items": {

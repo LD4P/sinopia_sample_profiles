@@ -581,9 +581,6 @@
                 "profile:bf2:Analog:Work"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "mandatory": "false",

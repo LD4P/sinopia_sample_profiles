@@ -190,7 +190,7 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "Creator of Work (RDA 19.2)",
+            "type": "resource",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
@@ -1058,12 +1058,6 @@
                 "profile:bf2:Resolution"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeLabel": "",
-                "dataTypeURI": "",
-                "dataTypeLabelHint": "",
-                "remark": ""
-              },
               "defaults": []
             },
             "propertyLabel": "Digital File Characteristics",

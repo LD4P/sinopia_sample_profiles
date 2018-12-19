@@ -29,7 +29,6 @@
               "valueTemplateRefs": [],
               "useValuesFrom": [],
               "valueDataType": {
-                "dataTypeURI": "",
                 "dataTypeLabel": "SKOS"
               },
               "defaultURI": ""

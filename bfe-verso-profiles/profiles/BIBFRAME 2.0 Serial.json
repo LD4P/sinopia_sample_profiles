@@ -624,9 +624,6 @@
                 "profile:bf2:Serial:Frequency"
               ],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyLabel": "Frequency",
@@ -1119,9 +1116,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/absorbed",
@@ -1136,9 +1130,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyLabel": "Continues (work):",
@@ -1153,9 +1144,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/continuesInPart",
@@ -1170,9 +1158,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/mergerOf",
@@ -1187,9 +1172,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/separatedFrom",
@@ -1204,9 +1186,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyLabel": "Continued by (work):",
@@ -1221,9 +1200,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/absorbedBy",
@@ -1238,9 +1214,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/continuedInPartBy",
@@ -1255,9 +1228,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/mergedToForm",
@@ -1272,9 +1242,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],
-              "valueDataType": {
-                "dataTypeURI": ""
-              },
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/splitInto",
