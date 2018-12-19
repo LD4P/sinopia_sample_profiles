@@ -190,7 +190,7 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "Creator of Work (RDA 19.2)",
+            "type": "resource",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
