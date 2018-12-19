@@ -15,6 +15,7 @@
         "date",
         "description",
         "id",
+        "resourceTemplates",
         "title"
       ],
       "properties": {

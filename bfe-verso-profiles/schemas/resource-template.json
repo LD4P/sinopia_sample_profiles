@@ -8,7 +8,8 @@
   "required": [
     "id",
     "resourceURI",
-    "resourceLabel"
+    "resourceLabel",
+    "propertyTemplates"
   ],
   "properties": {
     "id": {
