@@ -5,6 +5,15 @@ that is used in the Sinopia Profile Editor project.
 
 ## Log
 
+### 2018-12-18
+
+Small manual updates for JSON schema validity:
+
+- fixed bad type value in propertyTemplate Cartographic (8405430)
+- fixed bad type value in propertyTemplate in Moving Image BluRay DVD a889153
+- fixed Edition - author, not contact (03c5b14)
+- got rid of empty (invalid) dataTypeURI strings by removing the valueDataType for those (nothing else is of consequence) (8a7ee4b)
+
 ### 2018-12-17
 Update to ecb3c1e from https://github.com/lcnetdev/verso
 
