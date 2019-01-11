@@ -23,7 +23,7 @@ Profiles generally are combinations of resource templates with some additional m
 │   └── property-templates-array.json : Validates an array of Property Templates embedded in a Resource Template
 │   └── resource-template.json : Validates a Resource Template
 │   └── resource-templates-array.json : Validates an array of Resource Templates
-├── resourceTemplates ;
+├── resourceTemplates
 │   └── v1
 │       ├── all_resource_templates.json : All resource templates derived from LC Verso, updated to validate for Sinopia
 ├── profiles
@@ -38,6 +38,29 @@ Profiles generally are combinations of resource templates with some additional m
 
 ### JSON schemas
 
+Moved / Moving to ld4p sinopia github pages https://ld4p.github.io/sinopia.
+
+We decided to serve them via github pages so it would be easiest for the devs to
+
+    have clearly versioned schemas
+    persist old versions of the schemas
+    be able to add new versions with a minimum of dependency on ops
+
+The version 0.0.1 schemas have already moved.  Subsequent official versions of the schemas will be created there and the schemas directory here will be emptied except for a SCHEMAS_HAVE_MOVED.md file.
+
+#### For BFE Verso Profiles
+
+Schemas with version 0.0.1 have be written to cleanly validate the profiles from https://github.com/lcnetdev/verso to with a minimum of changes.
+
+The official place to look for version 0.0.1 JSON schemas is
+- https://ld4p.github.io/sinopia/schemas/0.0.1/profile.json
+- https://ld4p.github.io/sinopia/schemas/0.0.1/resource-templates-array.json
+- https://ld4p.github.io/sinopia/schemas/0.0.1/resource-template.json
+- https://ld4p.github.io/sinopia/schemas/0.0.1/property-templates-array.json
+- https://ld4p.github.io/sinopia/schemas/0.0.1/property-template.json
+- https://ld4p.github.io/sinopia/schemas/0.0.1/profiles-array.json
+
+
 #### For Sinopia Profiles
 
 In `schemas` there is currently a set of JSON schema files that are under construction.
@@ -46,32 +69,13 @@ In `schemas` there is currently a set of JSON schema files that are under constr
 
 These are under construction because we have to coordinate changes to resource templates in addition to the schemas, but we wanted to wire up validation for existing BFE Verso Profiles first.  Basically, we want to build the plumbing before we upgrade the faucets.
 
-#### For BFE Verso Profiles
-
-In `bfe-verso-profiles/schemas` there is a set of JSON schema files that
-- are themselves valid
-- can be used to validate everything in `bfe-verso-profiles/profiles` _except_ for `all_profiles.json`.  
-
 ### Example ajv validation commands
 
 The following commands validate use the [`ajv CLI library`](https://www.npmjs.com/package/ajv-cli) for JSON schema validation. However, there are [many available JSON Schema validation libraries in numerous languages](https://json-schema.org/implementations.html#validators); just make sure you select one that validates JSON Schema version draft-07.
 
-#### Validate schema itself
-
-```
-$ ajv compile -s bfe-verso-profiles/schemas/property-template
-
-schema bfe-verso-profiles/schemas/property-template is valid
-```
-
-```
-$ ajv compile -s bfe-verso-profiles/schemas/profile
-
-schema bfe-verso-profiles/schemas/profile is invalid
-error: can't resolve reference resource-templates-array from id profile#
-```
-
 #### Validate JSON instance against schema(s)
+
+If the schemas themselves aren't valid, the following commands will so indicate.
 
 ##### Validate a single file
 
@@ -139,4 +143,19 @@ bfe-verso-profiles/profiles/BIBFRAME 2.0 Sound Recording-Audio CD.json valid
 bfe-verso-profiles/profiles/BIBFRAME 2.0 Title Information.json valid
 bfe-verso-profiles/profiles/BIBFRAME 2.0 Topic.json valid
 bfe-verso-profiles/profiles/PMO Medium of Performance.json valid
+```
+
+#### Validate schema itself
+
+```
+$ ajv compile -s bfe-verso-profiles/schemas/property-template
+
+schema bfe-verso-profiles/schemas/property-template is valid
+```
+
+```
+$ ajv compile -s bfe-verso-profiles/schemas/profile
+
+schema bfe-verso-profiles/schemas/profile is invalid
+error: can't resolve reference resource-templates-array from id profile#
 ```
