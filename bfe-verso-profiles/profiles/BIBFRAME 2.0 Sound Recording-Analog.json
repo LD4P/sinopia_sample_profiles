@@ -858,10 +858,8 @@
                 "dataTypeLabelHint": "4 3/4 in.",
                 "remark": ""
               },
-              "defaultLiteral": "",
               "editable": "true",
               "repeatable": "false",
-              "defaultURI": "",
               "defaults": []
             },
             "mandatory": "false",
@@ -883,7 +881,6 @@
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/BaseMaterial"
               },
               "editable": "true",
-              "defaultLiteral": "",
               "repeatable": "true",
               "defaults": []
             },
@@ -965,7 +962,6 @@
                 "dataTypeLabelHint": ""
               },
               "editable": "false",
-              "defaultLiteral": "",
               "defaults": []
             },
             "propertyLabel": "Sound Characteristics",
