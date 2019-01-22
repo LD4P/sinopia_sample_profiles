@@ -823,7 +823,6 @@
                 "remark": "",
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Illustration"
               },
-              "defaultURI": "",
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/illustrativeContent",
