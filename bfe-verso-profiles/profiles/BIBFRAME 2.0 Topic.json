@@ -283,7 +283,6 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Source"
               },
-              "defaultURI": "",
               "repeatable": "false",
               "editable": "true",
               "defaults": []
