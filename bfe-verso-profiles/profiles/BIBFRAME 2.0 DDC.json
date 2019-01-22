@@ -29,8 +29,6 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/edition"
               },
-              "defaultURI": "",
-              "defaultLiteral": "",
               "editable": "true"
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/edition",
