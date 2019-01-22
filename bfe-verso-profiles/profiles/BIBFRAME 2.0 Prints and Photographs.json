@@ -173,8 +173,12 @@
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Content"
               },
               "editable": "false",
-              "defaultURI": "http://id.loc.gov/vocabulary/contentTypes/sti",
-              "defaultLiteral": "still image"
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/contentTypes/sti",
+                  "defaultLiteral": "still image"
+                }
+              ]
             },
             "propertyLabel": "Content Type",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/content"
@@ -209,8 +213,12 @@
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Media"
               },
               "editable": "false",
-              "defaultLiteral": "unmediated",
-              "defaultURI": "http://id.loc.gov/vocabulary/mediaTypes/n"
+              "defaults": [
+                {
+                  "defaultLiteral": "unmediated",
+                  "defaultURI": "http://id.loc.gov/vocabulary/mediaTypes/n"
+                }
+              ]
             },
             "propertyLabel": "Media Type",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/media"
@@ -244,8 +252,12 @@
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Carrier"
               },
               "editable": "false",
-              "defaultURI": "http://id.loc.gov/vocabulary/carriers/nb",
-              "defaultLiteral": "sheet"
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/carriers/nb",
+                  "defaultLiteral": "sheet"
+                }
+              ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
             "propertyLabel": "Carrier Type"
@@ -720,8 +732,7 @@
               "useValuesFrom": [],
               "valueDataType": {},
               "editable": "false",
-              "repeatable": "false",
-              "defaultLiteral": "Title devised by Library staff"
+              "repeatable": "false"
             },
             "propertyLabel": "7B3. Source of description; source of title proper",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
@@ -1061,7 +1072,7 @@
     "id": "profile:bf2:Graphics",
     "title": "BIBFRAME 2.0 Prints and Photographs",
     "description": "DCRM (Graphics) for Prints and Photograph Collections and Instances",
-    "contact": "NDMSO",
+    "author": "NDMSO",
     "date": "2017-05-20"
   }
 }
