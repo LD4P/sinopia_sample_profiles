@@ -270,8 +270,12 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Content"
               },
-              "defaultURI": "http://id.loc.gov/vocabulary/contentTypes/txt",
-              "defaultLiteral": "text",
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/contentTypes/txt",
+                  "defaultLiteral": "text"
+                }
+              ],
               "editable": "false",
               "repeatable": "true"
             },
@@ -533,8 +537,12 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Issuance"
               },
-              "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
-              "defaultLiteral": "single unit",
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+                  "defaultLiteral": "single unit"
+                }
+              ],
               "editable": "false",
               "repeatable": "true"
             },
@@ -590,8 +598,12 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Media"
               },
-              "defaultURI": "http://id.loc.gov/vocabulary/mediaTypes/n",
-              "defaultLiteral": "unmediated",
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/mediaTypes/n",
+                  "defaultLiteral": "unmediated"
+                }
+              ],
               "editable": "false",
               "repeatable": "true"
             },
@@ -642,8 +654,12 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Carrier"
               },
-              "defaultURI": "http://id.loc.gov/vocabulary/carriers/nc",
-              "defaultLiteral": "volume",
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/carriers/nc",
+                  "defaultLiteral": "volume"
+                }
+              ],
               "repeatable": "true",
               "editable": "false"
             },
@@ -764,8 +780,12 @@
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
               },
-              "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
-              "defaultLiteral": "DLC"
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
+                  "defaultLiteral": "DLC"
+                }
+              ]
             },
             "mandatory": "false",
             "repeatable": "true"
@@ -1222,7 +1242,7 @@
         "resourceLabel": "Supplementary Content"
       }
     ],
-    "contact": "NDMSO",
+    "author": "NDMSO",
     "date": "2018-02-27",
     "description": "Work and Instance for IBC records",
     "id": "profile:bf2:IBC",

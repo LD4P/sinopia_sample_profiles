@@ -1017,8 +1017,6 @@
               ],
               "useValuesFrom": [],
               "valueDataType": {},
-              "defaultURI": "",
-              "defaultLiteral": "",
               "defaults": []
             },
             "propertyLabel": "Sound Characteristics",

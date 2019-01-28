@@ -5,9 +5,18 @@ that is used in the Sinopia Profile Editor project.
 
 ## Log
 
+### 2019-01-22
+
+Small manual updates for JSON schema v0.0.2 validity:
+
+- adjusted defaultURI and defaultLiteral when they weren't inside defaults object
+    - the only slightly questionable one was when a non-empty defaultLiteral was provided without a defaultURI -- see ec91e62 (Prints and Photographs profile)
+- changed contact to author (894d6f5 and others)
+- removed adherence and source attributes from Admin Metadata - too soon! (ecae94d)
+
 ### 2018-12-18
 
-Small manual updates for JSON schema validity:
+Small manual updates for JSON schema v0.0.1 validity:
 
 - fixed bad type value in propertyTemplate Cartographic (8405430)
 - fixed bad type value in propertyTemplate in Moving Image BluRay DVD a889153
