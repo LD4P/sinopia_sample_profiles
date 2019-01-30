@@ -1,0 +1,277 @@
+{
+  "id": "sinopia:resourceTemplate:bf2:Monograph:Instance",
+  "resourceLabel": "BIBFRAME Instance",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
+  "author": "NDMSO",
+  "date": "2017-05-26",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+  "propertyTemplates": [
+    {
+      "propertyLabel": "Instance of",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/instanceOf",
+      "resourceTemplates": [],
+      "type": "resource",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Monograph:Work"
+        ]
+      },
+      "mandatory": "false",
+      "repeatable": "true"
+    },
+    {
+      "propertyLabel": "Title Information",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Title",
+          "sinopia:resourceTemplate:bf2:Title:VarTitle",
+          "sinopia:resourceTemplate:bf2:ParallelTitle",
+          "sinopia:resourceTemplate:bflc:TranscribedTitle"
+        ]
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyLabel": "Statement of Responsibility Relating to Title Proper (RDA 2.4.2)",
+      "remark": "http://access.rdatoolkit.org/2.4.2.html",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/responsibilityStatement"
+    },
+    {
+      "propertyLabel": "Edition Statement (RDA 2.5)",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/editionStatement",
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "remark": "http://access.rdatoolkit.org/2.5.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:PublicationInformation",
+          "sinopia:resourceTemplate:bf2:DistributionInformation",
+          "sinopia:resourceTemplate:bf2:ManufactureInformation"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/provisionActivity",
+      "propertyLabel": "Publication, Distribution, Manufacture Statements"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/copyrightDate",
+      "propertyLabel": "Copyright Date (RDA 2.11)",
+      "remark": "http://access.rdatoolkit.org/2.11.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:SeriesInformation"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
+      "propertyLabel": "Series Statement"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "http://id.loc.gov/vocabulary/issuance"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Issuance"
+        },
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
+            "defaultLiteral": "single unit"
+          }
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/issuance",
+      "propertyLabel": "Mode of Issuance (RDA 2.13)",
+      "remark": "http://access.rdatoolkit.org/2.13.html"
+    },
+    {
+      "propertyLabel": "Identifiers",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+      "resourceTemplates": [],
+      "type": "resource",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Identifiers:ISBN",
+          "sinopia:resourceTemplate:bf2:Identifiers:Other",
+          "sinopia:resourceTemplate:bf2:Identifiers:Local"
+        ]
+      },
+      "mandatory": "false",
+      "repeatable": "true"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Note"
+        ]
+      },
+      "propertyLabel": "Notes about the Instance",
+      "remark": "http://access.rdatoolkit.org/2.17.html",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/note"
+    },
+    {
+      "propertyLabel": "Media type (RDA 3.2)",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
+      "repeatable": "true",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "http://id.loc.gov/vocabulary/mediaTypes"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Media"
+        },
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/vocabulary/mediaTypes/n",
+            "defaultLiteral": "unmediated"
+          }
+        ]
+      },
+      "mandatory": "false",
+      "remark": "http://access.rdatoolkit.org/3.2.html"
+    },
+    {
+      "propertyLabel": "Extent",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/extent",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Extent"
+        ]
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource"
+    },
+    {
+      "propertyLabel": "Dimensions (RDA 3.5)",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/dimensions",
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "remark": "http://access.rdatoolkit.org/3.5.html"
+    },
+    {
+      "propertyLabel": "Carrier Type (RDA 3.3)",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
+      "repeatable": "true",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "http://id.loc.gov/vocabulary/carriers"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Carrier"
+        },
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/vocabulary/carriers/nc",
+            "defaultLiteral": "volume"
+          }
+        ]
+      },
+      "mandatory": "false",
+      "remark": "http://access.rdatoolkit.org/3.3.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Monograph:RelatedInstance"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
+      "propertyLabel": "Related Manifestation"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Monograph:Item"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasItem",
+      "propertyLabel": "Has Item",
+      "remark": "Item which is an example of the described Instance."
+    },
+    {
+      "propertyLabel": "Uniform Resource Locator (RDA 4.6)",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+      "type": "literal",
+      "mandatory": "false",
+      "repeatable": "true",
+      "remark": "http://access.rdatoolkit.org/4.6.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Identifiers:LCCN"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+      "propertyLabel": "LC Control Number for the Manifestation (RDA 2.15)",
+      "remark": "http://access.rdatoolkit.org/2.15.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:AdminMetadata"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "propertyLabel": "Administrative Metadata for Instance"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "false",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/projectedProvisionDate",
+      "propertyLabel": "Projected publication date (YYMM)",
+      "remark": "http://id.loc.gov/ontologies/bflc.html#p_projectedProvisionDate"
+    }
+  ]
+}

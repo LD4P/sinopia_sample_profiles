@@ -1,0 +1,58 @@
+{
+  "id": "sinopia:resourceTemplate:bf2:Monograph:RelatedInstance",
+  "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
+  "resourceLabel": "Related Manifestation",
+  "author": "NDMSO",
+  "date": "2017-05-26",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+  "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+      "propertyLabel": "Related Manifestations (RDA 27)",
+      "remark": "http://access.rdatoolkit.org/27.1.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyLabel": "Also issued in another format as:",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent",
+      "remark": "http://access.rdatoolkit.org/J.4.2.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/accompaniedBy",
+      "propertyLabel": "Accompanied by (manifestation):",
+      "remark": "http://access.rdatoolkit.org/J.4.5.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyLabel": "Reprinted as (manifestation):",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent",
+      "remark": "http://access.rdatoolkit.org/J.4.2.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "remark": "http://access.rdatoolkit.org/J.4.2.html",
+      "propertyLabel": "Reprint of (manifestation)",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyLabel": "Record Relationship Designator for Related Manifestation (RDA Appendix J)",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
+      "remark": "http://access.rdatoolkit.org/J.4.html"
+    }
+  ]
+}
