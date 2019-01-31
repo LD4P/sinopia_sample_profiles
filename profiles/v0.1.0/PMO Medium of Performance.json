@@ -418,7 +418,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
       }
     ],
-    "id": "profile:bf2:PMOMedPerf",
+    "id": "sinopia:profile:bf2:PMOMedPerf",
     "title": "PMO Medium of Performance",
     "description": "PMO Medium of Performance",
     "date": "2018-05-24",
