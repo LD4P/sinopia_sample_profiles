@@ -1,0 +1,57 @@
+{
+  "id": "sinopia:resourceTemplate:bf2:ManufactureInformation",
+  "resourceLabel": "Manufacture Activity",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture",
+  "date": "2017-06-02",
+  "author": "NDMSO",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+  "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Provision:Place"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+      "propertyLabel": "Place"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Provision:Name"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+      "propertyLabel": "Name"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+      "propertyLabel": "Date (RDA 2.10.6)",
+      "remark": "http://access.rdatoolkit.org/2.10.6.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Note"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+      "propertyLabel": "Note about manufacturer"
+    }
+  ]
+}
