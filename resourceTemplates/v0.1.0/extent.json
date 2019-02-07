@@ -1,0 +1,31 @@
+{
+  "id": "sinopia:resourceTemplate:bf2:Extent",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/Extent",
+  "resourceLabel": "Extent",
+  "date": "2018-09-26",
+  "author": "NDMSO",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json",
+  "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+      "propertyLabel": "Extent (RDA 3.4)",
+      "remark": "http://access.rdatoolkit.org/3.4.html"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Note"
+        ]
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+      "propertyLabel": "Note on extent"
+    }
+  ]
+}
