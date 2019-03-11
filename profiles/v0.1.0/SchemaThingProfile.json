@@ -7,13 +7,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/additionalType",
             "propertyLabel": "Additional Type"
           },
@@ -21,13 +14,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyLabel": "Alternative Name",
             "propertyURI": "http://schema.org/alternateName"
           },
@@ -35,15 +21,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/description",
             "propertyLabel": "Description",
             "remark": "A description of the item"
@@ -52,15 +29,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/disambiguatingDescription",
             "propertyLabel": "Disambiguating Description",
             "remark": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation."
@@ -69,15 +37,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/identifier",
             "propertyLabel": "Identifier",
             "remark": "The identifier property represents any kind of identifier for any kind of Thing"
@@ -86,15 +45,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/image",
             "propertyLabel": "Image",
             "remark": "An image of the item."
@@ -103,15 +53,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/mainEntityOfPage",
             "propertyLabel": "Main Entity of Page",
             "remark": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described."
@@ -120,15 +61,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/name",
             "propertyLabel": "Name",
             "remark": "Name of the Item"
@@ -137,15 +69,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/potentialAction",
             "propertyLabel": "Potential Action",
             "remark": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role."
@@ -154,15 +77,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/sameAs",
             "propertyLabel": "Same As",
             "remark": "URL of a reference Web page that unambiguously indicates the item's identity."
@@ -171,15 +85,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                ""
-              ],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
             "propertyURI": "http://schema.org/url",
             "propertyLabel": "URL",
             "remark": "URL of the item."
