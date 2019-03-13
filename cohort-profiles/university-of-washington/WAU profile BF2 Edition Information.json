@@ -1,0 +1,47 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/editionStatement",
+            "propertyLabel": "Edition Statement (RDA 2.5)",
+            "remark": "http://access.rdatoolkit.org/2.5.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyLabel": "Designation of Edition (RDA 2.5.2)",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/editionEnumeration",
+            "remark": "http://access.rdatoolkit.org/2.5.2.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/responsibilityStatement",
+            "propertyLabel": "Statement of Responsibility Relating to the Edition (RDA 2.5.4)",
+            "remark": "http://access.rdatoolkit.org/2.5.4.html"
+          }
+        ],
+        "id": "WAU:RT:BF2:EditionInformation",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/editionStatement",
+        "resourceLabel": "WAU RT BF2 Edition (unused)",
+        "remark": "http://access.rdatoolkit.org/2.5.html",
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-03-13",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      }
+    ],
+    "id": "WAU:profile:BF2:EditionInformation",
+    "title": "WAU profile BF2 Edition Information",
+    "description": "Edition (unused)",
+    "author": "Crystal Clements (cec23@uw.edu)",
+    "date": "2019-03-13",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+  }
+}

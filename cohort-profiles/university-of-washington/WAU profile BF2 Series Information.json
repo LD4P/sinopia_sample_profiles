@@ -1,0 +1,68 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyLabel": "Series Statement and ISSN of Series (RDA 2.12.1-2.12.8)",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesStatement",
+            "remark": "http://access.rdatoolkit.org/2.12.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/seriesEnumeration",
+            "propertyLabel": "Series Numbering (RDA 2.12.9)",
+            "remark": "http://access.rdatoolkit.org/2.12.9.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/subseriesStatement",
+            "propertyLabel": "Subseries Title Proper, ISSN of Subseries (RDA 2.12.10-2.12.16)",
+            "remark": "http://access.rdatoolkit.org/2.12.10.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/subseriesEnumeration",
+            "propertyLabel": "Numbering within Subseries (RDA 2.12.17)",
+            "remark": "http://access.rdatoolkit.org/2.12.17.html"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "WAU:RT:BF2:Note"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Note about the series"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
+        "id": "WAU:RT:BF2:SeriesInformation",
+        "resourceLabel": "WAU RT BF2 Series Statement",
+        "remark": "http://access.rdatoolkit.org/rdachp2_rda2-7632.html",
+        "date": "2019-03-13",
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      }
+    ],
+    "id": "WAU:profile:BF2:SeriesInformation",
+    "title": "WAU profile BF2 Series Information",
+    "date": "2019-03-13",
+    "author": "Crystal Clements (cec23@uw.edu)",
+    "description": "Instance, Series Information",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+  }
+}

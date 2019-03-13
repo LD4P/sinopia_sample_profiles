@@ -1,0 +1,94 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "WAU:RT:BF2:Agent:Person",
+                "WAU:RT:BF2:Agent:Family",
+                "WAU:RT:BF2:Agent:CorporateBody",
+                "WAU:RT:BF2:Agent:Jurisdiction",
+                "WAU:RT:BF2:Agent:Conference"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Primary Contributor"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "WAU:RT:BF2:Agent:Role"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
+            "propertyLabel": "Relationship Designator (RDA Appendix I)",
+            "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
+          }
+        ],
+        "id": "WAU:RT:BFLC:Agents:PrimaryContribution",
+        "resourceLabel": "WAU RT BFLC Agents PrimaryContribution",
+        "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution",
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-03-12",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "WAU:RT:BF2:Agent:bfPerson",
+                "WAU:RT:BF2:Agent:Family",
+                "WAU:RT:BF2:Agent:CorporateBody",
+                "WAU:RT:BF2:Agent:Jurisdiction",
+                "WAU:RT:BF2:Agent:Conference"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Primary Contributor"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "WAU:RT:BF2:Agent:Role"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
+            "propertyLabel": "Relationship Designator (RDA Appendix I)",
+            "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
+          }
+        ],
+        "id": "WAU:RT:BFLC:Agents:bfPrimaryContribution",
+        "resourceLabel": "WAU RT BFLC Agents bfPrimaryContribution",
+        "resourceURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution",
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-03-12",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      }
+    ],
+    "author": "Crystal Clements (cec23@uw.edu)",
+    "id": "WAU:profile:BFLC:PrimaryContribution",
+    "title": "WAU profile BFLC Agents PrimaryContribution",
+    "description": "Primary Contribution",
+    "date": "2019-03-12",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+  }
+}
