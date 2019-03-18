@@ -5,6 +5,7 @@ directory's sub-directories.
 ### Cohort Institution Codes Used in Templates
 * Cornell--Cornell University
 * Harvard--Harvard University
+* HRC--Harry Ransom Center, University of Texas at Austin
 * NLM--National Library of Medicine
 * Stanford--Stanford University
 * UCSD--University of California, San Diego
