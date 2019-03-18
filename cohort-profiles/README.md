@@ -8,6 +8,7 @@ directory's sub-directories.
 * NLM--National Library of Medicine
 * Stanford--Stanford University
 * UCSD--University of California, San Diego
+* WAU--University of Washington
 
 ### Codes for Ontologies Used in Templates
 * ARM--Art and Rare Materials Ontology
