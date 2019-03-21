@@ -6,8 +6,8 @@ directory's sub-directories.
 * Cornell--Cornell University
 * Harvard--Harvard University
 * HRC--Harry Ransom Center, University of Texas at Austin
-* Penn--University of Pennsylvania
 * NLM--National Library of Medicine
+* Penn--University of Pennsylvania
 * Stanford--Stanford University
 * UCSD--University of California, San Diego
 * WAU--University of Washington
