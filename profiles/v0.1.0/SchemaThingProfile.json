@@ -90,7 +90,7 @@
             "remark": "URL of the item."
           }
         ],
-        "id": "schema:Thing",
+        "id": "sinopia:resourceTemplate:schema:Thing",
         "resourceURI": "http://schema.org/Thing",
         "resourceLabel": "The most generic type of item",
         "author": "Jeremy Nelson",
