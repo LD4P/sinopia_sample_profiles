@@ -11,6 +11,7 @@ directory's sub-directories.
 * Stanford--Stanford University
 * UCSD--University of California, San Diego
 * WAU--University of Washington
+* CUB--University of Colorado Boulder
 
 ### Codes for Ontologies Used in Templates
 * ARM--Art and Rare Materials Ontology
