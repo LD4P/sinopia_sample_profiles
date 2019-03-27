@@ -1,1 +1,1 @@
-TBD
+Cornell profile work began before LD4P2 cohort members were directed to commit files to this repo. Until they've been migrated here, profiles for Cornell's Sinatra work item can be found at https://github.com/LD4P/ld4p2-cornell/tree/master/Sinatra/profiles.
