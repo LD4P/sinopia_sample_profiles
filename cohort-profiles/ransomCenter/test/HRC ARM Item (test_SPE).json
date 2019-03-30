@@ -1,0 +1,535 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Identifiers:LC",
+                "sinopia:resourceTemplate:bf2:Identifiers:DDC",
+                "sinopia:resourceTemplate:bf2:Identifiers:Shelfmark"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "propertyLabel": "Call number"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/organizations"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/txauhrh",
+                  "defaultLiteral": "TxAuHRH"
+                }
+              ],
+              "valueTemplateRefs": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+            "propertyLabel": "Held by",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+            "propertyLabel": "Shelving location",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+            "propertyLabel": "Electronic location",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Copy Specific Note",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
+        "resourceLabel": "HRC BIBFRAME 2.0 Item",
+        "id": "HRC:RT:bf2:Item",
+        "date": "2017-08-08",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+            "propertyLabel": "Access Policy",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "HRC:RT:bf2:Item:Access",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy",
+        "resourceLabel": "HRC Access Policy",
+        "date": "2017-08-08",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+            "propertyLabel": "Use or Reproduction Policy",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "HRC:RT:bf2:Item:Use",
+        "resourceLabel": "HRC Use or Reproduction Policy",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy",
+        "date": "2017-08-08",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/immediateAcquisition",
+            "propertyLabel": "Immediate Source of Acquisition of Item",
+            "remark": "http://access.rdatoolkit.org/2.19.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          }
+        ],
+        "id": "HRC:RT:bf2:Item:ImmAcqSource",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition",
+        "resourceLabel": "HRC Immediate Source of Acquisition",
+        "date": "2017-08-08",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                ""
+              ],
+              "defaults": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work",
+                "dataTypeLabel": "Work",
+                "remark": ""
+              }
+            },
+            "propertyLabel": "described by",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/describedBy",
+            "remark": "Eventually would like this to be a lookup"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasHandwritingType",
+            "propertyLabel": "has handwritten type"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "propertyLabel": "has physical condition"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasSignatureStatement",
+            "propertyLabel": "has signature statement"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/BindersTicket",
+            "propertyLabel": "Binder's ticket"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Inscription",
+            "propertyLabel": "Inscription"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Label",
+            "propertyLabel": "Label"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyLabel": "Seal",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Seal"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Stamp",
+            "propertyLabel": "Stamp"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Watermark",
+            "propertyLabel": "Watermark"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/DustJacket",
+            "propertyLabel": "Dust Jacket"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/SlipCase",
+            "propertyLabel": "Slip case"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [
+                {
+                  "defaultURI": "",
+                  "defaultLiteral": ""
+                }
+              ],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Wrapper",
+            "propertyLabel": "Wrapper"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/InaccuracyNote",
+            "propertyLabel": "Inaccuracy note"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
+        "id": "HRC:RT:ARM:item:core",
+        "resourceLabel": "HRC ARM Item",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/BinderActivity",
+            "propertyLabel": "Binder"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/CollectorActivity",
+            "propertyLabel": "Collector"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/CuratorActivity",
+            "propertyLabel": "Curator"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/ConservatorActivity",
+            "propertyLabel": "Conservator"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/DedicateeActivity",
+            "propertyLabel": "Dedicatee"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/DedicatorActivity",
+            "propertyLabel": "Dedicator"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/IlluminatorActivity",
+            "propertyLabel": "Illuminator"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/DonorActivity",
+            "propertyLabel": "Donor"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [
+                {
+                  "defaultURI": "",
+                  "defaultLiteral": ""
+                }
+              ],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/InscriberActivity",
+            "propertyLabel": "Inscriber"
+          }
+        ],
+        "id": "HRC:ARM:item:activity",
+        "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/Activity",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "resourceLabel": "HRC ARM item activity",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "HRC:profile:ARM:Item:test",
+    "title": "HRC ARM Item Test",
+    "description": "HRC ARM Item profile for Rare Books",
+    "date": "2019-03-30",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test"
+  }
+}
