@@ -1,0 +1,196 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
+            "propertyLabel": "Cataloger initials"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyLabel": "Creation date",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
+            "propertyLabel": "Change date"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/organizations"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/txauhrh",
+                  "defaultLiteral": "TxAuHRH"
+                }
+              ]
+            },
+            "propertyLabel": "Assigning agency",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/descriptionConventions"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"
+              }
+            },
+            "propertyLabel": "Description conventions",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/languages"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/languages/eng",
+                  "defaultLiteral": "English"
+                }
+              ]
+            },
+            "propertyLabel": "Description language",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/organizations"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/txauhrh",
+                  "defaultLiteral": "TxAuHRH"
+                }
+              ]
+            },
+            "propertyLabel": "Description modifier",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/menclvl"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"
+              }
+            },
+            "propertyLabel": "Encoding level",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel"
+          }
+        ],
+        "id": "HRC:RT:bf2:AdminMetadata",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+        "resourceLabel": "HRC BIBFRAME 2.0 Admin Metadata",
+        "date": "2019-03-29",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenerationProcess",
+            "propertyLabel": "Generation Process"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/Agent",
+            "propertyLabel": "Generation Agency"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/generationDate",
+            "propertyLabel": "Generation Date"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenerationProcess",
+        "id": "HRC:RT:bf2:AdminMetadata:GenerationProcess",
+        "resourceLabel": "HRC Machine-generated Metadata Process",
+        "date": "2019-03-29",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/Status",
+            "propertyLabel": "Record Status"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "	http://id.loc.gov/ontologies/bibframe/Note",
+            "propertyLabel": "Record Status Note"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
+        "resourceLabel": "Status",
+        "id": "HRC:RT:bf2:AdminMetadata:Status",
+        "date": "2019-03-29",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      }
+    ],
+    "id": "HRC:profile:bf2:AdminMetadata",
+    "title": "HRC BIBFRAME 2.0 Admin Metadata (Test)",
+    "description": "Administrative metadata for The Harry Ransom Center BIBFRAME Resources",
+    "date": "2019-03-29",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "BIBFRAME 2.0",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+  }
+}
