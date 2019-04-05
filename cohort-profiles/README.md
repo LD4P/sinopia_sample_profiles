@@ -10,6 +10,7 @@ directory's sub-directories.
 * Penn--University of Pennsylvania
 * Stanford--Stanford University
 * UCSD--University of California, San Diego
+* UMN--University of Minnesota
 * WAU--University of Washington
 * CUB--University of Colorado Boulder
 
