@@ -103,6 +103,6 @@
     "date": "2019-02-18",
     "author": "Jeremy Nelson",
     "adherence": "https://schema.org/Thing",
-    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
   }
 }
