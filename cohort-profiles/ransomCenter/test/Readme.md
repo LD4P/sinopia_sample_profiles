@@ -7,12 +7,10 @@ This directory includes HRC profiles created for testing purposes.
 
 
 
-### Atom pakages installed
+### Atom packages installed
 
-The Sinopia Profile Editor exports not formated JSON files, which makes it hard to review on a text editor.
-
->Installed the atom package **pretty-json** (https://atom.io/packages/pretty-json) in order to format and index the json file that the SPE exports. It makes easier navigate and doublecheck the profile in Atom.
-
+**Pretty-json** (https://atom.io/packages/pretty-json)  
+The Sinopia Profile Editor exports not formated JSON files, which makes it hard to review on a text editor. This package allows to format the json file when opening it with Atom.
 
 
 ### Validating a profile in Command Promp using the Sinopia JSON schemasand AJV (Windows)
