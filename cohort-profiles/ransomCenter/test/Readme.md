@@ -35,10 +35,10 @@ The Sinopia Profile Editor exports not formated JSON files, which makes it hard 
 
 
 
->Parameter -s indicates the JSON-schema to validate against (only takes one schema!).
+>`-s` --- indicates the JSON-schema to validate against (only takes one schema!).
 >
->Parameter -r indicates all the referenced schemas (which would be the rest of the Sinopia JSON-schemas v0.1.0 downloaded to a local directory).
+>`-r` --- indicates all the referenced schemas (which would be the rest of the Sinopia JSON-schemas v0.1.0 downloaded to a local directory).
 >
->Parameter -d indicates the JSON profiles (it takes multiple files, so the wild card will allow to validate all the profiles in the given folder. 
+>`-d` --- indicates the JSON profiles (it takes multiple files, so the wild card will allow to validate all the profiles in the given folder. 
 
 
