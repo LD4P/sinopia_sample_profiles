@@ -29,7 +29,7 @@ The Sinopia Profile Editor exports not formated JSON files, which makes it hard 
 
 4. In command promp typed:
 
-`ajv validate -s [local_schemas_direcotry_path]/profile -r '[local_schemas_direcotry_path]/*.json' -d "[local_profiles_direcotry_path]/*.json"`
+`ajv validate -s [schemas_folder]/profile -r '[schemas_folder]/*.json' -d "[profiles_folder]/*.json"`
 
 
 
