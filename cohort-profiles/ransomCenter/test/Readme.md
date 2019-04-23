@@ -14,7 +14,7 @@ This directory includes HRC profiles created for testing purposes.
 
 Standing questions:
 
-1. Modeling of custodial event type using the *rdf:type* property. Value of this property should be a Custodial Event subclass (https://ld4p.github.io/arm/custodial_history/ontology/0.1/custodial_history.html#CustodialEvent), but not sure how to enforce it from the profile. Can a subclass be used as a scheme for a property value? Should it be a literal? A lookup?
+1. Modeling of custodial event type using the *rdf:type* property. Should the value of this property be a Custodial Event subclass (https://ld4p.github.io/arm/custodial_history/ontology/0.1/custodial_history.html#CustodialEvent) and how to enforce it in the profile. Can a subclass be used as a scheme for a property value?
 
 2. arm:atLocation vs. bf:place. Seems the discussion is closed (https://github.com/LD4P/arm/issues/48), but not sure about the difference.
 
