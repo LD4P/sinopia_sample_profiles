@@ -1,0 +1,285 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasMaterial",
+            "propertyLabel": "Binding Material(s) - RBMS",
+            "remark": "Use RBMS Binding Terms - http://rbms.info/vocabularies/binding/alphabetical_list.htm"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Materials__Materials"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasMaterial",
+            "propertyLabel": "Binding Material(s) - AAT"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM:monograph:item:bindingNote"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Binding Note(s)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyLabel": "Binding Part(s) - RBMS",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "remark": "Use RBMS Binding Terms - http://rbms.info/vocabularies/binding/alphabetical_list.htm"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ]
+            },
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyLabel": "Binding Part(s) - AAT",
+            "remark": "Use to include the different parts of the binding"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "propertyLabel": "Binding Type - Ligatus",
+            "remark": "Use Language of Bindings: Ligatus - https://www.ligatus.org.uk/lob/ (QA service pending)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM:monograph:binding:binder"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/hasActivity",
+            "propertyLabel": "Binder"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM Monograph:binding:designer"
+              ]
+            },
+            "propertyLabel": "Designer",
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/hasActivity"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM:monograph:autograph"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "Markings"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM:monograph:physicalCondition"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "propertyLabel": "Physical Condition"
+          }
+        ],
+        "id": "HRC:RT:ARM:monograph:binding",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Binding",
+        "resourceLabel": "HRC ARM Monograph Binding",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "remark": "Use with rare monographs",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Descriptive note",
+            "remark": "Use to describe the resource"
+          }
+        ],
+        "id": "HRC:RT:ARM:monograph:item:bindingNote",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/DescriptiveNote",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "resourceLabel": "HRC ARM Monograph Binding Note",
+        "remark": "Use to further describe the binding",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Agents:Contribution"
+              ]
+            },
+            "propertyLabel": "Binder",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "remark": "Use for binders"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Binding date",
+            "remark": "Use EDTF formating"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Place"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+            "propertyLabel": "Place of binding",
+            "remark": "Geographic origin of the binding of the book"
+          }
+        ],
+        "id": "HRC:RT:ARM:monograph:binding:binder",
+        "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/BinderActivity",
+        "resourceLabel": "HRC ARM Monograph Binder",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "remark": "Use to provide information about the binder",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Agents:Contribution"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Binding Designer"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date",
+            "remark": "EDTF format date"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Place"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+            "propertyLabel": "Design place",
+            "remark": "Geographic origin of the binding design"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/DesignerActivity",
+        "id": "HRC:RT:ARM Monograph:binding:designer",
+        "resourceLabel": "HRC ARM Monograph Binding Designer",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Physical Condition"
+          }
+        ],
+        "id": "HRC:RT:ARM:monograph:physicalCondition",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+        "resourceLabel": "HRC ARM Monograph Physical Condition",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "remark": "Just for testing. This RT belongs outside of the Bindings profile",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Autograph Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Autograph Description"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Autograph",
+        "id": "HRC:RT:ARM:monograph:autograph",
+        "resourceLabel": "HRC ARM Monograph Autograph",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "remark": "Just for testing. This RT belongs outside of the Bindings profile",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      }
+    ],
+    "id": "HRC:profile:ARM:monograph:binging:test",
+    "description": "HRC ARM Binding profile for Rare Books",
+    "title": "HRC ARM Monograph Binding Test",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "ARM BF2 RBMS AAT",
+    "date": "2019-04-08",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+  }
+}
