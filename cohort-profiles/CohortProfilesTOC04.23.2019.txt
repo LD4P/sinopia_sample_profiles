@@ -466,6 +466,36 @@ HRC:profile:ARM:monograph:binging:test
 
 
 
+HRC:profile:ARM:monograph:custodialHistory:test
+
+    HRC:RT:ARM:monograph:custodialHistory
+            Custodial Event:      http://purl.org/dc/terms/hasPart
+
+    HRC:RT:ARM:monograph:custodialEvent
+            Custodial event name:      http://www.w3.org/2000/01/rdf-schema#label
+            Custodial event type:      http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+            Agent/role associated to the custodial event:      https://w3id.org/arm/activity/ontology/0.1/hasActivity
+            Place associated with custodial event:      https://w3id.org/arm/core/ontology/0.1/atLocation
+            EDTF Date associated with custodial event:      http://id.loc.gov/ontologies/bibframe/date
+
+    HRC:RT:ARM:monograph:seller
+            Seller:      http://id.loc.gov/ontologies/bibframe/agent
+
+    HRC:RT:ARM:monograph:buyer
+            Buyer:      http://id.loc.gov/ontologies/bibframe/agent
+
+    HRC:RT:ARM:monograph:donor
+            Donor:      http://id.loc.gov/ontologies/bibframe/agent
+
+    HRC:RT:ARM:monograph:borrower
+            Borrower:      http://id.loc.gov/ontologies/bibframe/agent
+
+    HRC:RT:ARM:monograph:owner
+            Former owner:      http://id.loc.gov/ontologies/bibframe/agent
+
+
+
+
 HRC:profile:bf2:AdminMetadata:test
 
     HRC:RT:bf2:AdminMetadata
@@ -1463,7 +1493,9 @@ WAU:profile:BF2:MIBluRayDVD
             Duration (RDA 7.22):      http://id.loc.gov/ontologies/bibframe/duration
             Optional Language Tracks (MARC 546 Field):      http://id.loc.gov/ontologies/bibframe/language
             Optional Subtitles:      http://id.loc.gov/ontologies/bibframe/note
-            Accessibility Content (Closed captions/ English subtitles for the deaf and hard of hearing):      http://id.loc.gov/ontologies/bibframe/contentAccessibility
+            Accessibility Content (Closed captions/ English subtitles for the deaf and hard of hearing):      
+
+http://id.loc.gov/ontologies/bibframe/contentAccessibility
             LCGFT Accessibility Term (Video recordings for ... ):      http://id.loc.gov/ontologies/bibframe/genreForm
             Aspect Ratio:      http://id.loc.gov/ontologies/bibframe/aspectRatio
             Sound Characteristics:      http://id.loc.gov/ontologies/bibframe/soundCharacteristic
