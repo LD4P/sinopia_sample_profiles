@@ -6,6 +6,23 @@ This directory includes HRC profiles created for testing purposes.
 >Files that include the sufix **_v0.1.0** have been validated against the JSON schemas v0.1.0.
 
 
+#### HRC ARM Monograph Binding test
+*High level JSON profile test for the ARM Binding model. Some of the RTs included here should probably defined outside of this profile on its own.*
+
+#### HRC ARM Monograph Custodial History test
+*High level JSON profile test for the ARM Custodial History model. It doesn't include price, accession number, aggregate custodial events or precedence relationships.*
+
+Standing questions:
+
+1. Modeling of custodial event type using the *rdf:type* property. Value of this property should be a Custodial Event subclass (https://ld4p.github.io/arm/custodial_history/ontology/0.1/custodial_history.html#CustodialEvent), but not sure how to enforce it from the profile. Can a subclass be used as a scheme for a property value? Should it be a literal? A lookup?
+
+2. arm:atLocation vs. bf:place. Seems the discussion is closed (https://github.com/LD4P/arm/issues/48), but not sure about the difference.
+
+3. Activity subclasses. Does the sinopia RT Agents Contribution (https://github.com/LD4P/sinopia_sample_profiles/blob/master/profiles/v0.1.0/BIBFRAME%202.0%20Agents%20Contribution.json) work in this context? 
+
+
+
+# Tips and tricks
 
 ### Atom packages installed
 
