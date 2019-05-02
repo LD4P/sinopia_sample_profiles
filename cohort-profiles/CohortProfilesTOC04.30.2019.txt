@@ -129,9 +129,78 @@ cub:profile:bf2:Photographs
 
 
 
-Harvard:profile:bf2:Item
+harvard:profile:bf2:Cartographic:digital
 
-    Harvard:resourceTemplate:bf2:Item
+    harvard:RT:bf2:DigitalCartographic:Work
+            Lookup:      http://id.loc.gov/ontologies/bibframe/Work
+            Creator of Work (RDA 19.2):      http://id.loc.gov/ontologies/bibframe/contribution
+            Title Information:      http://id.loc.gov/ontologies/bibframe/title
+            Form of Work:      http://id.loc.gov/ontologies/bibframe/genreForm
+            (Geographic) Coverage of the Content:      http://id.loc.gov/ontologies/bibframe/geographicCoverage
+            (Time) Coverage of the Content (RDA 7.3):      http://id.loc.gov/ontologies/bibframe/temporalCoverage
+            Cartographic Attributes:      http://id.loc.gov/ontologies/bibframe/cartographicAttributes
+            Intended Audience (RDA 7.7):      http://id.loc.gov/ontologies/bibframe/intendedAudience
+            Contribution (RDA 19.3 and 20.2):      http://id.loc.gov/ontologies/bibframe/contribution
+            Subject of the Work (RDA Chapter 23):      http://id.loc.gov/ontologies/bibframe/subject
+            Notes about the Work:      http://id.loc.gov/ontologies/bibframe/note
+            Classification numbers:      http://id.loc.gov/ontologies/bibframe/classification
+            Contents (LC-PCC PS 25.1):      http://id.loc.gov/ontologies/bibframe/tableOfContents
+            Summary:      http://id.loc.gov/ontologies/bibframe/summary
+            Content Type (RDA 6.9):      http://id.loc.gov/ontologies/bibframe/content
+            Language:      http://id.loc.gov/ontologies/bibframe/language
+            Script (RDA 7.13.2):      http://id.loc.gov/ontologies/bibframe/notation
+            Supplementary Content:      http://id.loc.gov/ontologies/bibframe/supplementaryContent
+            Color Content (RDA 7.17):      http://id.loc.gov/ontologies/bibframe/colorContent
+            Scale information:      http://id.loc.gov/ontologies/bibframe/scale
+            Time Period of Content (MARC 045 field):      http://id.loc.gov/ontologies/bibframe/temporalCoverage
+            Related Works (RDA Chapter 25 and Appendix J):      http://id.loc.gov/ontologies/bflc/relationship
+            Has BIBFRAME Instance:      http://id.loc.gov/ontologies/bibframe/hasInstance
+
+    harvard:RT:bf2:DigitalCartographic:Instance
+            Instance Of:      http://id.loc.gov/ontologies/bibframe/instanceOf
+            Title Information:      http://id.loc.gov/ontologies/bibframe/title
+            Statement of Responsibility Relating to Title Proper (RDA 2.4.2):      http://id.loc.gov/ontologies/bibframe/responsibilityStatement
+            Edition Statement (RDA 2.5):      http://id.loc.gov/ontologies/bibframe/editionStatement
+            Scale:      http://id.loc.gov/ontologies/bibframe/scale
+            Cartographic data:      http://id.loc.gov/ontologies/bibframe/cartographicAttributes
+            Publication, Distribution, Manufacture Statements:      http://id.loc.gov/ontologies/bibframe/provisionActivity
+            Copyright Date (RDA 2.11):      http://id.loc.gov/ontologies/bibframe/copyrightDate
+            Series Statement:      http://id.loc.gov/ontologies/bibframe/hasSeries
+            Mode of Issuance (RDA 2.13):      http://id.loc.gov/ontologies/bibframe/issuance
+            Identifier for the Manifestation:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Notes about the Instance:      http://id.loc.gov/ontologies/bibframe/note
+            Media type (RDA 3.2):      http://id.loc.gov/ontologies/bibframe/media
+            Carrier Type (RDA 3.3):      http://id.loc.gov/ontologies/bibframe/carrier
+            Extent:      http://id.loc.gov/ontologies/bibframe/extent
+            Dimensions (RDA 3.5):      http://id.loc.gov/ontologies/bibframe/dimensions
+            Base Material (RDA 3.6):      http://id.loc.gov/ontologies/bibframe/baseMaterial
+            Layout (RDA 3.11):      http://id.loc.gov/ontologies/bibframe/layout
+            Polarity (RDA 3.14):      http://id.loc.gov/ontologies/bibframe/polarity
+            Digital File Characteristic (RDA 3.19):      http://id.loc.gov/ontologies/bibframe/digitalCharacteristic
+            Uniform Resource Locator (RDA 4.6):      http://id.loc.gov/ontologies/bibframe/electronicLocator
+            Geographic Classification (MARC 052):      http://id.loc.gov/ontologies/bibframe/geographicCoverage
+            Contributors (RDA 21.1):      http://id.loc.gov/ontologies/bibframe/contribution
+            LC Control Number for the Manifestation (RDA 2.15):      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Related Instances:      http://id.loc.gov/ontologies/bflc/relationship
+            Administrative Metadata for Instance:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            Has Item:      http://id.loc.gov/ontologies/bibframe/hasItem
+
+    harvard:RT:bf2:DigitalCartographic:Item
+            Held by:      http://id.loc.gov/ontologies/bibframe/heldBy
+            Shelving call numbers:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Copy, issue, offprint number:      http://id.loc.gov/ontologies/bibframe/shelfmark
+            Barcode:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Electronic location:      http://id.loc.gov/ontologies/bibframe/electronicLocator
+            Held in sublocation:      http://id.loc.gov/ontologies/bibframe/sublocation
+            Notes about the Item:      http://id.loc.gov/ontologies/bibframe/note
+            Lending, Reproduction, and Retention Policies:      http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy
+
+
+
+
+harvard:profile:bf2:Item
+
+    harvard:RT:bf2:Item:map
             Barcode:      http://id.loc.gov/ontologies/bibframe/identifiedBy
             Call numbers:      http://id.loc.gov/ontologies/bibframe/identifiedBy
             Enumeration and chronology:      http://id.loc.gov/ontologies/bibframe/enumerationAndChronology
@@ -142,23 +211,16 @@ Harvard:profile:bf2:Item
             Note:      http://id.loc.gov/ontologies/bibframe/note
             Contact information (RDA 4.3):      http://id.loc.gov/ontologies/bibframe/acquisitionSource
 
-    sinopia:resourceTemplate:bf2:Item:Access
-            Lending or Access Policy:      http://www.w3.org/2000/01/rdf-schema#label
-
-    sinopia:resourceTemplate:bf2:Item:Use
-            Use or Reproduction Policy:      http://www.w3.org/2000/01/rdf-schema#label
-
-    sinopia:resourceTemplate:bf2:Item:Retention
-            Retention Policy:      http://www.w3.org/2000/01/rdf-schema#label
-
-    sinopia:resourceTemplate:bf2:Item:ImmAcqSource
-            Immediate Source of Acquisition of Item (RDA 2.19):      http://www.w3.org/2000/01/rdf-schema#label
-
-    sinopia:resourceTemplate:bf2:Item:Enumeration
-            Enumeration:      http://www.w3.org/2000/01/rdf-schema#label
-
-    sinopia:resourceTemplate:bf2:Item:Chronology
-            Chronology:      http://www.w3.org/2000/01/rdf-schema#label
+    harvard:RT:bf2:Item:digitalMap
+            Barcode:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Call numbers:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Enumeration and chronology:      http://id.loc.gov/ontologies/bibframe/enumerationAndChronology
+            Held by:      http://id.loc.gov/ontologies/bibframe/heldBy
+            Shelving location:      http://id.loc.gov/ontologies/bibframe/sublocation
+            Electronic location:      http://id.loc.gov/ontologies/bibframe/electronicLocator
+            Usage and access policy:      http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy
+            Note:      http://id.loc.gov/ontologies/bibframe/note
+            Contact information (RDA 4.3):      http://id.loc.gov/ontologies/bibframe/acquisitionSource
 
 
 
@@ -490,7 +552,7 @@ HRC:profile:ARM:monograph:custodialHistory:test
     HRC:RT:ARM:monograph:borrower
             Borrower:      http://id.loc.gov/ontologies/bibframe/agent
 
-    HRC:RT:ARM:monograph:owner
+    HRC:RT:ARM:monograph:formerOwner
             Former owner:      http://id.loc.gov/ontologies/bibframe/agent
 
 
@@ -1493,9 +1555,7 @@ WAU:profile:BF2:MIBluRayDVD
             Duration (RDA 7.22):      http://id.loc.gov/ontologies/bibframe/duration
             Optional Language Tracks (MARC 546 Field):      http://id.loc.gov/ontologies/bibframe/language
             Optional Subtitles:      http://id.loc.gov/ontologies/bibframe/note
-            Accessibility Content (Closed captions/ English subtitles for the deaf and hard of hearing):      
-
-http://id.loc.gov/ontologies/bibframe/contentAccessibility
+            Accessibility Content (Closed captions/ English subtitles for the deaf and hard of hearing):      http://id.loc.gov/ontologies/bibframe/contentAccessibility
             LCGFT Accessibility Term (Video recordings for ... ):      http://id.loc.gov/ontologies/bibframe/genreForm
             Aspect Ratio:      http://id.loc.gov/ontologies/bibframe/aspectRatio
             Sound Characteristics:      http://id.loc.gov/ontologies/bibframe/soundCharacteristic
