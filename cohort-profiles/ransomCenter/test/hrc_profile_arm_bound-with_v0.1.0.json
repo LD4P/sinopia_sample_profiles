@@ -1,0 +1,89 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM:monograph:custodialHistory"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
+            "propertyLabel": "Has custodial History",
+            "remark": "Use to indicate custodial history of the bound-with"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Item"
+              ]
+            },
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyLabel": "Bound item",
+            "remark": "Use to indicate items included in the bound-with"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "HRC:RT:ARM:monograph:binding"
+              ]
+            },
+            "propertyLabel": "Binding",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "remark": "Use to indicate binding information of the bound-with"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Identifiers"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "propertyLabel": "Identifier",
+            "remark": "Use to indicate identifier of the bound-with"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Title"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "propertyLabel": "Title",
+            "remark": "Use to indicate title of the bound-with"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/BoundCollection",
+        "id": "HRC:RT:ARM:boundCollection",
+        "resourceLabel": "HRC RT ARM BoundCollection",
+        "date": "2019-05-22",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "remark": "RT to be used to describe a bound-with",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
+      }
+    ],
+    "id": "HRC:profile:ARM:boundwith",
+    "title": "HRC Profile ARM Bound-with",
+    "date": "2019-05-22",
+    "description": "HRC ARM bound-with RTs for rare books",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "BF2 ARM dcterms",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json"
+  }
+}
