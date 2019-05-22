@@ -20,7 +20,12 @@ Standing questions:
 
 3. Activity subclasses. Does the sinopia RT Agents Contribution (https://github.com/LD4P/sinopia_sample_profiles/blob/master/profiles/v0.1.0/BIBFRAME%202.0%20Agents%20Contribution.json) work in this context? 
 
+#### HRC ARM Bound-with test
+*High level JSON profile for the ARM bound-with model. It doesn't include table of contents.*
 
+Standing questions:
+
+1. Is this the right way of linking to the item? Should an RT for bound-with item be created within this profile to include precedes and follows properties, and how would that link to the more generic item RT?
 
 # Tips and tricks
 
