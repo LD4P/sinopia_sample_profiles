@@ -3,7 +3,7 @@
 
 <http://sinopia.io/group/abc> <http://id.loc.gov/ontologies/bibframe/copyrightDate> "1984" .
 
-<http://sinopia.io/group/abc> <http://id.loc.gov/ontologies/bibframe/acquisitionTerms> "free with purchase" .      ]
+<http://sinopia.io/group/abc> <http://id.loc.gov/ontologies/bibframe/acquisitionTerms> "free with purchase" . 
 
 <http://sinopia.io/group/abc> <http://id.loc.gov/ontologies/bibframe/creationDate> "mydefaultvalue" .
 
