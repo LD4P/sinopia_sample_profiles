@@ -4,7 +4,7 @@
 - ConfigurationDemoFuller.json refers to several other Resource Templates, which are included in the Profile sinopia:profile:demo:referencedRTs for ease of testing.
 **sinopia:profile:demo:Note** contains these Resource Templates:
     - sinopia:RT:demo:Note is in Demo RT.json https://github.com/LD4P/sinopia_sample_profiles/blob/master/configuration_demo/Demo%20RT.json in current repo
-    - profile:bf2:Title is in this Profile: https://github.com/LD4P/sinopia_sample_profiles/blob/master/bfe-verso-profiles/profiles/BIBFRAME%202.0%20Title%20Information.json
+    - profile:bf2:Title and profile:bf2:Title:Note (referred to by profile:bf2:Title) are in this Profile: https://github.com/LD4P/sinopia_sample_profiles/blob/master/bfe-verso-profiles/profiles/BIBFRAME%202.0%20Title%20Information.json
     - profile:bf2:Note is in https://github.com/LD4P/sinopia_sample_profiles/blob/master/bfe-verso-profiles/profiles/BIBFRAME%202.0%20Note.json
     - profile:bf2:PublicationInformationTest is in https://github.com/LD4P/sinopia_sample_profiles/blob/master/bfe-verso-profiles/profiles/BIBFRAME%202.0%20Publication%2C%20Distribution%2C%20Manufacturer%20Activity.json
 - *Note that some configuration combinations, while possible to set up in the Profile Editor, are not included here because they don't really have a logical outcome in the Linked Data Editor, namely: type = Resource with a default value (there is no way to populate the default values for an entire Resource Template) and type = Resource with mandatory = true (how would you define "mandatory" completion of the Resource Template?)*
