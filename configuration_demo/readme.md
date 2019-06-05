@@ -1,7 +1,7 @@
 **to do: a configuration demo to test all the various QA lookups**
 
 ## Configuration demo with expected RDF ##
-**ConfigurationDemoFuller.json** is a Profile intended to show the various configuration possibilities for describing a Resource, including the 3 types of property templates, and variations of mandatory and repeatable, plus default values and tooltips. A full description of how this Profile is configured is here: [Key to ConfigurationDemoFuller](https://docs.google.com/spreadsheets/d/1V0yNUMBV5W4Hv1KU455tq4-APW190hUWuqBbyrZYVls/edit#gid=0) (Google sheet)
+**[ConfigurationDemoFuller.json](https://github.com/LD4P/sinopia_sample_profiles/blob/master/configuration_demo/ConfigurationDemoFuller.json)** is a Profile intended to show the various configuration possibilities for describing a Resource, including the 3 types of property templates, and variations of mandatory and repeatable, plus default values and tooltips. A full description of how this Profile is configured is here: [Key to ConfigurationDemoFuller](https://docs.google.com/spreadsheets/d/1V0yNUMBV5W4Hv1KU455tq4-APW190hUWuqBbyrZYVls/edit#gid=0) (Google sheet)
 - ConfigurationDemoFuller.json refers to several other Resource Templates:
     - sinopia:RT:demo:Note is in Demo RT.json https://github.com/LD4P/sinopia_sample_profiles/blob/master/configuration_demo/Demo%20RT.json in current repo
     - profile:bf2:Title and profile:bf2:Title:Note (referred to by profile:bf2:Title) are in this Profile: https://github.com/LD4P/sinopia_sample_profiles/blob/master/bfe-verso-profiles/profiles/BIBFRAME%202.0%20Title%20Information.json
