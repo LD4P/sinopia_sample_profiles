@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<j:map xmlns:j="http://www.w3.org/2005/xpath-functions">
+   <j:map key="Profile">
+      <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+      <j:string key="date">2019-05-14</j:string>
+      <j:string key="description">RDA profile for describing monographs</j:string>
+      <j:string key="id">profile:monograph</j:string>
+      <j:string key="title">WAU profile RDA monograph</j:string>
+      <j:string key="schema">https://ld4p.github.io/sinopia/schemas/0.1.0/profile.json</j:string>
+      <j:array key="resourceTemplates">
+         <j:map>
+            <j:string key="id">rt:rda:work:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10001</j:string>
+            <j:string key="resourceLabel">RT RDA Work for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Work</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has abridger agent (RDA 18.5)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20049</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/18.5.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/relators</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has category of work (RDA 6.3)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/w/P10004</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.3.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:genres</string>
+                        <string>http://id.loc.gov/vocabulary/marcgt</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has date of work (RDA 6.4)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/w/P10219</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.4.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has preferred title of work (RDA 6.2.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/w/P10223</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.2.2.html</j:string>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:expression:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10006</j:string>
+            <j:string key="resourceLabel">RT RDA Expression for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Expression</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has identifier for expression (RDA 6.13)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20002</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.13.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has creator agent of expression (RDA 20.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20053</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/20.2.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:dbpedia</string>
+                        <string>urn:ld4p:qa:names</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has script (RDA 7.13.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20065</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/7.13.2.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/mscript</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has accessibility content (RDA 7.14)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20208</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/7.14.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has supplementary content (RDA 7.16)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20206</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/7.16.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has date of expression (RDA 6.10)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20214</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.10.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has related expression of expression</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20205</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has language of expression (RDA 6.11)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20006</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.11.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/languages</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has award (RDA 7.28)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20005</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/7.28.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has note on changes in content characteristics (RDA 7.29.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20010</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/7.29.2.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has content type (RDA 6.9)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/e/P20001</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/6.9.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://rdaregistry.info/termList/RDAContentType</string>
+                        <string>https://id.loc.gov/vocabulary/contentTypes</string>
+                     </array>
+                  </j:map>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:manifestation:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10007</j:string>
+            <j:string key="resourceLabel">RT RDA Manifestation for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Manifestation</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has variant title of manifestation (RDA 2.3.6)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30128</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.3.6.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has date of production (RDA 2.7.6)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30009</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.7.6.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has mode of issuance (RDA 2.13)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30003</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.13.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/issuance</string>
+                        <string>http://rdaregistry.info/termList/ModeIssue</string>
+                     </array>
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="defaults">
+                        <map>
+                           <string key="defaultURI">http://rdaregistry.info/termList/ModeIssue/1001</string>
+                           <string key="defaultLiteral">single unit</string>
+                        </map>
+                        <map>
+                           <string key="defaultURI">http://id.loc.gov/vocabulary/issuance/mono</string>
+                           <string key="defaultLiteral">single unit</string>
+                        </map>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has related item of manifestation</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30140</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has other title information (RDA 2.3.4)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30142</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type"/>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.3.4.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has parallel other title information (RDA 2.3.5)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30151</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.3.5.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has parallel title proper (RDA 2.3.3)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30203</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.3.3.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has title proper (RDA 2.3.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/m/P30156</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.3.2.html</j:string>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:item:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10003</j:string>
+            <j:string key="resourceLabel">RT RDA Item for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Item</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has custodian agent (RDA 22.3)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/i/P40020</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/22.3.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/organizations</string>
+                     </array>
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="defaults">
+                        <map>
+                           <string key="defaultURI">http://id.loc.gov/vocabulary/organizations/wauar </string>
+                           <string key="defaultLiteral">University of Washington Libraries, Manuscripts, Special Collections, University Archives</string>
+                        </map>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has related agent of item</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/i/P40072</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:dbpedia</string>
+                        <string>urn:ld4p:qa:names</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has note on item (RDA 2.21)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/i/P40028</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.21.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has owner agent (RDA 22.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/i/P40021</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/22.2.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/organizations</string>
+                     </array>
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="defaults">
+                        <map>
+                           <string key="defaultURI">http://id.loc.gov/vocabulary/organizations/wauar </string>
+                           <string key="defaultLiteral">University of Washington Libraries, Manuscripts, Special Collections, University Archives</string>
+                        </map>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has restriction on access to item (RDA 4.4)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/i/P40047</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/4.4.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has related item of item</j:string>
+                  <j:string key="propertyURI"/>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">Do please note that there is no propertyURI</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has immediate source of acquisition of item (RDA 2.19)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/i/P40050</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/2.19.html</j:string>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:agent:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004</j:string>
+            <j:string key="resourceLabel">RT RDA Agent for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Agent</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has date of establishment (RDA 11.4.3)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50037</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.4.3.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has preferred name of family (RDA 10.2.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50065</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/10.2.2.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has date of conference (RDA 11.4.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50039</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.4.2.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has profession or occupation (RDA 9.16)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50104</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/9.16.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:subjects</string>
+                        <string>urn:ld4p:qa:demographics</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has date of termination (RDA 11.4.4)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50038</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.4.4.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has fuller form of name (RDA 9.5)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50115</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/9.5.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:names</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has number of conference (RDA 11.6)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50019</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.6.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has place of conference (RDA 11.3.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50024</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.3.2.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has address of person (RDA 9.12)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50114</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/9.12.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has term of rank, honour, or office (RDA 9.4)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50110</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/9.4.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has preferred name of person (RDA 9.2.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50117</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/9.2.2.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:names</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has field of activity of person (RDA 9.15)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50100</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/9.15.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:subjects</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has address of corporate body (RDA 11.9)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50036</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.9.html</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>urn:ld4p:qa:geonames</string>
+                        <string>urn:ld4p:qa:names</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has period of activity of corporate body (RDA 11.4.5)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50236</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">false</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.4.5.html</j:string>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has preferred name of corporate body (RDA 11.2.2)</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/a/P50041</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">literal</j:string>
+                  <j:string key="remark">http://access.rdatoolkit.org/11.2.2.html</j:string>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:nomen:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10012</j:string>
+            <j:string key="resourceLabel">RT RDA Nomen for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Nomen</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:place:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10009</j:string>
+            <j:string key="resourceLabel">RT RDA Place for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Place</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+            </j:array>
+         </j:map>
+         <j:map>
+            <j:string key="id">rt:rda:timespan:monograph</j:string>
+            <j:string key="resourceURI">http://rdaregistry.info/Elements/c/C10010</j:string>
+            <j:string key="resourceLabel">RT RDA Timespan for monographs</j:string>
+            <j:string key="author">Crystal Clements (cec23@uw.edu)</j:string>
+            <j:string key="date">2019-05-01</j:string>
+            <j:string key="schema">https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/uwResource-template.json"</j:string>
+            <j:array key="propertyTemplates">
+               <j:map>
+                  <j:string key="propertyLabel">Administrative Metadata for Timespan</j:string>
+                  <j:string key="propertyURI">http://id.loc.gov/ontologies/bibframe/adminMetadata</j:string>
+                  <j:string key="mandatory">false</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">resource</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="valueTemplateRefs">
+                        <string>rt:bf2:AdminMetadata</string>
+                     </array>
+                  </j:map>
+               </j:map>
+               <j:map>
+                  <j:string key="propertyLabel">has owner</j:string>
+                  <j:string key="propertyURI">http://rdaregistry.info/Elements/u/P60404</j:string>
+                  <j:string key="mandatory">true</j:string>
+                  <j:string key="repeatable">true</j:string>
+                  <j:string key="type">lookup</j:string>
+                  <j:map key="valueConstraint">
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="useValuesFrom">
+                        <string>http://id.loc.gov/vocabulary/organizations</string>
+                     </array>
+                     <array xmlns="http://www.w3.org/2005/xpath-functions" key="defaults">
+                        <map>
+                           <string key="defaultURI">http://id.loc.gov/vocabulary/organizations/wauar</string>
+                           <string key="defaultLiteral">University of Washington Libraries, Manuscripts, Special Collections, University Archives</string>
+                        </map>
+                     </array>
+                  </j:map>
+               </j:map>
+            </j:array>
+         </j:map>
+      </j:array>
+   </j:map>
+</j:map>

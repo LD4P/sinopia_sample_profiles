@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://github.com/CECSpecialistI/UWLibCatProfiles/raw/master/uwSchemas/test/testSchema001.json",
+    "title": "JSON Schema for testing",
+    "description": "Test use of URLs for raw GitHub files as values for id keys in JSON schemas",
+    "type": "object",
+    "properties": {
+        "exampleResourceIRI": {
+            "description": "Put any IRI in the JSON instance",
+            "type": "string",
+            "format": "uri"
+        }
+    }
+}
