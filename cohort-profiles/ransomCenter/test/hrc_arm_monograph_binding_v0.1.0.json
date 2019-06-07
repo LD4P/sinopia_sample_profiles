@@ -26,14 +26,10 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                "HRC:RT:ARM:monograph:item:bindingNote"
-              ]
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-            "propertyLabel": "Binding Note(s)"
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Binding Descriptive note",
+            "remark": "Use to describe the resource"
           },
           {
             "mandatory": "false",
@@ -82,7 +78,7 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "HRC:RT:ARM Monograph:binding:designer"
+                "HRC:RT:ARM:Monograph:binding:designer"
               ]
             },
             "propertyLabel": "Designer",
@@ -119,25 +115,6 @@
         "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
         "date": "2019-04-08",
         "remark": "Use with rare monographs",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
-      },
-      {
-        "propertyTemplates": [
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-            "propertyLabel": "Descriptive note",
-            "remark": "Use to describe the resource"
-          }
-        ],
-        "id": "HRC:RT:ARM:monograph:item:bindingNote",
-        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/DescriptiveNote",
-        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
-        "date": "2019-04-08",
-        "resourceLabel": "HRC ARM Monograph Binding Note",
-        "remark": "Use to further describe the binding",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.1.0/resource-template.json"
       },
       {
@@ -223,7 +200,7 @@
           }
         ],
         "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/DesignerActivity",
-        "id": "HRC:RT:ARM Monograph:binding:designer",
+        "id": "HRC:RT:ARM:Monograph:binding:designer",
         "resourceLabel": "HRC ARM Monograph Binding Designer",
         "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
         "date": "2019-04-08",
