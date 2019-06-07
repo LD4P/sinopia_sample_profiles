@@ -2,7 +2,6 @@
 
 This directory includes HRC profiles created for testing purposes. 
 
->Files that include the sufix **-spe** are fresh from the Sinopia Profile editor.  
 >Files that include the sufix **_v0.1.0** have been validated against the JSON schemas v0.1.0.
 
 
