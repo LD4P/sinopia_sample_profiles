@@ -1,0 +1,57 @@
+{"Profile": {
+    "resourceTemplates": [{
+        "propertyTemplates": [
+            {
+                "mandatory": "false",
+                "repeatable": "true",
+                "type": "resource",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                    "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Agent:Organization"],
+                    "useValuesFrom": [],
+                    "defaults": [],
+                    "valueDataType": {},
+                    "valueLanguage": ""
+                },
+                "propertyURI": "http://www.loc.gov/mads/rdf/v1#organization",
+                "propertyLabel": "Organization"
+            },
+            {
+                "mandatory": "false",
+                "repeatable": "false",
+                "type": "literal",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                    "valueTemplateRefs": [],
+                    "useValuesFrom": [],
+                    "defaults": [],
+                    "valueDataType": {}
+                },
+                "propertyLabel": "Affiliation start date",
+                "propertyURI": "http://www.loc.gov/mads/rdf/v1#affiliationStart"
+            },
+            {
+                "mandatory": "false",
+                "repeatable": "true",
+                "type": "literal",
+                "resourceTemplates": [],
+                "valueConstraint": {
+                    "valueTemplateRefs": [],
+                    "useValuesFrom": [],
+                    "defaults": [],
+                    "valueDataType": {}
+                },
+                "propertyURI": "http://www.loc.gov/mads/rdf/v1#affiliationEnd",
+                "propertyLabel": "Affiliation end date"
+            }
+        ],
+        "id": "profile:bf2:CornellSinatra45:AgentAffiliation",
+        "resourceURI": "http://www.loc.gov/mads/rdf/v1#Affiliation",
+        "resourceLabel": "Affiliation"
+    }],
+    "description": "Agent affiliation information (organization, start and end dates",
+    "id": "profile:bf2:CornellSinatra45:AgentAffiliation",
+    "title": "Affiliation",
+    "date": "2018-12-05",
+    "author": "Steven Folsom, Metadata Librarian, Cornell University"
+}}
