@@ -2,7 +2,6 @@
 
 This directory includes HRC profiles created for testing purposes. 
 
->Files that include the sufix **-spe** are fresh from the Sinopia Profile editor.  
 >Files that include the sufix **_v0.1.0** have been validated against the JSON schemas v0.1.0.
 
 
@@ -19,6 +18,8 @@ Standing questions:
 2. arm:atLocation vs. bf:place. Seems the discussion is closed (https://github.com/LD4P/arm/issues/48), but not sure about the difference.
 
 3. Activity subclasses. Does the sinopia RT Agents Contribution (https://github.com/LD4P/sinopia_sample_profiles/blob/master/profiles/v0.1.0/BIBFRAME%202.0%20Agents%20Contribution.json) work in this context? 
+
+4. Does it make sense to have a Custodial History RT that calls to a Custodial Event RT, or should this just include the Custodial Event RT as the starting point?
 
 #### HRC ARM Bound-with test
 *High level JSON profile for the ARM bound-with model. It doesn't include table of contents.*
