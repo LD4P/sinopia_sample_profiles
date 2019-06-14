@@ -28,6 +28,15 @@ Standing questions:
 
 1. Is this the right way of linking to the item? Should an RT for bound-with item be created within this profile to include precedes and follows properties, and how would that link to the more generic item RT?
 
+#### HRC ARM citation test
+*High level JSON profile for the ARM citation model following the USE CASE 2 (Citation located, cataloger adds commentary on citation)*
+
+Standing questions:
+
+1. What is "bib" namespace for?
+2. If Citation is subject of a statement and hasSource is the predicate, what if the object? Not clear on the diagram what the empty dottend line circles mean? However, they seem to be the subject of antoher statement.
+3. In the basic citation, the ex:citation -- hasSource -- ex:source. Should the object be a Source, and if so, is there a modeling for source documented somewhere?
+
 # Tips and tricks
 
 ### Atom packages installed
