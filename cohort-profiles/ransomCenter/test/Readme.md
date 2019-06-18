@@ -34,9 +34,13 @@ Standing questions:
 Standing questions:
 
 1. What is "bib:" namespace for? Is this Bilbiotek-o?
+
 2. In the basic citation model, the ex:citation -- hasSource -- ex:source. Should the object be a Source, and if so, is there a modeling for source documented somewhere? Is bf:Source appropriate in this case?
+
 3. In the located citation model, if Citation is subject of a statement and hasSource is the predicate, what if the object? Not clear on the diagram what the empty dottend line circles mean? However, they seem to be the subject of antoher statement. The HRC test example attempts to reflect  that modeling (relatinship between citation source, entry and page..) but it doesn't look too good
+
 4. In the located citation model, when linking a Citation to an instance via dcterms:isPartOf, how would be the recomendation to link directly to the instance (e.g a record on worldcat or Share-vde) instead of a literal?
+
 5. The class Volume doesn't exist in the ARM Core Ontology (while Entry and Page do). Is there a suggested ontology for Volume?
 
 # Tips and tricks
