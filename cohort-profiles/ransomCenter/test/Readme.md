@@ -30,7 +30,7 @@ Standing questions:
 
 1. Is this the right way of linking to the item? Should an RT for bound-with item be created within this profile to include precedes and follows properties, and how would that link to the more generic item RT?
 
-#### HRC ARM citation test
+#### HRC ARM Citation test
 *High level JSON profile for the ARM citation model following the USE CASE 2 (Citation located, cataloger adds commentary on citation)*
 
 Standing questions:
@@ -39,11 +39,20 @@ Standing questions:
 
 2. In the basic citation model, the ex:citation -- hasSource -- ex:source. Should the object be a Source, and if so, is there a modeling for source documented somewhere? Is bf:Source appropriate in this case?
 
-3. In the located citation model, if Citation is subject of a statement and hasSource is the predicate, what if the object? Not clear on the diagram what the empty dottend line circles mean? However, they seem to be the subject of antoher statement. The HRC test example attempts to reflect  that modeling (relatinship between citation source, entry and page..) but it doesn't look too good
+3. In the located citation model, if Citation is subject of a statement and hasSource is the predicate, what if the object? Not clear on the diagram what the empty dottend line circles mean? However, they seem to be the subject of antoher statement. The HRC test example attempts to reflect  that modeling (relatinship between citation source, entry and page..) but it doesn't look right.
 
 4. In the located citation model, when linking a Citation to an instance via dcterms:isPartOf, how would be the recomendation to link directly to the instance (e.g a record on worldcat or Share-vde) instead of a literal?
 
 5. The class Volume doesn't exist in the ARM Core Ontology (while Entry and Page do). Is there a suggested ontology for Volume?
+
+#### HRC Pforzheimer Item test
+*High level JSON profile for an item from the Carl H. Pforzheimer Library held at the HRC*
+
+Standing Questions:
+
+1. Linking the item to the digital surrogate --> Use property bf:otherPhysicalFormat or bf:hasEquivalent? otherPhysicalFormat can only be used with Instance, while hasEquivalent works with Work, Instance and Item. Here we use hasEquivalent as we want to state that it is this specific item that has been digitized, howeverit might be more appropriate to create that relationship on the instance level (if we want to follow a 776 marc field model)? Also, what should be the object of this statement? To make it here simple, we are using the URL in our CONTENTdm as a literal, but should this link to a brief instance description of the Digitized Instance?
+
+2. Accession number --> Is LC planning to include AccessionNumber to BF2?
 
 # Tips and tricks
 
