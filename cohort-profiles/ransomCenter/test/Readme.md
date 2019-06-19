@@ -23,8 +23,6 @@ Standing questions:
 
 4. Does it make sense to have a Custodial History RT that calls to a Custodial Event RT, or should this just include the Custodial Event RT as the starting point?
 
-5. Can the existing bf:custodialHistory property (http://id.loc.gov/ontologies/bibframe/custodialHistory) take the value of a Resource? As defined currently in the BF2 ontology it can just take the value of an rdfs:literal.
-
 #### HRC ARM Bound-with test
 *High level JSON profile for the ARM bound-with model. It doesn't include table of contents.*
 
