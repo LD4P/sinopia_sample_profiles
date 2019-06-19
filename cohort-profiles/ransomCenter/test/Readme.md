@@ -45,7 +45,7 @@ Standing questions:
 
 5. The class Volume doesn't exist in the ARM Core Ontology (while Entry and Page do). Is there a suggested ontology for Volume?
 
-#### HRC ARM Item Identifiers
+#### HRC ARM Item Identifiers test
 *High level JSON profile for HRC identifiers to be used on the item level*
 
 Standing Questions:
