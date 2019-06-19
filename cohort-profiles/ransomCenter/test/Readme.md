@@ -45,6 +45,14 @@ Standing questions:
 
 5. The class Volume doesn't exist in the ARM Core Ontology (while Entry and Page do). Is there a suggested ontology for Volume?
 
+#### HRC ARM Item Identifiers
+*High level JSON profile for HRC identifiers to be used on the item level*
+
+Standing Questions:
+
+1. Accession number --> Is LC planning to include AccessionNumber to BF2? Can I use the arm:AccessionNumber with bf:identifyBy even if the expected value is bf:Idnetifier or one of its classes? Also, there is an ARM Status Vocabulary (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html) that has not yet been requested as a lookup. Leaving it as a literal by now, with recommendation to use an ARM Status Vocabulary term (or URI as a literal?)
+
+
 #### HRC Pforzheimer Item test
 *High level JSON profile for an item from the Carl H. Pforzheimer Library held at the HRC*
 
@@ -52,7 +60,6 @@ Standing Questions:
 
 1. Linking the item to the digital surrogate --> Use property bf:otherPhysicalFormat or bf:hasEquivalent? otherPhysicalFormat can only be used with Instance, while hasEquivalent works with Work, Instance and Item. Here we use hasEquivalent as we want to state that it is this specific item that has been digitized, howeverit might be more appropriate to create that relationship on the instance level (if we want to follow a 776 marc field model)? Also, what should be the object of this statement? To make it here simple, we are using the URL in our CONTENTdm as a literal, but should this link to a brief instance description of the Digitized Instance?
 
-2. Accession number --> Is LC planning to include AccessionNumber to BF2?
 
 # Tips and tricks
 
