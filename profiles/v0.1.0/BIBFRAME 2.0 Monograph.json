@@ -9,7 +9,8 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://mlvlp04.loc.gov:8230/resources/works"
+                "urn:ld4p:qa:names:person",
+                "urn:ld4p:qa:subjects:person"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"

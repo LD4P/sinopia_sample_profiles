@@ -13,7 +13,7 @@
             "propertyLabel": "Search LCNAF",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ]
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#PersonalName",
@@ -155,7 +155,7 @@
             "propertyLabel": "Search LCNAF",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ]
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#FamilyName",
@@ -340,7 +340,7 @@
             "propertyLabel": "Search LCNAF",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ]
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#CorporateName",
@@ -541,7 +541,7 @@
             "propertyLabel": "Search LCNAF",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ]
             },
             "propertyURI": "http://www.loc.gov/mads/rdf/v1#ConferenceName",
@@ -740,7 +740,7 @@
             "repeatable": "true",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ]
             }
           },
@@ -1233,7 +1233,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ]
             },
             "propertyLabel": "Search LCNAF",
