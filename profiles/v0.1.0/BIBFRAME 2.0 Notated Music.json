@@ -1569,7 +1569,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/performanceMediums"
+                "urn:ld4p:qa:performance"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/MusicMedium"
@@ -1631,7 +1631,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/performanceMediums"
+                "urn:ld4p:qa:performance"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/MusicMedium"
@@ -1658,7 +1658,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/performanceMediums"
+                "urn:ld4p:qa:performance"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/MusicMedium"
