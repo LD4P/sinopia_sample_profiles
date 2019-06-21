@@ -173,7 +173,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/performanceMediums"
+                "urn:ld4p:qa:performance"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://performedmusicontology.org/ontology/IndividualInstrument"
@@ -212,7 +212,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/performanceMediums"
+                "urn:ld4p:qa:performance"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://performedmusicontology.org/ontology/InstrumentEnsemble"
@@ -340,7 +340,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/performanceMediums"
+                "urn:ld4p:qa:performance"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance"

@@ -280,7 +280,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
@@ -305,7 +305,7 @@
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "http://id.loc.gov/authorities/names"
+                "urn:ld4p:qa:names:person"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
