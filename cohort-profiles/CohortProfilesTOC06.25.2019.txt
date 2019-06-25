@@ -1070,6 +1070,73 @@ harvard:profile:bf2:Item
 
 
 
+Harvard:profile:test:lookups
+
+    Harvard:rt:test:lookups
+            AGROVOC:      http://property26
+            DBPEDIA:      http://property13
+            GEONAMES_all:      http://property1
+            GEONAMES_area:      http://property1
+            GEONAMES_place:      http://property3
+            GETTY_AAT all terms:      http://property4
+            GETTY_AAT Activities:      http://property21
+            GETTY_AAT Agents:      http://property22
+            GETTY_AAT Associated_Concepts:      http://property23
+            GETTY_AAT Brand_Names:      http://property24
+            GETTY_AAT Materials:      http://property39
+            GETTY_AAT Objects:      http://property40
+            GETTY_AAT Styles_and_Periods:      http://property38
+            GETTY_TGN:      http://property6
+            GETTY_ULAN:      http://property37
+            LOC all genres:      http://property5
+            LOC all names:      http://property7
+            LOC person [names]:      http://property8
+            LOC organization [names]:      http://property9
+            LOC place [names]:      http://property10
+            LOC intangible [names]:      http://property33
+            LOC work [names]:      http://property34
+            LOC all subjects:      http://property11
+            MESH:      http://property12
+            NALT:      http://property25
+            OCLCFAST:      http://property14
+            OCLCFAST concept:      http://property28
+            OCLCFAST event:      http://property29
+            OCLCFAST person:      http://property30
+            OCLCFAST organization:      http://property31
+            OCLCFAST place:      http://property32
+            OCLCFAST intangible:      http://property51
+            OCLCFAST work:      http://property52
+            OCLCFAST topic:      http://property53
+            OCLCFAST geographic:      http://property54
+            OCLCFAST event_name:      http://property55
+            OCLCFAST personal_name:      http://property56
+            OCLCFAST corporate_name:      http://property57
+            OCLCFAST uniform_title:      http://property58
+            OCLCFAST period:      http://property59
+            OCLCFAST form:      http://property60
+            SHAREVDE CORNELL WORK:      http://property15
+            SHAREVDE CORNELL INSTANCE:      http://property16
+            SHAREVDE STANFORD WORK:      http://property36
+            SHAREVDE STANFORD INSTANCE:      http://property35
+            MARC relator terms:      http://property18
+            carrier:      http://property27
+            color:      http://property49
+            content type:      http://property17
+            description conventions:      http://property50
+            illustrative content:      http://property41
+            language:      http://property19
+            media type:      http://property20
+            mode of issuance:      http://property42
+            base material:      http://property43
+            frequency:      http://property44
+            production method:      http://property45
+            recording medium:      http://property46
+            sound content:      http://property47
+            type of recording:      http://property48
+
+
+
+
 NLM:profile:BF2:Serial
 
     sinopia:resourceTemplate:bf2:Serial:Work
@@ -1175,6 +1242,150 @@ NLM:profile:BF2:Serial
     sinopia:resourceTemplate:bf2:Serial:Frequency
             Frequency (RDA 2.14):      http://id.loc.gov/ontologies/bflc/target
             Note on Frequency (RDA 2.17.12):      http://id.loc.gov/ontologies/bibframe/note
+
+
+
+
+SAG:profile:BF2:Serial
+
+    SAG:resourceTemplate:bf2:Serial:Work
+            Lookup:      http://id.loc.gov/ontologies/bibframe/Work
+            Creator of Work (RDA 19.2):      http://id.loc.gov/ontologies/bibframe/contribution
+            SAG Title Information (RDA 6.2.2, 6.2.3):      http://id.loc.gov/ontologies/bibframe/title
+            Form of Work (RDA 6.3):      http://id.loc.gov/ontologies/bibframe/genreForm
+            Date of Work (RDA 6.4):      http://id.loc.gov/ontologies/bibframe/originDate
+            Place of Origin of the Work (RDA 6.5):      http://id.loc.gov/ontologies/bibframe/originPlace
+            (Geographic) Coverage of the Content:      http://id.loc.gov/ontologies/bibframe/geographicCoverage
+            (Time) Coverage of the Content (RDA 7.3):      http://id.loc.gov/ontologies/bibframe/temporalCoverage
+            Intended Audience (RDA 7.7):      http://id.loc.gov/ontologies/bibframe/intendedAudience
+            Contribution (RDA 19.3 and 20.2):      http://id.loc.gov/ontologies/bibframe/contribution
+            Subject of the Work (RDA Chapter 23):      http://id.loc.gov/ontologies/bibframe/subject
+            Notes about the Work:      http://id.loc.gov/ontologies/bibframe/note
+            Classification numbers:      http://id.loc.gov/ontologies/bibframe/classification
+            Contents (LC-PCC PS 25.1):      http://id.loc.gov/ontologies/bibframe/tableOfContents
+            Summary:      http://id.loc.gov/ontologies/bibframe/summary
+            Content Type (RDA 6.9):      http://id.loc.gov/ontologies/bibframe/content
+            Language:      http://id.loc.gov/ontologies/bibframe/language
+            Script (RDA 7.13.2):      http://id.loc.gov/ontologies/bibframe/notation
+            Illustrative Content (RDA 7.15):      http://id.loc.gov/ontologies/bibframe/illustrativeContent
+            Color Content (RDA 7.17):      http://id.loc.gov/ontologies/bibframe/colorContent
+            Supplementary Content:      http://id.loc.gov/ontologies/bibframe/supplementaryContent
+            SAG Related Works (RDA Chapter 25, Appendix J):      http://id.loc.gov/ontologies/bflc/relationship
+            Related Expressions:      http://id.loc.gov/ontologies/bibframe/hasExpression
+            Related Manifestations (RDA Chapter 27,  Appendix J):      http://id.loc.gov/ontologies/bibframe/hasInstance
+            Has BIBFRAME Instance:      http://id.loc.gov/ontologies/bibframe/hasInstance
+            Authorized Access Point Representing the Work (RDA 6.27.1):      http://www.w3.org/2000/01/rdf-schema#label
+
+    SAG:resourceTemplate:bf2:Serial:Instance
+            Instance of:      http://id.loc.gov/ontologies/bibframe/instanceOf
+            SAG Title Information (RDA 2.3):      http://id.loc.gov/ontologies/bibframe/title
+            Statement of Responsibility Relating to Title Proper (RDA 2.4.2):      http://id.loc.gov/ontologies/bibframe/responsibilityStatement
+            Edition Statement (RDA 2.5):      http://id.loc.gov/ontologies/bibframe/editionStatement
+            SAG Publication, Distribution, Manufacture Statements:      http://id.loc.gov/ontologies/bibframe/provisionActivity
+            Copyright Date (RDA 2.11):      http://id.loc.gov/ontologies/bibframe/copyrightDate
+            Series Statement:      http://id.loc.gov/ontologies/bibframe/hasSeries
+            Mode of Issuance (RDA 2.13):      http://id.loc.gov/ontologies/bibframe/issuance
+            SAG Frequency:      http://id.loc.gov/ontologies/bibframe/frequency
+            Identifiers:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Media type (RDA 3.2):      http://id.loc.gov/ontologies/bibframe/media
+            Extent:      http://id.loc.gov/ontologies/bibframe/extent
+            Dimensions (RDA 3.5):      http://id.loc.gov/ontologies/bibframe/dimensions
+            Carrier Type (RDA 3.3):      http://id.loc.gov/ontologies/bibframe/carrier
+            Related Instances (RDA 27.1):      http://id.loc.gov/ontologies/bflc/relationship
+            Notes about the Instance:      http://id.loc.gov/ontologies/bibframe/note
+            Has Item:      http://id.loc.gov/ontologies/bibframe/hasItem
+            Uniform Resource Locator (RDA 4.6):      http://id.loc.gov/ontologies/bibframe/electronicLocator
+            LC Control Number for the Manifestation (RDA 2.15):      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Administrative Metadata for Instance:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            Projected publication date (YYMM):      http://id.loc.gov/ontologies/bflc/projectedProvisionDate
+            SAG Enumeration/Chronology Pattern Change:      http://id.loc.gov/ontologies/bibframe/arrangement
+
+    SAG:resourceTemplate:bf2:Serial:Item
+            Held by:      http://id.loc.gov/ontologies/bibframe/heldBy
+            Electronic location:      http://id.loc.gov/ontologies/bibframe/electronicLocator
+            Held in sublocation:      http://id.loc.gov/ontologies/bibframe/sublocation
+            Barcode:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Notes about the Item:      http://id.loc.gov/ontologies/bibframe/note
+            Lending, Reproduction, and Retention Policies:      http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy
+            Shelving call numbers:      http://id.loc.gov/ontologies/bibframe/identifedBy
+            Enumeration And Chronology of Item:      http://id.loc.gov/ontologies/bibframe/enumerationAndChronology
+            Immediate Acquisition:      http://id.loc.gov/ontologies/bibframe/immediateAcquisition
+            Contact information (RDA 4.3):      http://id.loc.gov/ontologies/bibframe/acquisitionSource
+
+    SAG:resourceTemplate:bf2:Serial:Title
+            Title Proper (RDA 2.3.2):      http://id.loc.gov/ontologies/bibframe/mainTitle
+            Designation of Part, Section or Supplement (RDA 2.3.1.7):      http://id.loc.gov/ontologies/bibframe/partNumber
+            Title of Part, Section or Supplement (RDA 2.3.1.7):      http://id.loc.gov/ontologies/bibframe/partName
+
+    SAG:resourceTemplate:bf2:Serials:RelatedWork
+            Search related works:      http://id.loc.gov/ontologies/bflc/target
+            Record Relationship Designator for Related Work (RDA Appendix J):      http://id.loc.gov/ontologies/bflc/relation
+            Absorbed (work)::      http://id.loc.gov/ontologies/bibframe/absorbed
+            Continues (work)::      http://id.loc.gov/ontologies/bibframe/continues
+            Continues in part (work)::      http://id.loc.gov/ontologies/bibframe/continuesInPart
+            Merger of (work)::      http://id.loc.gov/ontologies/bibframe/mergerOf
+            Separated from (work)::      http://id.loc.gov/ontologies/bibframe/separatedFrom
+            Continued by (work)::      http://id.loc.gov/ontologies/bibframe/continuedBy
+            Absorbed by (work)::      http://id.loc.gov/ontologies/bibframe/absorbedBy
+            Continued in part by (work)::      http://id.loc.gov/ontologies/bibframe/continuedInPartBy
+            Merged to form (work)::      http://id.loc.gov/ontologies/bibframe/mergedToForm
+            Split into (work)::      http://id.loc.gov/ontologies/bibframe/splitInto
+            Has supplement (work)::      http://id.loc.gov/ontologies/bibframe/supplement
+            Supplement to (work)::      http://id.loc.gov/ontologies/bibframe/supplementTo
+            Description of Related Work:      http://id.loc.gov/ontologies/bibframe/note
+            Indexed In (work; RDA Appendix J.2.2):      http://id.loc.gov/ontologies/bflc/indexedIn
+
+    NLM:resourceTemplate:bf2:Serial:RelatedInstance
+            Search Related Manifestation:      http://id.loc.gov/ontologies/bflc/target
+            Record Related Manifestation Authorized Access Point:      http://id.loc.gov/ontologies/bflc/target
+            Record Relationship Designator for Related Manifestation (RDA Appendix J):      http://id.loc.gov/ontologies/bflc/relation
+            ISSN of Related Manifestation:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            Also issued in another format as::      http://id.loc.gov/ontologies/bibframe/hasEquivalent
+            Accompanied by (manifestation)::      http://id.loc.gov/ontologies/bibframe/accompaniedBy
+            Description of Related Manifestation:      http://id.loc.gov/ontologies/bibframe/note
+
+    NLM:resourceTemplate:bf2:Serial:EnumerationAndChronology
+            Numeric and/or Alphabetic Designation of First Issue or Part of Sequence (RDA 2.6.2):      http://id.loc.gov/ontologies/bibframe/firstIssue
+            Chronological Designation of First Issue or Part of Sequence (RDA 2.6.3):      http://id.loc.gov/ontologies/bibframe/firstIssue
+            Numeric and/or Alphabetic Designation of Last Issue or Part of Sequence (RDA 2.6.4):      http://id.loc.gov/ontologies/bibframe/lastIssue
+            Chronological Designation of Last Issue or Part of Sequence (RDA 2.6.5):      http://id.loc.gov/ontologies/bibframe/lastIssue
+
+    SAG:resourceTemplate:bf2:Serials:Frequency
+            Frequency (RDA 2.14):      http://id.loc.gov/ontologies/bflc/target
+            Note on Frequency (RDA 2.17.12):      http://id.loc.gov/ontologies/bibframe/note
+            Frequency Coverage:      http://id.loc.gov/ontologies/bflc/appliesTo
+
+    SAG:resourceTemplate:bflc:Serials:AppiiesTo
+            Alphanumeric Designation and/or Date of First Issue of Change:      http://id.loc.gov/ontologies/bflc/firstIssue
+            Alphanumeric Designation and/or Date of Last Issue of Change:      http://id.loc.gov/ontologies/bibframe/lastIssue
+            Coverage Note:      http://id.loc.gov/ontologies/bibframe/note
+            Coverage URL:      http://id.loc.gov/ontologies/bflc/target
+
+    SAG:resourceTemplate:Serials:bf2:Title:AbbrevTitle
+            Title Abbreviation:      http://id.loc.gov/ontologies/bibframe/title
+            Source:      http://id.loc.gov/ontologies/bibframe/source
+
+    SAG:resourceTemplate:bf2:Serials:IndexingWork
+            Look up Indexing Work:      http://id.loc.gov/ontologies/bflc/target
+            Title of Indexing Work:      http://id.loc.gov/ontologies/bf2/title
+            Location of indexed data:      http://id.loc.gov/ontologies/bf2/part
+            Indexing coverage:      http://id.loc.gov/ontologies/bflc/appliesTo
+
+    SAG:resourceTemplate:bflc:Serials:Arrangeme
+            Enumeration/Chronology Pattern:      http://id.loc.gov/ontologies/bibframe/pattern
+            Coverage:      http://id.loc.gov/ontologies/bflc:appliesTo
+
+    SAG:resourceTemplate:bf2:Serials:Title:VarTitle
+            Variant title:      http://id.loc.gov/ontologies/bibframe/mainTitle
+            Type of variant title:      http://id.loc.gov/ontologies/bibframe/variantType
+            Coverage of variant title:      http://id.loc.gov/ontologies/bflc/appliesTo
+
+    SAG:resourceTemplate:bf2:Serials:PublicationInformation
+            Place:      http://id.loc.gov/ontologies/bibframe/place
+            Publisher Name:      http://id.loc.gov/ontologies/bibframe/agent
+            Publication Date:      http://id.loc.gov/ontologies/bibframe/date
+            Publication Note:      http://id.loc.gov/ontologies/bibframe/note
+            Coverage for Publication Information:      http://id.loc.gov/ontologies/bflc/appliesTo
 
 
 
@@ -1374,6 +1585,23 @@ UMN:profile:bf2:Serial
 
 
 
+HRC:Profile:ARM:BibCitation
+
+    HRC:RT:ARM:citation
+            Citation Source:      http://purl.org/dc/terms/isPartOf
+            Citation Entry:      https://w3id.org/arm/core/ontology/0.1/hasSource
+            Cataloger note:      http://id.loc.gov/ontologies/bibframe/note
+
+    HRC:RT:ARM:entry
+            Citation Entry:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+            Entry Page:      http://id.loc.gov/ontologies/bibframe/place
+
+    HRC:RT:ARM:page
+            Citation Page:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+
+
+
 HRC:profile:ARM:monograph:binging:test
 
     HRC:RT:ARM:monograph:binding
@@ -1446,6 +1674,20 @@ HRC:profile:ARM:monograph:custodialHistory:test
 
     HRC:RT:ARM:monograph:formerOwner
             Former owner:      http://id.loc.gov/ontologies/bibframe/agent
+
+
+
+
+HRC:profile:ARM:item:identifiers
+
+    HRC:RT:ARM:item:identifiers:accessionNumber
+            Accession Number:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+            Accession Number Date:      http://purl.org/dc/terms/date
+            Accession Number Status:      http://id.loc.gov/ontologies/bibframe/status
+            Assigning Agency:      http://id.loc.gov/ontologies/bibframe/source
+
+    HRC:RT:ARM:item:identifiers:shelfMark
+            HRC Shelf Mark:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
 
 
 
