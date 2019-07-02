@@ -825,7 +825,7 @@
             "propertyLabel": "Note about Illustrative Content"
           }
         ],
-        "id": "sinopia resourceTemplate:bf2:RareMat:Illus",
+        "id": "sinopia:resourceTemplate:bf2:RareMat:Illus",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Illustration",
         "resourceLabel": "Illustrative content",
         "date": "2017-08-30",
@@ -876,7 +876,7 @@
             "propertyLabel": "Location of citation"
           }
         ],
-        "id": "sinopia resourceTemplate:bf2:RareMat:RefWork",
+        "id": "sinopia:resourceTemplate:bf2:RareMat:RefWork",
         "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
         "resourceLabel": "References",
         "date": "2017-08-30",
@@ -888,7 +888,7 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "list",
             "valueConstraint": {
               "useValuesFrom": [
                 "https://lookup.ld4l.org/qa/search/linked_data/getty_aat_ld4l_cache"
