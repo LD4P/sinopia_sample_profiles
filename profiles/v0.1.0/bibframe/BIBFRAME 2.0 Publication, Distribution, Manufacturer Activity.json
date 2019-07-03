@@ -166,7 +166,7 @@
             "remark": "http://access.rdatoolkit.org/2.10.6.html"
           },
           {
-            "mandatory": "false",
+            "mandatory": "true",
             "repeatable": "true",
             "type": "resource",
             "resourceTemplates": [],
