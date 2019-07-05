@@ -227,8 +227,8 @@
             "propertyLabel": "Input Subject + Subdivision string"
           },
           {
-            "mandatory": "true",
-            "repeatable": "true",
+            "mandatory": "fale",
+            "repeatable": "false",
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
