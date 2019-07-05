@@ -13,6 +13,7 @@ directory's sub-directories.
 * UMN--University of Minnesota
 * WAU--University of Washington
 * CUB--University of Colorado Boulder
+* UChicago--University of Chicago 
 
 ### Codes for Ontologies Used in Templates
 * ARM--Art and Rare Materials Ontology
