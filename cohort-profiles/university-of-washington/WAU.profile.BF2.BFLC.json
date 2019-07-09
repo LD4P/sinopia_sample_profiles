@@ -3,7 +3,7 @@
         "title": "WAU profile BF2 BFLC",
         "id": "WAU:profile:BF2:BFLC",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-06-05",
+        "date": "2019-06-26",
         "description": "BIBFRAME metadata for RDA Resources",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata",
-                "date": "2019-06-05",
+                "date": "2019-06-26",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -114,11 +114,8 @@
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
                         "mandatory": "true",
                         "repeatable": "false",
-                        "type": "literal",
-                        "uwFormOrder": 2,
-                        "statusUw": "",
-                        "noteUw": "date or date and time on which metadata first created",
-                        "qUw": ""
+                        "type": "literal"
+                        
                     },
                     {
                         "propertyLabel": "Data change date",

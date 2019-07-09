@@ -11,9 +11,9 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" version="2.0" exclude-result-prefixes="#all">
     <!-- namespaces needed above to interact with property files from RDA Registry -->
     <xsl:output indent="yes"/>
-    <!-- indent for in creased human readability -->
+    <!-- indent for increased human readability -->
     <xsl:strip-space elements="*"/>
-    <!-- needed to handle white space so that we could traverse the sub-tree at /valueCobstraint -->
+    <!-- needed to handle white space so that we could traverse the sub-tree at /valueConstraint -->
     <xsl:key name="propuri" match="rdf:Description" use="@rdf:about"/>
     <!-- key to facilitate extracting values from RDA Registry property files using propertyURI in UW's profile:RDA -->
     <xsl:variable name="w" select="document('../rda/w.xml')"/>

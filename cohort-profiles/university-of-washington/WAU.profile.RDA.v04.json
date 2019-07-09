@@ -13,8 +13,24 @@
                 "id": "WAU:RT:RDA:Work",
                 "date": "2019-06-04",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
+                "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                               ""
+                            ]},
+                        "uwFormOrder": 0,
+                        "statusUw": "attention - lookup target is empty",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"]
+                        },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -22,7 +38,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         },
                         "uwFormOrder": 0,
@@ -1885,7 +1901,7 @@
                         },
                         "uwFormOrder": 27,
                         "statusUw": "attention",
-                        "noteUw": ["How does Sinopia handle RDA Registry lookups? Check on this one."],
+                        "noteUw": ["How does Sinopia handle RDA Registry lookups? Check on this one.","CEC tested in Sinopia dev 2019-06-19 and the property shows up but the lookup doesn't. Alternate literal doesn't make it into monographs profile"],
                         "qUw": [],
                         "usedInProfile": ["monograph"]
                     },
@@ -3605,9 +3621,9 @@
                             ]
                         },
                         "uwFormOrder": 184,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
-                        "qUw": ["Will anyone ever use this?"],
+                        "qUw": [""],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -3618,9 +3634,9 @@
                         "repeatable": "true",
                         "type": "literal",
                         "uwFormOrder": 184.1,
-                        "statusUw": "attention",
+                        "statusUw": "done",
                         "noteUw": [],
-                        "qUw": ["Will anyone ever use this?"],
+                        "qUw": ["?"],
                         "usedInProfile": ["monograph"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -5479,9 +5495,9 @@
                     {
                         "propertyLabel": "has related expression of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10308",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -5495,7 +5511,7 @@
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related collective agent of work",
@@ -7708,7 +7724,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10198",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -7719,10 +7735,10 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "",
+                        "statusUw": "attention 7/5/19",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "is catalogue of work (RDA 24.5)",
@@ -12287,7 +12303,7 @@
                         "remark": "http://access.rdatoolkit.org/7.2.html"
                     },
                     {
-                        "propertyLabel": "has nature of content (RDA 7.2)(Record URI (if available) or authorized access point if lookup fails)",
+                        "propertyLabel": "has nature of content (RDA 7.2)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10222",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -13449,6 +13465,22 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        },
+                        "uwFormOrder": 0,
+                        "statusUw": "attention - no lookup target specified.",
+                        "noteUw": ["is this the appropriate PT for an expression lookup?"],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": ""
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -13456,7 +13488,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -20233,9 +20265,9 @@
                     {
                         "propertyLabel": "has related manifestation of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20299",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -20246,10 +20278,10 @@
                             ]
                         },
                         "uwFormOrder": -1,
-                        "statusUw": "",
+                        "statusUw": "attention 7/5/19",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related work of expression",
@@ -24352,12 +24384,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
-                        },
+                       
+                       
                         "uwFormOrder": 277.1,
                         "statusUw": "done 2019-05-28",
                         "noteUw": [],
@@ -26104,6 +26132,22 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        },
+                        "uwFormOrder": 0,
+                        "statusUw": "attention - no lookup target specified.",
+                        "noteUw": ["is this the appropriate PT for an entity lookup?"],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": ""
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -26111,7 +26155,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -30102,7 +30146,7 @@
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": ["monograph"]
                     },
                     {
                         "propertyLabel": "has related collective agent of manifestation",
@@ -34312,6 +34356,22 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
+                {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        },
+                        "uwFormOrder": 0,
+                        "statusUw": "attention - no lookup target specified.",
+                        "noteUw": ["is this the appropriate PT for an item lookup?"],
+                        "qUw": [],
+                        "usedInProfile": ["monograph"],
+                        "remark": ""
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -34319,7 +34379,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "done",
@@ -37289,7 +37349,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -59624,7 +59684,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -63093,7 +63153,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",
@@ -64193,7 +64253,7 @@
                         "repeatable": "true",
                         "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
                         "uwFormOrder": 0,
                         "statusUw": "test CEC 2019-05-09",

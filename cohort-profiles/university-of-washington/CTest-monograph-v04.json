@@ -3,29 +3,18 @@
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-05-29",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for monographs",
-        "id": "profile:rda:monograph",
+        "id": "WAU:profile:RDA:Monograph",
         "title": "RDA for describing monographs",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
-                "id": "rt:rda:work:monograph",
+                "id": "WAU:RT:RDA:Work:Monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-15",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
-                    {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "Lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["dummy"]
-                        }
-                    },
                     {
                         "propertyLabel": "has colour content of representative expression",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
@@ -45,7 +34,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
@@ -130,14 +119,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType/"],
                             "defaults": [
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020",
-                                    "defaultLiteral": "text"
-                                },
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1014",
-                                    "defaultLiteral": "still image"
-                                }
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
+                                {"defaultLiteral": "text"},
+                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1014"},
+                                {"defaultLiteral": "still image"}
                             ]
                         }
                     },
@@ -1673,38 +1658,17 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.6.html"
-                    },
-                    {
-                        "propertyLabel": "has expression of work (RDA 17.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:expression:monograph"]
-                        }
                     }
                 ]
             },
             {
-                "id": "rt:rda:expression:monograph",
+                "id": "WAU:RT:RDA:Expression:Monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "RT RDA Expression for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
-                    {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "Lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["dummy"]
-                        }
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -1713,7 +1677,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         }
                     },
                     {
@@ -2830,22 +2794,11 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
-                        "propertyLabel": "has manifestation of expression (RDA 17.9)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:manifestation:monograph"]
-                        },
-                        "remark": "http://access.rdatoolkit.org/17.9.html"
                     }
                 ]
             },
             {
-                "id": "rt:rda:manifestation:monograph",
+                "id": "WAU:RT:RDA:Manifestation:Monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "RT RDA Manifestation for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
@@ -2853,15 +2806,12 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
+                        "propertyLabel": "has related item of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "Lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["dummy"]
-                        }
+                        "type": "literal",
+                        "remark": ""
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -2871,7 +2821,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         }
                     },
                     {
@@ -3235,7 +3185,7 @@
                         "propertyLabel": "has mode of issuance (RDA 2.13)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
                         "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
@@ -3737,39 +3687,17 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/21.5.html"
-                    },
-                    {
-                        "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["rt:rda:item:monograph"]
-                        },
-                        "remark": "http://access.rdatoolkit.org/17.11.html"
                     }
                 ]
             },
             {
-                "id": "rt:rda:item:monograph",
+                "id": "WAU:RT:RDA:Item:Monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "RT RDA Item for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
-                    {
-                        "propertyLabel": "Lookup",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "Lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["dummy"]
-                        }
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -3778,7 +3706,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
                         }
                     },
                     {
@@ -3845,7 +3773,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/22.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mcolor"],
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar ",
@@ -3928,7 +3856,7 @@
                 ]
             },
             {
-                "id": "rt:rda:timespan:monograph",
+                "id": "WAU:RT:RDA:Timespan:Monograph",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "RT RDA Timespan for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
@@ -3943,7 +3871,40 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:AdminMetadata"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has owner(Lookup)",
+                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "",
+                        "valueConstraint": {
+                            "useValuesFrom": ["http://id.loc.gov/vocabulary/organizations"],
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
+                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has owner(If lookup fails: record URI if available or authorized access point)",
+                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "",
+                        "valueConstraint": {
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wauar",
+                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
+                                }
+                            ]
                         }
                     }
                 ]

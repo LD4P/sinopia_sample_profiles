@@ -61,6 +61,7 @@
                 </string>
                 <string key="date">
                     <xsl:value-of select="j:string[@key = 'date']"/>
+                    <!-- Bring in value from last-edited RT? -->
                 </string>
                 <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
@@ -75,8 +76,7 @@
         <xsl:for-each select="j:map">
             <!-- Sorting PTs within each RT by uwForm order values
                 NOTE: 
-                Empty values first, 
-                0 (decided-upon value for undetermined) second, 
+                0 (undetermined) first, 
                 everything else next -->
             <xsl:sort select="j:number[@key = 'uwFormOrder']" data-type="number"/>
             <xsl:if test="j:array[@key = 'usedInProfile']/j:string = 'monograph'">
@@ -112,7 +112,18 @@
     </xsl:template>
     <xsl:template match="j:map[@key = 'valueConstraint']">
         <xsl:if test="j:array[@key='valueTemplateRefs']/descendant::text()">
-            <xsl:copy-of select="j:array[@key='valueTemplateRefs']"></xsl:copy-of>
+            <xsl:for-each select="j:array[@key='valueTemplateRefs']">
+                <array key="valueTemplateRefs">
+                    <xsl:choose>
+                        <xsl:when test="matches(j:string, 'AdminMetadata')">
+                            <string><xsl:value-of select="j:string"/></string>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <string><xsl:value-of select="concat(j:string, ':monograph')"/></string>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </array>
+            </xsl:for-each>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">
             <xsl:copy-of select="j:array[@key = 'useValuesFrom']"></xsl:copy-of>

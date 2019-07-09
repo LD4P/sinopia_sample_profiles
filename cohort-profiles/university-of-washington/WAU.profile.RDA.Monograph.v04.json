@@ -8,9 +8,9 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
         "resourceTemplates": [
             {
-                "id": "rt:rda:work:monograph",
+                "id": "WAU:RT:RDA:WORK:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "RT RDA Work for monographs",
+                "resourceLabel": "WAU RT RDA Work for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-15",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
@@ -34,7 +34,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"],
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         }
                     },
@@ -66,13 +66,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/6.3.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:genres",
-                                "http://id.loc.gov/vocabulary/marcgt"
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/6.3.html"
+                        
                     },
                     {
                         "propertyLabel": "has date of work (RDA 6.4)",
@@ -232,7 +227,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -240,7 +235,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -1434,7 +1429,7 @@
                     {
                         "propertyLabel": "has plaintiff person (RDA 18.5)(Lookup)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
-                        "mandatory": "",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
@@ -1448,7 +1443,7 @@
                     {
                         "propertyLabel": "has plaintiff person (RDA 18.5)(If lookup fails: record URI if available or authorized access point)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
-                        "mandatory": "",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/18.5.html"
@@ -1662,13 +1657,23 @@
                 ]
             },
             {
-                "id": "rt:rda:expression:monograph",
+                "id": "WAU:RT:RDA:EXPRESSION:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "RT RDA Expression for monographs",
+                "resourceLabel": "WAU RT RDA Expression for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
+                    {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        }
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -1677,7 +1682,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
@@ -2649,13 +2654,8 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
-                        }
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                        
                     },
                     {
                         "propertyLabel": "has instructor agent (RDA 18.5)(Lookup)",
@@ -2798,20 +2798,22 @@
                 ]
             },
             {
-                "id": "rt:rda:manifestation:monograph",
+                "id": "WAU:RT:RDA:MANIFESTATION:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "RT RDA Manifestation for monographs",
+                "resourceLabel": "WAU RT RDA Manifestation for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "has related item of manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "remark": ""
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        }
                     },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -2821,7 +2823,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
@@ -3691,13 +3693,23 @@
                 ]
             },
             {
-                "id": "rt:rda:item:monograph",
+                "id": "WAU:RT:RDA:ITEM:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "RT RDA Item for monographs",
+                "resourceLabel": "WAU RT RDA Item for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
+                    {
+                        "propertyLabel": "Lookup",
+                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [""]
+                        }
+                    },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -3706,7 +3718,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
@@ -3856,9 +3868,9 @@
                 ]
             },
             {
-                "id": "rt:rda:timespan:monograph",
+                "id": "WAU:RT:RDA:TIMESPAN:MONOGRAPH",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
-                "resourceLabel": "RT RDA Timespan for monographs",
+                "resourceLabel": "WAU RT RDA Timespan for monographs",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-05-01",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
@@ -3871,7 +3883,7 @@
                         "type": "resource",
                         "remark": "",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["rt:bf2:AdminMetadata"]
+                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         }
                     },
                     {
