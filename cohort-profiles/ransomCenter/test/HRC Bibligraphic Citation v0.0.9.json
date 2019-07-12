@@ -1,0 +1,136 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "remark": "This should probably be a look up field that links to the Instance for the source, but what vocabulary should it be looking at? Share-vde? Leaving as literal by now and suggest to use the Standards Citation Form Database: https://rbms.info/scf/",
+            "propertyURI": "http://purl.org/dc/terms/isPartOf",
+            "propertyLabel": "Citation Source"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:bibliographicCitation:entry"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasSource",
+            "propertyLabel": "Citation Entry"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Cataloger note"
+          }
+        ],
+        "id": "hrc:rt:arm:bibliographicCitation",
+        "resourceLabel": "Bibliographic Citation",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Citation",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "remark": "Used to record Bibliographic Citations for Rare Materials at the HRC",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Citation Entry",
+            "remark": "Text field to indicate the citation entry"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:bibliographicCitation:page"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+            "propertyLabel": "Entry Page",
+            "remark": "Link to page RT"
+          }
+        ],
+        "id": "hrc:rt:arm:bibliographicCitation:entry",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Entry",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "resourceLabel": "Citation Entry",
+        "remark": "Use to record page where the citation entry within the source",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Citation Page",
+            "remark": "Text field for indicating the page in the source where the citation is"
+          }
+        ],
+        "id": "hrc:rt:arm:bibliographicCitation:page",
+        "resourceLabel": "Citation Page",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Page",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "remark": "Use to record page where the citation is on the source",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "hrc:profile:arm:bibliographicCitation",
+    "title": "HRC Bibligraphic Citation Profile",
+    "date": "2019-06-18",
+    "description": "Profile for modeling Bibliographic Citations for Rare Materials at the HRC",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "ARM BIBFRAME dcterms RDF",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}
