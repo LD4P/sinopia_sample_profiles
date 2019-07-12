@@ -1,0 +1,213 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "http://id.loc.gov/vocabulary/organizations"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/txauhrh",
+                  "defaultLiteral": "TxAuHRH"
+                }
+              ],
+              "valueTemplateRefs": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+            "propertyLabel": "Held by",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+            "propertyLabel": "Shelving location",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:identifiers:shelfMark"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:identifiers:accessionNumber"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/AccessionNumber",
+            "propertyLabel": "Accession number"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:bindings"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Binding",
+            "propertyLabel": "Bindings information"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:boundCollection"
+              ],
+              "useValuesFrom": [],
+              "defaults": [
+                {
+                  "defaultURI": "",
+                  "defaultLiteral": ""
+                }
+              ],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/BoundCollection",
+            "propertyLabel": "Bound-with"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:custodialHistory"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyLabel": "Custodial History",
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/CustodialHistory"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:citation"
+              ],
+              "useValuesFrom": [],
+              "defaults": [
+                {
+                  "defaultURI": "",
+                  "defaultLiteral": ""
+                }
+              ],
+              "valueDataType": {}
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/Citation",
+            "propertyLabel": "Bibliographic citation"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent",
+            "propertyLabel": "Digital surrogate",
+            "remark": "Use to link to the CONTENTdm digital surrogate"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy",
+            "propertyLabel": "Access and Use policy",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Item:Use",
+                "sinopia:resourceTemplate:bf2:Item:Access"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Note(s)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:sharevde_stanford_instance_ld4l_cache"
+              ],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemOf",
+            "propertyLabel": "Holding for"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
+        "resourceLabel": "HRC Rare Books ARM Item",
+        "id": "hrc:rt:arm:item:rareBook",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-06-11",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "remark": "Use with Rare books on the Pforzheimer colleciton"
+      }
+    ],
+    "id": "hrc:profile:arm:item:rareBook",
+    "title": "HRC Item Rare Book Profile",
+    "description": "Profile for item description on the pforzheimer collection",
+    "date": "2019-07-12",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "adherence": "ARM BIBFRAME dcterms RDF",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter"
+  }
+}
