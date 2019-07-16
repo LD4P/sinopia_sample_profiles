@@ -1585,26 +1585,26 @@ UMN:profile:bf2:Serial
 
 
 
-HRC:Profile:ARM:BibCitation
+hrc:profile:arm:bibliographicCitation
 
-    HRC:RT:ARM:citation
+    hrc:rt:arm:bibliographicCitation
             Citation Source:      http://purl.org/dc/terms/isPartOf
             Citation Entry:      https://w3id.org/arm/core/ontology/0.1/hasSource
             Cataloger note:      http://id.loc.gov/ontologies/bibframe/note
 
-    HRC:RT:ARM:entry
+    hrc:rt:arm:bibliographicCitation:entry
             Citation Entry:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
             Entry Page:      http://id.loc.gov/ontologies/bibframe/place
 
-    HRC:RT:ARM:page
+    hrc:rt:arm:bibliographicCitation:page
             Citation Page:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
 
 
 
 
-HRC:profile:ARM:monograph:binging:test
+hrc:profile:arm:bingings
 
-    HRC:RT:ARM:monograph:binding
+    hrc:rt:arm:bindings
             Binding Material(s) - RBMS:      https://w3id.org/arm/core/ontology/0.1/hasMaterial
             Binding Material(s) - AAT:      https://w3id.org/arm/core/ontology/0.1/hasMaterial
             Binding Descriptive note:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
@@ -1616,78 +1616,481 @@ HRC:profile:ARM:monograph:binging:test
             Markings:      https://w3id.org/arm/core/ontology/0.1/markedBy
             Physical Condition:      https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition
 
-    HRC:RT:ARM:monograph:binding:binder
+    hrc:rt:arm:bindings:binder
             Binder:      http://id.loc.gov/ontologies/bibframe/agent
             Binding date:      http://id.loc.gov/ontologies/bibframe/date
             Place of binding:      http://id.loc.gov/ontologies/bibframe/place
 
-    HRC:RT:ARM:Monograph:binding:designer
+    hrc:rt:arm:bindings:designer
             Binding Designer:      http://id.loc.gov/ontologies/bibframe/agent
             Date:      http://id.loc.gov/ontologies/bibframe/date
             Design place:      http://id.loc.gov/ontologies/bibframe/place
 
-    HRC:RT:ARM:monograph:physicalCondition
+    hrc:rt:arm:bindings:physicalCondition
             Physical Condition:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
 
-    HRC:RT:ARM:monograph:autograph
+    hrc:rt:arm:bindings:autographText
             Autograph Text:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
             Autograph Description:      http://purl.org/dc/terms/description
 
 
 
 
-HRC:profile:ARM:boundwith
+hrc:profile:arm:boundwith
 
-    HRC:RT:ARM:boundCollection
+    hrc:profile:arm:boundwith
             Has custodial History:      https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory
             Bound item:      http://purl.org/dc/terms/hasPart
             Binding:      http://purl.org/dc/terms/hasPart
-            Identifier:      http://id.loc.gov/ontologies/bibframe/identifiedBy
+            ShelfMark:      http://id.loc.gov/ontologies/bibframe/identifiedBy
             Title:      http://id.loc.gov/ontologies/bibframe/title
 
 
 
 
-HRC:profile:ARM:monograph:custodialHistory:test
+hrc:profile:arm:custodialHistory
 
-    HRC:RT:ARM:monograph:custodialHistory
+    hrc:rt:arm:custodialHistory
             Custodial Event:      http://purl.org/dc/terms/hasPart
 
-    HRC:RT:ARM:monograph:custodialEvent
+    hrc:rt:arm:custodialHistory:custodialEvent
             Custodial event name:      http://www.w3.org/2000/01/rdf-schema#label
             Custodial event type:      http://www.w3.org/1999/02/22-rdf-syntax-ns#type
             Agent/role associated to the custodial event:      https://w3id.org/arm/activity/ontology/0.1/hasActivity
             Place associated with custodial event:      https://w3id.org/arm/core/ontology/0.1/atLocation
             EDTF Date associated with custodial event:      http://id.loc.gov/ontologies/bibframe/date
 
-    HRC:RT:ARM:monograph:seller
+    hrc:rt:arm:custodialHistory:seller
             Seller:      http://id.loc.gov/ontologies/bibframe/agent
 
-    HRC:RT:ARM:monograph:buyer
+    hrc:rt:custodialHistory:buyer
             Buyer:      http://id.loc.gov/ontologies/bibframe/agent
 
-    HRC:RT:ARM:monograph:donor
+    hrc:rt:arm:custodialHistory:donor
             Donor:      http://id.loc.gov/ontologies/bibframe/agent
 
-    HRC:RT:ARM:monograph:borrower
+    hrc:rt:arm:custodialHistory:borrower
             Borrower:      http://id.loc.gov/ontologies/bibframe/agent
 
-    HRC:RT:ARM:monograph:formerOwner
+    hrc:rt:arm:custodialHistory:formerOwner
             Former owner:      http://id.loc.gov/ontologies/bibframe/agent
 
 
 
 
-HRC:profile:ARM:item:identifiers
+hrc:profile:arm:identifiers
 
-    HRC:RT:ARM:item:identifiers:accessionNumber
+    hrc:rt:arm:identifiers:accessionNumber
             Accession Number:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
             Accession Number Date:      http://purl.org/dc/terms/date
             Accession Number Status:      http://id.loc.gov/ontologies/bibframe/status
             Assigning Agency:      http://id.loc.gov/ontologies/bibframe/source
 
-    HRC:RT:ARM:item:identifiers:shelfMark
+    hrc:rt:arm:identifiers:shelfMark
             HRC Shelf Mark:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+
+
+
+hrc:profile:arm:item:rareBook
+
+    hrc:rt:arm:item:rareBook
+            Held by:      http://id.loc.gov/ontologies/bibframe/heldBy
+            Shelving location:      http://id.loc.gov/ontologies/bibframe/sublocation
+            Accession number:      https://w3id.org/arm/core/ontology/0.1/AccessionNumber
+            Bindings information:      https://w3id.org/arm/core/ontology/0.1/Binding
+            Bound-with:      https://w3id.org/arm/core/ontology/0.1/BoundCollection
+            Custodial History:      https://w3id.org/arm/custodial_history/ontology/0.1/CustodialHistory
+            Bibliographic citation:      https://w3id.org/arm/core/ontology/0.1/Citation
+            Digital surrogate:      http://id.loc.gov/ontologies/bibframe/hasEquivalent
+            Access and Use policy:      http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy
+            Note(s):      http://id.loc.gov/ontologies/bibframe/note
+            Holding for:      http://id.loc.gov/ontologies/bibframe/itemOf
+
+
+
+
+WAU:profile:RDA:Monograph
+
+    WAU:RT:RDA:Work:Monograph
+            has colour content of representative expression:      http://rdaregistry.info/Elements/w/P10348
+            Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
+            has category of work (RDA 6.3)(Lookup):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (RDA 6.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10004
+            has date of work (RDA 6.4):      http://rdaregistry.info/Elements/w/P10219
+            has place of origin of work (RDA 6.5)(Lookup):      http://rdaregistry.info/Elements/w/P10218
+            has place of origin of work (RDA 6.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10218
+            has nature of content (RDA 7.2)(Lookup):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (RDA 7.2)(Record URI (if available) or authorized access point if lookup fails):      http://rdaregistry.info/Elements/w/P10222
+            has coverage of content (RDA 7.3)(Lookup):      http://rdaregistry.info/Elements/w/P10216
+            has coverage of content (RDA 7.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10216
+            has intended audience of representative expression (RDA 7.7)(Lookup):      http://rdaregistry.info/Elements/w/P10217
+            has intended audience of representative expression (RDA 7.7)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10217
+            has dissertation or thesis information (RDA 7.9):      http://rdaregistry.info/Elements/w/P10209
+            has academic degree (RDA 7.9.2):      http://rdaregistry.info/Elements/w/P10077
+            has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
+            has illustrations work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10093
+            has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
+            has ISSN:      http://rdaregistry.info/Elements/w/P10366
+            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
+            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
+            has sculptor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10202
+            has sculptor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10202
+            has creator agent of work (RDA 19.2)(Lookup):      http://rdaregistry.info/Elements/w/P10065
+            has creator agent of work (RDA 19.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10065
+            has architect agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10062
+            has architect agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10062
+            has landscape architect agent (RDA 18.5) (Lookup):      http://rdaregistry.info/Elements/w/P10200
+            has landscape architect agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10200
+            has artist agent (RDA 18.5) (Lookup):      http://rdaregistry.info/Elements/w/P10058
+            has artist agent (RDA 18.5) (If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10058
+            has book artist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10254
+            has book artist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10254
+            has calligrapher agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10253
+            has calligrapher agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10253
+            has author agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10061
+            has author agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10061
+            has librettist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10205
+            has librettist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10205
+            has lyricist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10204
+            has lyricist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10204
+            has rapporteur agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10255
+            has rapporteur agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10255
+            has screenwriter agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10203
+            has screenwriter agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10203
+            has cartographer agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10052
+            has cartographer agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10052
+            has choreographer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10060
+            has choreographer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10060
+            has compiler agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10055
+            has compiler agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10055
+            has composer agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10053
+            has composer agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10053
+            has designer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10051
+            has designer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10051
+            has enacting jurisdiction (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10017
+            has enacting jurisdiction (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10017
+            has interviewee agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10059
+            has interviewee agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10059
+            has interviewer agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10057
+            has interviewer agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10057
+            has inventor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10054
+            has inventor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10054
+            has photographer agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10056
+            has photographer agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10056
+            has praeses (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10045
+            has praeses (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10045
+            has programmer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10050
+            has programmer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10050
+            has remix artist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10306
+            has remix artist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10306
+            has respondent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10001
+            has respondent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10001
+            has addressee agent (RDA 19.3)(Lookup):      http://rdaregistry.info/Elements/w/P10070
+            has addressee agent (RDA 19.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10070
+            has appellant person (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10042
+            has appellant person (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10042
+            has appellee person (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10035
+            has appellee person (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10035
+            has appellee corporate body (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10005
+            has appellee corporate body (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10005
+            has casting director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10305
+            has casting director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10305
+            has commissioning body agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10287
+            has commissioning body agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10287
+            has consultant agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10071
+            has consultant agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10071
+            has court governed (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10011
+            has court governed (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10011
+            has dedicatee agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10069
+            has dedicatee agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10069
+            has dedicator agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10048
+            has dedicator agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10048
+            has defendant corporate body (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10285
+            has defendant corporate body (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10285
+            has defendant person (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10286
+            has defendant person (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10286
+            has degree committee member (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10284
+            has degree committee member (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10284
+            has degree granting institution (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10006
+            has degree granting institution (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10006
+            has degree supervisor (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10041
+            has degree supervisor (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10041
+            has director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10066
+            has director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10066
+            has film director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10013
+            has film director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10013
+            has radio director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10014
+            has radio director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10014
+            has television director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10015
+            has television director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10015
+            has director agent of photography (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10068
+            has director agent of photography (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10068
+            has editorial director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10298
+            has editorial director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10298
+            has honouree agent of work (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10049
+            has honouree agent of work (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10049
+            has hosting institution (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10007
+            has hosting institution (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10007
+            has issuing body agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10046
+            has issuing body agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10046
+            has judge (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10044
+            has judge (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10044
+            has medium (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10036
+            has medium (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10036
+            has organizer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10297
+            has organizer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10297
+            has participant in treaty (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10292
+            has participant in treaty (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10292
+            has plaintiff person (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10043
+            has plaintiff person (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10043
+            has plaintiff corporate body (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10010
+            has plaintiff corporate body (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10010
+            has producer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10064
+            has producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10064
+            has audio producer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10304
+            has audio producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10304
+            has film producer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10073
+            has film producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10073
+            has radio producer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10074
+            has radio producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10074
+            has television producer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10075
+            has television producer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10075
+            has production company (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10008
+            has production company (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10008
+            has researcher agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10293
+            has researcher agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10293
+            has abridger agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20049
+            has abridger agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20049
+            has numbering of part (RDA 24.6):      http://rdaregistry.info/Elements/w/P10012
+
+    WAU:RT:RDA:Expression:Monograph
+            Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
+            has content type (RDA 6.9)(Lookup):      http://rdaregistry.info/Elements/e/P20001
+            has content type (RDA 6.9)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20001
+            has date of expression (RDA 6.10):      http://rdaregistry.info/Elements/e/P20214
+            has language of expression (RDA 6.11)(Lookup):      http://rdaregistry.info/Elements/e/P20006
+            has language of expression (RDA 6.11)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20006
+            has identifier for expression (RDA 6.13):      http://rdaregistry.info/Elements/e/P20002
+            has script (RDA 7.13.2)(Lookup):      http://rdaregistry.info/Elements/e/P20065
+            has script (RDA 7.13.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20065
+            has accessibility content (RDA 7.14):      http://rdaregistry.info/Elements/e/P20208
+            has supplementary content (RDA 7.16):      http://rdaregistry.info/Elements/e/P20206
+            has award (RDA 7.28):      http://rdaregistry.info/Elements/e/P20005
+            has note on expression (RDA 7.29):      http://rdaregistry.info/Elements/e/P20071
+            has note on changes in content characteristics (RDA 7.29.2):      http://rdaregistry.info/Elements/e/P20010
+            has related expression of expression:      http://rdaregistry.info/Elements/e/P20205
+            has creator agent of expression (RDA 20.2)(Lookup):      http://rdaregistry.info/Elements/e/P20053
+            has creator agent of expression (RDA 20.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20053
+            has animator agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20028
+            has animator agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20028
+            has arranger agent of music (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20029
+            has arranger agent of music (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20029
+            has art director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20038
+            has art director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20038
+            has censor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20287
+            has censor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20287
+            has colourist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20283
+            has colourist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20283
+            has costume designer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20036
+            has costume designer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20036
+            has court reporter agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20040
+            has court reporter agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20040
+            has DJ agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20296
+            has DJ agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20296
+            has draftsman agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20033
+            has draftsman agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20033
+            has dubbing director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20295
+            has dubbing director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20295
+            has editor agent of text(Lookup):      http://rdaregistry.info/Elements/e/P20330
+            has editor agent of text(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20330
+            has illustrator (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20051
+            has illustrator (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20051
+            has interviewee agent of expression (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20047
+            has interviewee agent of expression (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20047
+            has interviewer agent of expression (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20032
+            has interviewer agent of expression (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20032
+            has makeup artist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20284
+            has makeup artist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20284
+            has minute taker agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20058
+            has minute taker agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20058
+            has music programmer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20294
+            has music programmer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20294
+            has musical director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20035
+            has musical director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20035
+            has onscreen participant agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20279
+            has onscreen participant agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20279
+            has performer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20039
+            has performer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20039
+            has actor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20012
+            has actor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20012
+            has voice actor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20070
+            has voice actor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20070
+            has commentator agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20021
+            has commentator agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20021
+            has conductor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20011
+            has conductor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20011
+            has choral conductor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20285
+            has choral conductor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20285
+            has instrumental conductor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20286
+            has instrumental conductor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20286
+            has dancer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20014
+            has dancer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20014
+            has host agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20016
+            has host agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20016
+            has instrumentalist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20020
+            has instrumentalist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20020
+            has moderator agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20017
+            has moderator agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20017
+            has narrator agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20022
+            has narrator agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20022
+            has onscreen presenter agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20013
+            has onscreen presenter agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20013
+            has panelist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20019
+            has panelist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20019
+            has puppeteer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20018
+            has puppeteer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20018
+            has singer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20025
+            has singer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20025
+            has speaker agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20024
+            has speaker agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20024
+            has storyteller agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20023
+            has storyteller agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20023
+            has instructor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20015
+            has instructor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20015
+            has presenter agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20054
+            has presenter agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20054
+            has production designer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20056
+            has production designer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20056
+            has recordist agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20052
+            has recordist agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20052
+            has software developer agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20280
+            has software developer agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20280
+            has stage director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20031
+            has stage director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20031
+
+    WAU:RT:RDA:Manifestation:Monograph
+            has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
+            Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
+            has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
+            has other title information (RDA 2.3.4):      http://rdaregistry.info/Elements/m/P30142
+            has parallel other title information (RDA 2.3.5):      http://rdaregistry.info/Elements/m/P30151
+            has variant title of manifestation (RDA 2.3.6):      http://rdaregistry.info/Elements/m/P30128
+            has statement of responsibility relating to title proper (RDA 2.4.2):      http://rdaregistry.info/Elements/m/P30105
+            has parallel statement of responsibility relating to title proper (RDA 2.4.3):      http://rdaregistry.info/Elements/m/P30116
+            has designation of edition (RDA 2.5.2):      http://rdaregistry.info/Elements/m/P30133
+            has parallel designation of edition (RDA 2.5.3):      http://rdaregistry.info/Elements/m/P30013
+            has statement of responsibility relating to edition (RDA 2.5.4):      http://rdaregistry.info/Elements/m/P30121
+            has parallel statement of responsibility relating to edition (RDA 2.5.5):      http://rdaregistry.info/Elements/m/P30115
+            has designation of named revision of edition (RDA 2.5.6):      http://rdaregistry.info/Elements/m/P30132
+            has parallel designation of named revision of edition (RDA 2.5.7):      http://rdaregistry.info/Elements/m/P30012
+            has statement of responsibility relating to named revision of edition (RDA 2.5.8):      http://rdaregistry.info/Elements/m/P30118
+            has place of production (RDA 2.7.2):      http://rdaregistry.info/Elements/m/P30086
+            has parallel place of production (RDA 2.7.3):      http://rdaregistry.info/Elements/m/P30091
+            has name of producer (RDA 2.7.4):      http://rdaregistry.info/Elements/m/P30174
+            has parallel name of producer (RDA 2.7.5):      http://rdaregistry.info/Elements/m/P30094
+            has date of production (RDA 2.7.6):      http://rdaregistry.info/Elements/m/P30009
+            has place of publication (RDA 2.8.2):      http://rdaregistry.info/Elements/m/P30088
+            has parallel place of publication (RDA 2.8.3):      http://rdaregistry.info/Elements/m/P30092
+            has name of publisher (RDA 2.8.4):      http://rdaregistry.info/Elements/m/P30176
+            has parallel name of publisher (RDA 2.8.5):      http://rdaregistry.info/Elements/m/P30095
+            has date of publication (RDA 2.8.6):      http://rdaregistry.info/Elements/m/P30011
+            has place of distribution (RDA 2.9.2):      http://rdaregistry.info/Elements/m/P30085
+            has parallel place of distribution (RDA 2.9.3):      http://rdaregistry.info/Elements/m/P30089
+            has name of distributor (RDA 2.9.4):      http://rdaregistry.info/Elements/m/P30173
+            has date of distribution (RDA 2.9.6):      http://rdaregistry.info/Elements/m/P30008
+            has place of manufacture (RDA 2.10.2):      http://rdaregistry.info/Elements/m/P30087
+            has parallel place of manufacture (RDA 2.10.3):      http://rdaregistry.info/Elements/m/P30090
+            has name of manufacturer (RDA 2.10.4):      http://rdaregistry.info/Elements/m/P30175
+            has parallel name of manufacturer (RDA 2.10.5):      http://rdaregistry.info/Elements/m/P30049
+            has date of manufacture (RDA 2.10.6):      http://rdaregistry.info/Elements/m/P30010
+            has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
+            has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
+            has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
+            has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
+            has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
+            has parallel statement of responsibility relating to series (RDA 2.12.7):      http://rdaregistry.info/Elements/m/P30113
+            has numbering within sequence (RDA 2.12.9):      http://rdaregistry.info/Elements/m/P30014
+            has mode of issuance (RDA 2.13)(Lookup):      http://rdaregistry.info/Elements/m/P30003
+            has mode of issuance (RDA 2.13)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30003
+            has note on manifestation (RDA 2.17):      http://rdaregistry.info/Elements/m/P30137
+            has note on title (RDA 2.17.2):      http://rdaregistry.info/Elements/m/datatype/P30063
+            has note on statement of responsibility (RDA 2.17.3):      http://rdaregistry.info/Elements/m/datatype/P30057
+            has note on edition statement (RDA 2.17.4):      http://rdaregistry.info/Elements/m/datatype/P30064
+            has note on numbering of sequence (RDA 2.17.5):      http://rdaregistry.info/Elements/m/P30062
+            has note on production statement (RDA 2.17.6):      http://rdaregistry.info/Elements/m/P30054
+            has note on publication statement (RDA 2.17.7):      http://rdaregistry.info/Elements/m/P30055
+            has note on distribution statement (RDA 2.17.8):      http://rdaregistry.info/Elements/m/P30052
+            has note on manufacture statement (RDA 2.17.9):      http://rdaregistry.info/Elements/m/P30053
+            has note on copyright date (RDA 2.17.10):      http://rdaregistry.info/Elements/m/P30059
+            has note on series statement (RDA 2.17.11):      http://rdaregistry.info/Elements/m/P30058
+            has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13):      http://rdaregistry.info/Elements/m/P30050
+            has note on identifier for manifestation (RDA 2.17.14):      http://rdaregistry.info/Elements/m/P30260
+            has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
+            has media type (RDA 3.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30002
+            has carrier type (RDA 3.3)(Lookup):      http://rdaregistry.info/Elements/m/P30001
+            has carrier type (RDA 3.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30001
+            has extent of manifestation (RDA 3.4)(lookup):      http://rdaregistry.info/Elements/m/P30182
+            has extent of manifestation (RDA 3.4)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30182
+            has dimensions (RDA 3.5):      http://rdaregistry.info/Elements/m/P30169
+            has base material (RDA 3.6)(Lookup):      http://rdaregistry.info/Elements/m/P30208
+            has base material (RDA 3.6)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30208
+            has applied material (RDA 3.7)(Lookup):      http://rdaregistry.info/Elements/m/P30084
+            has applied material (RDA 3.7)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30084
+            has mount (RDA 3.8)(Lookup):      http://rdaregistry.info/Elements/m/P30186
+            has mount (RDA 3.8)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30186
+            has production method (RDA 3.9)(Lookup):      http://rdaregistry.info/Elements/m/P30187
+            has production method (RDA 3.9)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30187
+            has generation (RDA 3.10)(Lookup):      http://rdaregistry.info/Elements/m/P30191
+            has generation (RDA 3.10)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30191
+            has layout (RDA 3.11)(Lookup):      http://rdaregistry.info/Elements/m/P30155
+            has layout (RDA 3.11)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30155
+            has bibliographic format (RDA 3.12)(Lookup):      http://rdaregistry.info/Elements/m/P30197
+            has bibliographic format (RDA 3.12)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30197
+            has font size (RDA 3.13)(Lookup):      http://rdaregistry.info/Elements/m/P30199
+            has font size (RDA 3.13)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30199
+            has equipment or system requirement (RDA 3.20):      http://rdaregistry.info/Elements/m/P30162
+            has note on extent of manifestation (RDA 3.21.2):      http://rdaregistry.info/Elements/m/P30061
+            has note on dimensions of manifestation (RDA 3.21.3):      http://rdaregistry.info/Elements/m/P30060
+            has note on changes in carrier characteristics (RDA 3.21.4):      http://rdaregistry.info/Elements/m/P30051
+            has type of binding:      http://rdaregistry.info/Elements/m/P30309
+            has term of availability (RDA 4.2):      http://rdaregistry.info/Elements/m/P30160
+            has uniform resource locator (RDA 4.6):      http://rdaregistry.info/Elements/m/P30154
+            has surveyor agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/m/P30312
+            has surveyor agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30312
+            has producer agent of unpublished manifestation (RDA 21.2)(Lookup):      http://rdaregistry.info/Elements/m/P30081
+            has producer agent of unpublished manifestation (RDA 21.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30081
+            has publisher agent (RDA 21.3)(Lookup):      http://rdaregistry.info/Elements/m/P30083
+            has publisher agent (RDA 21.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30083
+            has distributor agent (RDA 21.4)(Lookup):      http://rdaregistry.info/Elements/m/P30080
+            has distributor agent (RDA 21.4)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30080
+            has manufacturer agent (RDA 21.5)(Lookup):      http://rdaregistry.info/Elements/m/P30082
+            has manufacturer agent (RDA 21.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30082
+
+    WAU:RT:RDA:Item:Monograph
+            Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
+            has custodial history of item (RDA 2.18):      http://rdaregistry.info/Elements/i/P40026
+            has immediate source of acquisition of item (RDA 2.19):      http://rdaregistry.info/Elements/i/P40050
+            has note on extent of item (RDA 3.22.2):      http://rdaregistry.info/Elements/i/P40011
+            has note on dimensions of item (RDA 3.22.3):      http://rdaregistry.info/Elements/i/P40010
+            has restriction on access to item (RDA 4.4):      http://rdaregistry.info/Elements/i/P40047
+            has related item of item:      http://rdaregistry.info/Elements/i/P40046
+            has owner agent (RDA 22.2)(Lookup):      http://rdaregistry.info/Elements/i/P40021
+            has owner agent (RDA 22.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/i/P40021
+            has custodian agent (RDA 22.3)(Lookup):      http://rdaregistry.info/Elements/i/P40020
+            has custodian agent (RDA 22.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/i/P40020
+            has related agent of item (RDA 22.4) (Lookup):      http://rdaregistry.info/Elements/i/P40072
+            has related agent of item (RDA 22.4)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/i/P40072
+
+    WAU:RT:RDA:Timespan:Monograph
+            Administrative Metadata for Timespan:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has owner(Lookup):      http://rdaregistry.info/Elements/u/P60404
+            has owner(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/u/P60404
 
 
 
@@ -1695,6 +2098,7 @@ HRC:profile:ARM:item:identifiers
 profile:rda:monograph
 
     rt:rda:work:monograph
+            Lookup:      http://rdaregistry.info/Elements/c/C10001
             has colour content of representative expression:      http://rdaregistry.info/Elements/w/P10348
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
@@ -1849,6 +2253,7 @@ profile:rda:monograph
             has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
 
     rt:rda:expression:monograph
+            Lookup:      http://rdaregistry.info/Elements/c/C10006
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
             has content type (RDA 6.9)(Lookup):      http://rdaregistry.info/Elements/e/P20001
@@ -1956,6 +2361,7 @@ profile:rda:monograph
             has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
 
     rt:rda:manifestation:monograph
+            Lookup:      http://rdaregistry.info/Elements/c/C10007
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -2053,8 +2459,10 @@ profile:rda:monograph
             has distributor agent (RDA 21.4)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30080
             has manufacturer agent (RDA 21.5)(Lookup):      http://rdaregistry.info/Elements/m/P30082
             has manufacturer agent (RDA 21.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30082
+            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
 
     rt:rda:item:monograph
+            Lookup:      http://rdaregistry.info/Elements/c/C10003
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
             has custodial history of item (RDA 2.18):      http://rdaregistry.info/Elements/i/P40026
@@ -2072,8 +2480,6 @@ profile:rda:monograph
 
     rt:rda:timespan:monograph
             Administrative Metadata for Timespan:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has owner(Lookup):      http://rdaregistry.info/Elements/u/P60404
-            has owner(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/u/P60404
 
 
 
@@ -2099,7 +2505,7 @@ WAU:profile:BF2:BFLC
 
 profile:rda:monograph
 
-    rt:rda:work:monograph
+    WAU:RT:RDA:WORK:MONOGRAPH
             has colour content of representative expression:      http://rdaregistry.info/Elements/w/P10348
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
@@ -2252,7 +2658,8 @@ profile:rda:monograph
             has abridger agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20049
             has numbering of part (RDA 24.6):      http://rdaregistry.info/Elements/w/P10012
 
-    rt:rda:expression:monograph
+    WAU:RT:RDA:EXPRESSION:MONOGRAPH
+            Lookup:      http://rdaregistry.info/Elements/c/C10006
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
             has content type (RDA 6.9)(Lookup):      http://rdaregistry.info/Elements/e/P20001
@@ -2358,8 +2765,8 @@ profile:rda:monograph
             has stage director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20031
             has stage director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20031
 
-    rt:rda:manifestation:monograph
-            has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
+    WAU:RT:RDA:MANIFESTATION:MONOGRAPH
+            Lookup:      http://rdaregistry.info/Elements/c/C10007
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -2458,7 +2865,8 @@ profile:rda:monograph
             has manufacturer agent (RDA 21.5)(Lookup):      http://rdaregistry.info/Elements/m/P30082
             has manufacturer agent (RDA 21.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/m/P30082
 
-    rt:rda:item:monograph
+    WAU:RT:RDA:ITEM:MONOGRAPH
+            Lookup:      http://rdaregistry.info/Elements/c/C10003
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
             has custodial history of item (RDA 2.18):      http://rdaregistry.info/Elements/i/P40026
@@ -2474,7 +2882,7 @@ profile:rda:monograph
             has related agent of item (RDA 22.4) (Lookup):      http://rdaregistry.info/Elements/i/P40072
             has related agent of item (RDA 22.4)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/i/P40072
 
-    rt:rda:timespan:monograph
+    WAU:RT:RDA:TIMESPAN:MONOGRAPH
             Administrative Metadata for Timespan:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has owner(Lookup):      http://rdaregistry.info/Elements/u/P60404
             has owner(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/u/P60404
@@ -2485,6 +2893,7 @@ profile:rda:monograph
 WAU:profile:RDA
 
     WAU:RT:RDA:Work
+            Lookup:      http://rdaregistry.info/Elements/c/C10001
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has academic supervisor:      http://rdaregistry.info/Elements/w/P10407
             has access point for work (RDA 6.1.2):      http://rdaregistry.info/Elements/w/P10328
@@ -3098,7 +3507,7 @@ WAU:profile:RDA
             has coverage of content (RDA 7.3)(Lookup):      http://rdaregistry.info/Elements/w/P10216
             has coverage of content (RDA 7.3)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10216
             has nature of content (RDA 7.2)(Lookup):      http://rdaregistry.info/Elements/w/P10222
-            has nature of content (RDA 7.2)(Record URI (if available) or authorized access point if lookup fails):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (RDA 7.2)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10222
             has television director agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/w/P10015
             has television director agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/w/P10015
             has television director collective agent:      http://rdaregistry.info/Elements/w/P10467
@@ -3157,6 +3566,7 @@ WAU:profile:RDA
             is music for video work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10240
 
     WAU:RT:RDA:Expression
+            Lookup:      http://rdaregistry.info/Elements/c/C10006
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has abridger agent (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/e/P20049
             has abridger agent (RDA 18.5)(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/e/P20049
@@ -3772,6 +4182,7 @@ WAU:profile:RDA
             is music for video expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20246
 
     WAU:RT:RDA:Manifestation
+            Lookup:      http://rdaregistry.info/Elements/c/C10007
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has base material (RDA 3.6)(Lookup):      http://rdaregistry.info/Elements/m/P30208
@@ -4201,6 +4612,7 @@ WAU:profile:RDA
             has plate number for notated music (RDA 2.15.3):      http://rdaregistry.info/Elements/m/P30066
 
     WAU:RT:RDA:Item
+            Lookup:      http://rdaregistry.info/Elements/c/C10003
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has access point for item:      http://rdaregistry.info/Elements/i/P40080
             has annotator (RDA 18.5)(Lookup):      http://rdaregistry.info/Elements/i/P40015
@@ -5692,8 +6104,6 @@ WAU:profile:RDA
             is year degree granted of:      http://rdaregistry.info/Elements/t/P70046
             has owner(Lookup):      http://rdaregistry.info/Elements/u/P60404
             has owner(If lookup fails: record URI if available or authorized access point):      http://rdaregistry.info/Elements/u/P60404
-
-
 
 
 
