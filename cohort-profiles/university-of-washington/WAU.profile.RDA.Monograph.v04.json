@@ -86,14 +86,9 @@
                         "remark": "http://access.rdatoolkit.org/6.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:names",
-                                "urn:ld4p:qa:names:place",
-                                "urn:ld4p:qa:geonames",
-                                "http://id.loc.gov/vocabulary/countries",
-                                "http://id.loc.gov/vocabulary/geographicAreas",
-                                "http://www.geonames.org"
+                                "urn:ld4p:qa:names:place"
                             ],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
+                            "valueDataType": {}
                         }
                     },
                     {
