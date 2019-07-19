@@ -30,6 +30,8 @@ Standing questions:
 
 1. Is this the right way of linking to the item? Should an RT for bound-with item be created within this profile to include precedes and follows properties, and how would that link to the more generic item RT?
 
+2. Sinopia doesn't allow repeated property templates with the same URI, so the ARM model of using dcterms:hasPart to link the bound collection to item and to binding doesn't seem to be suported in Sinopia
+
 #### HRC ARM Citation test
 *High level JSON profile for the ARM citation model following the USE CASE 2 (Citation located, cataloger adds commentary on citation)*
 
