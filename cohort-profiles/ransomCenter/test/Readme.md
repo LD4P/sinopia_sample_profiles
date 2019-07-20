@@ -47,6 +47,8 @@ Standing questions:
 
 5. The class Volume doesn't exist in the ARM Core Ontology (while Entry and Page do). Is there a suggested ontology for Volume?
 
+6. Are we using properly the https://w3id.org/arm/core/ontology/0.1/citedBy property? Per the definition, seems to be visual materials focused,
+
 #### HRC ARM Item Identifiers test
 *High level JSON profile for HRC identifiers to be used on the item level*
 
