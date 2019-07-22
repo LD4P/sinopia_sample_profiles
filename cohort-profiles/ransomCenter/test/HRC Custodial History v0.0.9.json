@@ -1,0 +1,111 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:custodialHistory:custodialEvent"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "https://w3id.org/arm/custodial_history/ontology/CustodialEvent"
+              }
+            },
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyLabel": "Custodial Event"
+          }
+        ],
+        "id": "hrc:rt:arm:custodialHistory",
+        "resourceLabel": "Custodial History",
+        "resourceURI": "https://w3id.org/arm/custodial_history/ontology/0.1/CustodialHistory",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-22",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "propertyLabel": "Custodial event type",
+            "remark": "The custodial event is an instance of a class. Is there a contolled vocabulary for this?"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:custodialHistory:formerOwner"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/hasActivity",
+            "propertyLabel": "Agent/role associated to the custodial event"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Place"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with custodial event"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "EDTF Date associated with custodial event",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html"
+          }
+        ],
+        "id": "hrc:rt:arm:custodialHistory:custodialEvent",
+        "resourceLabel": "Custodial Event",
+        "resourceURI": "https://w3id.org/arm/custodial_history/ontology/0.1/CustodialEvent",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-22",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "propertyLabel": "Former owner"
+          }
+        ],
+        "id": "hrc:rt:arm:custodialHistory:formerOwner",
+        "resourceURI": "https://w3id.org/arm/custodial_history/ontology/0.1/OwnerActivity",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-22",
+        "resourceLabel": "Former Owner",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "hrc:profile:arm:custodialHistory",
+    "title": "HRC Custodial History Profile",
+    "date": "2019-04-22",
+    "description": "Profile for modeling custodial history of Rare Materials items at the HRC",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "ARM BF2 RBMS AAT",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

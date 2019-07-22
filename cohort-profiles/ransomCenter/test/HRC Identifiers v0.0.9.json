@@ -1,0 +1,63 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Accession Number",
+            "remark": "Text field to indicate the Accession Number."
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+            "propertyLabel": "Accession Number Status",
+            "remark": "An ARM Status Vocabulary exists that has not yet been requested as a lookup. Leaving it as a literal by now, with the recommendation to use the ARM vocabulary term (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html)."
+          }
+        ],
+        "id": "hrc:rt:arm:identifiers:accessionNumber",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/AccessionNumber",
+        "resourceLabel": "Accession Number",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "remark": "Numeric, alphanumeric, or other identifying codes assigned when an art object, book, or other item enters the collection of a museum, library, or other repository. Such codes are unique within the set of codes, and specifically identify the particular item at hand. The numbers may be marked on the objects or not.",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark"
+              }
+            },
+            "propertyLabel": "HRC Shelf Mark",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "remark": "Location on the HRC stacks"
+          }
+        ],
+        "id": "hrc:rt:arm:identifiers:shelfMark",
+        "resourceLabel": "Shelf Mark",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "remark": "Item identifier, such as a call or other type of number",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "description": "Profile to define RTs for identifiers to be used in rare materials items at the HRC",
+    "id": "hrc:profile:arm:identifiers",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "ARM BF2 dcterms",
+    "title": "HRC Identifiers Profile",
+    "date": "2019-06-19",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

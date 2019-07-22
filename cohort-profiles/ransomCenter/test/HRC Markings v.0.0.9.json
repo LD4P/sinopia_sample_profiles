@@ -1,0 +1,413 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:markings:autographText",
+                "hrc:rt:arm:markings:inscription",
+                "hrc:rt:arm:markings:bindersTicket",
+                "hrc:rt:arm:markings:stamp",
+                "hrc:rt:arm:markings:label",
+                "hrc:rt:arm:markings:watermark",
+                "hrc:rt:arm:markings:seal"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "Markings",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "hrc:rt:arm:markings",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Marking",
+        "resourceLabel": "Markings Information",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "remark": "Use to describe markings on Rare Materials Items",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Autograph Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Autograph Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Author",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Autograph",
+        "id": "hrc:rt:arm:markings:autographText",
+        "resourceLabel": "Autograph(s)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-04-08",
+        "remark": "",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Inscription Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Inscription Description"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              }
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Inscriber"
+          }
+        ],
+        "id": "hrc:rt:arm:markings:inscription",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Inscription",
+        "resourceLabel": "Inscription(s)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Binder's Ticket Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Binder's Ticket Description"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/BindersTicket",
+        "resourceLabel": "Binder's Ticket",
+        "id": "hrc:rt:arm:markings:bindersTicket",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Stamp Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Stamp Description"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              }
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Entity Associated with the Stamp"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Stamp",
+        "id": "hrc:rt:arm:markings:stamp",
+        "resourceLabel": "Stamp(s)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Label Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Label Description"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              }
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Entity Associated with the label"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Label",
+        "resourceLabel": "Label(s)",
+        "id": "hrc:rt:arm:markings:label",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Watermark Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyLabel": "Watermark Description",
+            "propertyURI": "http://purl.org/dc/terms/description"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              }
+            },
+            "propertyLabel": "Paper artisan",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Watermark",
+        "id": "hrc:rt:arm:markings:watermark",
+        "resourceLabel": "Watermark(s)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Seal Text"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Seal Description"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:agent:contribution"
+              ],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              }
+            },
+            "propertyLabel": "Entity Associated with the Seal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent"
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Seal",
+        "id": "hrc:rt:arm:markings:seal",
+        "resourceLabel": "Seal(s)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "hrc:profile:arm:markings",
+    "description": "Profile for modeling markings for Rare Materials at the HRC",
+    "title": "HRC Markings Profile",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "ARM BF2 RBMS AAT",
+    "date": "2019-04-08",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter/test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}
