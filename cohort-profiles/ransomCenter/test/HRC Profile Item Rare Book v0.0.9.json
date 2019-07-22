@@ -1,0 +1,175 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "defaults": [
+                {
+                  "defaultLiteral": "txauhrh"
+                }
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+            "propertyLabel": "Held by"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+            "propertyLabel": "Shelving location",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:identifiers:shelfMark"
+              ]
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:identifiers:accessionNumber"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "propertyLabel": "Accession Number"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:bindings"
+              ]
+            },
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyLabel": "Binding information",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/isPartOf",
+            "propertyLabel": "Bound-with"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:custodialHistory"
+              ]
+            },
+            "propertyLabel": "Custodial History",
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "https://w3id.org/arm/core/ontology/0.1/Citation"
+              },
+              "valueTemplateRefs": [
+                "hrc:rt:arm:bibliographicCitation"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
+            "propertyLabel": "Bibliographic citation"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "https://w3id.org/arm/core/ontology/0.1/Marking"
+              },
+              "valueTemplateRefs": [
+                "hrc:rt:arm:markings"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "Markings"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent",
+            "propertyLabel": "Digital surrogate",
+            "remark": "Use to link to the CONTENTdm digital surrogate"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+            "propertyLabel": "Access and Use policy",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Item:Use",
+                "sinopia:resourceTemplate:bf2:Item:Access"
+              ]
+            }
+            },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Cataloger Note(s)"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:sharevde_stanford_instance_ld4l_cache"
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemOf",
+            "propertyLabel": "Holding for"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
+        "resourceLabel": "HRC Rare Books ARM Item",
+        "id": "hrc:rt:arm:item:rareBook",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-06-11",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "remark": "Use with Rare books on the Pforzheimer collection"
+      }
+    ],
+    "id": "hrc:profile:arm:item:rareBook",
+    "title": "HRC Profile Item Rare Book",
+    "description": "Profile for modeling descriptions of Rare Materials items at the HRC",
+    "date": "2019-07-12",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "adherence": "ARM BIBFRAME dcterms RDF",
+    "source": "https://github.com/LD4P/sinopia_sample_profiles/tree/master/cohort-profiles/ransomCenter"
+  }
+}
