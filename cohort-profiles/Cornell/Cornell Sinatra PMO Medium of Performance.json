@@ -10,7 +10,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "CornellSinatra45:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -62,7 +62,7 @@
                         "propertyLabel": "Total Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:DecMed",
+                "id": "CornellSinatra45:PMOMedPerf:DecMed",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared Medium of Performance"
             },
@@ -75,7 +75,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart"
+                                "CornellSinatra45:PMOMedPerf:MedPart"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -127,7 +127,7 @@
                         "propertyLabel": "Performer Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:PerfMed",
+                "id": "CornellSinatra45:PMOMedPerf:PerfMed",
                 "resourceURI": "http://performedmusicontology.org/ontology/PerformedMedium",
                 "resourceLabel": "Performed Medium"
             },
@@ -140,8 +140,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPerfI1",
-                                "profile:bf2:PMOMedPerf:MedPerfI2"
+                                "CornellSinatra45:PMOMedPerf:MedPerfI1",
+                                "CornellSinatra45:PMOMedPerf:MedPerfI2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -151,7 +151,7 @@
                         "propertyLabel": "has Medium of Performance"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPart2",
+                "id": "CornellSinatra45:PMOMedPerf:MedPart2",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Medium Part/Declared"
             },
@@ -164,8 +164,8 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPerfI1",
-                                "profile:bf2:PMOMedPerf:MedPerfI2"
+                                "CornellSinatra45:PMOMedPerf:MedPerfI1",
+                                "CornellSinatra45:PMOMedPerf:MedPerfI2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -231,7 +231,7 @@
                         "propertyLabel": "has Performer Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPart",
+                "id": "CornellSinatra45:PMOMedPerf:MedPart",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
                 "resourceLabel": "Medium Part/Performed"
             },
@@ -285,7 +285,7 @@
                         "propertyLabel": "Required Performer Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPerfI1",
+                "id": "CornellSinatra45:PMOMedPerf:MedPerfI1",
                 "resourceURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance",
                 "resourceLabel": "Individual Medium of Performance"
             },
@@ -324,7 +324,7 @@
                         "propertyLabel": "has Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:MedPerfI2",
+                "id": "CornellSinatra45:PMOMedPerf:MedPerfI2",
                 "resourceURI": "http://performedmusicontology.org/ontology/EnsembleMediumOfPerformance",
                 "resourceLabel": "Ensemble Medium of Performance"
             },
@@ -373,7 +373,7 @@
                         "propertyLabel": "has Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:DecMedTotals",
+                "id": "CornellSinatra45:PMOMedPerf:DecMedTotals",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Medium of Performance: Totaling Counts for the Entire Work",
                 "remark": ""
@@ -387,7 +387,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "CornellSinatra45:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -403,7 +403,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "CornellSinatra45:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -419,7 +419,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:PMOMedPerf:MedPart2"
+                                "CornellSinatra45:PMOMedPerf:MedPart2"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -471,15 +471,15 @@
                         "propertyLabel": "Total Ensemble Count"
                     }
                 ],
-                "id": "profile:bf2:PMOMedPerf:DecMedTest",
+                "id": "CornellSinatra45:PMOMedPerf:DecMedTest",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
                 "resourceLabel": "Declared Medium Test"
             }
         ],
-        "id": "profile:bf2:PMOMedPerf",
+        "id": "sinopia:resourceTemplate:bf2:PMOMedPerf",
         "title": "PMO Medium of Performance",
-        "description": "PMO Medium of Performance",
+        "description": "PMO Medium of Performance templates derived from LC's copy",
         "date": "2018-05-24",
-        "contact": "NDMSO"
+        "author": "Steven Folsom"
     }
 }

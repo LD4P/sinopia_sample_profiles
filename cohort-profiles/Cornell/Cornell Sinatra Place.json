@@ -8,22 +8,18 @@
             "valueConstraint": {
                 "valueTemplateRefs": [],
                 "useValuesFrom": ["urn:ld4p:qa:geonames"],
-                "valueDataType": {
-                    "remark": "",
-                    "dataTypeURI": ""
-                },
                 "repeatable": "false",
                 "defaults": []
             },
             "propertyLabel": "Search Places",
             "propertyURI": "http://www.geonames.org/ontology#Feature"
         }],
-        "id": "profile:bf2:CornellSinatra45:Place",
+        "id": "CornellSinatra45:Place",
         "resourceURI": "http://www.geonames.org/ontology#Feature",
         "resourceLabel": "Place",
-        "contact": ""
+        "author": "Steven Folsom, Cornell University Metadata Librarian"
     }],
-    "id": "profile:bf2:CornellSinatra45:Place",
+    "id": "CornellSinatra45:Place",
     "title": "Place",
     "date": "2018-12-05",
     "description": "Geonames Place Associated with a Resource",

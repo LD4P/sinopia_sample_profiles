@@ -8,7 +8,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Place"],
+                        "valueTemplateRefs": ["CornellSinatra45:Place"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "repeatable": "true",
@@ -26,9 +26,9 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                          "profile:bf2:CornellSinatra45:Agent:Person",
-                          "profile:bf2:CornellSinatra45:Agent:Family",
-                          "profile:bf2:CornellSinatra45:Agent:Organization"
+                          "CornellSinatra45:Agent:Person",
+                          "CornellSinatra45:Agent:Family",
+                          "CornellSinatra45:Agent:Organization"
                       ],
                         "useValuesFrom": [],
                         "valueDataType": {},
@@ -61,7 +61,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
                         "useValuesFrom": [],
                         "defaults": [],
                         "valueDataType": {}
@@ -70,8 +70,8 @@
                     "propertyLabel": "Note about publisher"
                 }
             ],
-            "id": "profile:bf2:CornellSinatra45:PublicationInformation",
-            "contact": "Steven Folsom",
+            "id": "CornellSinatra45:PublicationInformation",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
             "resourceLabel": "Publication Activity"
         },
@@ -83,7 +83,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Place"],
+                        "valueTemplateRefs": ["CornellSinatra45:Place"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "repeatable": "true",
@@ -101,9 +101,9 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                          "profile:bf2:CornellSinatra45:Agent:Person",
-                          "profile:bf2:CornellSinatra45:Agent:Family",
-                          "profile:bf2:CornellSinatra45:Agent:Organization"
+                          "CornellSinatra45:Agent:Person",
+                          "CornellSinatra45:Agent:Family",
+                          "CornellSinatra45:Agent:Organization"
                       ],
                         "useValuesFrom": [],
                         "valueDataType": {},
@@ -136,22 +136,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                    "propertyLabel": "Statement of Function (RDA 2.9.4.4)",
-                    "remark": "http://access.rdatoolkit.org/2.9.4.4.html"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
                         "useValuesFrom": [],
                         "defaults": [],
                         "valueDataType": {}
@@ -161,7 +146,7 @@
                 }
             ],
             "resourceLabel": "Distribution Activity",
-            "id": "profile:bf2:CornellSinatra45:DistributionInformation",
+            "id": "CornellSinatra45:DistributionInformation",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Distribution"
         },
         {
@@ -172,9 +157,8 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Place"],
+                        "valueTemplateRefs": ["CornellSinatra45:Place"],
                         "useValuesFrom": [],
-                        "valueDataType": {"dataTypeURI": ""},
                         "repeatable": "true",
                         "editable": "true",
                         "defaults": []
@@ -190,12 +174,11 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                          "profile:bf2:CornellSinatra45:Agent:Person",
-                          "profile:bf2:CornellSinatra45:Agent:Family",
-                          "profile:bf2:CornellSinatra45:Agent:Organization"
+                          "CornellSinatra45:Agent:Person",
+                          "CornellSinatra45:Agent:Family",
+                          "CornellSinatra45:Agent:Organization"
                       ],
                         "useValuesFrom": [],
-                        "valueDataType": {"dataTypeURI": ""},
                         "repeatable": "true",
                         "editable": "true",
                         "defaults": []
@@ -225,7 +208,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
                         "useValuesFrom": [],
                         "defaults": [],
                         "valueDataType": {}
@@ -234,15 +217,14 @@
                     "propertyLabel": "Note about manufacturer"
                 }
             ],
-            "id": "profile:bf2:CornellSinatra45:ManufactureInformation",
+            "id": "CornellSinatra45:ManufactureInformation",
             "resourceLabel": "Manufacture Activity",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture"
         }
     ],
-    "id": "profile:bf2:CornellSinatra45:PublicationDistributionManufactureInformation",
+    "id": "CornellSinatra45:PublicationDistributionManufactureInformation",
     "title": "BIBFRAME 2.0 Publication, Distribution, Manufacturer Activity",
     "description": "Publication, Distribution, Manufacture Activity",
     "date": "2018-12-05",
-    "contact": "NDMSO",
     "author": "Steven Folsom, Cornell University Metadata Librarian"
 }}

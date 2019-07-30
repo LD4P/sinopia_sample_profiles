@@ -2,7 +2,7 @@
     "resourceTemplates": [
         {
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
-            "id": "profile:bf2:CornellSinatra45:Agent:Person",
+            "id": "CornellSinatra45:Agent:Person",
             "resourceLabel": "Person",
             "propertyTemplates": [
                 {
@@ -11,8 +11,6 @@
                         "repeatable": "true",
                         "useValuesFrom": ["urn:ld4p:qa:names:person"],
                         "valueTemplateRefs": [],
-                        "valueDataType": {"dataTypeURI": ""},
-                        "valueLanguage": "",
                         "defaults": []
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/Person",
@@ -87,7 +85,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:AgentAffiliation"],
+                        "valueTemplateRefs": ["CornellSinatra45:AgentAffiliation"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -102,7 +100,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Note"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -117,7 +115,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Identifier"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Identifier"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -132,7 +130,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:VariantAgents"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:VariantAgents"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -147,7 +145,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RelatedAgents"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RelatedAgents"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -162,7 +160,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:Source"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Source"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -170,14 +168,12 @@
                     "propertyLabel": "Source Consulted (RDA 8.12)",
                     "remark": "http://access.rdatoolkit.org/rdachp8_rda8-479.html",
                     "propertyURI": "http://www.loc.gov/mads/rdf/v1#hasSource"
-                }
-            ],
-            "contact": "Steven Folsom",
-            "remark": ""
-        },
-        {
+                  }
+              ]
+          },
+          {
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Family",
-            "id": "profile:bf2:CornellSinatra45:Agent:Family",
+            "id": "CornellSinatra45:Agent:Family",
             "resourceLabel": "Family",
             "propertyTemplates": [
                 {
@@ -185,7 +181,6 @@
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": ["urn:ld4p:qa:names"],
-                        "valueDataType": {"dataTypeURI": ""},
                         "repeatable": "true",
                         "defaults": []
                     },
@@ -231,7 +226,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RWO:Dates"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RWO:Dates"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -246,7 +241,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Place"],
+                        "valueTemplateRefs": ["CornellSinatra45:Place"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -291,7 +286,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RWO:AssociatedLanguage"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RWO:AssociatedLanguage"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -306,7 +301,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Note"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -321,7 +316,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Identifier"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Identifier"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -336,8 +331,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RWO:IdentifiedbyAuthority"],
-                        "useValuesFrom": [""],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RWO:IdentifiedbyAuthority"],
                         "valueDataType": {},
                         "defaults": []
                     },
@@ -351,7 +345,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:VariantAgents"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:VariantAgents"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -366,7 +360,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RelatedAgents"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RelatedAgents"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -381,7 +375,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:Source"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Source"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -394,7 +388,7 @@
         },
         {
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization",
-            "id": "profile:bf2:CornellSinatra45:Agent:Organization",
+            "id": "CornellSinatra45:Agent:Organization",
             "resourceLabel": "Organization",
             "propertyTemplates": [
                 {
@@ -402,7 +396,6 @@
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": ["urn:ld4p:qa:names:organization"],
-                        "valueDataType": {"dataTypeURI": ""},
                         "repeatable": "true",
                         "defaults": []
                     },
@@ -433,7 +426,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Place"],
+                        "valueTemplateRefs": ["CornellSinatra45:Place"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -448,7 +441,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RWO:Dates"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RWO:Dates"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -478,7 +471,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RWO:AssociatedLanguage"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RWO:AssociatedLanguage"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -493,7 +486,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RWO:FieldofActivity"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RWO:FieldofActivity"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -508,7 +501,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Note"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -523,7 +516,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Identifier"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Identifier"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -553,7 +546,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:VariantAgents"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:VariantAgents"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -568,7 +561,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:RelatedAgents"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:RelatedAgents"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -583,7 +576,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agents:Source"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Source"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -655,7 +648,7 @@
                     "propertyURI": "http://www.loc.gov/mads/rdf/v1#email"
                 }
             ],
-            "id": "profile:bf2:Agents:Addresses",
+            "id": "CornellSinatra45:bf2:Agent:Addresses",
             "resourceLabel": "Addresses",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address"
         },
@@ -746,7 +739,7 @@
                     "propertyURI": "http://www.loc.gov/mads/rdf/v1#postcode"
                 }
             ],
-            "id": "profile:bf2:Agents:Addresses:Extended",
+            "id": "CornellSinatra45:bf2:Agent:Addresses:Extended",
             "resourceLabel": "Addresses, Extended",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address"
         },
@@ -772,7 +765,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Role"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Role"],
                         "useValuesFrom": [],
                         "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Role"},
                         "defaults": []
@@ -783,7 +776,7 @@
                 }
             ],
             "resourceLabel": "Related Agents",
-            "id": "profile:bf2:Agents:RelatedAgents",
+            "id": "CornellSinatra45:bf2:Agent:RelatedAgents",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Authority"
         },
         {
@@ -809,7 +802,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Note"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -839,7 +832,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Note"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -850,7 +843,7 @@
                 }
             ],
             "resourceLabel": "Sources Consulted and Cataloger's Notes",
-            "id": "profile:bf2:Agents:Source",
+            "id": "CornellSinatra45:bf2:Agent:Source",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Source"
         },
         {
@@ -869,7 +862,7 @@
                 "propertyLabel": "Variant Access Point Representing an Agent",
                 "remark": "http://access.rdatoolkit.org/rdachp9_rda9-5726.html"
             }],
-            "id": "profile:bf2:Agents:VariantAgents",
+            "id": "CornellSinatra45:bf2:Agent:VariantAgents",
             "resourceLabel": "Variant Access Points Representing Agents",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#hasVariant"
         },
@@ -883,7 +876,6 @@
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": ["http://id.loc.gov/vocabulary/relators"],
-                        "valueDataType": {"dataTypeURI": ""},
                         "repeatable": "false",
                         "defaults": []
                     },
@@ -898,7 +890,6 @@
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": [],
-                        "valueDataType": {"dataTypeURI": ""},
                         "repeatable": "false",
                         "defaults": []
                     },
@@ -906,7 +897,7 @@
                     "propertyLabel": "Input RDA relationship designator term (if it does not appear above)"
                 }
             ],
-            "id": "profile:bf2:Agent:Role",
+            "id": "CornellSinatra45:bf2:Agent:Role",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Role",
             "resourceLabel": "Role"
         },
@@ -932,7 +923,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Agent:Identifier:Source"],
+                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Identifier:Source"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -941,7 +932,7 @@
                     "propertyLabel": "Source of identifier"
                 }
             ],
-            "id": "profile:bf2:Agent:Identifier",
+            "id": "CornellSinatra45:bf2:Agent:Identifier",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Identifier",
             "resourceLabel": "Identifier"
         },
@@ -960,7 +951,7 @@
                 "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                 "propertyLabel": "Note"
             }],
-            "id": "profile:bf2:Agent:Note",
+            "id": "CornellSinatra45:bf2:Agent:Note",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#note",
             "resourceLabel": "Note"
         },
@@ -979,12 +970,12 @@
                 "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                 "propertyLabel": "Source of identifier"
             }],
-            "id": "profile:bf2:Agent:Identifier:Source",
+            "id": "CornellSinatra45:bf2:Agent:Identifier:Source",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
             "resourceLabel": "Source"
         }
     ],
-    "id": "profile:bf2:CornellSinatra45:Agents:Attributes",
+    "id": "CornellSinatra45:Agents:Attributes",
     "title": "Cornell Sinatra BIBFRAME 2.0 Agents",
     "date": "2018-11-13",
     "description": "Agents are people, organizations, etc., associated with a Work or Instance through roles such as author, editor, artist, photographer, composer, illustrator, etc.",

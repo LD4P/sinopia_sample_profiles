@@ -1,7 +1,7 @@
 {"Profile": {
     "resourceTemplates": [{
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
-        "id": "profile:bf2:CornellSinatra45:Agents:Contribution",
+        "id": "CornellSinatra45:Agents:Contribution",
         "resourceLabel": "Contribution",
         "propertyTemplates": [
             {
@@ -10,9 +10,9 @@
                     "repeatable": "false",
                     "useValuesFrom": [],
                     "valueTemplateRefs": [
-                        "profile:bf2:CornellSinatra45:Agent:Person",
-                        "profile:bf2:CornellSinatra45:Agent:Family",
-                        "profile:bf2:CornellSinatra45:Agent:Organization"
+                        "CornellSinatra45:Agent:Person",
+                        "CornellSinatra45:Agent:Family",
+                        "CornellSinatra45:Agent:Organization"
                     ],
                     "editable": "true",
                     "defaults": []
@@ -31,7 +31,7 @@
                 "repeatable": "true",
                 "resourceTemplates": [],
                 "valueConstraint": {
-                    "valueTemplateRefs": ["profile:bf2:Agent:Role"],
+                    "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Role"],
                     "useValuesFrom": [],
                     "editable": "true",
                     "repeatable": "true",
@@ -59,7 +59,7 @@
                 "type": "resource",
                 "resourceTemplates": [],
                 "valueConstraint": {
-                    "valueTemplateRefs": ["profile:bf2:Place"],
+                    "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Place"],
                     "useValuesFrom": [],
                     "defaults": [],
                     "valueDataType": {}
@@ -69,10 +69,9 @@
             }
         ]
     }],
+    "author": "Steven Folsom, Cornell University Metadata Librarian",
     "id": "bf2:CornellSinatra45:AgentsContribution",
     "title": "BIBFRAME 2.0 Agents Contribution",
     "date": "2019-01-17",
-    "description": "Creators and Contributors",
-    "contact": "Steven Folsom",
-    "author": "Steven Folsom, Metadata Librarian, Cornell University"
+    "description": "Creators and Contributors"
 }}

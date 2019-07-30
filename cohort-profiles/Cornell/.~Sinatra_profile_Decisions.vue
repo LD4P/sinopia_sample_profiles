@@ -88,7 +88,7 @@
         <URIString>http://vue.tufts.edu/rdf/resource/80d55f57c0a80164396804e0fc01cca2</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="108" label="profile:bf2:CornellSinatra45:Item"
+    <child ID="108" label="CornellSinatra45:Item"
         layerID="1" created="1548350089639" x="-498.0" y="1508.5"
         width="216.0" height="163.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
@@ -106,7 +106,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d4c0a80164396804e0b46c8818</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="53" label="profile:bf2:Note" created="1548296208750"
+        <child ID="53" label="sinopia:resourceTemplate:bf2:Note" created="1548296208750"
             x="34.0" y="41.5" width="180.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -116,7 +116,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d5c0a80164396804e06e35e4cf</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="52" label="profile:bf2:Note" created="1548296184840"
+        <child ID="52" label="sinopia:resourceTemplate:bf2:Note" created="1548296184840"
             x="34.0" y="61.0" width="171.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -136,7 +136,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/811cf0dfc0a80164396804e00c29ba7b</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="128" label="profile:bf2:Note" created="1548351304489"
+        <child ID="128" label="sinopia:resourceTemplate:bf2:Note" created="1548351304489"
             x="34.0" y="100.0" width="95.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -146,7 +146,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/811cf0dfc0a80164396804e09a32faca</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="51" label="profile:bf2:Note" created="1548296134093"
+        <child ID="51" label="sinopia:resourceTemplate:bf2:Note" created="1548296134093"
             x="34.0" y="119.5" width="165.0" height="50.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -158,7 +158,7 @@
         </child>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="109" label="profile:bf2:CornellSinatra45:Instance"
+    <child ID="109" label="CornellSinatra45:Instance"
         layerID="1" created="1548350152944" x="-497.0" y="720.125"
         width="291.75" height="729.0" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -168,7 +168,7 @@
         <font>Arial-plain-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/811cf0e0c0a80164396804e04af5fe9c</URIString>
         <child ID="78"
-            label="profile:bf2:CornellSinatra45:Work (Instance of)"
+            label="CornellSinatra45:Work (Instance of)"
             created="1548345586648" x="34.0" y="22.0" width="263.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -179,7 +179,7 @@
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
         <child ID="79"
-            label="&quot;profile:bf2:Title&quot;,&#xa;&quot;profile:bf2:Title:VarTitle&quot;,&#xa; &quot;profile:bf2:ParallelTitle&quot;,&#xa;&quot;profile:bflc:TranscribedTitle&quot;"
+            label="&quot;sinopia:resourceTemplate:bf2:Title&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Title:VarTitle&quot;,&#xa; &quot;sinopia:resourceTemplate:bf2:ParallelTitle&quot;,&#xa;&quot;profile:bflc:TranscribedTitle&quot;"
             created="1548345711695" x="34.0" y="41.5" width="167.0"
             height="64.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -211,7 +211,7 @@
             <shape xsi:type="rectangle"/>
         </child>
         <child ID="47"
-            label="&quot;profile:bf2:CornellSinatra45:PublicationInformation&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:ManufactureInformation&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:DistributionInformation&quot;"
+            label="&quot;CornellSinatra45:PublicationInformation&quot;,&#xa; &quot;CornellSinatra45:ManufactureInformation&quot;,&#xa; &quot;CornellSinatra45:DistributionInformation&quot;"
             created="1548295857264" x="34.0" y="131.5" width="336.0"
             height="117.5" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -220,7 +220,7 @@
             <font>Arial-plain-12</font>
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d4c0a80164396804e0bf41520b</URIString>
             <child ID="82"
-                label="&quot;profile:bf2:CornellSinatra45:Agent:Person&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:Agent:Family&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:Agent:Organization&quot;"
+                label="&quot;CornellSinatra45:Agent:Person&quot;,&#xa; &quot;CornellSinatra45:Agent:Family&quot;,&#xa; &quot;CornellSinatra45:Agent:Organization&quot;"
                 created="1548345901071" x="34.0" y="50.0" width="281.0"
                 height="57.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -230,7 +230,7 @@
                 <URIString>http://vue.tufts.edu/rdf/resource/80d55f55c0a80164396804e0e9f0a631</URIString>
                 <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
             </child>
-            <child ID="83" label="profile:bf2:CornellSinatra45:Place"
+            <child ID="83" label="CornellSinatra45:Place"
                 created="1548345901071" x="34.0" y="95.0" width="249.5"
                 height="22.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -252,7 +252,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f56c0a80164396804e0864dffa3</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="46" label="profile:bf2:Note" created="1548295839250"
+        <child ID="46" label="sinopia:resourceTemplate:bf2:Note" created="1548295839250"
             x="34.0" y="242.125" width="165.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -273,7 +273,7 @@
             <shape xsi:type="rectangle"/>
         </child>
         <child ID="86"
-            label="&quot;profile:bf2:Identifiers:Identifiers:PubNumber&quot;,&#xa;&quot;profile:bf2:Identifiers:Identifiers:Copyright&quot;,&#xa;&quot;profile:bf2:Identifiers:Identifiers:Other&quot;"
+            label="&quot;sinopia:resourceTemplate:bf2:Identifiers:Identifiers:PubNumber&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Identifiers:Identifiers:Copyright&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Identifiers:Identifiers:Other&quot;"
             created="1548346718896" x="34.0" y="281.125" width="258.0"
             height="50.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -283,7 +283,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f56c0a80164396804e06410d7fc</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="42" label="profile:bf2:Note" created="1548295658777"
+        <child ID="42" label="sinopia:resourceTemplate:bf2:Note" created="1548295658777"
             x="34.0" y="321.625" width="95.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -293,7 +293,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d4c0a80164396804e0e618607c</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="43" label="profile:bf2:Note" created="1548295691680"
+        <child ID="43" label="sinopia:resourceTemplate:bf2:Note" created="1548295691680"
             x="34.0" y="341.125" width="150.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -335,7 +335,7 @@
             <shape xsi:type="rectangle"/>
         </child>
         <child ID="95"
-            label="&quot;profile:bf2:Identifiers:Identifiers:PubNumber&quot;,&#xa;&quot;profile:bf2:Identifiers:Identifiers:Copyright&quot;,&#xa;&quot;profile:bf2:Identifiers:Identifiers:Other&quot;"
+            label="&quot;sinopia:resourceTemplate:bf2:Identifiers:Identifiers:PubNumber&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Identifiers:Identifiers:Copyright&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Identifiers:Identifiers:Other&quot;"
             created="1548348644871" x="34.0" y="419.125" width="199.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -375,7 +375,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f57c0a80164396804e05fa57c93</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="45" label="profile:bf2:Note" created="1548295796895"
+        <child ID="45" label="sinopia:resourceTemplate:bf2:Note" created="1548295796895"
             x="34.0" y="497.125" width="122.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -396,7 +396,7 @@
             <shape xsi:type="rectangle"/>
         </child>
         <child ID="44"
-            label="&quot;profile:bf2:TypeRec&quot;,&#xa; &quot;profile:bf2:RecMedium&quot;,&#xa; &quot;profile:bf2:PlayingSpeed&quot;,&#xa;&quot;profile:bf2:Analog:Sound6&quot;,&#xa;&quot;profile:bf2:Playback&quot;,&#xa; &quot;profile:bf2:SpecPlayback&quot;"
+            label="&quot;sinopia:resourceTemplate:bf2:TypeRec&quot;,&#xa; &quot;sinopia:resourceTemplate:bf2:RecMedium&quot;,&#xa; &quot;sinopia:resourceTemplate:bf2:PlayingSpeed&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Analog:Sound6&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Playback&quot;,&#xa; &quot;sinopia:resourceTemplate:bf2:SpecPlayback&quot;"
             created="1548295718087" x="34.0" y="536.125" width="165.0"
             height="92.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -417,7 +417,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/811cf0f3c0a80164396804e094c57c17</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="105" label="profile:bf2:Identifiers:LCCN"
+        <child ID="105" label="sinopia:resourceTemplate:bf2:Identifiers:LCCN"
             created="1548349913262" x="34.0" y="627.625" width="159.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -428,7 +428,7 @@
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
         <child ID="106"
-            label="profile:bf2:CornellSinatra45:Item (has Item)"
+            label="CornellSinatra45:Item (has Item)"
             created="1548349964194" x="34.0" y="647.125" width="245.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -520,7 +520,7 @@
             <font>Arial-plain-12</font>
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d4c0a80164396804e0ff376a69</URIString>
             <child ID="58"
-                label="&quot;profile:bf2:CornellSinatra45:Agent:Person&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:Agent:Family&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:Agent:Organization&quot;"
+                label="&quot;CornellSinatra45:Agent:Person&quot;,&#xa; &quot;CornellSinatra45:Agent:Family&quot;,&#xa; &quot;CornellSinatra45:Agent:Organization&quot;"
                 created="1548296329340" x="34.0" y="22.0" width="281.0"
                 height="57.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -530,7 +530,7 @@
                 <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d4c0a80164396804e07415f9b4</URIString>
                 <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
             </child>
-            <child ID="55" label="profile:bf2:CornellSinatra45:Place"
+            <child ID="55" label="CornellSinatra45:Place"
                 created="1548296271109" x="34.0" y="67.0" width="249.5"
                 height="22.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -543,7 +543,7 @@
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
         <child ID="61"
-            label="&quot;profile:bf2:WorkTitle&quot;,&#xa; &quot;profile:bf2:WorkVariantTitle&quot;,&#xa; &quot;profile:bflc:TranscribedTitle&quot;"
+            label="&quot;sinopia:resourceTemplate:bf2:WorkTitle&quot;,&#xa; &quot;sinopia:resourceTemplate:bf2:WorkVariantTitle&quot;,&#xa; &quot;profile:bflc:TranscribedTitle&quot;"
             created="1548297547235" x="34.0" y="111.625" width="173.0"
             height="50.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -553,7 +553,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d5c0a80164396804e0784b34d2</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="29" label="profile:bf2:Form" created="1548294964812"
+        <child ID="29" label="sinopia:resourceTemplate:bf2:Form" created="1548294964812"
             x="34.0" y="152.125" width="97.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -574,7 +574,7 @@
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
         <child ID="35"
-            label="profile:bf2:CornellSinatra45:Place (for place of origin)"
+            label="CornellSinatra45:Place (for place of origin)"
             created="1548295129747" x="34.0" y="191.125" width="301.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -585,7 +585,7 @@
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
         <child ID="27"
-            label="profile:bf2:MOPStatement&#xa;profile:bf2:PMOMedPerf:PerfMed&#xa;profile:bf2:MOPInstrument&#xa;profile:bf2:MOPVoice&#xa;profile:bf2:MOPEnsemble"
+            label="sinopia:resourceTemplate:bf2:MOPStatement&#xa;CornellSinatra45:PMOMedPerf:PerfMed&#xa;sinopia:resourceTemplate:bf2:MOPInstrument&#xa;sinopia:resourceTemplate:bf2:MOPVoice&#xa;sinopia:resourceTemplate:bf2:MOPEnsemble"
             created="1548294691975" x="34.0" y="210.625" width="191.0"
             height="78.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -625,7 +625,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dcf277dc0a80164396804e0480846b9</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="38" label="profile:bf2:CornellSinatra45:SongWork"
+        <child ID="38" label="CornellSinatra45:SongWork"
             created="1548295160344" x="34.0" y="330.625" width="301.0"
             height="89.5" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -634,7 +634,7 @@
             <font>Arial-plain-12</font>
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d3c0a80164396804e03433dfcf</URIString>
             <child ID="57"
-                label="&quot;profile:bf2:CornellSinatra45:Agent:Person&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:Agent:Family&quot;,&#xa; &quot;profile:bf2:CornellSinatra45:Agent:Organization&quot;"
+                label="&quot;CornellSinatra45:Agent:Person&quot;,&#xa; &quot;CornellSinatra45:Agent:Family&quot;,&#xa; &quot;CornellSinatra45:Agent:Organization&quot;"
                 created="1548296323279" x="34.0" y="22.0" width="281.0"
                 height="57.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -644,7 +644,7 @@
                 <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d3c0a80164396804e0ad608b87</URIString>
                 <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
             </child>
-            <child ID="56" label="profile:bf2:CornellSinatra45:Place"
+            <child ID="56" label="CornellSinatra45:Place"
                 created="1548296286682" x="34.0" y="67.0" width="249.5"
                 height="22.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -657,7 +657,7 @@
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
         <child ID="22"
-            label="&quot;profile:bf2:TopicSearch&quot;,&#xa;&quot;profile:bf2:Components&quot;&#xa;&quot;profile:bf2:TopicInput&quot;"
+            label="&quot;sinopia:resourceTemplate:bf2:TopicSearch&quot;,&#xa;&quot;sinopia:resourceTemplate:bf2:Components&quot;&#xa;&quot;sinopia:resourceTemplate:bf2:TopicInput&quot;"
             created="1548279472171" x="34.0" y="400.75" width="149.0"
             height="50.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -667,7 +667,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d1c0a80164396804e05b568812</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="31" label="profile:bf2:Note" created="1548295027657"
+        <child ID="31" label="sinopia:resourceTemplate:bf2:Note" created="1548295027657"
             x="34.0" y="441.25" width="95.0" height="22.0"
             strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -677,7 +677,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d3c0a80164396804e0cf740f2d</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="28" label="profile:bf2:CornellSinatra45:SongWork"
+        <child ID="28" label="CornellSinatra45:SongWork"
             created="1548294759429" x="34.0" y="460.75" width="222.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -698,7 +698,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f54c0a80164396804e0427b18d3</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="30" label="profile:bf2:Summary"
+        <child ID="30" label="sinopia:resourceTemplate:bf2:Summary"
             created="1548295023288" x="34.0" y="499.75" width="121.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -718,7 +718,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f54c0a80164396804e07fbbd3d1</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="24" label="profile:bf2:CornellSinatra45:Work"
+        <child ID="24" label="CornellSinatra45:Work"
             created="1548279477189" x="34.0" y="538.75" width="132.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -728,7 +728,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d2c0a80164396804e0a79a1b8b</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="26" label="profile:bf2:CornellSinatra45:Work"
+        <child ID="26" label="CornellSinatra45:Work"
             created="1548294612054" x="34.0" y="558.25" width="158.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -738,7 +738,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d2c0a80164396804e0fc1fc738</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="36" label="profile:bf2:CornellSinatra45:Capture"
+        <child ID="36" label="CornellSinatra45:Capture"
             created="1548295159161" x="34.0" y="577.75" width="237.0"
             height="44.5" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>
@@ -746,7 +746,7 @@
             <textColor>#000000</textColor>
             <font>Arial-plain-12</font>
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d3c0a80164396804e0825dcbb3</URIString>
-            <child ID="54" label="profile:bf2:CornellSinatra45:Place"
+            <child ID="54" label="CornellSinatra45:Place"
                 created="1548296260028" x="34.0" y="22.0" width="249.5"
                 height="22.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
                 <fillColor>#FC938D</fillColor>
@@ -758,7 +758,7 @@
             </child>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="21" label="profile:bf2:CornellSinatra45:Work"
+        <child ID="21" label="CornellSinatra45:Work"
             created="1548279471426" x="34.0" y="614.125" width="144.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -778,7 +778,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f54c0a80164396804e06f7019ad</URIString>
             <shape xsi:type="rectangle"/>
         </child>
-        <child ID="25" label="profile:bf2:RelatedWork"
+        <child ID="25" label="sinopia:resourceTemplate:bf2:RelatedWork"
             created="1548294604897" x="34.0" y="653.125" width="140.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -788,7 +788,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/7dbfc7d2c0a80164396804e0b954103b</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="69" label="profile:bf2:RelatedExpression"
+        <child ID="69" label="sinopia:resourceTemplate:bf2:RelatedExpression"
             created="1548343780966" x="34.0" y="672.625" width="173.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#8AEE95</fillColor>
@@ -798,7 +798,7 @@
             <URIString>http://vue.tufts.edu/rdf/resource/80d55f54c0a80164396804e00ca8ad3e</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
-        <child ID="74" label="profile:bf2:CornellSinatra45:Instance"
+        <child ID="74" label="CornellSinatra45:Instance"
             created="1548344566674" x="34.0" y="692.125" width="211.0"
             height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
             <fillColor>#FC938D</fillColor>

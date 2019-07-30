@@ -1,0 +1,62 @@
+{"Profile": {
+    "resourceTemplates": [{
+        "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "useValuesFrom": [
+          "urn:discogs",
+          "urn:ld4p:qa:sharevde_cornell_work_ld4l_cache"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"
+        },
+        "valueTemplateRefs": [],
+        "defaults": []
+      },
+      "propertyLabel": "Search related expressions",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/target"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": [],
+      "propertyLabel": "Relationship Designator for Related Expression  (RDA Appendix J)",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/relation",
+      "remark": "http://access.rdatoolkit.org/rdaappj_rdaj-16.html",
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "sinopia:resourceTemplate:bf2:Note"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+      "propertyLabel": "Description of Related Expression"
+    }
+        ],
+        "id": "CornellSinatra45:bflc:RelatedExpression",
+        "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
+        "resourceLabel": "Cornell Related Expression"
+    }],
+    "description": "related expressions based off of LC and Harvard work",
+    "id": "CornellSinatra45:bflc:RelatedExpression",
+    "title": "Cornell Sinatra Related Expressions",
+    "date": "2019-07-29",
+    "author": "Steven Folsom, Metadata Librarian, Cornell University"
+}}

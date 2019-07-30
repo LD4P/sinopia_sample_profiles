@@ -9,7 +9,7 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
-                        "useValuesFrom": ["http://discogsviaqa.notreal"],
+                        "useValuesFrom": ["urn:discogs"],
                         "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Work"},
                         "defaults": []
                     },
@@ -22,13 +22,15 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bflc:CornellSinatra45:Agents:PrimaryContribution"],
+                        "valueTemplateRefs": [
+                          "profile:bflc:CornellSinatra45:Agents:PrimaryContribution",
+                          "CornellSinatra45:Agents:Contribution"
+                        ],
                         "useValuesFrom": [],
-                        "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"},
                         "defaults": []
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
-                    "propertyLabel": "Creator of Work (RDA 19.2)",
+                    "propertyLabel": "Agents associated with a work",
                     "remark": "http://access.rdatoolkit.org/19.2.html"
                 },
                 {
@@ -38,8 +40,8 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                            "profile:bf2:WorkTitle",
-                            "profile:bf2:WorkVariantTitle",
+                            "sinopia:resourceTemplate:bf2:WorkTitle",
+                            "sinopia:resourceTemplate:bf2:WorkVariantTitle",
                             "profile:bflc:TranscribedTitle"
                         ],
                         "useValuesFrom": [],
@@ -55,7 +57,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Form"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Form"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -88,7 +90,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Place"],
+                        "valueTemplateRefs": ["CornellSinatra45:Place"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -103,7 +105,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:MOPStatement"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPStatement"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -117,7 +119,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:PMOMedPerf:PerfMed"],
+                        "valueTemplateRefs": ["CornellSinatra45:PMOMedPerf:PerfMed"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -131,7 +133,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:MOPInstrument"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPInstrument"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -145,7 +147,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:MOPVoice"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPVoice"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -159,7 +161,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:MOPEnsemble"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPEnsemble"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -218,25 +220,10 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Agents:Contribution"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
-                    "propertyLabel": "Contribution (RDA 19.3 and 20.2)",
-                    "remark": "http://access.rdatoolkit.org/19.3.html"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
                         "valueTemplateRefs": [
-                            "profile:TopicSearch",
-                            "profile:Components",
-                            "profile:TopicInput"
+                            "sinopia:resourceTemplate:bf2:TopicSearch",
+                            "sinopia:resourceTemplate:bf2:Components",
+                            "sinopia:resourceTemplate:bf2:TopicInput"
                         ],
                         "useValuesFrom": [],
                         "valueDataType": {},
@@ -252,7 +239,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -266,7 +253,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:SongWork"],
+                        "valueTemplateRefs": ["CornellSinatra45:SongWork"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -281,7 +268,7 @@
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
-                                "profile:bf2:Contents"
+                                "sinopia:resourceTemplate:bf2:Contents"
                             ],
                             "useValuesFrom": [],
                             "valueDataType": {},
@@ -296,7 +283,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Summary"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Summary"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -330,7 +317,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Language2"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Language2"],
                         "useValuesFrom": [],
                         "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"},
                         "editable": "false",
@@ -347,7 +334,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Identifiers:Matrix"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Identifiers:Matrix"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -361,7 +348,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Capture"],
+                        "valueTemplateRefs": ["CornellSinatra45:Capture"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -375,7 +362,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:SupplContent"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:SupplContent"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -404,7 +391,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:RelatedWork"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:RelatedWork"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -419,7 +406,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:RelatedExpression"],
+                        "valueTemplateRefs": ["CornellSinatra45:bflc:RelatedExpression"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -434,7 +421,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Instance"],
+                        "valueTemplateRefs": ["CornellSinatra45:Instance"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -458,12 +445,12 @@
                     "remark": "http://access.rdatoolkit.org/6.28.1.html"
                 }
             ],
-            "id": "profile:bf2:CornellSinatra45:Work",
+            "id": "CornellSinatra45:Work",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
             "resourceLabel": "BIBFRAME Work"
         },
         {
-            "id": "profile:bf2:CornellSinatra45:Instance",
+            "id": "CornellSinatra45:Instance",
             "propertyTemplates": [
                 {
                     "propertyLabel": "Instance Of",
@@ -471,9 +458,8 @@
                     "resourceTemplates": [],
                     "type": "resource",
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Work"],
+                        "valueTemplateRefs": ["CornellSinatra45:Work"],
                         "useValuesFrom": [],
-                        "valueDataType": {"dataTypeURI": ""},
                         "defaults": []
                     },
                     "mandatory": "false",
@@ -485,9 +471,9 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                              "profile:bf2:Title",
-                              "profile:bf2:Title:VarTitle",
-                              "profile:bf2:ParallelTitle",
+                              "sinopia:resourceTemplate:bf2:Title",
+                              "sinopia:resourceTemplate:bf2:Title:VarTitle",
+                              "sinopia:resourceTemplate:bf2:ParallelTitle",
                               "profile:bflc:TranscribedTitle"
                         ],
                         "useValuesFrom": [],
@@ -536,9 +522,9 @@
                     "type": "resource",
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                            "profile:bf2:CornellSinatra45:PublicationInformation",
-                            "profile:bf2:CornellSinatra45:ManufactureInformation",
-                            "profile:bf2:CornellSinatra45:DistributionInformation"
+                            "CornellSinatra45:PublicationInformation",
+                            "CornellSinatra45:ManufactureInformation",
+                            "CornellSinatra45:DistributionInformation"
                         ],
                         "useValuesFrom": [],
                         "valueDataType": {},
@@ -569,7 +555,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:SeriesInformation"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:SeriesInformation"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -605,9 +591,10 @@
                     "type": "resource",
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                            "profile:bf2:Identifiers:Identifiers:PubNumber",
-                            "profile:bf2:Identifiers:Identifiers:Copyright",
-                            "profile:bf2:Identifiers:Identifiers:Other"
+                            "sinopia:resourceTemplate:bf2:Identifiers:PubNumber",
+                            "sinopia:resourceTemplate:bf2:Identifiers:Copyright",
+                            "sinopia:resourceTemplate:bf2:Identifiers:Other",
+                            "sinopia:resourceTemplate:bf2:Identifiers:LCCN"
                         ],
                         "useValuesFrom": [],
                         "valueDataType": {},
@@ -623,7 +610,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -638,7 +625,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Analog:Credits"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Analog:Credits"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -692,7 +679,7 @@
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/extent",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Extent"],
+                        "valueTemplateRefs": ["CornellSinatra45:Extent"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -714,10 +701,8 @@
                             "dataTypeLabelHint": "7 in.",
                             "remark": ""
                         },
-                        "defaultLiteral": "",
                         "editable": "true",
                         "repeatable": "false",
-                        "defaultURI": "",
                         "defaults": []
                     },
                     "mandatory": "false",
@@ -735,7 +720,6 @@
                         "useValuesFrom": ["http://id.loc.gov/vocabulary/mmaterial"],
                         "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/BaseMaterial"},
                         "editable": "true",
-                        "defaultLiteral": "",
                         "repeatable": "true",
                         "defaults": []
                     },
@@ -764,7 +748,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:ProdMeth"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:ProdMeth"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -795,17 +779,16 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                            "profile:bf2:TypeRec",
-                            "profile:bf2:RecMedium",
-                            "profile:bf2:PlayingSpeed",
-                            "profile:bf2:Analog:Sound6",
-                            "profile:bf2:Playback",
-                            "profile:bf2:SpecPlayback"
+                            "sinopia:resourceTemplate:bf2:TypeRec",
+                            "sinopia:resourceTemplate:bf2:RecMedium",
+                            "sinopia:resourceTemplate:bf2:PlayingSpeed",
+                            "sinopia:resourceTemplate:bf2:Analog:Sound6",
+                            "sinopia:resourceTemplate:bf2:Playback",
+                            "sinopia:resourceTemplate:bf2:SpecPlayback"
                         ],
                         "useValuesFrom": [],
                         "valueDataType": {"dataTypeLabelHint": ""},
                         "editable": "false",
-                        "defaultLiteral": "",
                         "defaults": []
                     },
                     "propertyLabel": "Sound Characteristics",
@@ -833,22 +816,7 @@
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Identifiers:LCCN"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
-                    "propertyLabel": "LC Control Number for the Manifestation (RDA 2.15)",
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
-                    "remark": "http://access.rdatoolkit.org/2.15.html"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Item"],
+                        "valueTemplateRefs": ["CornellSinatra45:Item"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -861,7 +829,7 @@
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance"
         },
         {
-            "id": "profile:bf2:CornellSinatra45:Item",
+            "id": "CornellSinatra45:Item",
             "propertyTemplates": [
                 {
                     "propertyLabel": "Held by",
@@ -881,25 +849,14 @@
                     "repeatable": "true"
                 },
                 {
-                    "propertyLabel": "Call numbers",
+                    "propertyLabel": "Call number shelfmark and Barcode",
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Identifiers:Shelfmark"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource"
-                },
-                {
-                    "propertyLabel": "Barcode",
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Identifiers:Barcode"],
+                        "valueTemplateRefs": [
+                          "sinopia:resourceTemplate:bf2:Identifiers:LC",
+                          "sinopia:resourceTemplate:bf2:Identifiers:Barcode"
+                        ],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -927,7 +884,7 @@
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                     "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
                         "useValuesFrom": [],
                         "valueDataType": {},
                         "defaults": []
@@ -942,9 +899,9 @@
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [
-                            "profile:bf2:Item:Access",
-                            "profile:bf2:Item:Item:Use",
-                            "profile:bf2:Item:Retention"
+                            "sinopia:resourceTemplate:bf2:Item:Access",
+                            "sinopia:resourceTemplate:bf2:Item:Use",
+                            "sinopia:resourceTemplate:bf2:Item:Retention"
                         ],
                         "useValuesFrom": [],
                         "valueDataType": {},
@@ -959,26 +916,6 @@
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item"
         },
         {
-            "propertyTemplates": [{
-                "mandatory": "false",
-                "repeatable": "true",
-                "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                    "valueTemplateRefs": [],
-                    "useValuesFrom": [],
-                    "valueDataType": {},
-                    "defaults": []
-                },
-                "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
-                "propertyLabel": "Credits note"
-            }],
-            "id": "profile:bf2:Analog:Credits",
-            "resourceLabel": "Note",
-            "resourceURI": "http://id.loc.gov/ontologies/bibframe/Note",
-            "remark": ""
-        },
-        {
             "propertyTemplates": [
               {
                   "mandatory": "false",
@@ -987,7 +924,7 @@
                   "resourceTemplates": [],
                   "valueConstraint": {
                       "valueTemplateRefs": [
-                          "profile:bf2:WorkTitle"
+                          "sinopia:resourceTemplate:bf2:WorkTitle"
                       ],
                       "useValuesFrom": [],
                       "valueDataType": {},
@@ -1002,29 +939,16 @@
                   "type": "resource",
                   "resourceTemplates": [],
                   "valueConstraint": {
-                      "valueTemplateRefs": ["profile:bflc:CornellSinatra45:Agents:PrimaryContribution"],
+                      "valueTemplateRefs": [
+                        "profile:bflc:CornellSinatra45:Agents:PrimaryContribution",
+                        "CornellSinatra45:Agents:Contribution"
+                      ],
                       "useValuesFrom": [],
-                      "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"},
                       "defaults": []
                   },
                   "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
-                  "propertyLabel": "Creator of Work (RDA 19.2)",
+                  "propertyLabel": "Agents associated with a work",
                   "remark": "http://access.rdatoolkit.org/19.2.html"
-              },
-              {
-                  "mandatory": "false",
-                  "repeatable": "true",
-                  "type": "resource",
-                  "resourceTemplates": [],
-                  "valueConstraint": {
-                      "valueTemplateRefs": ["profile:bf2:CornellSinatra45:Agents:Contribution"],
-                      "useValuesFrom": [],
-                      "valueDataType": {},
-                      "defaults": []
-                  },
-                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
-                  "propertyLabel": "Contribution (RDA 19.3 and 20.2)",
-                  "remark": "http://access.rdatoolkit.org/19.3.html"
               },
               {
                   "mandatory": "false",
@@ -1034,11 +958,6 @@
                   "valueConstraint": {
                       "valueTemplateRefs": [],
                       "useValuesFrom": [],
-                      "valueDataType": {
-                          "dataTypeURI": "",
-                          "dataTypeLabel": "",
-                          "dataTypeLabelHint": "HH:MM:SS"
-                      },
                       "defaults": []
                   },
                   "propertyURI": "http://id.loc.gov/ontologies/bibframe/duration",
@@ -1046,56 +965,15 @@
                   "remark": ""
               }
             ],
-            "id": "profile:bf2:CornellSinatra45:SongWork",
+            "id": "CornellSinatra45:SongWork",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Audio",
             "resourceLabel": "Song"
-        },
-        {
-            "propertyTemplates": [
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "target",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [],
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mgroove"],
-                        "valueDataType": {
-                            "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/GrooveCharacteristic",
-                            "remark": ""
-                        },
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
-                    "propertyLabel": "Groove Characteristic (RDA 3.16.5)",
-                    "remark": "http://access.rdatoolkit.org/3.16.5.html"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["profile:bf2:Note"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
-                    "propertyLabel": "Details of Groove Characteristic (RDA 3.16.5.4)",
-                    "remark": "http://access.rdatoolkit.org/3.16.5.4.html"
-                }
-            ],
-            "id": "profile:bf2:Analog:Sound6",
-            "resourceURI": "http://id.loc.gov/ontologies/bibframe/GrooveCharacteristic",
-            "resourceLabel": "Groove Characteristic"
         }
     ],
-    "contact": "Steven Folsom",
+    "author": "Steven Folsom, Cornell University Metadata Librarian",
     "date": "2019-01-17",
     "description": "Work, Expression, Instance for Cornell Analog 45 Recordings",
-    "id": "profile:bf2:CornellSinatra45:CornellSinatra45",
+    "id": "CornellSinatra45:CornellSinatra45",
     "title": "Cornell Sinatra BIBFRAME 2.0 Sound Recording-Analog 45",
-    "remark": "Derived from https://github.com/lcnetdev/verso/blob/67786e709e2aa207f6605e6a484b69d01acb9a60/data/profiles/BIBFRAME 2.0 Sound Recording-Analog.json",
-    "author": "Steven Folsom, Cornell University Metadata Librarian"
+    "remark": "Derived from https://github.com/lcnetdev/verso/blob/67786e709e2aa207f6605e6a484b69d01acb9a60/data/profiles/BIBFRAME 2.0 Sound Recording-Analog.json"
 }}
