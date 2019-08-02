@@ -4,7 +4,7 @@
             "propertyTemplates": [
                 {
                     "mandatory": "false",
-                    "repeatable": "true",
+                    "repeatable": "false",
                     "type": "resource",
                     "resourceTemplates": [],
                     "valueConstraint": {
@@ -15,7 +15,7 @@
                         ],
                         "useValuesFrom": [],
                         "valueDataType": {},
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "editable": "false",
                         "defaults": []
                     },

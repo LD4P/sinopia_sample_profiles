@@ -5,7 +5,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
@@ -202,7 +202,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
@@ -294,7 +294,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
@@ -567,7 +567,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
@@ -639,7 +639,7 @@
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                     "repeatable": "true",
                     "resourceTemplates": [],
-                    "type": "resource",
+                    "type": "lookup",
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": ["http://id.loc.gov/vocabulary/mediaTypes"],
@@ -659,7 +659,7 @@
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
                     "repeatable": "true",
                     "resourceTemplates": [],
-                    "type": "resource",
+                    "type": "lookup",
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": ["http://id.loc.gov/vocabulary/carriers"],
@@ -713,12 +713,11 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
                         "useValuesFrom": ["http://id.loc.gov/vocabulary/mmaterial"],
-                        "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/BaseMaterial"},
                         "editable": "true",
                         "repeatable": "true",
                         "defaults": []
@@ -730,7 +729,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
@@ -760,7 +759,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "resourceTemplates": [],
                     "valueConstraint": {
                         "valueTemplateRefs": [],
