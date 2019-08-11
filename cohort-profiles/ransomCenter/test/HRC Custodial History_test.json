@@ -10,10 +10,7 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "hrc:rt:arm:custodialHistory:custodialEvent"
-              ],
-              "valueDataType": {
-                "dataTypeURI": "https://w3id.org/arm/custodial_history/ontology/CustodialEvent"
-              }
+              ]
             },
             "propertyURI": "http://purl.org/dc/terms/hasPart",
             "propertyLabel": "Custodial Event"
@@ -46,7 +43,7 @@
               ]
             },
             "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/hasActivity",
-            "propertyLabel": "Agent/role associated to the custodial event"
+            "propertyLabel": "Agent/Role Associated to the Custodial Event"
           },
           {
             "mandatory": "false",
@@ -64,8 +61,13 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              }
+            },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
-            "propertyLabel": "EDTF Date associated with custodial event",
+            "propertyLabel": "Date associated with custodial event (EDTF)",
             "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html"
           }
         ],
@@ -84,7 +86,7 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "hrc:rt:agent:contribution"
+                "hrc:rt:bf2:agent:contribution"
               ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",

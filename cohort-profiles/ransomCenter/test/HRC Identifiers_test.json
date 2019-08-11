@@ -5,19 +5,19 @@
         "propertyTemplates": [
           {
             "mandatory": "false",
-            "repeatable": "false",
+            "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
             "propertyLabel": "Accession Number",
             "remark": "Text field to indicate the Accession Number."
           },
           {
-            "mandatory": "false",
+            "mandatory": "true",
             "repeatable": "false",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
             "propertyLabel": "Accession Number Status",
-            "remark": "An ARM Status Vocabulary exists that has not yet been requested as a lookup. Leaving it as a literal by now, with the recommendation to use the ARM vocabulary term (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html)."
+            "remark": "An ARM Status Vocabulary exists that has not yet been requested as a lookup. Leaving it as a literal by now, with the recommendation to use the ARM vocabulary term (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html). Alternativelly, there is a the LC status vocabulary that has actually been requested as a controlled list in Sinopia"
           }
         ],
         "id": "hrc:rt:arm:identifiers:accessionNumber",
@@ -32,15 +32,18 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal",
-            "valueConstraint": {
-              "valueDataType": {
-                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark"
-              }
-            },
-            "propertyLabel": "HRC Shelf Mark",
+            "type": "literal"
+            "propertyLabel": "Shelf Mark",
             "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
             "remark": "Location on the HRC stacks"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+            "propertyLabel": "Shelf Mark Status",
+            "remark": "An ARM Status Vocabulary exists that has not yet been requested as a lookup. Leaving it as a literal by now, with the recommendation to use the ARM vocabulary term (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html). Alternativelly, there is a the LC status vocabulary that has actually been requested as a controlled list in Sinopia"
           }
         ],
         "id": "hrc:rt:arm:identifiers:shelfMark",

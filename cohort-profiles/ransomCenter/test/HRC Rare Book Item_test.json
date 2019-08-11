@@ -62,7 +62,7 @@
             "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://purl.org/dc/terms/isPartOf",
-            "propertyLabel": "Bound-with",
+            "propertyLabel": "Sammelband",
             "remark": "Property needs to be updated to link to the Sammelband record (lookup?)"
           },
           {

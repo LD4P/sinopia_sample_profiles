@@ -10,14 +10,11 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "sinopia:resourceTemplate:bf2:Title"
-              ],
-              "useValuesFrom": [],
-              "defaults": []
+              ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
             "propertyLabel": "Title",
-            "remark": "Use to indicate title of the Sammelband",
-            "resourceTemplates": []
+            "remark": "Use to indicate title of the Sammelband"
           },
           {
             "mandatory": "true",
@@ -27,14 +24,11 @@
               "valueTemplateRefs": [
                 "hrc:rt:arm:item:rareBook",
                 "hrc:rt:arm:bindings"
-              ],
-              "useValuesFrom": [],
-              "defaults": []
+              ]
             },
             "propertyURI": "http://purl.org/dc/terms/hasPart",
             "propertyLabel": "Sammelband compponents (items and bindings)",
-            "remark": "Use to indicate items/binding information of the Sammelband",
-            "resourceTemplates": []
+            "remark": "Use to indicate items/binding information of the Sammelband"
           },
           {
             "mandatory": "false",
@@ -43,14 +37,11 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "hrc:rt:arm:identifiers:accessionNumber"
-              ],
-              "useValuesFrom": [],
-              "defaults": []
+              ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
             "propertyLabel": "Accession Number",
-            "remark": "Use to register any identifier of the Sammelband.",
-            "resourceTemplates": []
+            "remark": "Use to register any identifier of the Sammelband."
           },
           {
             "mandatory": "false",
@@ -61,11 +52,8 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "hrc:rt:arm:identifiers:shelfMark"
-              ],
-              "useValuesFrom": [],
-              "defaults": []
-            },
-            "resourceTemplates": []
+              ]
+            }
           },
           {
             "mandatory": "false",
@@ -74,18 +62,15 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "hrc:rt:arm:custodialHistory"
-              ],
-              "useValuesFrom": [],
-              "defaults": []
+              ]
             },
             "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
-            "propertyLabel": "Has custodial History",
-            "remark": "Use to indicate custodial history of the Sammelband",
-            "resourceTemplates": []
+            "propertyLabel": "Custodial History",
+            "remark": "Use to indicate custodial history of the Sammelband"
           }
         ],
         "resourceURI": "https://w3id.org/arm/core/ontology/0.1/BoundCollection",
-        "id": "hrc:rt:arm:boundwith",
+        "id": "hrc:rt:arm:sammelband",
         "resourceLabel": "HRC ARM Rare Book Sammelband",
         "date": "2019-05-22",
         "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
@@ -93,7 +78,7 @@
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       }
     ],
-    "id": "hrc:profile:arm:boundwith",
+    "id": "hrc:profile:arm:sammelband",
     "title": "HRC Sammelband Profile",
     "date": "2019-05-22",
     "description": "Profile for modeling Sammelbands at the HRC",

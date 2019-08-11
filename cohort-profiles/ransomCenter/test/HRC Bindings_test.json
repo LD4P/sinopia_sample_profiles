@@ -56,7 +56,7 @@
               ]
             },
             "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/hasActivity",
-            "propertyLabel": "Binder and Binding Designer Information"
+            "propertyLabel": "Agent/Role Associated with the Binding"
           },
           {
             "mandatory": "false",
@@ -64,11 +64,11 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "hrc:rt:arm:markings"
+                "hrc:rt:arm:markings:bindersTicket"
               ]
             },
             "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
-            "propertyLabel": "Markings"
+            "propertyLabel": "Binder's Ticket"
           },
           {
             "mandatory": "false",
@@ -94,7 +94,7 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "hrc:rt:agent:contribution"
+                "hrc:rt:bf2:agents:contribution"
               ]
             },
             "propertyLabel": "Binder",
@@ -105,7 +105,7 @@
             "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
-            "propertyLabel": "Binding date",
+            "propertyLabel": "Date Associated with the Binding (EDTF)",
             "remark": "Use EDTF formating"
           },
           {
@@ -118,7 +118,7 @@
               ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
-            "propertyLabel": "Place of binding"
+            "propertyLabel": "Place Associated with the binding"
           }
         ],
         "id": "hrc:rt:arm:bindings:binder",
@@ -137,7 +137,7 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "hrc:rt:agent:contribution"
+                "hrc:rt:bf2:agents:contribution"
               ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
