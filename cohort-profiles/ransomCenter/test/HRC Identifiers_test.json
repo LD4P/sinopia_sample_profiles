@@ -32,7 +32,7 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal"
+            "type": "literal",
             "propertyLabel": "Shelf Mark",
             "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
             "remark": "Location on the HRC stacks"
