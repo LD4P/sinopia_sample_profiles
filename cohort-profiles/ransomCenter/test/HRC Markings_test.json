@@ -50,7 +50,6 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueDataType": {
               "valueTemplateRefs": [
                 "hrc:rt:bf2:agents:contribution"
               ]
@@ -97,14 +96,14 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal"
+            "type": "literal",
             "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
             "propertyLabel": "Inscription Text"
           },
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal"
+            "type": "literal",
             "propertyURI": "http://purl.org/dc/terms/description",
             "propertyLabel": "Inscription Description"
           },
@@ -119,8 +118,7 @@
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
             "propertyLabel": "Agent/Role Associated with the Inscription"
-          }
-          ,
+          },
           {
             "mandatory": "false",
             "repeatable": "true",
@@ -361,7 +359,7 @@
           {
             "mandatory": "false",
             "repeatable": "false",
-            "type": "literal"
+            "type": "literal",
             "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
             "propertyLabel": "Seal Text"
           },
