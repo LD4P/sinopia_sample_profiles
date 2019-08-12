@@ -1,0 +1,172 @@
+{
+    "Profile": {
+        "resourceTemplates": [
+            {
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
+                "id": "hrc:rt:bf2:agents:contribution",
+                "resourceLabel": "Contribution",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Agent",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "hrc:rt:bf2:agents:person",
+                                "hrc:rt:bf2:agents:family",
+                                "hrc:rt:bf2:agents:corporateBody",
+                                "hrc:rt:bf2:agents:jurisdiction"
+                            ]
+                        },
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+                        "type": "resource",
+                        "mandatory": "false",
+                        "repeatable": "true"
+                    },
+                    {
+                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
+                        "propertyLabel": "Relationship Designator (RDA Appendix I)",
+                        "type": "resource",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "lc:RT:bf2:Agent:Role"
+                            ]
+                        },
+                        "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
+                    }
+                ],
+                "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+                "date": "2019-08-10",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+              "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
+              "id": "hrc:rt:bf2:agents:person",
+              "resourceLabel": "Person",
+              "propertyTemplates": [
+                {
+                  "propertyLabel": "Person (lookup)",
+                  "valueConstraint": {
+                    "useValuesFrom": [
+                      "urn:ld4p:qa:gettyulan:person",
+                      "urn:ld4p:qa:names:person"
+                    ]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/Person",
+                  "type": "lookup",
+                  "mandatory": "false",
+                  "repeatable": "true"
+                },
+                {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "literal",
+                  "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "propertyLabel": "Preferred Name for Person (RDA 9.2.2)",
+                  "remark": "http://access.rdatoolkit.org/rdachp9_rda9-822.html"
+                }
+              ],
+              "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+              "date": "2019-08-07",
+              "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+              "resourceURI": "http://id.loc.gov/ontologies/bibframe/Family",
+              "id": "hrc:rt:bf2:agents:family",
+              "resourceLabel": "Family",
+              "propertyTemplates": [
+                {
+                  "propertyLabel": "Family (Lookup)",
+                  "valueConstraint": {
+                    "useValuesFrom": [
+                      "urn:ld4p:qa:names"
+                    ]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/Family",
+                  "type": "lookup",
+                  "mandatory": "false",
+                  "repeatable": "true"
+                },
+                {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "literal",
+                  "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "propertyLabel": "Preferred Name for Family (RDA 10.2.2)",
+                  "remark": "http://access.rdatoolkit.org/rdachp10_rda10-241.html"
+                }
+              ],
+              "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+              "date": "2019-08-07",
+              "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+              "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization",
+              "id": "hrc:rt:bf2:agents:corporateBody",
+              "resourceLabel": "Corporate Body",
+              "propertyTemplates": [
+                {
+                  "propertyLabel": "Corporate Body (lookup)",
+                  "valueConstraint": {
+                    "useValuesFrom": [
+                      "urn:ld4p:qa:gettyulan:organization",
+                      "urn:ld4p:qa:names:organization"
+                    ]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/Organization",
+                  "type": "lookup",
+                  "mandatory": "false",
+                  "repeatable": "true"
+                },
+                {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "literal",
+                  "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "propertyLabel": "Preferred Name for Corporate Body (RDA 11.2.2)",
+                  "remark": "http://access.rdatoolkit.org/rdachp11_rda11-1207.html"
+                }
+              ],
+              "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+              "date": "2019-08-07",
+              "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            },
+            {
+              "resourceURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+              "id": "hrc:rt:bf2:agents:jurisdiction",
+              "resourceLabel": "Jurisdiction",
+              "propertyTemplates": [
+                {
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+                  "propertyLabel": "Jurisdiction",
+                  "type": "lookup",
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "valueConstraint": {
+                    "useValuesFrom": [
+                      "urn:ld4p:qa:names:place"
+                    ]
+                  }
+                },
+                {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "literal",
+                  "propertyLabel": "Preferred Name for Place (RDA 16.2.2)",
+                  "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "remark": "http://access.rdatoolkit.org/rdachp16_rda16-322.html"
+                }
+              ],
+              "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+              "date": "2019-08-07",
+              "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/resource-template.json"
+            }
+        ],
+        "id": "hrc:profile:bf2:agents",
+        "title": "HRC BF2 Agents",
+        "date": "2019-08-10",
+        "description": "Creators and Contributors",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.0/profile.json"
+    }
+}
