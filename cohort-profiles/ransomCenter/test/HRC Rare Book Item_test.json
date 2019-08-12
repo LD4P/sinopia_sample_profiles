@@ -60,7 +60,12 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "literal",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:rt:arm:sammelband"
+              ]
+            },
             "propertyURI": "http://purl.org/dc/terms/isPartOf",
             "propertyLabel": "Sammelband",
             "remark": "Property needs to be updated to link to the Sammelband record (lookup?)"
