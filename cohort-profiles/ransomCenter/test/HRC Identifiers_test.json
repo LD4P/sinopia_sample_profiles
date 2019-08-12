@@ -12,8 +12,8 @@
             "remark": "Text field to indicate the Accession Number."
           },
           {
-            "mandatory": "true",
-            "repeatable": "false",
+            "mandatory": "false",
+            "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
             "propertyLabel": "Accession Number Status",
@@ -38,8 +38,8 @@
             "remark": "Location on the HRC stacks"
           },
           {
-            "mandatory": "true",
-            "repeatable": "false",
+            "mandatory": "false",
+            "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
             "propertyLabel": "Shelf Mark Status",
