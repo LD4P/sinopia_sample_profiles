@@ -24,13 +24,13 @@
                     {
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                         "propertyLabel": "Relationship Designator (RDA Appendix I)",
-                        "type": "resource",
+                        "type": "lookup",
                         "mandatory": "false",
                         "repeatable": "true",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "lc:RT:bf2:Agent:Role"
-                            ]
+                          "useValuesFrom": [
+                            "https://id.loc.gov/vocabulary/relators"
+                          ]
                         },
                         "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                     }
