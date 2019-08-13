@@ -152,7 +152,6 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
-            ,
             "valueConstraint": {
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
