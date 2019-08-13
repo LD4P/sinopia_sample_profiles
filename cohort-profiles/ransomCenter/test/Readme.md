@@ -4,7 +4,7 @@ This directory includes HRC profiles created for testing purposes.
 
 >Profiles on this test folder are subject to changes without keeping track of version.
 
-####HRC Agents test
+#### HRC Agents test
 *High level JSON profile test for Agents linked to resource descriptions. This profile modifies the LC canonical profile by having just a lookup (LCNAF and ULAN) and a literal property for preferred form of the name for each named entity.* 
 
 
