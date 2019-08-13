@@ -51,7 +51,7 @@ Standing Questions:
 1. Accession number --> Is LC planning to include AccessionNumber to BF2? Can I use the arm:AccessionNumber with bf:identifyBy even if the expected value is bf:Idnetifier or one of its classes? Also, there is an ARM Status Vocabulary (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html) that has not yet been requested as a lookup. Leaving it as a literal by now, with recommendation to use an ARM Status Vocabulary term (or URI as a literal?)
 
 
-#### HRC Identifiers test
+#### HRC Markings test
 *High level JSON profile test for the [ARM markings modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/markings.md)*
 
 
