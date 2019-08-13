@@ -9,7 +9,7 @@ This directory includes HRC profiles created for testing purposes.
 
 
 #### HRC Bibliographic Citation test
-*High level JSON profile for the ARM bibliographic citation model[https://github.com/LD4P/arm/blob/master/modeling_recommendations/bibliographic_citations.md] following the USE CASE 2 (Citation located, cataloger adds commentary on citation)*
+*High level JSON profile for the [ARM bibliographic citation modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/bibliographic_citations.md) following the USE CASE 2 (Citation located, cataloger adds commentary on citation)*
 
 Standing questions:
 
@@ -27,10 +27,10 @@ Standing questions:
 
 
 #### HRC Binding test
-*High level JSON profile test for the ARM Binding model[https://github.com/LD4P/arm/blob/master/modeling_recommendations/bindings.md]. Some of the RTs included here should probably defined outside of this profile on its own.*
+*High level JSON profile test for the [ARM Binding modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/bindings.md). Some of the RTs included here should probably defined outside of this profile on its own.*
 
 #### HRC Custodial History test
-*High level JSON profile test for the ARM Custodial History model[https://github.com/LD4P/arm/blob/master/modeling_recommendations/custodial_history.md]. It doesn't include price, accession number, aggregate custodial events or precedence relationships.*
+*High level JSON profile test for the [ARM Custodial History modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/custodial_history.md). It doesn't include price, accession number, aggregate custodial events or precedence relationships.*
 
 Standing questions:
 
@@ -44,7 +44,7 @@ Standing questions:
 
 
 #### HRC Identifiers test
-*High level JSON profile for HRC identifiers to be used on the item level. It modifies the LC canonical profile to include the ARM accession numbers modeling[https://github.com/LD4P/arm/blob/master/modeling_recommendations/accession_numbers.md]*
+*High level JSON profile for HRC identifiers to be used on the item level. It modifies the LC canonical profile to include the [ARM accession numbers modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/accession_numbers.md)*
 
 Standing Questions:
 
@@ -52,7 +52,7 @@ Standing Questions:
 
 
 #### HRC Identifiers test
-*High level JSON profile test for the ARM markings modeling[https://github.com/LD4P/arm/blob/master/modeling_recommendations/markings.md]*
+*High level JSON profile test for the [ARM markings modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/markings.md)*
 
 
 #### HRC Rare Book Item test
@@ -64,7 +64,7 @@ Standing Questions:
 
 
 #### HRC Sammelband test
-*High level JSON profile for the ARM bound-with model[https://github.com/LD4P/arm/blob/master/modeling_recommendations/carriers_and_bound_withs.md]. It doesn't include table of contents.*
+*High level JSON profile for the [ARM bound-with modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/carriers_and_bound_withs.md). It doesn't include table of contents.*
 
 Standing questions:
 
