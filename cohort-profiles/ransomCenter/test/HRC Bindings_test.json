@@ -104,6 +104,11 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              }
+            },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
             "propertyLabel": "Date Associated with the Binding (EDTF)",
             "remark": "Use EDTF formating"
@@ -123,7 +128,7 @@
         ],
         "id": "hrc:rt:arm:bindings:binder",
         "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/BinderActivity",
-        "resourceLabel": "Binder Information",
+        "resourceLabel": "Binder Activity",
         "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
         "date": "2019-04-08",
         "remark": "Use to provide information about the binder",
@@ -147,6 +152,12 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
+            ,
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              }
+            },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
             "propertyLabel": "Date",
             "remark": "EDTF format date"
@@ -166,7 +177,7 @@
         ],
         "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/DesignerActivity",
         "id": "hrc:rt:arm:bindings:designer",
-        "resourceLabel": "Binding Designer Information",
+        "resourceLabel": "Designer Information",
         "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
         "date": "2019-04-08",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
