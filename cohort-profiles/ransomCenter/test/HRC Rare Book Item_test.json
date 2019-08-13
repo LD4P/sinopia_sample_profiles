@@ -8,12 +8,9 @@
             "repeatable": "false",
             "type": "literal",
             "valueConstraint": {
-              "valueDataType": {
-                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
-              },
               "defaults": [
                 {
-                  "defaultLiteral": "txauhrh"
+                  "defaultURI": "txauhrh"
                 }
               ]
             },
@@ -60,15 +57,10 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                "hrc:rt:arm:sammelband"
-              ]
-            },
+            "type": "literal",
             "propertyURI": "http://purl.org/dc/terms/isPartOf",
             "propertyLabel": "Sammelband",
-            "remark": "Property needs to be updated to link to the Sammelband record (lookup?)"
+            "remark": "This RT should be updated as soon as there is a QA for data in Sinopia."
           },
           {
             "mandatory": "false",
