@@ -778,8 +778,8 @@
               },
               "defaults": [
                 {
-                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/dlc",
-                  "defaultLiteral": "DLC"
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
                 }
               ]
             },
