@@ -1,0 +1,75 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:test:arm:bibliographicCitation:entry"
+              ]
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasSource",
+            "propertyLabel": "Citation Entry"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Cataloger note"
+          }
+        ],
+        "id": "harvard:test:arm:bibliographicCitation",
+        "resourceLabel": "Bibliographic Citation",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Citation",
+        "author": "Harvard ARM Test",
+        "remark": "Used to record bibliographic citations for Rare Materials at the Harvard Library",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Citation Entry"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Citation Page",
+            "remark": "Use p. [page#]"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "remark": "Use RBMS Standard Citation Form Database: https://rbms.info/scf/",
+            "propertyURI": "http://purl.org/dc/terms/isPartOf",
+            "propertyLabel": "RBMS Standard Citation Form"
+          }
+        ],
+        "id": "harvard:test:arm:bibliographicCitation:entry",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Entry",
+        "author": "Harvard ARM Test",
+        "resourceLabel": "Citation Entry",
+        "remark": "Use to record citation entry",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "harvard:profile:test:arm:bibliographicCitation",
+    "title": "Harvard Bibligraphic Citation Profile",
+    "date": "2019-06-18",
+    "description": "Profile for modeling Bibliographic Citations for Rare Materials at the Harvard Library",
+    "author": "Harvard ARM Test",
+    "adherence": "ARM BIBFRAME dcterms RDF",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

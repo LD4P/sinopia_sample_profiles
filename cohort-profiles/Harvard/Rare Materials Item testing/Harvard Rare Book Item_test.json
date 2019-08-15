@@ -1,0 +1,225 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ],
+              "valueTemplateRefs": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+            "propertyLabel": "Held by",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+            "propertyLabel": "Shelving location",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:test:arm:identifiers:shelfMark"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:test:arm:identifiers:accessionNumber"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "propertyLabel": "Accession Number",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:test:arm:bindings"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyLabel": "Binding information",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/isPartOf",
+            "propertyLabel": "Sammelband",
+            "remark": "This RT should be updated as soon as there is a QA for data in Sinopia.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:test:arm:custodialHistory"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyLabel": "Custodial History",
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "https://w3id.org/arm/core/ontology/0.1/Citation"
+              },
+              "valueTemplateRefs": [
+                "harvard:test:arm:bibliographicCitation"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
+            "propertyLabel": "Bibliographic citation",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "https://w3id.org/arm/core/ontology/0.1/Marking"
+              },
+              "valueTemplateRefs": [
+                "harvard:test:arm:markings"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "Markings",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "propertyLabel": "Physical Condition",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent",
+            "propertyLabel": "Digital surrogate",
+            "remark": "Use to link to the CONTENTdm digital surrogate",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+            "propertyLabel": "Access and Use policy",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "sinopia:resourceTemplate:bf2:Item:Use",
+                "sinopia:resourceTemplate:bf2:Item:Access"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Cataloger Note(s)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:sinopia"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemOf",
+            "propertyLabel": "Item of",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
+        "resourceLabel": "Harvard ARM Rare Books Item",
+        "id": "harvard:test:arm:item:rareBook",
+        "author": "Harvard ARM Test",
+        "date": "2019-06-11",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "remark": "Use with Rare books on the Pforzheimer collection"
+      }
+    ],
+    "id": "harvard:profile:test:arm:item:rareBook",
+    "title": "Harvard Profile Item Rare Book",
+    "description": "Profile for modeling descriptions of Rare Materials items at the Harvard Library",
+    "date": "2019-07-12",
+    "author": "Harvard ARM Test",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "adherence": "ARM BIBFRAME dcterms RDF"
+  }
+}
