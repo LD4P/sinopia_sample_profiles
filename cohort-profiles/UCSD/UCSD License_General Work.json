@@ -1,0 +1,29 @@
+{
+  "Profile":{
+    "resourceTemplates":[
+      {
+        "propertyTemplates":[
+          {
+            "mandatory":"false",
+            "repeatable":"true",
+            "type":"literal",
+            "propertyURI":"https://www.w3.org/1999/xhtml/vocab#license",
+            "propertyLabel":"License",
+            "remark":"Use to add a general license statement."
+          }
+        ],
+        "id":"UCSD:RT:BF2:RightsModuleTest:Work:LicenseGeneral",
+        "resourceURI":"http://schema.org/Thing",
+        "resourceLabel":"UCSD License_General Work",
+        "author":"Jim Soe Nyun (jsoenyun@ucsd.edu)",
+        "schema":"https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "title":"UCSD:RT:BF2:RightsModuleTest:Work:LicenseGeneral",
+    "id":"UCSD:RT:BF2:RightsModuleTest:Work:LicenseGeneral",
+    "description":"Profile wrapper for resource templates",
+    "author":"Jim Soe Nyun (jsoenyun@ucsd.edu)",
+    "schema":"https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date":"2019-08-20"
+  }
+}
