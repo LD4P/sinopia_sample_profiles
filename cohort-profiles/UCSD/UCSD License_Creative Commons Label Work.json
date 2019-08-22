@@ -2,11 +2,11 @@
     "resourceTemplates": [{
         "propertyTemplates": [{
             "mandatory": "false",
-            "repeatable": "false",
-            "type": "resource",
-            "propertyURI": "https://www.w3.org/1999/xhtml/vocab#license",
-            "propertyLabel": "Creative Commons License",
-            "remark": "Add a Creative Commons license URI",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "propertyLabel": "Creative Commons License Label or Statement",
+            "remark": "Add a Creative Commons license label or statement",
             "resourceTemplates": [],
             "valueConstraint": {
                 "valueTemplateRefs": [],
@@ -14,13 +14,13 @@
                 "defaults": []
             }
         }],
-        "id": "UCSD:RT:BF2:RightsModuleTest:Work:CCLicense",
+        "id": "UCSD:RT:BF2:RightsModuleTest:Work:CCLicenseLabel",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy",
-        "resourceLabel": "UCSD License_Creative Commons URI Work",
+        "resourceLabel": "UCSD License_Creative Commons Label Work",
         "author": "Jim Soe Nyun (jsoenyun@ucsd.edu)",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
     }],
-    "title": "UCSD License_Creative Commons Work",
+    "title": "UCSD License_Creative Commons Label Work",
     "id": "UCSD:RT:BF2:RightsModuleTest:Work:LicenseGeneral",
     "description": "Profile wrapper for resource templates",
     "author": "Jim Soe Nyun (jsoenyun@ucsd.edu)",
