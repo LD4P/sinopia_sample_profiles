@@ -1,0 +1,241 @@
+{
+    "Profile": {
+        "author": "Crystal Clements (cec23@uw.edu)",
+        "date": "2019-09-03",
+        "description": "MADS test",
+        "id": "WAU:profile:MADS:test",
+        "title": "WAU Profile MADS test",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+        "resourceTemplates": [
+            {
+                "resourceURI": "http://rdaregistry.info/Elements/w/P10256",
+                "resourceLabel": "WAU RT MADS RDF subject test",
+                "id": "WAU:RT:MADSRDF:subject",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "has subject (RDA 23.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "remark": "http://access.rdatoolkit.org/23.5.html",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "WAU:RT:MADSRDF:complexSubject",
+                                "WAU:RT:MADSRDF:simpleSubject",
+                                "WAU:RT:MADSRDF:geographic",
+                                "WAU:RT:MADSRDF:temporal"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
+                "resourceLabel": "WAU RT MADS RDF Complex Subject",
+                "id": "WAU:RT:MADSRDF:complexSubject",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Component List",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:list"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Label",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic",
+                "resourceLabel": "WAU RT MADS RDF Hierarchical Geographic",
+                "id": "WAU:RT:MADSRDF:hierarchicalGeographic",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Component List",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#componentList",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:list:hierarchicalGeographic"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Label",
+                        "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
+                "resourceLabel": "WAU RT MADS RDF Subject",
+                "id": "WAU:RT:MADSRDF:simpleSubject",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Subject Search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Geographic",
+                "resourceLabel": "WAU RT MADS RDF Geographic",
+                "id": "WAU:RT:MADSRDF:geographic",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Subject search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects:place", "urn:ld4p:qa:names:place"]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.loc.gov/mads/rdf/v1#Temporal",
+                "resourceLabel": "WAU RT MADS RDF Temporal",
+                "id": "WAU:RT:MADSRDF:temporal",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Authoritative Label",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#authoritativeLabel",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "Subject search",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:subjects"]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+                "resourceLabel": "WAU RT RDF List",
+                "id": "WAU:RT:RDF:list",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "Subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Add another subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:list"]
+                        }
+                    }
+                ]
+            },
+            {
+                "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+                "resourceLabel": "WAU RT RDF List",
+                "id": "WAU:RT:RDF:list:hierarchicalGeographic",
+                "date": "2019-07-11",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "propertyLabel": "MADS:Geographic",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+                        "mandatory": "true",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:places",
+                                "urn:ld4p:qa:geonames",
+                                "urn:ld4p:qa:places"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "Add another MADS:Geographic",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "resource",
+                        "valueConstraint": {
+                            "valueTemplateRefs": ["WAU:RT:RDF:list:hierarchicalGeographic"]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

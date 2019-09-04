@@ -24,7 +24,7 @@
         "type": "array",
         "items": {
          "type": "string",
-         "enum": ["monograph"]
+         "enum": ["monograph", "dvdVideo", "etd"]
          },
          "$comment": "Add additional strings to enumeration as additional format-specific profiles are to be created"
         },

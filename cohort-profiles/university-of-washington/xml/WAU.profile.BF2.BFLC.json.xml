@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns="http://www.w3.org/2005/xpath-functions">
+    <map key="Profile">
+        <string key="title">WAU profile BF2 BFLC</string>
+        <string key="id">WAU:profile:BF2:BFLC</string>
+        <string key="author">Crystal Clements (cec23@uw.edu)</string>
+        <string key="date">2019-06-26</string>
+        <string key="description">BIBFRAME metadata for RDA Resources</string>
+        <string key="schema">https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json</string>
+        <array key="resourceTemplates">
+            <map>
+                <string key="resourceURI"
+                    >http://id.loc.gov/ontologies/bibframe/AdminMetadata</string>
+                <string key="resourceLabel">WAU RT BF2 BFLC Admin Metadata</string>
+                <string key="id">WAU:RT:BF2:BFLC:AdminMetadata</string>
+                <string key="date">2019-06-26</string>
+                <string key="author">Crystal Clements (cec23@uw.edu)</string>
+                <string key="schema"
+                    >https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json</string>
+                <array key="propertyTemplates">
+                    <map>
+                        <string key="propertyLabel">Your cataloger ID (UW netid)</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bflc/catalogerID</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">true</string>
+                        <string key="type">literal</string>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Record status</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/status</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">false</string>
+                        <string key="type">resource</string>
+                        <map key="valueConstraint">
+                            <array key="valueTemplateRefs">
+                                <string>WAU:RT:BF2:BFLC:AdminMetadata:Status</string>
+                            </array>
+                        </map>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Encoding level</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bflc/encodingLevel</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">false</string>
+                        <string key="type">lookup</string>
+                        <map key="valueConstraint">
+                            <array key="useValuesFrom">
+                                <string>http://id.loc.gov/vocabulary/menclvl</string>
+                            </array>
+                            <map key="valueDataType">
+                                <string key="dataTypeURI"
+                                    >http://id.loc.gov/ontologies/bflc/EncodingLevel</string>
+                            </map>
+                            <array key="defaults">
+                                <map>
+                                    <string key="defaultURI"
+                                        >http://id.loc.gov/vocabulary/menclvl/f</string>
+                                    <string key="defaultLiteral">full</string>
+                                </map>
+                            </array>
+                        </map>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Description conventions</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/descriptionConventions</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">true</string>
+                        <string key="type">lookup</string>
+                        <map key="valueConstraint">
+                            <array key="useValuesFrom">
+                                <string>http://id.loc.gov/vocabulary/descriptionConventions</string>
+                            </array>
+                            <map key="valueDataType">
+                                <string key="dataTypeURI"
+                                    >http://id.loc.gov/ontologies/bibframe/DescriptionConventions</string>
+                            </map>
+                            <array key="defaults">
+                                <map>
+                                    <string key="defaultURI"
+                                        >http://id.loc.gov/vocabulary/descriptionConventions/rda</string>
+                                    <string key="defaultLiteral">Resource Description and
+                                        Access</string>
+                                </map>
+                                <map>
+                                    <string key="defaultURI"
+                                        >http://id.loc.gov/vocabulary/descriptionConventions/isbd</string>
+                                    <string key="defaultLiteral">ISBD: International Standard
+                                        Bibliographic Description</string>
+                                </map>
+                            </array>
+                        </map>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Source of cataloging</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/source</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">true</string>
+                        <string key="type">lookup</string>
+                        <map key="valueConstraint">
+                            <array key="useValuesFrom">
+                                <string>urn:ld4p:qa:names:organization</string>
+                            </array>
+                            <map key="valueDataType">
+                                <string key="dataTypeURI"
+                                    >http://id.loc.gov/ontologies/bibframe/Agent</string>
+                            </map>
+                            <array key="defaults">
+                                <map>
+                                    <string key="defaultURI"
+                                        >http://id.loc.gov/vocabulary/organizations/wau</string>
+                                    <string key="defaultLiteral">WAU</string>
+                                </map>
+                            </array>
+                        </map>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Description language</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/descriptionLanguage</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">false</string>
+                        <string key="type">lookup</string>
+                        <map key="valueConstraint">
+                            <array key="useValuesFrom">
+                                <string>http://id.loc.gov/vocabulary/languages</string>
+                            </array>
+                            <map key="valueDataType">
+                                <string key="dataTypeURI"
+                                    >http://id.loc.gov/ontologies/bibframe/Language</string>
+                            </map>
+                            <array key="defaults">
+                                <map>
+                                    <string key="defaultURI"
+                                        >http://id.loc.gov/vocabulary/languages/eng</string>
+                                    <string key="defaultLiteral">English</string>
+                                </map>
+                            </array>
+                        </map>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Data creation date</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/creationDate</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">false</string>
+                        <string key="type">literal</string>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Data change date</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/changeDate</string>
+                        <string key="mandatory">false</string>
+                        <string key="repeatable">false</string>
+                        <string key="type">literal</string>
+                    </map>
+                    <map>
+                        <string key="propertyLabel">Description authentication</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/descriptionAuthentication</string>
+                        <string key="mandatory">false</string>
+                        <string key="repeatable">true</string>
+                        <string key="type">lookup</string>
+                        <map key="valueConstraint">
+                            <array key="useValuesFrom">
+                                <string>http://id.loc.gov/vocabulary/marcauthen</string>
+                            </array>
+                            <map key="valueDataType">
+                                <string key="dataTypeURI"
+                                    >http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication</string>
+                            </map>
+                        </map>
+                    </map>
+                </array>
+            </map>
+            <map>
+                <string key="resourceURI">http://id.loc.gov/ontologies/bibframe/Status</string>
+                <string key="resourceLabel">WAU RT BF2 BFLC Admin Metadata Status</string>
+                <string key="id">WAU:RT:BF2:BFLC:AdminMetadata:Status</string>
+                <string key="date">2019-05-30</string>
+                <string key="author">Crystal Clements (cec23@uw.edu)</string>
+                <string key="schema"
+                    >https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json</string>
+                <array key="propertyTemplates">
+                    <map>
+                        <string key="propertyLabel">Code</string>
+                        <string key="propertyURI"
+                            >http://id.loc.gov/ontologies/bibframe/code</string>
+                        <string key="mandatory">true</string>
+                        <string key="repeatable">true</string>
+                        <string key="type">literal</string>
+                        <map key="valueConstraint">
+                            <array key="defaults">
+                                <map>
+                                    <string key="defaultLiteral">n</string>
+                                </map>
+                            </array>
+                        </map>
+                    </map>
+                </array>
+            </map>
+        </array>
+    </map>
+</map>

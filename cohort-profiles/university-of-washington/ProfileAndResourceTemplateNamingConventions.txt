@@ -1,0 +1,12 @@
+Naming Conventions for University of Washington Sinopia Profiles and Resource Templates
+
+-All ID's start with WAU
+-Profile ID's start with WAU:profile
+-Resource template ID's start with WAU:RT
+-Next comes an abbreviated content standard/data model. examples: WAU:profile:RDA
+								  or, WAU:RT:RDA
+-Next is a term or multiple terms for the contents of the profile or resource template (this can include specific RDF classes or formats of materials being described by the resource and property templates inside). examples: WAU:profile:RDA:monograph 
+						                    or, WAU:RT:RDA:Work:monograph
+-Terms for RDF classes described in resource templates (such as "Work") are always capitalized. Terms for formats described in a profile or resource template (such as "monograph") are controlled by a local schema and are never capitalized.
+
+-Profiles and resource templates also have labels. Labels should exactly mirror ID's, but with spaces in place of colons. examples: "WAU profile RDA monograph" or, "WAU RT RDA Work monograph"

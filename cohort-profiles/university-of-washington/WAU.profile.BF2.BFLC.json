@@ -40,11 +40,11 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/menclvl"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/menclvl"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/menclvl/f",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/menclvl/f",
                                     "defaultLiteral": "full"
                                 }
                             ]
@@ -57,15 +57,15 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/descriptionConventions"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/descriptionConventions"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/rda",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
                                     "defaultLiteral": "Resource Description and Access"
                                 },
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/isbd",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/descriptionConventions/isbd",
                                     "defaultLiteral": "ISBD: International Standard Bibliographic Description"
                                 }
                             ]
@@ -79,12 +79,12 @@
                         "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:names:organization"
+                                "https://id.loc.gov/vocabulary/organizations"
                             ],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/organizations/wau",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
                                     "defaultLiteral": "WAU"
                                 }
                             ]
@@ -97,11 +97,11 @@
                         "repeatable": "false",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/languages"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"},
                             "defaults": [
                                 {
-                                    "defaultURI": "http://id.loc.gov/vocabulary/languages/eng",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/languages/eng",
                                     "defaultLiteral": "English"
                                 }
                             ]
@@ -129,7 +129,7 @@
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/marcauthen"],
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/marcauthen"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication"}
                         }
                     }
