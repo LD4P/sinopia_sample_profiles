@@ -72,6 +72,8 @@
             ],
             "id": "CornellSinatra45:PublicationInformation",
             "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Publication",
             "resourceLabel": "Publication Activity"
         },
@@ -147,6 +149,9 @@
             ],
             "resourceLabel": "Distribution Activity",
             "id": "CornellSinatra45:DistributionInformation",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Distribution"
         },
         {
@@ -219,6 +224,9 @@
             ],
             "id": "CornellSinatra45:ManufactureInformation",
             "resourceLabel": "Manufacture Activity",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Manufacture"
         }
     ],

@@ -2,6 +2,9 @@
     "resourceTemplates": [
         {
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "id": "CornellSinatra45:Agent:Person",
             "resourceLabel": "Person",
             "propertyTemplates": [
@@ -173,6 +176,9 @@
           },
           {
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Family",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "id": "CornellSinatra45:Agent:Family",
             "resourceLabel": "Family",
             "propertyTemplates": [
@@ -361,6 +367,9 @@
         {
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization",
             "id": "CornellSinatra45:Agent:Organization",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceLabel": "Organization",
             "propertyTemplates": [
                 {
@@ -607,6 +616,9 @@
             ],
             "id": "CornellSinatra45:bf2:Agent:Addresses",
             "resourceLabel": "Addresses",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address"
         },
         {
@@ -698,6 +710,9 @@
             ],
             "id": "CornellSinatra45:bf2:Agent:Addresses:Extended",
             "resourceLabel": "Addresses, Extended",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Address"
         },
         {
@@ -734,6 +749,9 @@
             ],
             "resourceLabel": "Related Agents",
             "id": "CornellSinatra45:bf2:Agent:RelatedAgents",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Authority"
         },
         {
@@ -801,6 +819,9 @@
             ],
             "resourceLabel": "Sources Consulted and Cataloger's Notes",
             "id": "CornellSinatra45:bf2:Agent:Source",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Source"
         },
         {
@@ -821,6 +842,9 @@
             }],
             "id": "CornellSinatra45:bf2:Agent:VariantAgents",
             "resourceLabel": "Variant Access Points Representing Agents",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#hasVariant"
         },
         {
@@ -855,6 +879,9 @@
                 }
             ],
             "id": "CornellSinatra45:bf2:Agent:Role",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Role",
             "resourceLabel": "Role"
         },
@@ -890,6 +917,9 @@
                 }
             ],
             "id": "CornellSinatra45:bf2:Agent:Identifier",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#Identifier",
             "resourceLabel": "Identifier"
         },
@@ -910,6 +940,9 @@
             }],
             "id": "CornellSinatra45:bf2:Agent:Note",
             "resourceURI": "http://www.loc.gov/mads/rdf/v1#note",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceLabel": "Note"
         },
         {
@@ -957,6 +990,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:bf2:Agent:RWO:FieldofActivity",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Field of Activity"
             },
@@ -992,6 +1028,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:bf2:Agent:RWO:Dates",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#RWO",
                 "resourceLabel": "Dates"
             },
@@ -1011,6 +1050,9 @@
                 "propertyLabel": "Source of identifier"
             }],
             "id": "CornellSinatra45:bf2:Agent:Identifier:Source",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
+            "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Source",
             "resourceLabel": "Source"
         }

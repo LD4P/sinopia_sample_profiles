@@ -16,6 +16,9 @@
         }],
         "id": "CornellSinatra45:Place",
         "resourceURI": "http://www.geonames.org/ontology#Feature",
+        "author": "Steven Folsom, Cornell University Metadata Librarian",
+        "date": "2019-09-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "resourceLabel": "Place",
         "author": "Steven Folsom, Cornell University Metadata Librarian"
     }],

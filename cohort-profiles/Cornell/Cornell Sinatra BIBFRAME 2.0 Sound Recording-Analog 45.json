@@ -446,6 +446,8 @@
             ],
             "id": "CornellSinatra45:Work",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
             "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
             "resourceLabel": "BIBFRAME Work"
         },
@@ -826,6 +828,8 @@
             ],
             "resourceLabel": "BIBFRAME Instance",
             "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance"
 
         },
@@ -915,6 +919,8 @@
             ],
             "resourceLabel": "BIBFRAME Item",
             "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item"
         },
         {
@@ -969,6 +975,8 @@
             ],
             "id": "CornellSinatra45:SongWork",
             "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
+            "author": "Steven Folsom, Cornell University Metadata Librarian",
+            "date": "2019-09-06",
             "resourceURI": "http://id.loc.gov/ontologies/bibframe/Audio",
             "resourceLabel": "Song"
         }
@@ -978,5 +986,6 @@
     "description": "Work, Expression, Instance for Cornell Analog 45 Recordings",
     "id": "CornellSinatra45:CornellSinatra45",
     "title": "Cornell Sinatra BIBFRAME 2.0 Sound Recording-Analog 45",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "remark": "Derived from https://github.com/lcnetdev/verso/blob/67786e709e2aa207f6605e6a484b69d01acb9a60/data/profiles/BIBFRAME 2.0 Sound Recording-Analog.json"
 }}

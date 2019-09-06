@@ -52,6 +52,9 @@
         ],
         "id": "CornellSinatra45:bflc:RelatedExpression",
         "resourceURI": "http://id.loc.gov/ontologies/bflc/Relationship",
+        "author": "Steven Folsom, Cornell University Metadata Librarian",
+        "date": "2019-09-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "resourceLabel": "Cornell Related Expression"
     }],
     "description": "related expressions based off of LC and Harvard work",

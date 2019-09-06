@@ -53,6 +53,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:Capture",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Capture",
                 "resourceLabel": "Capture information"
             },
@@ -93,6 +96,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:Extent",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Extent",
                 "resourceLabel": "Extent"
             }

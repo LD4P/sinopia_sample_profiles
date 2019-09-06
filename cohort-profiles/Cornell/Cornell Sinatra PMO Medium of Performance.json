@@ -64,6 +64,9 @@
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:DecMed",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceLabel": "Declared Medium of Performance"
             },
             {
@@ -128,6 +131,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:PerfMed",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://performedmusicontology.org/ontology/PerformedMedium",
                 "resourceLabel": "Performed Medium"
             },
@@ -153,6 +159,9 @@
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:MedPart2",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceLabel": "Medium Part/Declared"
             },
             {
@@ -233,6 +242,9 @@
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:MedPart",
                 "resourceURI": "http://performedmusicontology.org/ontology/MediumPart",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceLabel": "Medium Part/Performed"
             },
             {
@@ -286,6 +298,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:MedPerfI1",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://performedmusicontology.org/ontology/IndividualMediumOfPerformance",
                 "resourceLabel": "Individual Medium of Performance"
             },
@@ -325,6 +340,9 @@
                     }
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:MedPerfI2",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceURI": "http://performedmusicontology.org/ontology/EnsembleMediumOfPerformance",
                 "resourceLabel": "Ensemble Medium of Performance"
             },
@@ -375,6 +393,9 @@
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:DecMedTotals",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceLabel": "Medium of Performance: Totaling Counts for the Entire Work",
                 "remark": ""
             },
@@ -473,6 +494,9 @@
                 ],
                 "id": "CornellSinatra45:PMOMedPerf:DecMedTest",
                 "resourceURI": "http://performedmusicontology.org/ontology/DeclaredMedium",
+                "author": "Steven Folsom, Cornell University Metadata Librarian",
+                "date": "2019-09-06",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "resourceLabel": "Declared Medium Test"
             }
         ],

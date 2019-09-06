@@ -1,6 +1,9 @@
 {"Profile": {
     "resourceTemplates": [{
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
+        "author": "Steven Folsom, Cornell University Metadata Librarian",
+        "date": "2019-09-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "id": "CornellSinatra45:Agents:Contribution",
         "resourceLabel": "Contribution",
         "propertyTemplates": [

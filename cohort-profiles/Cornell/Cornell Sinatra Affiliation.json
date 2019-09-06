@@ -46,6 +46,9 @@
             }
         ],
         "id": "CornellSinatra45:AgentAffiliation",
+        "author": "Steven Folsom, Cornell University Metadata Librarian",
+        "date": "2019-09-06",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
         "resourceURI": "http://www.loc.gov/mads/rdf/v1#Affiliation",
         "resourceLabel": "Affiliation"
     }],
