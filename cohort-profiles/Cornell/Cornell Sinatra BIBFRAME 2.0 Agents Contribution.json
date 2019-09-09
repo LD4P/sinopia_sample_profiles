@@ -10,62 +10,39 @@
             {
                 "propertyLabel": "Agent",
                 "valueConstraint": {
-                    "repeatable": "false",
-                    "useValuesFrom": [],
-                    "valueTemplateRefs": [
-                        "CornellSinatra45:Agent:Person",
-                        "CornellSinatra45:Agent:Family",
-                        "CornellSinatra45:Agent:Organization"
-                    ],
-                    "editable": "true",
-                    "defaults": []
+                    "useValuesFrom": ["urn:ld4p:qa:names"]
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
-                "type": "resource",
+                "type": "lookup",
+                "subtype": "context",
                 "mandatory": "false",
-                "repeatable": "false",
-                "resourceTemplates": []
+                "repeatable": "false"
             },
             {
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                 "propertyLabel": "Relationship Designator (RDA Appendix I)",
-                "type": "resource",
+                "type": "lookup",
                 "mandatory": "false",
                 "repeatable": "true",
-                "resourceTemplates": [],
                 "valueConstraint": {
-                    "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Role"],
-                    "useValuesFrom": [],
-                    "editable": "true",
-                    "repeatable": "true",
-                    "defaults": []
+                    "useValuesFrom": ["https://id.loc.gov/vocabulary/relators"]
                 },
                 "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
             },
             {
                 "mandatory": "false",
-                "repeatable": "true",
+                "repeatable": "false",
                 "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                    "valueTemplateRefs": [],
-                    "useValuesFrom": [],
-                    "defaults": [],
-                    "valueDataType": {}
-                },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
                 "propertyLabel": "Contribution date"
             },
             {
                 "mandatory": "false",
                 "repeatable": "true",
-                "type": "resource",
-                "resourceTemplates": [],
+                "type": "lookup",
+                "subtype": "context",
                 "valueConstraint": {
-                    "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Place"],
-                    "useValuesFrom": [],
-                    "defaults": [],
-                    "valueDataType": {}
+                    "useValuesFrom": ["urn:ld4p:qa:geonames"]
                 },
                 "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
                 "propertyLabel": "Contribution place"
@@ -75,6 +52,7 @@
     "author": "Steven Folsom, Cornell University Metadata Librarian",
     "id": "bf2:CornellSinatra45:AgentsContribution",
     "title": "BIBFRAME 2.0 Agents Contribution",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "date": "2019-01-17",
     "description": "Creators and Contributors"
 }}

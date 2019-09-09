@@ -60,6 +60,7 @@
     "description": "related expressions based off of LC and Harvard work",
     "id": "CornellSinatra45:bflc:RelatedExpression",
     "title": "Cornell Sinatra Related Expressions",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "date": "2019-07-29",
     "author": "Steven Folsom, Metadata Librarian, Cornell University"
 }}

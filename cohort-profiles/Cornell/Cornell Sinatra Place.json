@@ -26,5 +26,6 @@
     "title": "Place",
     "date": "2018-12-05",
     "description": "Geonames Place Associated with a Resource",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "author": "Steven Folsom, Metadata Librarian, Cornell University"
 }}

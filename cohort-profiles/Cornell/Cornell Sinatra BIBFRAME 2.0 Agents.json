@@ -1059,6 +1059,7 @@
     ],
     "id": "CornellSinatra45:Agents:Attributes",
     "title": "Cornell Sinatra BIBFRAME 2.0 Agents",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "date": "2018-11-13",
     "description": "Agents are people, organizations, etc., associated with a Work or Instance through roles such as author, editor, artist, photographer, composer, illustrator, etc.",
     "author": "Steven Folsom, Metadata Librarian, Cornell University"

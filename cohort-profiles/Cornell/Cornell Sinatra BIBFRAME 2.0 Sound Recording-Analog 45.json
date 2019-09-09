@@ -987,5 +987,6 @@
     "id": "CornellSinatra45:CornellSinatra45",
     "title": "Cornell Sinatra BIBFRAME 2.0 Sound Recording-Analog 45",
     "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "remark": "Derived from https://github.com/lcnetdev/verso/blob/67786e709e2aa207f6605e6a484b69d01acb9a60/data/profiles/BIBFRAME 2.0 Sound Recording-Analog.json"
 }}

@@ -5,13 +5,8 @@
                 "mandatory": "false",
                 "repeatable": "true",
                 "type": "resource",
-                "resourceTemplates": [],
                 "valueConstraint": {
-                    "valueTemplateRefs": ["CornellSinatra45:Agent:Organization"],
-                    "useValuesFrom": [],
-                    "defaults": [],
-                    "valueDataType": {},
-                    "valueLanguage": ""
+                    "valueTemplateRefs": ["CornellSinatra45:Agent:Organization"]
                 },
                 "propertyURI": "http://www.loc.gov/mads/rdf/v1#organization",
                 "propertyLabel": "Organization"
@@ -20,13 +15,6 @@
                 "mandatory": "false",
                 "repeatable": "false",
                 "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                    "valueTemplateRefs": [],
-                    "useValuesFrom": [],
-                    "defaults": [],
-                    "valueDataType": {}
-                },
                 "propertyLabel": "Affiliation start date",
                 "propertyURI": "http://www.loc.gov/mads/rdf/v1#affiliationStart"
             },
@@ -34,13 +22,6 @@
                 "mandatory": "false",
                 "repeatable": "true",
                 "type": "literal",
-                "resourceTemplates": [],
-                "valueConstraint": {
-                    "valueTemplateRefs": [],
-                    "useValuesFrom": [],
-                    "defaults": [],
-                    "valueDataType": {}
-                },
                 "propertyURI": "http://www.loc.gov/mads/rdf/v1#affiliationEnd",
                 "propertyLabel": "Affiliation end date"
             }
@@ -56,5 +37,6 @@
     "id": "CornellSinatra45:AgentAffiliation",
     "title": "Affiliation",
     "date": "2018-12-05",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "author": "Steven Folsom, Metadata Librarian, Cornell University"
 }}

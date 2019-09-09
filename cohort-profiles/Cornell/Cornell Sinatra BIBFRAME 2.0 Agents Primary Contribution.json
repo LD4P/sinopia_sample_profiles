@@ -3,69 +3,44 @@
         {
             "propertyTemplates": [
                 {
-                    "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [
-                            "CornellSinatra45:Agent:Person",
-                            "CornellSinatra45:Agent:Family",
-                            "CornellSinatra45:Agent:Organization"
-                        ],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "repeatable": "false",
-                        "editable": "false",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
-                    "propertyLabel": "Primary Contributor"
+                  "propertyLabel": "Primary Contributor",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:names"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "mandatory": "false",
+                  "repeatable": "false"
                 },
                 {
-                    "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:bf2:Agent:Role"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "repeatable": "false",
-                        "defaults": [],
-                        "editable": "true"
-                    },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                     "propertyLabel": "Relationship Designator (RDA Appendix I)",
+                    "type": "lookup",
+                    "mandatory": "false",
+                    "repeatable": "true",
+                    "valueConstraint": {
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/relators"]
+                    },
                     "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html"
                 },
                 {
                     "mandatory": "false",
                     "repeatable": "false",
                     "type": "literal",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [],
-                        "useValuesFrom": [],
-                        "defaults": [],
-                        "valueDataType": {}
-                    },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
-                    "propertyLabel": "Contribution date"
+                    "propertyLabel": "Primary contribution date"
                 },
                 {
                     "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
-                    "resourceTemplates": [],
+                    "repeatable": "true",
+                    "type": "lookup",
+                    "subtype": "context",
                     "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:Place"],
-                        "useValuesFrom": [],
-                        "defaults": [],
-                        "valueDataType": {}
+                        "useValuesFrom": ["urn:ld4p:qa:geonames"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
-                    "propertyLabel": "Place of contribution"
+                    "propertyLabel": "Primary contribution place"
                 }
             ],
             "id": "profile:bflc:CornellSinatra45:Agents:PrimaryContribution",
@@ -79,6 +54,7 @@
     "author": "Steven Folsom, Cornell University Metadata Librarian",
     "id": "profile:bflc:CornellSinatra45:PrimaryContribution",
     "title": "BIBFRAME 2.0 Agents Primary Contribution",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
     "description": "Primary Contribution",
     "date": "2019-01-19"
 }}
