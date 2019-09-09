@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-07-16",
+        "date": "2019-09-09",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,27 +11,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                {
-                        "propertyLabel": "Lookup for existing Work",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
-                        },
-                        "uwFormOrder": 0.1,
-                        "statusUw": "attention",
-                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 8/23"],
-                        "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Work",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -91,7 +74,7 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"
+                                "urn:ld4p:qa:names"
                             ]
                         },
                         "uwFormOrder": 234,
@@ -110,7 +93,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -318,7 +300,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -338,7 +319,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -358,7 +338,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -378,7 +357,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -397,7 +375,7 @@
                         "type": "literal",
                         "uwFormOrder": 75,
                         "statusUw": "attention",
-                        "noteUw": ["We need to decide how these will be handled.", "This needs to be a work lookup within Sinopia. The feature is being developed now according to Michelle F. on 2019-07-16"],
+                        "noteUw": ["This needs to be an RDA Work lookup within Sinopia"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -410,7 +388,7 @@
                         "type": "literal",
                         "uwFormOrder": 76,
                         "statusUw": "attention",
-                        "noteUw": ["Lookup to a work in Sinopia, under development as of 2019-07-16"],
+                        "noteUw": ["This needs to be an RDA Work lookup within Sinopia"],
                         "qUw": [],
                         "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -466,7 +444,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -570,7 +547,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -695,7 +671,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -799,7 +774,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -978,7 +952,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -998,7 +971,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1102,7 +1074,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1248,7 +1219,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1352,7 +1322,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1571,7 +1540,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1724,25 +1692,6 @@
                         "usedInProfile": ["monograph"]
                     },
                     {
-                        "propertyLabel": "has colour content of representative expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
-                            "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003"},
-                                {"defaultLiteral": "polychrome"}
-                            ]
-                        },
-                        "uwFormOrder": 27,
-                        "statusUw": "attention RDA",
-                        "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
-                        "qUw": [""],
-                        "usedInProfile": ["dvdVideo"]
-                    },
-                    {
                         "propertyLabel": "has commissioning body agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10287",
                         "mandatory": "false",
@@ -1751,7 +1700,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1855,7 +1803,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -1959,7 +1906,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2063,7 +2009,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2188,7 +2133,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2427,7 +2371,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2531,7 +2474,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2761,7 +2703,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2865,7 +2806,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2885,7 +2825,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "defaultURI": ["http://id.loc.gov/authorities/names/n79054596"],
@@ -2907,7 +2846,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2940,7 +2878,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -2960,7 +2897,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3182,7 +3118,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3308,7 +3243,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3391,7 +3325,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3412,7 +3345,6 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -3437,7 +3369,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3457,7 +3388,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3477,7 +3407,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3625,7 +3554,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3729,7 +3657,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -3898,7 +3825,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 213,
                         "statusUw": "done",
@@ -4043,7 +3970,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4191,7 +4117,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4298,7 +4223,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4402,7 +4326,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4506,7 +4429,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4610,7 +4532,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4630,7 +4551,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4706,7 +4626,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -4897,7 +4816,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 231.5,
                         "statusUw": "done",
@@ -5554,7 +5473,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -5721,7 +5639,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -5847,7 +5764,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -5993,7 +5909,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -8683,7 +8598,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -8963,7 +8877,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9132,7 +9045,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9236,7 +9148,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9256,7 +9167,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9402,7 +9312,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9550,7 +9459,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9698,7 +9606,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -9929,7 +9836,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -10054,7 +9960,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -10192,7 +10097,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -10275,7 +10179,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -10400,7 +10303,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -10843,7 +10745,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 232,
                         "statusUw": "done",
@@ -11494,7 +11396,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -11598,7 +11499,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -11724,7 +11624,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -11909,7 +11808,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -12216,7 +12114,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -12562,27 +12459,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                    {
-                        "propertyLabel": "Lookup for existing Expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
-                        },
-                        "uwFormOrder": 0.2,
-                        "statusUw": "attention",
-                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 9/3"],
-                        "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -12606,7 +12486,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 234,
                         "statusUw": "done",
@@ -12720,7 +12600,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -12888,7 +12767,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13013,7 +12891,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13117,7 +12994,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13287,7 +13163,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13459,7 +13334,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13563,7 +13437,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13667,7 +13540,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13771,7 +13643,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -13875,7 +13746,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -14189,7 +14059,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -14293,7 +14162,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -14396,8 +14264,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                        "useValuesFrom": [ "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
+                        "useValuesFrom": [ "urn:ld4p:qa:names"
                             ]
                         },
                         "uwFormOrder": 233,
@@ -14500,7 +14367,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -14638,7 +14504,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -14743,7 +14608,6 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -14874,7 +14738,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -14978,7 +14841,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                             },
@@ -14998,7 +14860,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -15676,7 +15537,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -16017,7 +15877,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -16121,7 +15980,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -16225,7 +16083,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -16366,7 +16223,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -16470,7 +16326,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -18574,7 +18429,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 129,
                         "statusUw": "done",
@@ -18910,7 +18765,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 299.5,
                         "statusUw": "done",
@@ -19078,7 +18933,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                             },
@@ -19182,7 +19036,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -19430,7 +19283,6 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -19645,7 +19497,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -19749,7 +19600,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -19854,7 +19704,6 @@
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -19963,7 +19812,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20067,7 +19915,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20171,7 +20018,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20363,7 +20209,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20511,7 +20356,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20648,7 +20492,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20773,7 +20616,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -20877,7 +20719,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21047,7 +20888,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21173,7 +21013,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21356,7 +21195,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21459,7 +21297,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 299.7,
                         "statusUw": "done",
@@ -21620,7 +21458,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21724,7 +21561,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21828,7 +21664,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -21932,7 +21767,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -22036,7 +21870,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -22162,7 +21995,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -22266,7 +22098,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -22843,7 +22674,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 288,
                         "statusUw": "done",
@@ -22944,7 +22775,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 289,
                         "statusUw": "done",
@@ -23283,7 +23114,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 291,
                       "statusUw": "done",
@@ -23299,7 +23130,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 292,
                       "statusUw": "done",
@@ -23315,7 +23146,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 293,
                       "statusUw": "done",
@@ -23331,7 +23162,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 294,
                       "statusUw": "done",
@@ -23347,7 +23178,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 295,
                       "statusUw": "done",
@@ -23363,7 +23194,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 296,
                       "statusUw": "done",
@@ -23379,7 +23210,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 297,
                       "statusUw": "done",
@@ -23395,7 +23226,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 298,
                       "statusUw": "done",
@@ -23411,7 +23242,7 @@
                       "type": "lookup",
                         "subtype": "context",
                       "valueConstraint": {
-                          "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                          "useValuesFrom": ["urn:ld4p:qa:names"]
                       },
                       "uwFormOrder": 299,
                       "statusUw": "done",
@@ -23427,7 +23258,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 290,
                         "statusUw": "done",
@@ -23529,7 +23360,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -23850,27 +23680,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                                {
-                        "propertyLabel": "Lookup for existing Manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
-                        },
-                        "uwFormOrder": 0.3,
-                        "statusUw": "attention",
-                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 9/3"],
-                        "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -24230,7 +24043,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 306,
                         "statusUw": "done",
@@ -24331,7 +24144,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 307,
                         "statusUw": "done",
@@ -24432,7 +24245,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 302,
                         "statusUw": "done",
@@ -24533,7 +24346,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 308,
                         "statusUw": "done",
@@ -24690,7 +24503,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 309,
                         "statusUw": "done",
@@ -24965,7 +24778,7 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 114.5,
                         "statusUw": "done",
@@ -26188,7 +26001,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -26505,7 +26317,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 310,
                         "statusUw": "done",
@@ -26619,7 +26431,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 311,
                         "statusUw": "done",
@@ -26880,8 +26692,7 @@
                             "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1002"},
-                                {"defaultLiteral": "text file"},
-                                {"defaultLiteral": "PDF"}
+                                {"defaultLiteral": ["text file", "PDF"]}
                             ]
                         },
                         "uwFormOrder": 109.9,
@@ -26992,7 +26803,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 304,
                         "statusUw": "done",
@@ -27628,7 +27439,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 114.7,
                         "statusUw": "done",
@@ -28078,17 +27889,12 @@
                         "type": "literal",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "https://id.loc.gov/vocabulary/issuance",
                                 "http://rdaregistry.info/termList/ModeIssue"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
                                     "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
-                                    "defaultLiteral": "single unit"
-                                },
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
                                     "defaultLiteral": "single unit"
                                 }
                             ]
@@ -28418,7 +28224,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 312,
                         "statusUw": "done",
@@ -28814,7 +28620,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -29689,7 +29494,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 313,
                         "statusUw": "done",
@@ -30007,7 +29812,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 314,
                         "statusUw": "done",
@@ -30269,7 +30074,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 315,
                         "statusUw": "done",
@@ -30370,7 +30175,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 316,
                         "statusUw": "done",
@@ -30472,7 +30277,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -30576,7 +30380,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -31149,7 +30952,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -31766,27 +31568,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
-                {
-                        "propertyLabel": "Lookup for existing Item",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
-                        },
-                        "uwFormOrder": 0.4,
-                        "statusUw": "attention",
-                        "noteUw": ["This won't work like we thought it would. Suggest removal AKM 9/3"],
-                        "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
-                    },
                     {
                         "propertyLabel": "Administrative Metadata for Item",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
@@ -31831,7 +31616,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 325,
                         "statusUw": "done",
@@ -31890,7 +31675,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 332,
                         "statusUw": "done",
@@ -31907,7 +31692,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 327,
                         "statusUw": "done",
@@ -32262,7 +32047,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 328,
                         "statusUw": "attention",
@@ -32473,7 +32258,7 @@
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -32577,7 +32362,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 329,
                         "statusUw": "attention",
@@ -32678,7 +32463,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 326,
                         "statusUw": "done",
@@ -32695,7 +32480,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 319,
                         "statusUw": "done",
@@ -32817,7 +32602,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 321,
                         "statusUw": "done",
@@ -33004,7 +32789,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 320,
                         "statusUw": "done",
@@ -33105,7 +32890,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 330,
                         "statusUw": "done",
@@ -33206,7 +32991,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 331,
                         "statusUw": "done",
@@ -33308,7 +33093,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ]
                         },
@@ -33750,7 +33534,7 @@
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
+                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
                                     "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
                                 }
                             ]
@@ -34304,7 +34088,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 333,
                         "statusUw": "done",
@@ -34405,7 +34189,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:dbpedia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
                         "uwFormOrder": 322,
                         "statusUw": "done",
@@ -34589,7 +34373,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -41330,7 +41114,6 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
                                 "urn:ld4p:qa:names"
                             ],
                             "valueDataType": {"dataTypeURI": ""},
@@ -56906,7 +56689,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -60375,7 +60158,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -61475,7 +61258,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-07-16",
+                "date": "2019-09-09",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [

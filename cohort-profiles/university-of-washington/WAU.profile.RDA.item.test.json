@@ -385,6 +385,74 @@
                         "type": "literal"
                     }
                 ]
+            },
+            {
+                "id": "WAU:RT:RDA:Item:Barcode",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/Barcode",
+                "resourceLabel": "Barcode",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false", 
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "Barcode"
+                    }
+                ]
+            },
+            {
+                "id": "WAU:RT:RDA:Item:ShelfMarkDdc",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkDdc",
+                "resourceLabel": "DDC call number",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "DDC call number"
+                    }
+                ]
+            },
+            {
+                "id": "WAU:RT:RDA:Item:ShelfMarkLcc",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc",
+                "resourceLabel": "LCC call number",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "LCC call number"
+                    }
+                ]
+            },
+            {
+                "id": "WAU:RT:RDA:Item:ShelfMark",
+                "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark",
+                "resourceLabel": "Shelf Mark",
+                "date": "2019-09-03",
+                "author": "Crystal Clements (cec23@uw.edu)",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "propertyTemplates": [
+                    {
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "literal",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "propertyLabel": "Shelf Mark"
+                    }
+                ]
             }
         ]
     }
