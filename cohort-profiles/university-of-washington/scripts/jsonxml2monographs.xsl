@@ -31,7 +31,7 @@
             </string>
             <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
-            <string key="schema">https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json</string>
+            <string key="schema">https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json</string>
             <array key="resourceTemplates">
                 <xsl:apply-templates select="j:array[@key = 'resourceTemplates']"/>
             </array>
@@ -62,7 +62,7 @@
                 <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
                 <string key="schema"
-                    >https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json</string>
+                    >https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json</string>
                 <array key="propertyTemplates">
                     <xsl:apply-templates select="j:array[@key = 'propertyTemplates']"/>
                 </array>
@@ -95,6 +95,11 @@
                     <string key="type">
                         <xsl:value-of select="j:string[@key = 'type']"/>
                     </string>
+                    <xsl:if test="j:string[@key = 'subtype']/text()">
+                        <string key="subtype">
+                            <xsl:value-of select="j:string[@key = 'subtype']"/>
+                        </string>
+                    </xsl:if>
                     <xsl:if test="j:string[@key = 'remark']/text()">
                         <string key="remark">
                             <xsl:value-of select="j:string[@key = 'remark']"/>
@@ -110,28 +115,30 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="j:map[@key = 'valueConstraint']">
-        <xsl:if test="j:array[@key = 'valueTemplateRefs']/descendant::text()">
+        <xsl:if test="j:array[@key = 'valueTemplateRefs']/j:string/text()">
             <xsl:for-each select="j:array[@key = 'valueTemplateRefs']">
-                <array key="valueTemplateRefs">
-                    <xsl:choose>
-                        <xsl:when test="matches(j:string, 'AdminMetadata')">
-                            <string>
-                                <xsl:value-of select="j:string"/>
-                            </string>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <string>
-                                <xsl:value-of select="concat(j:string, ':monograph')"/>
-                            </string>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </array>
+                <xsl:choose>
+                    <xsl:when test="../../j:string[@key = 'type'] != 'literal'">
+                        <array key="valueTemplateRefs">
+                            <xsl:choose>
+                                <xsl:when test="matches(j:string, 'AdminMetadata')">
+                                    <string>
+                                        <xsl:value-of select="j:string"/>
+                                    </string>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <string>
+                                        <xsl:value-of select="concat(j:string, ':monograph')"/>
+                                    </string>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </array>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">
-            <!-- don't want useValuesFrom, defaultURI values for literal props in the mono profile /
-                BUT keeping them in RDA profile pending addition of RDA QA and change to lookup props /
-                @gerontakos is there a better way to do this here and below? -->
             <xsl:choose>
                 <xsl:when test="../j:string[@key = 'type'] != 'literal'">
                     <xsl:copy-of select="j:array[@key = 'useValuesFrom']"/>
@@ -142,26 +149,21 @@
         <xsl:if test="j:map[@key = 'valueDataType']/descendant::text()">
             <xsl:copy-of select="j:map[@key = 'valueDataType']"/>
         </xsl:if>
-        <xsl:if test="j:array[@key = 'defaults']/descendant::text()">
-            <!-- see comment above -->
-            <xsl:choose>
-                <xsl:when test="../j:string[@key = 'type'] != 'literal'">
-                    <xsl:copy-of select="j:array[@key = 'defaults']"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:for-each select="j:array[@key = 'defaults']">
-                        <j:array key="defaults">
-                            <xsl:for-each select="j:map">
-                                <j:map>
-                                    <j:string key="defaultLiteral">
-                                        <xsl:value-of select="j:string[@key = 'defaultLiteral']"/>
-                                    </j:string>
-                                </j:map>
-                            </xsl:for-each>
-                        </j:array>
-                    </xsl:for-each>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:if>
+        <xsl:for-each select="j:array[@key = 'defaults']">
+            <xsl:if test="descendant::text()">
+                <array key="defaults">
+                    <xsl:if test="j:map/j:string[@key = 'defaultURI']/text()">
+                        <map>
+                            <xsl:copy-of select="j:map/j:string[@key = 'defaultURI']"/>
+                        </map>
+                    </xsl:if>
+                    <xsl:if test="j:map/j:string[@key = 'defaultLiteral']/text()">
+                        <map>
+                            <xsl:copy-of select="j:map/j:string[@key = 'defaultLiteral']"/>
+                        </map>
+                    </xsl:if>
+                </array>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
