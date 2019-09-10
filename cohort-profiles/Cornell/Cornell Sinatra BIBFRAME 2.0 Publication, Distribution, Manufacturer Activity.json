@@ -2,55 +2,32 @@
     "resourceTemplates": [
         {
             "propertyTemplates": [
-                {
-                    "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:Place"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "repeatable": "true",
-                        "editable": "true",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
-                    "propertyLabel": "Place",
-                    "remark": ""
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [
-                          "CornellSinatra45:Agent:Person",
-                          "CornellSinatra45:Agent:Family",
-                          "CornellSinatra45:Agent:Organization"
-                      ],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "repeatable": "true",
-                        "editable": "true",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
-                    "propertyLabel": "Agent",
-                    "remark": ""
-                },
+              {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:geonames"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+                  "propertyLabel": "Place of Publication"
+              },
+              {
+                  "propertyLabel": "Publisher",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:names"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "mandatory": "false",
+                  "repeatable": "false"
+              },
                 {
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "literal",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
                     "propertyLabel": "Date (RDA 2.8.6)",
                     "remark": "http://access.rdatoolkit.org/2.8.6.html"
@@ -59,12 +36,8 @@
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "resource",
-                    "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
-                        "useValuesFrom": [],
-                        "defaults": [],
-                        "valueDataType": {}
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                     "propertyLabel": "Note about publisher"
@@ -79,55 +52,32 @@
         },
         {
             "propertyTemplates": [
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:Place"],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "repeatable": "true",
-                        "editable": "true",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
-                    "propertyLabel": "Place",
-                    "remark": ""
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [
-                          "CornellSinatra45:Agent:Person",
-                          "CornellSinatra45:Agent:Family",
-                          "CornellSinatra45:Agent:Organization"
-                      ],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "repeatable": "true",
-                        "editable": "true",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
-                    "propertyLabel": "Agent",
-                    "remark": ""
-                },
+              {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:geonames"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+                  "propertyLabel": "Place of Distribution"
+              },
+              {
+                  "propertyLabel": "Distributor",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:names"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "mandatory": "false",
+                  "repeatable": "false"
+              },
                 {
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "literal",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
                     "propertyLabel": "Date (RDA 2.9.6)",
                     "remark": "http://access.rdatoolkit.org/2.9.6.html"
@@ -136,12 +86,8 @@
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "resource",
-                    "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
-                        "useValuesFrom": [],
-                        "defaults": [],
-                        "valueDataType": {}
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                     "propertyLabel": "Note about distributor"
@@ -156,53 +102,32 @@
         },
         {
             "propertyTemplates": [
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:Place"],
-                        "useValuesFrom": [],
-                        "repeatable": "true",
-                        "editable": "true",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
-                    "propertyLabel": "Place",
-                    "remark": ""
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [
-                          "CornellSinatra45:Agent:Person",
-                          "CornellSinatra45:Agent:Family",
-                          "CornellSinatra45:Agent:Organization"
-                      ],
-                        "useValuesFrom": [],
-                        "repeatable": "true",
-                        "editable": "true",
-                        "defaults": []
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
-                    "propertyLabel": "Agent",
-                    "remark": ""
-                },
+              {
+                  "mandatory": "false",
+                  "repeatable": "true",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:geonames"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+                  "propertyLabel": "Place of Manufacturing"
+              },
+              {
+                  "propertyLabel": "Manufacturer",
+                  "valueConstraint": {
+                      "useValuesFrom": ["urn:ld4p:qa:names"]
+                  },
+                  "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+                  "type": "lookup",
+                  "subtype": "context",
+                  "mandatory": "false",
+                  "repeatable": "false"
+              },
                 {
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "literal",
-                    "resourceTemplates": [],
-                    "valueConstraint": {
-                        "valueTemplateRefs": [],
-                        "useValuesFrom": [],
-                        "valueDataType": {},
-                        "defaults": []
-                    },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
                     "propertyLabel": "Date (RDA 2.10.6)",
                     "remark": "http://access.rdatoolkit.org/2.10.6.html"
@@ -211,12 +136,8 @@
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "resource",
-                    "resourceTemplates": [],
                     "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"],
-                        "useValuesFrom": [],
-                        "defaults": [],
-                        "valueDataType": {}
+                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Note"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                     "propertyLabel": "Note about manufacturer"
