@@ -148,8 +148,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/maudience"],
-                        "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/IntendedAudience"}
+                        "useValuesFrom": ["http://id.loc.gov/vocabulary/maudience"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/intendedAudience",
                     "propertyLabel": "Intended Audience (RDA 7.7)",
@@ -200,7 +199,7 @@
                             ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/tableOfContents",
-                        "propertyLabel": "Contents (LC-PCC PS 25.1)"
+                        "propertyLabel": "Table of Contents Note (LC-PCC PS 25.1)"
                     },
                 {
                     "mandatory": "false",
@@ -217,7 +216,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/contentTypes"],
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/contentTypes"],
                         "defaults": [{
                             "defaultURI": "http://id.loc.gov/vocabulary/contentTypes/prm",
                             "defaultLiteral": "performed music"
@@ -400,7 +399,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/issuance"],
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
                         "defaults": [{
                             "defaultURI": "http://id.loc.gov/vocabulary/issuance/mono",
                             "defaultLiteral": "single unit"
@@ -453,8 +452,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mediaTypes"],
-                        "valueDataType": {
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
                         "defaults": [{
                             "defaultURI": "http://id.loc.gov/vocabulary/mediaTypes/s",
                             "defaultLiteral": "audio"
@@ -462,15 +460,14 @@
                     },
                     "mandatory": "false",
                     "remark": "http://access.rdatoolkit.org/3.2.html"
-                }
-              },
+                },
                 {
                     "propertyLabel": "Carrier Type (RDA 3.3)",
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/carriers"],
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
                         "defaults": [{
                             "defaultURI": "http://id.loc.gov/vocabulary/carriers/sd",
                             "defaultLiteral": "audio disc"
@@ -492,13 +489,6 @@
                 {
                     "propertyLabel": "Dimensions (RDA 3.5)",
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/dimensions",
-                    "valueConstraint": {
-                        "valueDataType": {
-                            "dataTypeLabelHint": "7 in."
-                        },
-                        "editable": "true",
-                        "repeatable": "false"
-                    },
                     "mandatory": "false",
                     "repeatable": "false",
                     "type": "literal",
@@ -520,8 +510,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mmaterial"],
-                        "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AppliedMaterial"}
+                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mmaterial"]
                     },
                     "propertyLabel": "Applied Material (RDA 3.7)",
                     "remark": "http://access.rdatoolkit.org/3.7.html",
