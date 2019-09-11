@@ -6,6 +6,7 @@
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "lookup",
+                    "subtype": "context",
                     "valueConstraint": {
                         "useValuesFrom": ["urn:discogs"]
                     },
@@ -238,22 +239,13 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
+                    "subtype"
                     "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:RelatedWork"]
+                        "useValuesFrom": ["urn:discogs"]
                     },
-                    "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
+                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/relatedTo",
                     "propertyLabel": "Related Works"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:bflc:RelatedExpression"]
-                    },
-                    "propertyLabel": "Related Expressions",
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasExpression"
                 },
                 {
                     "mandatory": "false",
