@@ -2,7 +2,7 @@
   "Profile": {
     "resourceTemplates": [
       {
-        "author": "Erik Radio (erik.radio@colorado.edu)",
+        "author": "CU Boulder",
         "date": "2017-05-20",
         "id": "cub:profile:bf2:gisWork",
         "propertyTemplates": [
@@ -32,22 +32,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "sinopia:resourceTemplate:bf2:Graphics:StatementOfResponsibility"
-              ],
-              "useValuesFrom": [],
-              "defaults": []
-            }
-          },
-          {
-            "mandatory": "false",
-            "propertyLabel": "Creator(s)",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
-            "repeatable": "true",
-            "resourceTemplates": [],
-            "type": "resource",
-            "valueConstraint": {
-
-              "valueTemplateRefs": [
-                "sinopia:resourceTemplate:bflc:Agents:PrimaryContribution"
               ],
               "useValuesFrom": [],
               "defaults": []
@@ -95,17 +79,9 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "sinopia:resourceTemplate:bf2:Cartographic:Attributes"
-              ],
-              "useValuesFrom": [
-                ""
-              ],
-              "defaults": [
-                {
-                  "defaultURI": "",
-                  "defaultLiteral": ""
-                }
               ]
             }
+
           },
           {
             "mandatory": "false",
@@ -157,7 +133,7 @@
             "propertyLabel": "Content Type",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/content",
             "repeatable": "true",
-            "type": "lookup",
+            "type": "literal",
             "valueConstraint": {
               "defaults": [
                 {
@@ -193,7 +169,7 @@
             "propertyLabel": "Media Type",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
             "repeatable": "false",
-            "type": "lookup",
+            "type": "literal",
             "valueConstraint": {
               "defaults": [
                 {
@@ -337,7 +313,7 @@
         "resourceLabel": "GIS - Digital Instance",
         "remark": "Describes digital components of digitized image",
         "id": "cub:Profile:GIS:Instance",
-        "author": "Erik Radio (erik.radio@colorado.edu)",
+        "author": "CU Boulder",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       },
       {
@@ -353,7 +329,6 @@
               ],
               "useValuesFrom": [],
               "defaults": []
-
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
             "propertyLabel": "Electronic location"
@@ -379,7 +354,7 @@
         "id": "cub:Profile:GIS:digitalItem",
         "resourceLabel": "GIS - Digital Item",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
-        "author": "Erik Radio (erik.radio@colorado.edu)",
+        "author": "CU Boulder",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       }
     ],
