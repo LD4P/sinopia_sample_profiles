@@ -34,7 +34,7 @@
                         "valueTemplateRefs": [
                             "sinopia:resourceTemplate:bf2:WorkTitle",
                             "sinopia:resourceTemplate:bf2:WorkVariantTitle",
-                            "profile:bflc:TranscribedTitle"
+                            "ld4p:RT:bflc:TranscribedTitle"
                         ]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
@@ -69,9 +69,10 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
+                    "subtype": "context",
                     "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:Place"]
+                        "useValuesFrom": ["urn:ld4p:qa:geonames"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
                     "propertyLabel": "Place of Origin of the Work (RDA 6.5)",
@@ -86,46 +87,6 @@
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/musicMedium",
                     "propertyLabel": "Medium of Performance Statement"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["CornellSinatra45:PMOMedPerf:PerfMed"]
-                    },
-                    "propertyLabel": "Performed Medium",
-                    "propertyURI": "http://performedmusicontology.org/ontology/hasMedium"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPInstrument"]
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/instrument",
-                    "propertyLabel": "Medium of Performance - Instrument"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPVoice"]
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/voice",
-                    "propertyLabel": "Medium of Performance - Voice"
-                },
-                {
-                    "mandatory": "false",
-                    "repeatable": "true",
-                    "type": "resource",
-                    "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:MOPEnsemble"]
-                    },
-                    "propertyURI": "http://id.loc.gov/ontologies/bibframe/ensemble",
-                    "propertyLabel": "Medium of Performance - Ensemble"
                 },
                 {
                     "mandatory": "false",
@@ -148,7 +109,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/maudience"]
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/maudience"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/intendedAudience",
                     "propertyLabel": "Intended Audience (RDA 7.7)",
@@ -157,12 +118,12 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "valueConstraint": {
-                        "valueTemplateRefs": [
-                            "sinopia:resourceTemplate:bf2:TopicSearch",
-                            "sinopia:resourceTemplate:bf2:Components",
-                            "sinopia:resourceTemplate:bf2:TopicInput"
+                        "useValuesFrom": [
+                            "urn:ld4p:qa:subjects",
+                            "urn:ld4p:qa:names",
+                            "urn:ld4p:qa:geonames"
                         ]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
@@ -229,9 +190,9 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "lookup",
                     "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:Language2"]
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/language",
                     "propertyLabel": "Language"
@@ -499,7 +460,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mmaterial"]
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"]
                     },
                     "propertyLabel": "Base Material (RDA 3.6)",
                     "remark": "http://access.rdatoolkit.org/3.6.html",
@@ -510,7 +471,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mmaterial"]
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"]
                     },
                     "propertyLabel": "Applied Material (RDA 3.7)",
                     "remark": "http://access.rdatoolkit.org/3.7.html",
@@ -531,7 +492,7 @@
                     "repeatable": "true",
                     "type": "lookup",
                     "valueConstraint": {
-                        "useValuesFrom": ["http://id.loc.gov/vocabulary/mgeneration"]
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/mgeneration"]
                     },
                     "propertyLabel": "Recording Generation (RDA 3.10)",
                     "remark": "http://access.rdatoolkit.org/3.10.html",

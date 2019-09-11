@@ -7,14 +7,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPart2"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMediumPart",
                         "propertyLabel": "has Medium Part"
@@ -23,13 +19,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
                         "propertyLabel": "Total Distinct Part Count"
                     },
@@ -37,13 +26,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
                         "propertyLabel": "Total Required Performer Count"
                     },
@@ -51,13 +33,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
                         "propertyLabel": "Total Ensemble Count"
                     }
@@ -75,14 +50,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPart"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMediumPart",
                         "propertyLabel": "has Medium Part"
@@ -91,13 +62,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
                         "propertyLabel": "has Distinct Part Count"
                     },
@@ -105,13 +69,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
                         "propertyLabel": "has Ensemble Count"
                     },
@@ -119,13 +76,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasPerformerCount",
                         "propertyLabel": "Performer Count"
                     }
@@ -143,15 +93,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPerfI1",
                                 "CornellSinatra45:PMOMedPerf:MedPerfI2"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMediumOfPerformance",
                         "propertyLabel": "has Medium of Performance"
@@ -170,15 +116,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPerfI1",
                                 "CornellSinatra45:PMOMedPerf:MedPerfI2"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMediumOfPerformance",
                         "propertyLabel": "has Medium of Performance"
@@ -187,13 +129,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
                         "propertyLabel": "has Distinct Part Count"
                     },
@@ -201,13 +136,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
                         "propertyLabel": "has Required Performer Count"
                     },
@@ -215,13 +143,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
                         "propertyLabel": "has Ensemble Count"
                     },
@@ -229,13 +150,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasPerformerCount",
                         "propertyLabel": "has Performer Count"
                     }
@@ -253,17 +167,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "target",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "http://id.loc.gov/authorities/performanceMediums"
+                                "urn:ld4p:qa:performance"
                             ],
                             "valueDataType": {
-                                "dataTypeURI": "http://performedmusicontology.org/ontology/IndividualInstrument",
-                                "remark": ""
-                            },
-                            "defaults": []
+                                "dataTypeURI": "http://performedmusicontology.org/ontology/IndividualInstrument"
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Individual Instrument or Voice"
@@ -272,13 +182,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
                         "propertyLabel": "Distinct Part Count"
                     },
@@ -286,13 +189,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
                         "propertyLabel": "Required Performer Count"
                     }
@@ -310,16 +206,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "target",
-                        "resourceTemplates": [],
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
                             "useValuesFrom": [
-                                "http://id.loc.gov/authorities/performanceMediums"
+                                "urn:ld4p:qa:performance"
                             ],
                             "valueDataType": {
                                 "dataTypeURI": "http://performedmusicontology.org/ontology/InstrumentEnsemble"
-                            },
-                            "defaults": []
+                            }
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
                         "propertyLabel": "Ensemble"
@@ -328,13 +221,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
                         "propertyLabel": "has Ensemble Count"
                     }
@@ -352,13 +238,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
                         "propertyLabel": "has Distinct Part Count"
                     },
@@ -366,13 +245,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
                         "propertyLabel": "has Required Part Count"
                     },
@@ -380,13 +252,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
                         "propertyLabel": "has Ensemble Count"
                     }
@@ -396,8 +261,7 @@
                 "author": "Steven Folsom, Cornell University Metadata Librarian",
                 "date": "2019-09-06",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
-                "resourceLabel": "Medium of Performance: Totaling Counts for the Entire Work",
-                "remark": ""
+                "resourceLabel": "Medium of Performance: Totaling Counts for the Entire Work"
             },
             {
                 "propertyTemplates": [
@@ -405,14 +269,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPart2"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasMediumPart",
                         "propertyLabel": "has Medium Part"
@@ -421,14 +281,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPart2"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/alternateMediumOfPerformance",
                         "propertyLabel": "OR has Alternate Medium Part"
@@ -437,14 +293,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "CornellSinatra45:PMOMedPerf:MedPart2"
-                            ],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
+                            ]
                         },
                         "propertyLabel": "OR has Doubling Medium Part",
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDoublingMediumOfPerformance"
@@ -453,13 +305,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasDistinctPartCount",
                         "propertyLabel": "Total Distinct Part Count"
                     },
@@ -467,13 +312,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasRequiredPerformerCount",
                         "propertyLabel": "Total Required Performer Count"
                     },
@@ -481,13 +319,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {},
-                            "defaults": []
-                        },
                         "propertyURI": "http://performedmusicontology.org/ontology/hasEnsembleCount",
                         "propertyLabel": "Total Ensemble Count"
                     }

@@ -6,15 +6,10 @@
                     {
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
-                        "resourceTemplates": [],
+                        "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "valueTemplateRefs": [
-                                "CornellSinatra45:Place"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
+                            "useValuesFrom": ["urn:ld4p:qa:geonames"]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
                         "propertyLabel": "Place of Capture (RDA 7.11.2)",
@@ -24,13 +19,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
-                        },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
                         "propertyLabel": "Date of Capture (RDA 7.11.3)",
                         "remark": "http://access.rdatoolkit.org/7.11.3.html"
@@ -39,14 +27,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "sinopia:resourceTemplate:bf2:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Capture note"
@@ -65,15 +49,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "resourceTemplates": [],
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {
-                              "dataTypeLabelHint": "1 audio disc"
-                            }
-                        },
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "propertyLabel": "Extent (RDA 3.4)",
                         "remark": "http://access.rdatoolkit.org/3.4.html"
@@ -82,14 +57,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
                                 "sinopia:resourceTemplate:bf2:Note"
-                            ],
-                            "useValuesFrom": [],
-                            "defaults": [],
-                            "valueDataType": {}
+                            ]
                         },
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
                         "propertyLabel": "Note on extent"
