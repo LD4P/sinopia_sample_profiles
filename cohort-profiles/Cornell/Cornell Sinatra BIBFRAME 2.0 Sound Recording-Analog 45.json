@@ -240,7 +240,7 @@
                     "mandatory": "false",
                     "repeatable": "true",
                     "type": "lookup",
-                    "subtype"
+                    "subtype": "context",
                     "valueConstraint": {
                         "useValuesFrom": ["urn:discogs"]
                     },
