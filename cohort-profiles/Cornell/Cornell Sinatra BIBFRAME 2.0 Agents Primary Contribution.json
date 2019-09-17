@@ -16,7 +16,7 @@
                 {
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
                     "propertyLabel": "Relationship Designator (RDA Appendix I)",
-                    "type": "lookup",
+                    "type": "list",
                     "mandatory": "false",
                     "repeatable": "true",
                     "valueConstraint": {

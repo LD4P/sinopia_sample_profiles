@@ -108,7 +108,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/maudience"]
                     },
@@ -176,7 +176,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/contentTypes"],
                         "defaults": [{
@@ -191,7 +191,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
                     },
@@ -350,7 +350,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/issuance"],
                         "defaults": [{
@@ -403,7 +403,7 @@
                     "propertyLabel": "Media type (RDA 3.2)",
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/media",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/mediaTypes"],
                         "defaults": [{
@@ -418,7 +418,7 @@
                     "propertyLabel": "Carrier Type (RDA 3.3)",
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/carrier",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/carriers"],
                         "defaults": [{
@@ -450,7 +450,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"]
                     },
@@ -461,7 +461,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/mmaterial"]
                     },
@@ -472,9 +472,9 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "resource",
+                    "type": "list",
                     "valueConstraint": {
-                        "valueTemplateRefs": ["sinopia:resourceTemplate:bf2:ProdMeth"]
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/mproduction"]
                     },
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/productionMethod",
                     "propertyLabel": "Production Method"
@@ -482,7 +482,7 @@
                 {
                     "mandatory": "false",
                     "repeatable": "true",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/mgeneration"]
                     },
@@ -539,7 +539,7 @@
                 {
                     "propertyLabel": "Held by",
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
-                    "type": "lookup",
+                    "type": "list",
                     "valueConstraint": {
                         "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                         "defaults": [{
