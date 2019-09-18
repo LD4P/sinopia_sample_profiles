@@ -492,16 +492,17 @@
                 },
                 {
                     "mandatory": "false",
-                    "repeatable": "false",
-                    "type": "resource",
+                    "repeatable": "true",
+                    "type": "list",
                     "valueConstraint": {
-                        "valueTemplateRefs": [
-                            "sinopia:resourceTemplate:bf2:TypeRec",
-                            "sinopia:resourceTemplate:bf2:RecMedium",
-                            "sinopia:resourceTemplate:bf2:PlayingSpeed",
-                            "sinopia:resourceTemplate:bf2:Analog:Sound6",
-                            "sinopia:resourceTemplate:bf2:Playback",
-                            "sinopia:resourceTemplate:bf2:SpecPlayback"
+                        "useValuesFrom": [
+                          "https://id.loc.gov/vocabulary/mrectype",
+                          "https://id.loc.gov/vocabulary/mrecmedium",
+                          "https://id.loc.gov/vocabulary/mgroove",
+                          "https://id.loc.gov/vocabulary/mplayspeed",
+                          "https://id.loc.gov/vocabulary/mplayback",
+                          "http://id.loc.gov/vocabulary/mspecplayback",
+                          "https://id.loc.gov/vocabulary/mcapturestorage"
                         ]
                     },
                     "propertyLabel": "Sound Characteristics",
