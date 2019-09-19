@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-09",
+        "date": "2019-09-11",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -37,7 +37,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10407",
                         "mandatory": "",
                         "repeatable": "",
-                        "type": "",  
+                        "type": "",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
                             "useValuesFrom": [],
@@ -1528,7 +1528,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/7.7.html"
                     },
                     {
@@ -1681,15 +1681,15 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27,
-                        "statusUw": "attention RDA",
-                        "noteUw": ["RDA Registry hasn't yet been added to QA. Crystal has been bugging them about it and it should happen sometime soon as of 2019-07-16"],
+                        "statusUw": "done",
+                        "noteUw": [""],
                         "qUw": [""],
-                        "usedInProfile": ["monograph"]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has commissioning body agent (RDA 18.5)",
@@ -4559,7 +4559,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["monograph"],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"  
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "has ISSN",
@@ -4893,20 +4893,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
                         "uwFormOrder": 336.5,
-                        "statusUw": "",
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "has related collective agent of work",
@@ -6974,7 +6965,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus/"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         },
                         "uwFormOrder": 26,
                         "statusUw": "",
@@ -7033,20 +7024,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
                         "uwFormOrder": 336,
                         "statusUw": "attention",
-                        "noteUw": ["Under development currently as of 2019-07-16. We will know where to point this lookup soon."],
+                        "noteUw": ["Under development currently as of 2019-07-16. We will know where to point this as a lookup soon."],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "is catalogue of work (RDA 24.5)",
@@ -7453,16 +7435,16 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         },
                         "uwFormOrder": 747,
                         "statusUw": "attention WEMI",
-                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.", 
-                        "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet.", 
+                        "noteUw": ["We need to add a lookup to the expression RT that will look for expressions somewhere. Wherever they get stored.",
+                        "We also need to have something like this property for related works, manifestations, items for cases where the thing that is related to the thing being described hasn't been cataloged in Sinopia yet.",
                         "Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.5.html"
                     },
                     {
@@ -7706,7 +7688,7 @@
                         "type": "",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": [],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -10085,7 +10067,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/24.6.html"
                     },
                     {
@@ -11166,27 +11148,15 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
+                        "type": "resource",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names",
-                                "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:mesh",
-                                "urn:ld4p:qa:dbpedia"
-                            ],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
+                            "valueTemplateRefs": ["WAU:RT:MADSRDF:complexSubject", "WAU:RT:MADSRDF:simpleSubject"]
+                          },
                         "uwFormOrder": 683,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["do our own MADS profile? Just use LC's subject resource templates here?","If we don't want to accept any and all changes LC makes to their RT's in the future, we might need to clone them if we go that route"],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "qUw": ["do our own MADS profile"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/23.5.html"
                     },
                     {
@@ -11365,7 +11335,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:place"]
                         },
                         "uwFormOrder": 17,
                         "statusUw": "",
@@ -12459,7 +12429,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -17457,14 +17427,14 @@
                         "subtype": "context",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         },
                         "uwFormOrder": 748,
                         "statusUw": "attention WEMI",
                         "noteUw": ["We need to add a lookup to the manifestation RT that will look for manifestations somewhere. Wherever they get stored.","Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.9.html"
                     },
                     {
@@ -18527,20 +18497,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
                         "uwFormOrder": 336.6,
-                        "statusUw": "attention 7/5/19",
+                        "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"]
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
                     },
                     {
                         "propertyLabel": "has related work of expression",
@@ -18771,7 +18732,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -19239,10 +19200,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20228",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["http://rdaregistry.info/termList/scale"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/scale"]
                         },
                         "uwFormOrder": 126.5,
                         "statusUw": "attention RDA",
@@ -20892,10 +20853,10 @@
                             ]
                         },
                         "uwFormOrder": 251,
-                        "statusUW": "attention",
-                        "noteUw": ["It looks like they're turning illustrations into their own entities, separate from expressions but related. The version of RDA we're using currently doesn't make this distinction (according to current RDA toolkit). So, we should use the deprecated property here and consult Adam to double-check"],
+                        "statusUW": "done",
+                        "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -21157,7 +21118,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mrelief"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mrelief"]
                         },
                         "uwFormOrder": 124.42,
                         "statusUw": "done",
@@ -21303,7 +21264,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "map"]
                     },
                     {
                         "propertyLabel": "has reviser collective agent",
@@ -22284,9 +22245,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"]
                         },
                         "uwFormOrder": 27.5,
                         "statusUw": "attention RDA",
@@ -22300,9 +22261,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003"},
                                 {"defaultLiteral": "polychrome"}
@@ -22364,9 +22325,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20061",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/TacNotation"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/TacNotation"]
                         },
                         "uwFormOrder": 124.2,
                         "statusUw": "attention RDA",
@@ -22406,9 +22367,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
                                 {"defaultLiteral": "text"}
@@ -22426,9 +22387,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1023"},
                                 {"defaultLiteral": "two-dimensional moving image"}
@@ -22446,9 +22407,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                              "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1002"},
                                 {"defaultLiteral": "cartographic image"}
@@ -22557,7 +22518,7 @@
                         "type": "lookup",
                         "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://id.loc.gov/vocabulary/mprojection"]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mprojection"]
                         },
                         "uwFormOrder": 124.43,
                         "statusUw": "done",
@@ -22781,7 +22742,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -23007,9 +22968,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20290",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/AspectRatio"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/AspectRatio"]
                         },
                         "uwFormOrder": 126.2,
                         "statusUw": "attention RDA",
@@ -23119,8 +23080,8 @@
                       "uwFormOrder": 291,
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
-                      "usedInProfile": ["monograph", "dvdVideo"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "usedInProfile": ["monograph", "dvdVideo", "map"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of added commentary (RDA 18.5)",
@@ -23136,7 +23097,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph", "dvdVideo"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of added text (RDA 18.5)",
@@ -23151,8 +23112,8 @@
                       "uwFormOrder": 293,
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
-                      "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "usedInProfile": ["monograph", "map"],
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of added lyrics (RDA 18.5)",
@@ -23168,7 +23129,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of afterword (RDA 18.5)",
@@ -23184,7 +23145,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of foreword (RDA 18.5)",
@@ -23200,7 +23161,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of introduction (RDA 18.5)",
@@ -23216,7 +23177,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of postface (RDA 18.5)",
@@ -23232,7 +23193,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                       "propertyLabel": "has writer of preface (RDA 18.5)",
@@ -23248,7 +23209,7 @@
                       "statusUw": "done",
                       "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                       "usedInProfile": ["monograph"],
-                      "remark": "http://access.rdatoolkit.org/18.5.html"  
+                      "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "has visual effects provider agent (RDA 18.5)",
@@ -23680,7 +23641,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -23716,7 +23677,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                             "defaults": [
@@ -23758,7 +23719,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"],
                             "defaults": [
@@ -23943,9 +23904,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30199",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/fontSize"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/fontSize"]
                         },
                         "uwFormOrder": 109,
                         "statusUw": "attention RDA",
@@ -23981,9 +23942,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30197",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/bookFormat"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/bookFormat"]
                             },
                         "uwFormOrder": 108,
                         "statusUw": "attention RDA",
@@ -24150,7 +24111,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26008,7 +25969,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/21.4.html"
                     },
                     {
@@ -26323,7 +26284,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26437,7 +26398,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -26616,9 +26577,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30186",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMaterial"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMaterial"]
                         },
                         "uwFormOrder": 104,
                         "statusUw": "attention RDA",
@@ -26667,9 +26628,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1006"},
                                 {"defaultLiteral": "video file"}
@@ -26687,9 +26648,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1002"},
                                 {"defaultLiteral": ["text file", "PDF"]}
@@ -26707,9 +26668,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"]
                         },
                         "uwFormOrder": 109.9,
                         "statusUw": "attention RDA",
@@ -26758,9 +26719,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
                         "mandatory": "true",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/typeRec"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/typeRec"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/typeRec/1002"},
                                 {"defaultLiteral": "digital"}
@@ -27053,9 +27014,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30191",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAGeneration"]
                         },
                         "uwFormOrder": 106,
                         "statusUw": "attention RDA",
@@ -27181,9 +27142,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"]
                         },
                         "uwFormOrder": 105,
                         "statusUw": "attention RDA",
@@ -27197,9 +27158,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30187",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAproductionMethod/1017"},
                                 {"defaultLiteral": "stamping"}
@@ -27322,9 +27283,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008"},
                                 {"defaultLiteral": "volume"}
@@ -27342,9 +27303,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1060"},
                                 {"defaultLiteral": "videodisc"}
@@ -27362,9 +27323,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1018"},
                                 {"defaultLiteral": "online resource"}
@@ -27382,9 +27343,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30001",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1048"},
                                 {"defaultLiteral": "sheet"}
@@ -27516,20 +27477,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
                         "uwFormOrder": 336.7,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "etd"]
+                        "usedInProfile": ["monograph", "etd", "dvdVideo", "map"]
                     },
                     {
                         "propertyLabel": "has related collective agent of manifestation",
@@ -27886,10 +27838,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30003",
                         "mandatory": "false",
                         "repeatable": "false",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "http://rdaregistry.info/termList/ModeIssue"
+                            "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"
+                                
                             ],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
@@ -28009,27 +27961,18 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {"defaultURI": ""},
-                                {"defaultLiteral": ""}
-                            ]
-                        },
                         "uwFormOrder": 336.8,
                         "statusUw": "attention",
                         "noteUw": [],
-                        "qUw": ["how will URI-to-URI relationships work in Sinopia?"],
-                        "usedInProfile": ["monograph", "etd"]
+                        "qUw": [""],
+                        "usedInProfile": ["monograph", "etd", "dvdVideo", "map"]
                     },
                     {
                         "propertyLabel": "has media type (RDA 3.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
@@ -28049,9 +27992,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1008"},
                                 {"defaultLiteral": "video"}
@@ -28069,9 +28012,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1003"},
                                 {"defaultLiteral": "computer"}
@@ -28230,7 +28173,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -28627,7 +28570,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/21.5.html"
                     },
                     {
@@ -29230,7 +29173,7 @@
                         "statusUw": "attention WEMI",
                         "noteUw": ["Lookup pointed to dummy urn to allow for URI typing in Sinopia."],
                         "qUw": ["Can we put two dataTypeURI's in?", "As with works, expressions, and manifestations, we will need to put in a lookup to find already-cataloged entities. We need a place to point those lookups though."],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/17.11.html"
                     },
                     {
@@ -29500,9 +29443,9 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },  
+                    },
                     {
                         "propertyLabel": "has papermaker collective agent",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30393",
@@ -29818,7 +29761,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -29910,9 +29853,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30184",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/configPlayback"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/configPlayback"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/configPlayback/1002"},
                                 {"defaultLiteral": "stereo"}
@@ -29952,9 +29895,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30196",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAPolarity"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAPolarity"]
                         },
                         "uwFormOrder": 109.5,
                         "statusUw": "attention RDA",
@@ -30033,9 +29976,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30163",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/presFormat"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/presFormat"]
                         },
                         "uwFormOrder": 109.6,
                         "statusUw": "attention RDA",
@@ -30080,7 +30023,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -30284,7 +30227,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/21.2.html"
                     },
                     {
@@ -30387,7 +30330,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd"],
+                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"],
                         "remark": "http://access.rdatoolkit.org/21.3.html"
                     },
                     {
@@ -30479,9 +30422,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30006",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDARegionalEncoding"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDARegionalEncoding"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDARegionalEncoding/1002"},
                                 {"defaultLiteral": "region 1"}
@@ -30662,9 +30605,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30206",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/recMedium"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/recMedium"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/recMedium/1003"},
                                 {"defaultLiteral": "optical"}
@@ -30852,9 +30795,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/specPlayback"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/specPlayback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
@@ -30906,9 +30849,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30123",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/broadcastStand"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/broadcastStand"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/broadcastStand/1002"},
                                 {"defaultLiteral": "NTSC"}
@@ -30959,7 +30902,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -31178,10 +31121,10 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30182",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
                             "valueTemplateRefs": [],
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierEU"],
                             "valueDataType": {"dataTypeURI": ""},
                             "defaults": [
                                 {"defaultURI": ""},
@@ -31344,9 +31287,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30155",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/layout"]
                         },
                         "uwFormOrder": 107,
                         "statusUw": "attention RDA",
@@ -31463,9 +31406,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30104",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/videoFormat"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/videoFormat"]
                         },
                         "uwFormOrder": 109.7,
                         "statusUw": "attention RDA",
@@ -31568,7 +31511,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -31622,7 +31565,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -31681,7 +31624,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -31698,7 +31641,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32368,7 +32311,7 @@
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32469,7 +32412,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32486,7 +32429,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32608,7 +32551,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32795,7 +32738,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32896,7 +32839,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -32997,7 +32940,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -33100,7 +33043,7 @@
                         "statusUw": "",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"]
+                        "usedInProfile": ["monograph", "dvdVideo", "map"]
                     },
                     {
                         "propertyLabel": "has related family of item",
@@ -34094,7 +34037,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": ["monograph", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -34195,7 +34138,7 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo"],
+                        "usedInProfile": ["monograph", "dvdVideo", "map"],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -34373,7 +34316,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -56689,7 +56632,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -60158,7 +60101,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -61258,26 +61201,10 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-09-09",
+                "date": "2019-09-11",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
-                "propertyTemplates": [
-                    {
-                        "propertyLabel": "Administrative Metadata for Timespan",
-                        "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "resource",
-                        "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        },
-                        "uwFormOrder": 0,
-                        "statusUw": "test CEC 2019-05-09",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": []
-                    },
-                    {
+                "propertyTemplates": [{
                         "propertyLabel": "has access point for timespan",
                         "propertyURI": "http://rdaregistry.info/Elements/t/P70015",
                         "mandatory": "",
@@ -62490,11 +62417,11 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 157,
+                        "uwFormOrder": -1,
                         "statusUw": "attention",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": ["monograph", "dvdVideo", "etd", "map"]
+                        "usedInProfile": []
                     }
                 ]
             }

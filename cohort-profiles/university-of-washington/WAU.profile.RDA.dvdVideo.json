@@ -1,19 +1,19 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-08-01",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan for DVD videos",
+        "date": "2019-09-13",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan dvd videos",
         "id": "WAU:profile:RDA:dvdVideo",
         "title": "WAU Profile RDA for describing DVD videos",
-        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
         "resourceTemplates": [
             {
                 "id": "WAU:RT:RDA:Work:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "WAU RT RDA Work for DVD videos",
+                "resourceLabel": "WAU RT RDA Work dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Work",
@@ -24,17 +24,6 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
-                        }
-                    },
-                    {
-                        "propertyLabel": "Lookup for existing Work",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10001",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         }
                     },
                     {
@@ -81,6 +70,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/6.3.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:genres"],
@@ -104,6 +94,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/6.5.html",
                         "valueConstraint": {
                             "useValuesFrom": [
@@ -135,24 +126,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/geographicAreas"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has intended audience of representative expression (RDA 7.7)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10217",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.7.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:demographics",
-                                "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:dbpedia"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names:place"]
                         }
                     },
                     {
@@ -178,20 +155,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/7.9.4.html"
-                    },
-                    {
-                        "propertyLabel": "has colour content of representative expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10348",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
-                            "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003"},
-                                {"defaultLiteral": "polychrome"}
-                            ]
-                        }
                     },
                     {
                         "propertyLabel": "has note on work (RDA 5.9)",
@@ -229,12 +192,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/19.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -243,12 +204,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -257,12 +216,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -271,12 +228,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -285,12 +240,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -299,12 +252,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -313,12 +264,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -327,12 +276,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -341,12 +288,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -355,12 +300,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -369,12 +312,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -383,12 +324,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -397,12 +336,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -411,12 +348,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -425,12 +360,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -439,12 +372,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -453,12 +384,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -467,11 +396,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -480,12 +407,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -494,12 +419,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -508,12 +431,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -522,12 +443,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -536,12 +455,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -550,12 +467,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -564,12 +479,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -578,12 +491,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -592,12 +503,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -606,12 +515,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -620,12 +527,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -634,12 +539,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -648,12 +551,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -662,12 +563,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -676,12 +575,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -690,12 +587,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -704,12 +599,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -718,12 +611,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -732,12 +623,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -746,12 +635,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -760,12 +647,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -774,12 +659,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -788,12 +671,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -802,12 +683,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -816,12 +695,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -830,12 +707,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -844,12 +719,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -858,11 +731,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -871,12 +742,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -885,12 +754,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -916,14 +783,29 @@
                         "type": "literal"
                     },
                     {
+                        "propertyLabel": "has subject (RDA 23.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10256",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "resource",
+                        "remark": "http://access.rdatoolkit.org/23.5.html",
+                        "valueConstraint": {
+                            "valueTemplateRefs": [
+                                "WAU:RT:MADSRDF:complexSubject",
+                                "WAU:RT:MADSRDF:simpleSubject"
+                            ]
+                        }
+                    },
+                    {
                         "propertyLabel": "has expression of work (RDA 17.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "resource",
+                        "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/17.5.html",
                         "valueConstraint": {
-                            "valueTemplateRefs": ["WAU:RT:RDA:Expression:monograph"],
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"],
                             "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
                         }
                     }
@@ -932,10 +814,10 @@
             {
                 "id": "WAU:RT:RDA:Expression:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "WAU RT RDA Expression for DVD videos",
+                "resourceLabel": "WAU RT RDA Expression dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Expression",
@@ -945,17 +827,6 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "Lookup for existing Expression",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10006",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10006"}
                         }
                     },
                     {
@@ -978,6 +849,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
@@ -1002,7 +874,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.17.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAColourContent/"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAColourContent/"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAColourContent/1003"},
                                 {"defaultLiteral": "polychrome"}
@@ -1017,7 +889,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDAContentType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1023"},
                                 {"defaultLiteral": "two-dimensional moving image"}
@@ -1052,6 +924,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/6.11.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
@@ -1071,6 +944,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.11.2.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:place"]
@@ -1098,6 +972,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/7.13.2.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/mscript"]
@@ -1142,7 +1017,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/7.19.1.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/AspectRatio"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/AspectRatio"]
                         }
                     },
                     {
@@ -1191,11 +1066,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1204,12 +1077,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/20.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1218,12 +1089,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1232,12 +1101,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1246,12 +1113,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1260,12 +1125,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1274,12 +1137,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1288,12 +1149,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1302,12 +1161,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1316,12 +1173,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1330,12 +1185,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1344,12 +1197,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1358,11 +1209,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1371,12 +1220,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1385,12 +1232,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1399,12 +1244,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1413,12 +1256,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1427,12 +1268,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1441,12 +1280,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1455,12 +1292,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1469,12 +1304,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1483,12 +1316,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1497,12 +1328,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1511,12 +1340,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1525,12 +1352,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1539,12 +1364,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1553,12 +1376,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1567,12 +1388,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1581,12 +1400,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1595,12 +1412,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1609,12 +1424,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1623,12 +1436,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1637,12 +1448,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1651,12 +1460,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1665,12 +1472,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1679,12 +1484,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1693,12 +1496,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1707,12 +1508,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1721,12 +1520,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1735,12 +1532,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1749,12 +1544,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1763,12 +1556,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1777,12 +1568,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1791,12 +1580,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1805,12 +1592,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1819,12 +1604,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1833,12 +1616,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1847,12 +1628,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1861,12 +1640,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1875,12 +1652,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1889,12 +1664,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1903,11 +1676,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -1916,16 +1687,29 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has manifestation of expression (RDA 17.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.9.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
+                        }
                     }
                 ]
             },
             {
                 "id": "WAU:RT:RDA:Manifestation:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "WAU RT RDA Manifestation for DVD videos",
+                "resourceLabel": "WAU RT RDA Manifestation dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Manifestation",
@@ -1935,17 +1719,6 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "Lookup for existing Manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10007",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
                         }
                     },
                     {
@@ -2240,7 +2013,12 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/2.11.html"
+                        "remark": "http://access.rdatoolkit.org/2.11.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "©"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has title of series (RDA 2.12.2)",
@@ -2306,19 +2084,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/2.13.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "https://id.loc.gov/vocabulary/issuance",
-                                "http://rdaregistry.info/termList/ModeIssue"
-                            ],
+                            "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"],
                             "defaults": [
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
-                                    "defaultLiteral": "single unit"
-                                },
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/issuance/mono",
-                                    "defaultLiteral": "single unit"
-                                }
+                                {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
+                                {"defaultLiteral": "single unit"}
                             ]
                         }
                     },
@@ -2442,7 +2211,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAMediaType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1008"},
                                 {"defaultLiteral": "video"}
@@ -2457,7 +2226,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierType"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1060"},
                                 {"defaultLiteral": "videodisc"}
@@ -2472,7 +2241,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.4.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDACarrierEU"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierEU"]
                         }
                     },
                     {
@@ -2496,7 +2265,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAproductionMethod"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAproductionMethod"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDAproductionMethod/1017"},
                                 {"defaultLiteral": "stamping"}
@@ -2511,7 +2280,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.10.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/RDAGeneration"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAGeneration"]
                         }
                     },
                     {
@@ -2522,7 +2291,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.11.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/layout"]
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/layout"]
                         }
                     },
                     {
@@ -2541,7 +2310,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/typeRec"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/typeRec"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/typeRec/1002"},
                                 {"defaultLiteral": "digital"}
@@ -2556,7 +2325,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/recMedium"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/recMedium"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/recMedium/1003"},
                                 {"defaultLiteral": "optical"}
@@ -2571,7 +2340,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.8.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/configPlayback"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/configPlayback"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/configPlayback/1002"},
                                 {"defaultLiteral": "stereo"}
@@ -2586,7 +2355,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://www.rdaregistry.info/termList/specPlayback"],
+                            "useValuesFrom": ["https://www.rdaregistry.info/termList/specPlayback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
@@ -2608,7 +2377,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.17.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/presFormat"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/presFormat"]
                         }
                     },
                     {
@@ -2619,7 +2388,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.18.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/videoFormat"]
+                            "useValuesFrom": ["https://rdaregistry.info/termList/videoFormat"]
                         }
                     },
                     {
@@ -2630,7 +2399,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.18.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/broadcastStand"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/broadcastStand"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/broadcastStand/1002"},
                                 {"defaultLiteral": "NTSC"}
@@ -2645,7 +2414,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.19.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/fileType"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/fileType"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/fileType/1006"},
                                 {"defaultLiteral": "video file"}
@@ -2689,7 +2458,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.19.6.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["http://rdaregistry.info/termList/RDARegionalEncoding"],
+                            "useValuesFrom": ["https://rdaregistry.info/termList/RDARegionalEncoding"],
                             "defaults": [
                                 {"defaultURI": "http://rdaregistry.info/termList/RDARegionalEncoding/1002"},
                                 {"defaultLiteral": "region 1"}
@@ -2742,11 +2511,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2755,11 +2522,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2792,12 +2557,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.2.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2806,12 +2569,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2820,12 +2581,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2834,12 +2593,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2848,12 +2605,37 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/21.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related expression of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has related item of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30140",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
+                    },
+                    {
+                        "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.11.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
+                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         }
                     }
                 ]
@@ -2861,10 +2643,10 @@
             {
                 "id": "WAU:RT:RDA:Item:dvdVideo",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item for DVD videos",
+                "resourceLabel": "WAU RT RDA Item dvd videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+                "date": "2019-09-11",
+                "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -2874,17 +2656,6 @@
                         "type": "resource",
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "Lookup for existing Item",
-                        "propertyURI": "http://rdaregistry.info/Elements/c/C10003",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["http://mlvlp04.loc.gov:8230/resources/works"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
                         }
                     },
                     {
@@ -2941,14 +2712,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/22.2.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
+                                {"defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar"},
+                                {"defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"}
                             ]
                         }
                     },
@@ -2958,12 +2728,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2972,12 +2740,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2986,12 +2752,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -3000,12 +2764,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -3014,14 +2776,13 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/22.3.html",
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
                             "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar ",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
+                                {"defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar"},
+                                {"defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"}
                             ]
                         }
                     },
@@ -3031,11 +2792,9 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -3044,12 +2803,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -3058,12 +2815,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -3072,38 +2827,10 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "subtype": "context",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:dbpedia",
-                                "urn:ld4p:qa:names"
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "WAU:RT:RDA:Timespan:dvdVideo",
-                "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
-                "resourceLabel": "WAU RT RDA Timespan for DVD videos",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-07-16",
-                "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
-                "propertyTemplates": [
-                    {
-                        "propertyLabel": "has owner",
-                        "propertyURI": "http://rdaregistry.info/Elements/u/P60404",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
-                            "defaults": [
-                                {
-                                    "defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar",
-                                    "defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
                     }
                 ]

@@ -26,6 +26,20 @@
                         }
                     },
                     {
+                        "propertyLabel": "Pre-coordinate Subject",
+                        "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+                        "mandatory": "false",
+                        "repeatable": "false",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:subjects",
+                                "urn:ld4p:qa:subjects:place",
+                                "urn:ld4p:qa:names:place"
+                            ]
+                        }
+                    },
+                    {
                         "propertyLabel": "Label",
                         "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
                         "mandatory": "false",

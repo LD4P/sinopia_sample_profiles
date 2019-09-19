@@ -2,8 +2,19 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns="http://www.w3.org/2005/xpath-functions" xmlns:j="http://www.w3.org/2005/xpath-functions"
     exclude-result-prefixes="j" version="3.0">
-    <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
+    
+    <!-- BEFORE USING THIS TRANSFORM, 
+        *CONFIRM OUTPUT FILE LOCATION TO AVOID OVERWRITING
+        A DIFFERENT FORMAT-SPECIFIC JSON-IN-XML PROFILE -->
+    
+    <!-- Variables here to facilitate use for all formats /
+        *EDIT EACH for each format to output -->
+    <xsl:variable name="formatID" select="':monograph'"/>
+    <xsl:variable name="formatTitle" select="' for describing monographs'"/>
+    <xsl:variable name="formatLabel" select="' monographs'"/>
+    <xsl:variable name="formatEnum" select="'monograph'"/>
+    
     <xsl:template match="/">
         <map xmlns="http://www.w3.org/2005/xpath-functions">
             <xsl:apply-templates select="j:map/j:map[@key = 'Profile']"/>
@@ -18,39 +29,38 @@
             <string key="date">
                 <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
             </string>
-            <!-- Description not accurate for format-specific profiles as not all RTs are pushed through to them -->
             <string key="description">
-                <xsl:value-of select="concat(j:string[@key = 'description'], ' for electronic theses and dissertations')"/>
+                <xsl:value-of select="concat(j:string[@key = 'description'], $formatLabel)"/>
             </string>
             <string key="id">
-                <xsl:value-of select="concat(j:string[@key = 'id'], ':etd')"/>
+                <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>
             </string>
             <string key="title">
                 <xsl:value-of
-                    select="concat(j:string[@key = 'title'], ' for describing electronic theses and dissertations')"/>
+                    select="concat(j:string[@key = 'title'], $formatTitle)"/>
             </string>
             <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
-            <string key="schema">https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json</string>
+            <string key="schema">https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json</string>
             <array key="resourceTemplates">
                 <xsl:apply-templates select="j:array[@key = 'resourceTemplates']"/>
             </array>
         </map>
     </xsl:template>
     <xsl:template match="j:array[@key = 'resourceTemplates']">
-        <!-- Specify each RT to push through to etd profile below -->
+        <!-- Specify RTs to push through to profile below -->
         <xsl:for-each
-            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item|Timespan')]">
+            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')]">
             <map>
                 <string key="id">
-                    <xsl:value-of select="concat(j:string[@key = 'id'], ':etd')"/>
+                    <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>
                 </string>
                 <string key="resourceURI">
                     <xsl:value-of select="j:string[@key = 'resourceURI']"/>
                 </string>
                 <string key="resourceLabel">
                     <xsl:value-of
-                        select="concat(normalize-space(j:string[@key = 'resourceLabel']), ' for electronic theses and dissertations')"
+                        select="concat(normalize-space(j:string[@key = 'resourceLabel']), $formatLabel)"
                     />
                 </string>
                 <string key="author">
@@ -62,7 +72,7 @@
                 <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
                 <string key="schema"
-                    >https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json</string>
+                    >https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json</string>
                 <array key="propertyTemplates">
                     <xsl:apply-templates select="j:array[@key = 'propertyTemplates']"/>
                 </array>
@@ -76,7 +86,7 @@
                 0 (undetermined) first, 
                 everything else next -->
             <xsl:sort select="j:number[@key = 'uwFormOrder']" data-type="number"/>
-            <xsl:if test="j:array[@key = 'usedInProfile']/j:string = 'monograph'">
+            <xsl:if test="j:array[@key = 'usedInProfile']/j:string = $formatEnum">
                 <map>
                     <!-- activate uwFormOrder below only to check accuracy of sort; otherwise suppress in this transform using comment -->
                     <!-- <string key="uwFormOrderValue"><xsl:value-of select="j:number[@key = 'uwFormOrder']"/></string> -->
@@ -95,6 +105,11 @@
                     <string key="type">
                         <xsl:value-of select="j:string[@key = 'type']"/>
                     </string>
+                    <xsl:if test="j:string[@key = 'subtype']/text()">
+                        <string key="subtype">
+                            <xsl:value-of select="j:string[@key = 'subtype']"/>
+                        </string>
+                    </xsl:if>
                     <xsl:if test="j:string[@key = 'remark']/text()">
                         <string key="remark">
                             <xsl:value-of select="j:string[@key = 'remark']"/>
@@ -110,28 +125,10 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="j:map[@key = 'valueConstraint']">
-        <xsl:if test="j:array[@key = 'valueTemplateRefs']/descendant::text()">
-            <xsl:for-each select="j:array[@key = 'valueTemplateRefs']">
-                <array key="valueTemplateRefs">
-                    <xsl:choose>
-                        <xsl:when test="matches(j:string, 'AdminMetadata')">
-                            <string>
-                                <xsl:value-of select="j:string"/>
-                            </string>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <string>
-                                <xsl:value-of select="concat(j:string, ':etd')"/>
-                            </string>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </array>
-            </xsl:for-each>
+        <xsl:if test="j:array[@key = 'valueTemplateRefs']/j:string/text()">
+            <xsl:apply-templates select="j:array[@key = 'valueTemplateRefs']"/>
         </xsl:if>
         <xsl:if test="j:array[@key = 'useValuesFrom']/descendant::text()">
-            <!-- don't want useValuesFrom, defaultURI values for literal props in the mono profile /
-                BUT keeping them in RDA profile pending addition of RDA QA and change to lookup props /
-                @gerontakos is there a better way to do this here and below? -->
             <xsl:choose>
                 <xsl:when test="../j:string[@key = 'type'] != 'literal'">
                     <xsl:copy-of select="j:array[@key = 'useValuesFrom']"/>
@@ -142,26 +139,40 @@
         <xsl:if test="j:map[@key = 'valueDataType']/descendant::text()">
             <xsl:copy-of select="j:map[@key = 'valueDataType']"/>
         </xsl:if>
-        <xsl:if test="j:array[@key = 'defaults']/descendant::text()">
-            <!-- see comment above -->
-            <xsl:choose>
-                <xsl:when test="../j:string[@key = 'type'] != 'literal'">
-                    <xsl:copy-of select="j:array[@key = 'defaults']"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:for-each select="j:array[@key = 'defaults']">
-                        <j:array key="defaults">
-                            <xsl:for-each select="j:map">
-                                <j:map>
-                                    <j:string key="defaultLiteral">
-                                        <xsl:value-of select="j:string[@key = 'defaultLiteral']"/>
-                                    </j:string>
-                                </j:map>
-                            </xsl:for-each>
-                        </j:array>
+        <xsl:for-each select="j:array[@key = 'defaults']">
+            <xsl:if test="descendant::text()">
+                <array key="defaults">
+                    <xsl:if test="j:map/j:string[@key = 'defaultURI']/text()">
+                        <map>
+                            <xsl:copy-of select="j:map/j:string[@key = 'defaultURI']"/>
+                        </map>
+                    </xsl:if>
+                    <xsl:if test="j:map/j:string[@key = 'defaultLiteral']/text()">
+                        <map>
+                            <xsl:copy-of select="j:map/j:string[@key = 'defaultLiteral']"/>
+                        </map>
+                    </xsl:if>
+                </array>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template match="j:array[@key = 'valueTemplateRefs']">
+            <xsl:if test="../../j:string[@key = 'type'] != 'literal'">
+                <array key="valueTemplateRefs">
+                    <xsl:for-each select="j:string">
+                        <string>
+                            <xsl:choose>
+                                <xsl:when
+                                    test="matches(., 'AdminMetadata|complexSubject|simpleSubject')">
+                                    <xsl:value-of select="."/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="concat(., $formatID)"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </string>
                     </xsl:for-each>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:if>
+                </array>
+            </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
