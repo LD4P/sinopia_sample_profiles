@@ -3,18 +3,18 @@
     xmlns="http://www.w3.org/2005/xpath-functions" xmlns:j="http://www.w3.org/2005/xpath-functions"
     exclude-result-prefixes="j" version="3.0">
     <xsl:strip-space elements="*"/>
-    
+
     <!-- BEFORE USING THIS TRANSFORM, 
         *CONFIRM OUTPUT FILE LOCATION TO AVOID OVERWRITING
         A DIFFERENT FORMAT-SPECIFIC JSON-IN-XML PROFILE -->
-    
+
     <!-- Variables here to facilitate use for all formats /
         *EDIT EACH for each format to output -->
-    <xsl:variable name="formatID" select="':monograph'"/>
-    <xsl:variable name="formatTitle" select="' for describing monographs'"/>
-    <xsl:variable name="formatLabel" select="' monographs'"/>
-    <xsl:variable name="formatEnum" select="'monograph'"/>
-    
+    <xsl:variable name="formatID" select="':dvdVideo'"/>
+    <xsl:variable name="formatTitle" select="' for describing DVD videos'"/>
+    <xsl:variable name="formatLabel" select="' DVD videos'"/>
+    <xsl:variable name="formatEnum" select="'dvdVideo'"/>
+
     <xsl:template match="/">
         <map xmlns="http://www.w3.org/2005/xpath-functions">
             <xsl:apply-templates select="j:map/j:map[@key = 'Profile']"/>
@@ -36,8 +36,7 @@
                 <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>
             </string>
             <string key="title">
-                <xsl:value-of
-                    select="concat(j:string[@key = 'title'], $formatTitle)"/>
+                <xsl:value-of select="concat(j:string[@key = 'title'], $formatTitle)"/>
             </string>
             <!-- Hard-coded schema value here
                 *Conformance requirements may change in future* -->
@@ -142,37 +141,35 @@
         <xsl:for-each select="j:array[@key = 'defaults']">
             <xsl:if test="descendant::text()">
                 <array key="defaults">
-                    <xsl:if test="j:map/j:string[@key = 'defaultURI']/text()">
-                        <map>
+                    <map>
+                        <xsl:if test="j:map/j:string[@key = 'defaultURI']/text()">
                             <xsl:copy-of select="j:map/j:string[@key = 'defaultURI']"/>
-                        </map>
-                    </xsl:if>
-                    <xsl:if test="j:map/j:string[@key = 'defaultLiteral']/text()">
-                        <map>
+                        </xsl:if>
+                        <xsl:if test="j:map/j:string[@key = 'defaultLiteral']/text()">
                             <xsl:copy-of select="j:map/j:string[@key = 'defaultLiteral']"/>
-                        </map>
-                    </xsl:if>
+                        </xsl:if>
+                    </map>
                 </array>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="j:array[@key = 'valueTemplateRefs']">
-            <xsl:if test="../../j:string[@key = 'type'] != 'literal'">
-                <array key="valueTemplateRefs">
-                    <xsl:for-each select="j:string">
-                        <string>
-                            <xsl:choose>
-                                <xsl:when
-                                    test="matches(., 'AdminMetadata|complexSubject|simpleSubject')">
-                                    <xsl:value-of select="."/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="concat(., $formatID)"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </string>
-                    </xsl:for-each>
-                </array>
-            </xsl:if>
+        <xsl:if test="../../j:string[@key = 'type'] != 'literal'">
+            <array key="valueTemplateRefs">
+                <xsl:for-each select="j:string">
+                    <string>
+                        <xsl:choose>
+                            <xsl:when
+                                test="matches(., 'AdminMetadata|complexSubject|simpleSubject')">
+                                <xsl:value-of select="."/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="concat(., $formatID)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </string>
+                </xsl:for-each>
+            </array>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

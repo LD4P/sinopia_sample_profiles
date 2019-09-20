@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-09-13",
+        "date": "2019-09-19",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan electronic theses and dissertations",
         "id": "WAU:profile:RDA:etd",
         "title": "WAU Profile RDA for describing electronic theses and dissertations",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -75,8 +75,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:genres"],
                             "defaults": [
-                                {"defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026039"},
-                                {"defaultLiteral": "Academic theses"}
+                                {
+                                    "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026039",
+                                    "defaultLiteral": "Academic theses"
+                                }
                             ]
                         }
                     },
@@ -180,16 +182,36 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/24.5.html"
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
                     },
                     {
                         "propertyLabel": "is subseries of (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/24.5.html"
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has expression of work (RDA 17.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
                     },
                     {
                         "propertyLabel": "has creator agent of work (RDA 19.2)",
@@ -309,19 +331,6 @@
                                 "WAU:RT:MADSRDF:simpleSubject"
                             ]
                         }
-                    },
-                    {
-                        "propertyLabel": "has expression of work (RDA 17.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10078",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "remark": "http://access.rdatoolkit.org/17.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10001"}
-                        }
                     }
                 ]
             },
@@ -330,7 +339,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -401,8 +410,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://rdaregistry.info/termList/RDAContentType"],
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020"},
-                                {"defaultLiteral": "text"}
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020",
+                                    "defaultLiteral": "text"
+                                }
                             ]
                         }
                     },
@@ -511,6 +522,30 @@
                         }
                     },
                     {
+                        "propertyLabel": "has work expressed (RDA 17.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20231",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.6.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has manifestation of expression (RDA 17.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.9.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related expression of expression",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20205",
                         "mandatory": "false",
@@ -535,19 +570,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "has manifestation of expression (RDA 17.9)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20059",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "remark": "http://access.rdatoolkit.org/17.9.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10007"}
-                        }
                     }
                 ]
             },
@@ -556,7 +578,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -944,8 +966,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["http://rdaregistry.info/termList/ModeIssue"],
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001"},
-                                {"defaultLiteral": "single unit"}
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/ModeIssue/1001",
+                                    "defaultLiteral": "single unit"
+                                }
                             ]
                         }
                     },
@@ -1047,8 +1071,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://www.rdaregistry.info/termList/RDAMediaType"],
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1003"},
-                                {"defaultLiteral": "computer"}
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1003",
+                                    "defaultLiteral": "computer"
+                                }
                             ]
                         }
                     },
@@ -1062,8 +1088,10 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://www.rdaregistry.info/termList/RDACarrierType"],
                             "defaults": [
-                                {"defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1018"},
-                                {"defaultLiteral": "online resource"}
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/RDACarrierType/1018",
+                                    "defaultLiteral": "online resource"
+                                }
                             ]
                         }
                     },
@@ -1176,6 +1204,30 @@
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
                     {
+                        "propertyLabel": "has expression manifested (RDA 17.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30139",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.10.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/17.11.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has publisher agent (RDA 21.3)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30083",
                         "mandatory": "false",
@@ -1207,19 +1259,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "has exemplar of manifestation (RDA 17.11)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30103",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "subtype": "context",
-                        "remark": "http://access.rdatoolkit.org/17.11.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:sharevde_stanford_work_ld4l_cache"],
-                            "valueDataType": {"dataTypeURI": "http://rdaregistry.info/Elements/c/C10003"}
-                        }
                     }
                 ]
             },
@@ -1228,7 +1267,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-09-11",
+                "date": "2019-09-19",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1242,14 +1281,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "has custodial history of item (RDA 2.18)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40026",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/2.18.html"
-                    },
-                    {
                         "propertyLabel": "has immediate source of acquisition of item (RDA 2.19)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40050",
                         "mandatory": "false",
@@ -1258,20 +1289,48 @@
                         "remark": "http://access.rdatoolkit.org/2.19.html"
                     },
                     {
-                        "propertyLabel": "has note on extent of item (RDA 3.22.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40011",
+                        "propertyLabel": "is accompanied by item (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40029",
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.22.2.html"
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "subtype": "context",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
                     },
                     {
-                        "propertyLabel": "has note on dimensions of item (RDA 3.22.3)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40010",
+                        "propertyLabel": "has related item of item",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/3.22.3.html"
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is container of item (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40034",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is contained in item (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40009",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
+                        }
                     },
                     {
                         "propertyLabel": "has restriction on access to item (RDA 4.4)",
@@ -1282,26 +1341,15 @@
                         "remark": "http://access.rdatoolkit.org/4.4.html"
                     },
                     {
-                        "propertyLabel": "has related item of item",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "has owner agent (RDA 22.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40021",
+                        "propertyLabel": "has manifestation exemplified (RDA 17.12)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40049",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "subtype": "context",
-                        "remark": "http://access.rdatoolkit.org/22.2.html",
+                        "remark": "http://access.rdatoolkit.org/17.12.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
-                            "defaults": [
-                                {"defaultURI": "https://id.loc.gov/vocabulary/organizations/wauar"},
-                                {"defaultLiteral": "University of Washington Libraries, Manuscripts, Special Collections, University Archives"}
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:dbpedia"]
                         }
                     }
                 ]

@@ -14,8 +14,7 @@
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-09-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
-                "qUw": "If this test becomes what we want to use, we'll need to remove the Item RT from the main RDA profile or turn this profile into that RT",
-                "noteUw": "If used we'll need statusUw etc.",
+
                 "propertyTemplates": [
                     {
                         "propertyLabel": "Administrative Metadata for Item",
@@ -81,8 +80,7 @@
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40046",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
-                        "noteUw": "this would ideally be a lookup where we could search for other items."
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has owner agent (RDA 22.2)",
@@ -330,7 +328,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "resource",
-                        "noteUw": "has domain of BF items!",
                         "resourceTemplates": [],
                         "valueConstraint": {
                             "valueTemplateRefs": [
