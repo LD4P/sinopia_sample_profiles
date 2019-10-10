@@ -542,7 +542,7 @@
                     "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
                     "type": "list",
                     "valueConstraint": {
-                        "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations"],
+                        "useValuesFrom": ["https://id.loc.gov/vocabulary/organizations/"],
                         "defaults": [{
                             "defaultURI": "http://id.loc.gov/vocabulary/organizations/nicmu",
                             "defaultLiteral": "Cornell University, Music Library"

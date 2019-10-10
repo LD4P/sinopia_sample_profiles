@@ -5,7 +5,10 @@
                 {
                   "propertyLabel": "Primary Contributor",
                   "valueConstraint": {
-                      "useValuesFrom": ["urn:ld4p:qa:names"]
+                      "useValuesFrom": ["urn:ld4p:qa:names:person",
+                                        "urn:ld4p:qa:names:organization",
+                                        "urn:ld4p:qa:names:family",
+                                        "urn:ld4p:qa:names:conference"]
                   },
                   "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
                   "type": "lookup",
