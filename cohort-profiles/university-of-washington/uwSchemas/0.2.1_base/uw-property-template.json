@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-property-template.json",
-  "title": "UW Property Template Schema, based on Sinopia Property Template Schema v0.0.9",
+  "$id": "https://ld4p.github.io/sinopia/schemas/0.2.1/property-template.json",
+  "title": "Sinopia Property Template Schema",
   "description": "Property template for property associated with the entity described by a resource template.",
-  "version": "0.0.9",
+  "version": "0.2.1",
   "type": "object",
   "required": [
     "propertyURI",
@@ -12,34 +12,6 @@
   ],
   "additionalProperties": false,
   "properties": {
-   "uwFormOrder": {
-        "type": "number",
-        "minimum": -1,
-        "$comment": "Use 0 (zero) for properties with undetermined form order; use decimals to adjust form order as needed following additional assignment"
-    },
-    "statusUw": {
-        "type": "string"
-    }, 
-    "usedInProfile": {
-        "type": "array",
-        "items": {
-         "type": "string",
-         "enum": ["monograph", "dvdVideo", "etd"]
-         },
-         "$comment": "Add additional strings to enumeration as additional format-specific profiles are to be created"
-        },
-    "noteUw": {
-        "type": "array",
-        "items": {
-            "type": "string"
-        }
-    },
-    "qUw": {
-        "type": "array",
-        "items": {
-            "type": "string"
-        }  
-    },
     "mandatory": {
       "type": ["boolean", "string"],
       "enum": ["true", "false"],
@@ -74,6 +46,7 @@
       "type": "string",
       "title": "Remark",
       "description": "Comment or guiding statement intended to be presented as supplementary information in user display.",
+      "minLength": 3,
       "example": [
         "http://access.rdatoolkit.org/6.17.html",
         "http://www.loc.gov/mads/rdf/v1#",
@@ -93,9 +66,15 @@
       "description": "This is not currently used, but should/could replace valueConstraint.valueTemplateRefs",
       "maxItems": 0
     },
+    "subtype": {
+      "type": "string",
+      "title": "A subtype of the property",
+      "description": "Used for supporting extended context in QA",
+      "maxItems": 0
+    },
     "type": {
       "type": "string",
-      "enum": ["literal", "lookup", "resource"],
+      "enum": ["literal", "literal-lang", "target", "list", "lookup", "resource"],
       "title": "Type",
       "description": "Type of value (literal / resource / lookup) that is allowed by this property."
     },
@@ -112,6 +91,7 @@
           "items": {
             "type": "string"
           },
+          "minItems": 1,
           "example": [
             "['sinopia:resourceTemplate:bf2:Agent:Person', 'sinopia:resourceTemplate:bf2:Identifiers:Barcode', 'sinopia:resourceTemplate:bflc:Agents:PrimaryContribution']"
           ]
@@ -123,6 +103,7 @@
           "items": {
             "type": "string"
           },
+          "minItems": 1,
           "example": [
             "['http://id.loc.gov/authorities/names', 'http://mlvlp04.loc.gov:8230/resources/works', 'http://id.loc.gov/authorities/genreForms']"
           ]
@@ -132,12 +113,14 @@
           "title": "Value Data Types",
           "description": "Data Type information: Type URI.",
           "additionalProperties": false,
+          "required": ["dataTypeURI"],
           "properties": {
             "dataTypeURI": {
               "type": "string",
               "format": "uri",
               "title": "Data Type URI",
               "description": "URI for the Data Type of the Lookup Value default.",
+              "minLength": 5,
               "example": [
                 "http://id.loc.gov/ontologies/bibframe/Work",
                 "http://id.loc.gov/ontologies/bflc/PrimaryContribution",
@@ -154,12 +137,18 @@
             "type": "object",
             "title": "default Literal + URI",
             "description": "a default value is specified with a literal and a URI",
+            "anyOf": [
+              { "required": ["defaultURI"] },
+              { "required": [ "defaultLiteral"] }
+            ],
             "additionalProperties": false,
             "properties": {
               "defaultURI": {
                 "type": "string",
+                "format": "uri",
                 "title": "Default URI",
                 "description": "default value URI",
+                "minLength": 5,
                 "examples": [
                   "http://id.loc.gov/vocabulary/contentTypes/prm",
                   "http://id.loc.gov/vocabulary/subjectSchemes/lcsh"
@@ -169,6 +158,7 @@
                 "type": "string",
                 "title": "Default Literal",
                 "description": "default literal value",
+                "minLength": 1,
                 "examples": [
                   "performed music",
                   "LCSH"
@@ -177,6 +167,11 @@
             }
           }
         }
+      },
+      "$comment": "Use at most one of useValuesFrom, valueTemplateRefs",
+      "dependencies": {
+        "valueTemplateRefs": { "not": { "required": ["useValuesFrom"] } },
+        "useValuesFrom": { "not": { "required": ["valueTemplateRefs"] } }
       }
     }
   },
@@ -188,8 +183,11 @@
         }
       },
       "then": {
-        "$comment": "require valueConstraint.useValuesFrom",
-        "$ref": "#/definitions/requires-valueConstraint-useValuesFrom"
+        "$comment": "forbid resourceTemplates and require valueConstraint.useValuesFrom",
+        "allOf": [
+          { "not": { "required": ["resourceTemplates"] } },
+          { "$ref": "#/definitions/requires-valueConstraint-useValuesFrom" }
+        ]
       }
     },
     {
@@ -201,7 +199,21 @@
       "then": {
         "$comment": "require valueConstraint.valueTemplateRefs and forbid defaults",
         "allOf": [
-          { "$ref": "#/definitions/requires-valueConstraint-valueTemplateRefs" }
+          { "$ref": "#/definitions/requires-valueConstraint-valueTemplateRefs-forbids-defaults" }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "literal" }
+        }
+      },
+      "then": {
+        "$comment": "forbid resourceTemplates, valueConstraint.useValuesFrom and valueConstraint.valueTemplateRefs",
+        "allOf": [
+          { "not": { "required": ["resourceTemplates"] } },
+          { "$ref": "#/definitions/valueConstraint-requires-neither-templateRefs-nor-valuesFrom" }
         ]
       }
     }
@@ -212,14 +224,6 @@
       "properties": {
         "valueConstraint" : {
           "required": ["useValuesFrom"]
-        }
-      }
-    },
-    "requires-valueConstraint-valueTemplateRefs": {
-      "required": ["valueConstraint"],
-      "properties": {
-        "valueConstraint" : {
-          "required": ["valueTemplateRefs"]
         }
       }
     },
