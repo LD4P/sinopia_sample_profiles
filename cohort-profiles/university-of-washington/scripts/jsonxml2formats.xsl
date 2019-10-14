@@ -10,10 +10,10 @@
 
     <!-- Variables here to facilitate use for all formats /
         *EDIT EACH for each format to output -->
-    <xsl:variable name="formatID" select="':dvdVideo'"/>
-    <xsl:variable name="formatTitle" select="' for describing DVD videos'"/>
-    <xsl:variable name="formatLabel" select="' DVD videos'"/>
-    <xsl:variable name="formatEnum" select="'dvdVideo'"/>
+    <xsl:variable name="formatID" select="':map'"/>
+    <xsl:variable name="formatTitle" select="' for maps'"/>
+    <xsl:variable name="formatLabel" select="' maps'"/>
+    <xsl:variable name="formatEnum" select="'map'"/>
 
     <xsl:template match="/">
         <map xmlns="http://www.w3.org/2005/xpath-functions">
