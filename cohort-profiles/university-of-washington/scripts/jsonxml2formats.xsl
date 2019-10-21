@@ -10,10 +10,13 @@
 
     <!-- Variables here to facilitate use for all formats /
         *EDIT EACH for each format to output -->
-    <xsl:variable name="formatID" select="':map'"/>
-    <xsl:variable name="formatTitle" select="' for maps'"/>
-    <xsl:variable name="formatLabel" select="' maps'"/>
-    <xsl:variable name="formatEnum" select="'map'"/>
+    <xsl:variable name="formatID" select="':etd'"/>
+    <xsl:variable name="formatTitle" select="' for electronic theses and dissertations'"/>
+    <xsl:variable name="formatLabel" select="' electronic theses and dissertations'"/>
+    <xsl:variable name="formatEnum" select="'etd'"/>
+    <xsl:variable name="profileDesc">
+        <xsl:text>Resource templates (Work, Expression, Manifestation, Item, Admin Metadata, Status) for</xsl:text>
+    </xsl:variable>
 
     <xsl:template match="/">
         <map xmlns="http://www.w3.org/2005/xpath-functions">
@@ -30,7 +33,7 @@
                 <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
             </string>
             <string key="description">
-                <xsl:value-of select="concat(j:string[@key = 'description'], $formatLabel)"/>
+                <xsl:value-of select="concat($profileDesc, $formatLabel)"/>
             </string>
             <string key="id">
                 <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>
@@ -49,7 +52,7 @@
     <xsl:template match="j:array[@key = 'resourceTemplates']">
         <!-- Specify RTs to push through to profile below -->
         <xsl:for-each
-            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')]">
+            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item|AdminMetadata|Status')]">
             <map>
                 <string key="id">
                     <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>
