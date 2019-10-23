@@ -4002,69 +4002,37 @@ hrc:profile:arm:sammelband
 
 
 
-WAU:profile:BF2:BFLC
-
-    WAU:RT:BF2:BFLC:AdminMetadata
-            Your cataloger ID (UW netid):      http://id.loc.gov/ontologies/bflc/catalogerID
-            Record status:      http://id.loc.gov/ontologies/bibframe/status
-            Encoding level:      http://id.loc.gov/ontologies/bflc/encodingLevel
-            Description conventions:      http://id.loc.gov/ontologies/bibframe/descriptionConventions
-            Source of cataloging:      http://id.loc.gov/ontologies/bibframe/source
-            Description language:      http://id.loc.gov/ontologies/bibframe/descriptionLanguage
-            Data creation date:      http://id.loc.gov/ontologies/bibframe/creationDate
-            Data change date:      http://id.loc.gov/ontologies/bibframe/changeDate
-            Description authentication:      http://id.loc.gov/ontologies/bibframe/descriptionAuthentication
-
-    WAU:RT:BF2:BFLC:AdminMetadata:Status
-            Code:      http://id.loc.gov/ontologies/bibframe/code
-
-
-
-
-WAU:profile:MADS:test
-
-    WAU:RT:MADSRDF:complexSubject
-            Component List:      http://www.loc.gov/mads/rdf/v1#componentList
-            Pre-coordinate Subject:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
-            Label:      http://www.w3.org/2000/01/rdf-schema#label
-
-    WAU:RT:MADSRDF:simpleSubject
-            Authoritative Label:      http://www.loc.gov/mads/rdf/v1#authoritativeLabel
-            Subject Search:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
-
-    WAU:RT:RDF:list
-            Subject:      http://www.w3.org/1999/02/22-rdf-syntax-ns#first
-            Add another subject:      http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
-
-
-
-
 WAU:profile:RDA:dvdVideo
 
     WAU:RT:RDA:Work:dvdVideo
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for work (RDA 6.1.2):      http://rdaregistry.info/Elements/w/P10328
+            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
             has authorized access point for work:      http://rdaregistry.info/Elements/w/P10331
-            has title of work (RDA 6.2):      http://rdaregistry.info/Elements/w/P10088
+            is same as LC NAF work:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for work:      http://rdaregistry.info/Elements/w/P10332
             has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
             has variant title of work (RDA 6.2.3):      http://rdaregistry.info/Elements/w/P10086
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
             has date of work (RDA 6.4):      http://rdaregistry.info/Elements/w/P10219
             has place of origin of work (RDA 6.5):      http://rdaregistry.info/Elements/w/P10218
-            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
-            has nature of content (RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (This is a note)(RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
             has coverage of content (RDA 7.3):      http://rdaregistry.info/Elements/w/P10216
+            has creator characteristic:      https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic
             has dissertation or thesis information (RDA 7.9):      http://rdaregistry.info/Elements/w/P10209
             has academic degree (RDA 7.9.2):      http://rdaregistry.info/Elements/w/P10077
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
+            has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has ISSN:      http://rdaregistry.info/Elements/w/P10366
             has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
             is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
-            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
+            work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            work has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
+            has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has artist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10058
-            has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has librettist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10205
             has lyricist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10204
             has rapporteur agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10255
@@ -4091,7 +4059,6 @@ WAU:profile:RDA:dvdVideo
             has film director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10013
             has radio director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10014
             has television director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10015
-            has director agent of photography (RDA 18.5):      http://rdaregistry.info/Elements/w/P10068
             has editorial director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10298
             has founding agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10299
             has honouree agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10049
@@ -4109,22 +4076,144 @@ WAU:profile:RDA:dvdVideo
             has researcher agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10293
             has related agent of work:      http://rdaregistry.info/Elements/w/P10311
             has sponsoring agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10067
+            work has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has abridger agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20049
             has numbering of part (RDA 24.6):      http://rdaregistry.info/Elements/w/P10012
+            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
             has related work of work:      http://rdaregistry.info/Elements/w/P10198
             has related expression of work:      http://rdaregistry.info/Elements/w/P10308
+            has related manifestation of work:      http://rdaregistry.info/Elements/w/P10309
+            has related item of work:      http://rdaregistry.info/Elements/w/P10310
+            is based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10190
+            is abridgement of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10125
+            is adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10142
+            is choreographic adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10183
+            is dramatization of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10127
+            is motion picture adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10129
+            is musical theatre adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10233
+            is opera adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10234
+            is oratorio adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10288
+            is radio adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10131
+            is television adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10132
+            is video adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10138
+            is expanded version of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10184
+            is imitation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10196
+            is parody of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10197
+            is remake of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10185
+            is summary of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10179
+            has derivative work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10148
+            is adapted as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10155
+            is adapted as graphic novel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10251
+            is adapted as libretto work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10113
+            is adapted as motion picture work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10025
+            is adapted as musical theatre work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10235
+            is adapted as novel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10034
+            is adapted as opera work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10236
+            is adapted as oratorio work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10289
+            is adapted as radio program work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10076
+            is adapted as radio script work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10098
+            has motion picture screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10160
+            has screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10159
+            is adapted as motion picture screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10094
+            is adapted as screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10095
+            is adapted as video screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10097
+            is adapted as video work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10087
+            is adapted as video game work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10249
+            is adapted in verse as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10023
+            is dramatized as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10016
+            is expanded as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10119
+            is inspiration for (RDA 24.5):      http://rdaregistry.info/Elements/w/P10291
+            is inspired by (RDA 24.5):      http://rdaregistry.info/Elements/w/P10290
+            is remade as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10032
+            is summarized as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10109
+            has commemoration (RDA 24.5):      http://rdaregistry.info/Elements/w/P10294
+            is commemoration of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10295
+            is augmentation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10192
+            is supplement to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10154
+            is augmented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10108
+            has catalogue work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10110
+            has guide work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10124
+            has supplement work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10172
+            is complemented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10103
+            has choreography work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10247
+            is choreography for work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10248
+            has libretto work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10165
+            has music work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10237
+            has motion picture music work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10246
+            has video music work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10239
+            has video screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10164
+            is preceded by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10156
+            is absorption in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10225
+            is absorption of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10224
+            is continuation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10226
+            is merger of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10213
+            has prequel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10122
+            is replacement in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10206
+            is separated from work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10169
+            has sequel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10020
+            is succeeded by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10170
+            is absorbed by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10145
+            is absorbed in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10146
+            is continued by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10191
+            is merged to form work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10212
+            is replaced in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10021
+            is split into work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10211
+            is adapted as choreography work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10091
             has subject (RDA 23.4):      http://rdaregistry.info/Elements/w/P10256
+            is work described in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10118
+            is work analysed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10121
+            is work commentary in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10116
+            is work critiqued in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10115
+            is work evaluated in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10120
+            is work reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10114
+            is description of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10100
+            is analysis of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10140
+            is commentary on work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10187
+            is critique of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10182
+            is evaluation of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10153
+            is description of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10277
+            is analysis of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10278
+            is commentary on expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10282
+            is critique of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10281
+            is evaluation of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10279
+            is review of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10280
+            is description of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10271
+            is analysis of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10272
+            is commentary on manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10276
+            is critique of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10275
+            is evaluation of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10273
+            is review of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10274
+            is commentary on item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10270
+            is description of person (RDA 23.5):      http://rdaregistry.info/Elements/w/P10325
+            is evaluation of RDA entity:      http://rdaregistry.info/Elements/w/P10361
+            is description of RDA entity:      http://rdaregistry.info/Elements/w/P10360
+            is description of agent:      http://rdaregistry.info/Elements/w/P10338
+            is description of family (RDA 23.5):      http://rdaregistry.info/Elements/w/P10327
+            is description of place:      http://rdaregistry.info/Elements/w/P10601
+            is part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10019
+            has part work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10147
+            has regional version:      http://rdaregistry.info/Elements/w/P10386
+            is regional version of:      http://rdaregistry.info/Elements/w/P10389
+            has television screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10163
+            is adapted as television program work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10085
+            is adapted as television screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10096
 
     WAU:RT:RDA:Expression:dvdVideo
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for expression:      http://rdaregistry.info/Elements/e/P20310
+            is same as LC NAF expression:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for expression:      http://rdaregistry.info/Elements/e/P20314
             has authorized access point for expression:      http://rdaregistry.info/Elements/e/P20313
+            has category of expression (Lookup for genres applicable to expressions):      http://rdaregistry.info/Elements/e/P20331
             has intended audience of expression:      http://rdaregistry.info/Elements/e/P20322
             has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
             has colour content (RDA 7.17):      http://rdaregistry.info/Elements/e/P20224
+            expression has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            expression has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            expression has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            expression has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
             has content type (RDA 6.9):      http://rdaregistry.info/Elements/e/P20001
             has date of expression (RDA 6.10):      http://rdaregistry.info/Elements/e/P20214
-            has title of expression:      http://rdaregistry.info/Elements/e/P20312
+            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has variant title of expression:      http://rdaregistry.info/Elements/e/P20316
             has language of expression (RDA 6.11):      http://rdaregistry.info/Elements/e/P20006
             has identifier for expression (RDA 6.13):      http://rdaregistry.info/Elements/e/P20002
@@ -4132,7 +4221,6 @@ WAU:profile:RDA:dvdVideo
             has date of capture (RDA 7.11.3):      http://rdaregistry.info/Elements/e/P20004
             has note on capture (RDA 7.11.4):      http://rdaregistry.info/Elements/e/P20309
             has script (RDA 7.13.2):      http://rdaregistry.info/Elements/e/P20065
-            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has accessibility content (RDA 7.14):      http://rdaregistry.info/Elements/e/P20208
             has supplementary content (RDA 7.16):      http://rdaregistry.info/Elements/e/P20206
             has aspect ratio (RDA 7.19):      http://rdaregistry.info/Elements/e/P20229
@@ -4141,11 +4229,10 @@ WAU:profile:RDA:dvdVideo
             has details of duration (RDA 7.22.1.5):      http://rdaregistry.info/Elements/e/P20278
             has award (RDA 7.28):      http://rdaregistry.info/Elements/e/P20005
             has note on expression (RDA 7.29):      http://rdaregistry.info/Elements/e/P20071
-            has note on changes in content characteristics (RDA 7.29.2):      http://rdaregistry.info/Elements/e/P20010
+            has University of Washington-specific note on expression (RDA 7.29):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has related agent of expression:      http://rdaregistry.info/Elements/e/P20301
-            has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
-            has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
+            expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has animator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20028
             has arranger agent of music (RDA 18.5):      http://rdaregistry.info/Elements/e/P20029
             has art director agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20038
@@ -4196,12 +4283,20 @@ WAU:profile:RDA:dvdVideo
             has writer of supplementary textual content (RDA 18.5):      http://rdaregistry.info/Elements/e/P20046
             has writer of added commentary (RDA 18.5):      http://rdaregistry.info/Elements/e/P20044
             has reviser agent:      http://rdaregistry.info/Elements/e/P20327
+            has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
+            has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has related manifestation of expression:      http://rdaregistry.info/Elements/e/P20299
+            is revision of (RDA 24.5):      http://rdaregistry.info/Elements/e/P20189
+            is dramatized as expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20073
+            is revised as (RDA 24.5):      http://rdaregistry.info/Elements/e/P20211
+            is augmented by expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20105
+            expression has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            is expression reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/e/P20274
 
     WAU:RT:RDA:Manifestation:dvdVideo
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
+            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
             has other title information (RDA 2.3.4):      http://rdaregistry.info/Elements/m/P30142
@@ -4247,18 +4342,8 @@ WAU:profile:RDA:dvdVideo
             has mode of issuance (RDA 2.13):      http://rdaregistry.info/Elements/m/P30003
             has identifier for manifestation (RDA 2.15):      http://rdaregistry.info/Elements/m/datatype/P30004
             has note on manifestation (RDA 2.17):      http://rdaregistry.info/Elements/m/P30137
-            has note on title (RDA 2.17.2):      http://rdaregistry.info/Elements/m/datatype/P30063
-            has note on statement of responsibility (RDA 2.17.3):      http://rdaregistry.info/Elements/m/datatype/P30057
-            has note on edition statement (RDA 2.17.4):      http://rdaregistry.info/Elements/m/datatype/P30064
-            has note on numbering of sequence (RDA 2.17.5):      http://rdaregistry.info/Elements/m/P30062
-            has note on production statement (RDA 2.17.6):      http://rdaregistry.info/Elements/m/P30054
-            has note on publication statement (RDA 2.17.7):      http://rdaregistry.info/Elements/m/P30055
-            has note on distribution statement (RDA 2.17.8):      http://rdaregistry.info/Elements/m/P30052
-            has note on manufacture statement (RDA 2.17.9):      http://rdaregistry.info/Elements/m/P30053
-            has note on copyright date (RDA 2.17.10):      http://rdaregistry.info/Elements/m/P30059
-            has note on series statement (RDA 2.17.11):      http://rdaregistry.info/Elements/m/P30058
+            has University of Washington-specific note on manifestation (RDA 2.17):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13):      http://rdaregistry.info/Elements/m/P30050
-            has note on identifier for manifestation (RDA 2.17.14):      http://rdaregistry.info/Elements/m/P30260
             has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
             has carrier type (RDA 3.3):      http://rdaregistry.info/Elements/m/P30001
             has extent of manifestation (RDA 3.4):      http://rdaregistry.info/Elements/m/P30182
@@ -4282,39 +4367,55 @@ WAU:profile:RDA:dvdVideo
             has regional encoding (RDA 3.19.6):      http://rdaregistry.info/Elements/m/P30006
             has encoded bitrate (RDA 3.19.7):      http://rdaregistry.info/Elements/m/P30202
             has equipment or system requirement (RDA 3.20):      http://rdaregistry.info/Elements/m/P30162
-            has note on extent of manifestation (RDA 3.21.2):      http://rdaregistry.info/Elements/m/P30061
-            has note on dimensions of manifestation (RDA 3.21.3):      http://rdaregistry.info/Elements/m/P30060
-            has note on changes in carrier characteristics (RDA 3.21.4):      http://rdaregistry.info/Elements/m/P30051
-            has contributor agent of text:      http://rdaregistry.info/Elements/m/P30328
-            has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
             has term of availability (RDA 4.2):      http://rdaregistry.info/Elements/m/P30160
-            has contact information (RDA 4.3):      http://rdaregistry.info/Elements/m/P30141
+            has restriction on use of manifestation (RDA 4.5):      http://rdaregistry.info/Elements/m/P30146
+            manifestation has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            manifestation has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            manifestation has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
+            manifestation has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            manifestation has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
             has uniform resource locator (RDA 4.6):      http://rdaregistry.info/Elements/m/P30154
-            has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            manifestation has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
+            has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
+            has contributor agent of text:      http://rdaregistry.info/Elements/m/P30328
             has producer agent of unpublished manifestation (RDA 21.2):      http://rdaregistry.info/Elements/m/P30081
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
             has broadcaster agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30067
             has film distributor agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30068
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
+            has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
+            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
+            manifestation has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            manifestation held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
     WAU:RT:RDA:Item:dvdVideo
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has restriction on use of item (RDA 4.5):      http://rdaregistry.info/Elements/i/P40048
+            item has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
+            item has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            item has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            item has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            item has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
             has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
+            item has physical location:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation
+            item has physical sublocation:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation
+            item has barcode:      https://doi.org/10.6069/uwlib.55.d.4#hasBarcode
             has immediate source of acquisition of item (RDA 2.19):      http://rdaregistry.info/Elements/i/P40050
             is accompanied by item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40029
             has related item of item:      http://rdaregistry.info/Elements/i/P40046
             is container of item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40034
             is contained in item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40009
             has restriction on access to item (RDA 4.4):      http://rdaregistry.info/Elements/i/P40047
-            has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
+            item has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has depositor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40006
             has former owner agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40019
             has donor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40007
             has seller agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40008
             has related agent of item (RDA 22.4):      http://rdaregistry.info/Elements/i/P40072
+            has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
+            item held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
 
 
@@ -4323,67 +4424,123 @@ WAU:profile:RDA:etd
 
     WAU:RT:RDA:Work:etd
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for work (RDA 6.1.2):      http://rdaregistry.info/Elements/w/P10328
+            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
             has authorized access point for work:      http://rdaregistry.info/Elements/w/P10331
-            has title of work (RDA 6.2):      http://rdaregistry.info/Elements/w/P10088
+            is same as LC NAF work:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for work:      http://rdaregistry.info/Elements/w/P10332
             has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
             has variant title of work (RDA 6.2.3):      http://rdaregistry.info/Elements/w/P10086
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
             has date of work (RDA 6.4):      http://rdaregistry.info/Elements/w/P10219
             has place of origin of work (RDA 6.5):      http://rdaregistry.info/Elements/w/P10218
-            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
-            has nature of content (RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (This is a note)(RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
             has coverage of content (RDA 7.3):      http://rdaregistry.info/Elements/w/P10216
+            has creator characteristic:      https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic
             has dissertation or thesis information (RDA 7.9):      http://rdaregistry.info/Elements/w/P10209
             has academic degree (RDA 7.9.2):      http://rdaregistry.info/Elements/w/P10077
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
-            has illustrations work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10093
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
+            has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
             is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
-            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
-            has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
+            has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
+            has consultant agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10071
             has degree committee member (RDA 18.5):      http://rdaregistry.info/Elements/w/P10284
             has degree granting institution (RDA 18.5):      http://rdaregistry.info/Elements/w/P10006
             has degree supervisor (RDA 18.5):      http://rdaregistry.info/Elements/w/P10041
             has related agent of work:      http://rdaregistry.info/Elements/w/P10311
             has sponsoring agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10067
+            work has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has numbering of part (RDA 24.6):      http://rdaregistry.info/Elements/w/P10012
+            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
             has related work of work:      http://rdaregistry.info/Elements/w/P10198
             has related expression of work:      http://rdaregistry.info/Elements/w/P10308
+            has related manifestation of work:      http://rdaregistry.info/Elements/w/P10309
+            has related item of work:      http://rdaregistry.info/Elements/w/P10310
+            is based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10190
+            is summary of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10179
+            has derivative work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10148
+            is abstracted as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10107
+            is abstracted in work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10089
+            is expanded as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10119
+            is inspiration for (RDA 24.5):      http://rdaregistry.info/Elements/w/P10291
+            is inspired by (RDA 24.5):      http://rdaregistry.info/Elements/w/P10290
+            is summarized as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10109
+            is augmentation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10192
+            has appendix work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10123
+            is augmented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10108
+            has addenda work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10112
+            has catalogue work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10110
+            has errata work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10092
+            has supplement work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10172
+            is complemented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10103
+            is absorption in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10225
+            is absorption of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10224
+            is merger of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10213
+            is replacement in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10206
+            is absorbed by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10145
+            is absorbed in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10146
+            is merged to form work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10212
+            is replaced in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10021
+            is split into work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10211
             has subject (RDA 23.4):      http://rdaregistry.info/Elements/w/P10256
+            is work described in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10118
+            is work analysed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10121
+            is work commentary in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10116
+            is work critiqued in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10115
+            is work evaluated in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10120
+            is work reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10114
+            is description of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10100
+            is analysis of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10140
+            is evaluation of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10153
+            is analysis of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10266
+            is critique of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10269
+            is evaluation of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10267
+            is description of person (RDA 23.5):      http://rdaregistry.info/Elements/w/P10325
+            is evaluation of RDA entity:      http://rdaregistry.info/Elements/w/P10361
+            is description of RDA entity:      http://rdaregistry.info/Elements/w/P10360
+            is description of agent:      http://rdaregistry.info/Elements/w/P10338
+            is description of family (RDA 23.5):      http://rdaregistry.info/Elements/w/P10327
+            is description of place:      http://rdaregistry.info/Elements/w/P10601
+            is part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10019
+            has part work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10147
 
     WAU:RT:RDA:Expression:etd
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for expression:      http://rdaregistry.info/Elements/e/P20310
+            is same as LC NAF expression:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for expression:      http://rdaregistry.info/Elements/e/P20314
             has authorized access point for expression:      http://rdaregistry.info/Elements/e/P20313
+            has category of expression (Lookup for genres applicable to expressions):      http://rdaregistry.info/Elements/e/P20331
             has intended audience of expression:      http://rdaregistry.info/Elements/e/P20322
             has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
             has colour content (RDA 7.17):      http://rdaregistry.info/Elements/e/P20224
             has content type (RDA 6.9):      http://rdaregistry.info/Elements/e/P20001
             has date of expression (RDA 6.10):      http://rdaregistry.info/Elements/e/P20214
-            has title of expression:      http://rdaregistry.info/Elements/e/P20312
+            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has variant title of expression:      http://rdaregistry.info/Elements/e/P20316
             has language of expression (RDA 6.11):      http://rdaregistry.info/Elements/e/P20006
             has identifier for expression (RDA 6.13):      http://rdaregistry.info/Elements/e/P20002
             has script (RDA 7.13.2):      http://rdaregistry.info/Elements/e/P20065
-            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has accessibility content (RDA 7.14):      http://rdaregistry.info/Elements/e/P20208
             has supplementary content (RDA 7.16):      http://rdaregistry.info/Elements/e/P20206
             has note on expression (RDA 7.29):      http://rdaregistry.info/Elements/e/P20071
-            has note on changes in content characteristics (RDA 7.29.2):      http://rdaregistry.info/Elements/e/P20010
+            has University of Washington-specific note on expression (RDA 7.29):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has related agent of expression:      http://rdaregistry.info/Elements/e/P20301
+            has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
+            expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
             has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has related expression of expression:      http://rdaregistry.info/Elements/e/P20205
-            has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
             has related manifestation of expression:      http://rdaregistry.info/Elements/e/P20299
+            is augmented by expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20105
+            expression has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            is expression reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/e/P20274
 
     WAU:RT:RDA:Manifestation:etd
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
+            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
             has other title information (RDA 2.3.4):      http://rdaregistry.info/Elements/m/P30142
@@ -4407,7 +4564,6 @@ WAU:profile:RDA:etd
             has place of publication (RDA 2.8.2):      http://rdaregistry.info/Elements/m/P30088
             has parallel place of publication (RDA 2.8.3):      http://rdaregistry.info/Elements/m/P30092
             has name of publisher (RDA 2.8.4):      http://rdaregistry.info/Elements/m/P30176
-            has parallel name of publisher (RDA 2.8.5):      http://rdaregistry.info/Elements/m/P30095
             has date of publication (RDA 2.8.6):      http://rdaregistry.info/Elements/m/P30011
             has place of distribution (RDA 2.9.2):      http://rdaregistry.info/Elements/m/P30085
             has parallel place of distribution (RDA 2.9.3):      http://rdaregistry.info/Elements/m/P30089
@@ -4428,15 +4584,7 @@ WAU:profile:RDA:etd
             has numbering within sequence (RDA 2.12.9):      http://rdaregistry.info/Elements/m/P30014
             has mode of issuance (RDA 2.13):      http://rdaregistry.info/Elements/m/P30003
             has note on manifestation (RDA 2.17):      http://rdaregistry.info/Elements/m/P30137
-            has note on title (RDA 2.17.2):      http://rdaregistry.info/Elements/m/datatype/P30063
-            has note on statement of responsibility (RDA 2.17.3):      http://rdaregistry.info/Elements/m/datatype/P30057
-            has note on edition statement (RDA 2.17.4):      http://rdaregistry.info/Elements/m/datatype/P30064
-            has note on production statement (RDA 2.17.6):      http://rdaregistry.info/Elements/m/P30054
-            has note on publication statement (RDA 2.17.7):      http://rdaregistry.info/Elements/m/P30055
-            has note on distribution statement (RDA 2.17.8):      http://rdaregistry.info/Elements/m/P30052
-            has note on manufacture statement (RDA 2.17.9):      http://rdaregistry.info/Elements/m/P30053
-            has note on copyright date (RDA 2.17.10):      http://rdaregistry.info/Elements/m/P30059
-            has note on series statement (RDA 2.17.11):      http://rdaregistry.info/Elements/m/P30058
+            has University of Washington-specific note on manifestation (RDA 2.17):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13):      http://rdaregistry.info/Elements/m/P30050
             has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
             has carrier type (RDA 3.3):      http://rdaregistry.info/Elements/m/P30001
@@ -4446,78 +4594,31 @@ WAU:profile:RDA:etd
             has digital representation of cartographic content (RDA 3.19.8):      http://rdaregistry.info/Elements/m/P30102
             has details of digital representation of cartographic content (RDA 3.19.8.4):      http://rdaregistry.info/Elements/m/P30222
             has equipment or system requirement (RDA 3.20):      http://rdaregistry.info/Elements/m/P30162
-            has note on extent of manifestation (RDA 3.21.2):      http://rdaregistry.info/Elements/m/P30061
-            has note on dimensions of manifestation (RDA 3.21.3):      http://rdaregistry.info/Elements/m/P30060
-            has note on changes in carrier characteristics (RDA 3.21.4):      http://rdaregistry.info/Elements/m/P30051
             has term of availability (RDA 4.2):      http://rdaregistry.info/Elements/m/P30160
             has restriction on use of manifestation (RDA 4.5):      http://rdaregistry.info/Elements/m/P30146
             has uniform resource locator (RDA 4.6):      http://rdaregistry.info/Elements/m/P30154
+            manifestation has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
+            has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
-            has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
+            manifestation has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            manifestation held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
     WAU:RT:RDA:Item:etd
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has restriction on use of item (RDA 4.5):      http://rdaregistry.info/Elements/i/P40048
             has immediate source of acquisition of item (RDA 2.19):      http://rdaregistry.info/Elements/i/P40050
             is accompanied by item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40029
             has related item of item:      http://rdaregistry.info/Elements/i/P40046
             is container of item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40034
             is contained in item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40009
             has restriction on access to item (RDA 4.4):      http://rdaregistry.info/Elements/i/P40047
+            item has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
-
-
-
-
-WAU:profile:RDA:item:test
-
-    WAU:RT:RDA:Item:Test
-            Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
-            has custodial history of item (RDA 2.18):      http://rdaregistry.info/Elements/i/P40026
-            has immediate source of acquisition of item (RDA 2.19):      http://rdaregistry.info/Elements/i/P40050
-            has note on extent of item (RDA 3.22.2):      http://rdaregistry.info/Elements/i/P40011
-            has note on dimensions of item (RDA 3.22.3):      http://rdaregistry.info/Elements/i/P40010
-            has restriction on access to item (RDA 4.4):      http://rdaregistry.info/Elements/i/P40047
-            has related item of item:      http://rdaregistry.info/Elements/i/P40046
-            has owner agent (RDA 22.2):      http://rdaregistry.info/Elements/i/P40021
-            has depositor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40006
-            has former owner agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40019
-            has donor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40007
-            has seller agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40008
-            has custodian agent (RDA 22.3):      http://rdaregistry.info/Elements/i/P40020
-            has related agent of item (RDA 22.4):      http://rdaregistry.info/Elements/i/P40072
-            has annotator (RDA 18.5):      http://rdaregistry.info/Elements/i/P40015
-            has autographer (RDA 18.5):      http://rdaregistry.info/Elements/i/P40016
-            has binder agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40013
-            has curator agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40017
-            has dedicatee agent of item (RDA 18.5):      http://rdaregistry.info/Elements/i/P40025
-            has honouree agent of item (RDA 18.5):      http://rdaregistry.info/Elements/i/P40022
-            has illuminator agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40012
-            has inscriber (RDA 18.5):      http://rdaregistry.info/Elements/i/P40014
-            has restorationist agent of item (RDA 18.5):      http://rdaregistry.info/Elements/i/P40024
-            has barcode:      http://id.loc.gov/ontologies/bibframe/identifiedBy
-            has shelf mark:      http://id.loc.gov/ontologies/bibframe/shelfmark
-            Enumeration and chronology:      http://id.loc.gov/ontologies/bibframe/enumerationAndChronology
-            Held by:      http://id.loc.gov/ontologies/bibframe/heldBy
-            Shelving location:      http://id.loc.gov/ontologies/bibframe/sublocation
-            Electronic location:      http://id.loc.gov/ontologies/bibframe/electronicLocator
-            Usage and access policy:      http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy
-
-    WAU:RT:RDA:Item:Barcode
-            Barcode:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
-
-    WAU:RT:RDA:Item:ShelfMarkDdc
-            DDC call number:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
-
-    WAU:RT:RDA:Item:ShelfMarkLcc
-            LCC call number:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
-
-    WAU:RT:RDA:Item:ShelfMark
-            Shelf Mark:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+            item held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
 
 
@@ -4527,7 +4628,9 @@ WAU:profile:RDA
     WAU:RT:RDA:Work
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has academic supervisor:      http://rdaregistry.info/Elements/w/P10407
+            is same as LC NAF work:      http://www.w3.org/2004/02/skos/core#exactMatch
             has access point for work (RDA 6.1.2):      http://rdaregistry.info/Elements/w/P10328
+            work has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has abridger agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20049
             has addressee agent (RDA 19.3):      http://rdaregistry.info/Elements/w/P10070
             has addressee collective agent:      http://rdaregistry.info/Elements/w/P10460
@@ -4595,11 +4698,13 @@ WAU:profile:RDA
             has casting director corporate body:      http://rdaregistry.info/Elements/w/P10547
             has casting director family:      http://rdaregistry.info/Elements/w/P10594
             has casting director person:      http://rdaregistry.info/Elements/w/P10453
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
             has intended audience of representative expression (RDA 7.7):      http://rdaregistry.info/Elements/w/P10217
+            has creator characteristic:      https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic
             has choreographer agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10060
             has choreographer collective agent:      http://rdaregistry.info/Elements/w/P10481
             has choreographer corporate body:      http://rdaregistry.info/Elements/w/P10528
@@ -4933,6 +5038,7 @@ WAU:profile:RDA
             has equinox (RDA 7.5):      http://rdaregistry.info/Elements/w/P10214
             has note on metadata work (RDA 24.7 24.8 29.6 29.7):      http://rdaregistry.info/Elements/w/P10402
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
+            has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             is opera adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10234
             is adapted as opera work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10236
             has opus number (RDA 6.16.1.3.2):      http://rdaregistry.info/Elements/w/P10333
@@ -5035,7 +5141,7 @@ WAU:profile:RDA
             is sounds for work:      http://rdaregistry.info/Elements/w/P10376
             has sounds work:      http://rdaregistry.info/Elements/w/P10374
             has source consulted:      http://rdaregistry.info/Elements/w/P10406
-            has special issue:      http://rdaregistry.info/Elements/w/P10410
+            has special issue:      null
             is special issue of:      http://rdaregistry.info/Elements/w/P10411
             is split from work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10168
             is spoken word for work:      http://rdaregistry.info/Elements/w/P10375
@@ -5070,7 +5176,7 @@ WAU:profile:RDA
             has subject person:      http://rdaregistry.info/Elements/w/P10261
             has subject corporate body:      http://rdaregistry.info/Elements/w/P10263
             has coverage of content (RDA 7.3):      http://rdaregistry.info/Elements/w/P10216
-            has nature of content (RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (This is a note)(RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
             has television director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10015
             has television director collective agent:      http://rdaregistry.info/Elements/w/P10467
             has television director corporate body:      http://rdaregistry.info/Elements/w/P10514
@@ -5122,9 +5228,15 @@ WAU:profile:RDA
             is adapted as musical theatre work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10235
             is music for television program work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10242
             is music for video work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10240
+            work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            work has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
 
     WAU:RT:RDA:Expression
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            is same as LC NAF expression:      http://www.w3.org/2004/02/skos/core#exactMatch
+            expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has abridger agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20049
             has abridger collective agent:      http://rdaregistry.info/Elements/e/P20416
             has abridger corporate body:      http://rdaregistry.info/Elements/e/P20475
@@ -5166,7 +5278,7 @@ WAU:profile:RDA
             has authorized access point for expression:      http://rdaregistry.info/Elements/e/P20313
             has identifier for expression (RDA 6.13):      http://rdaregistry.info/Elements/e/P20002
             is augmented by expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20105
-            has category of expression:      http://rdaregistry.info/Elements/e/P20331
+            has category of expression (Lookup for genres applicable to expressions):      http://rdaregistry.info/Elements/e/P20331
             has censor agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20287
             has censor collective agent:      http://rdaregistry.info/Elements/e/P20415
             has censor corporate body:      http://rdaregistry.info/Elements/e/P20474
@@ -5446,6 +5558,7 @@ WAU:profile:RDA
             has makeup artist person:      http://rdaregistry.info/Elements/e/P20341
             has medium of performance of choreographic content:      http://rdaregistry.info/Elements/e/P20324
             has note on expression (RDA 7.29):      http://rdaregistry.info/Elements/e/P20071
+            has University of Washington-specific note on expression (RDA 7.29):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has note on capture (RDA 7.11.4):      http://rdaregistry.info/Elements/e/P20309
             has note on changes in content characteristics (RDA 7.29.2):      http://rdaregistry.info/Elements/e/P20010
             is set to music as expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20087
@@ -5668,6 +5781,11 @@ WAU:profile:RDA
             is adapted as musical theatre expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20241
             is music for television program expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20248
             is music for video expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20246
+            expression has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            expression has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            expression has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            expression has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            expression has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
 
     WAU:RT:RDA:Manifestation
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
@@ -5688,6 +5806,7 @@ WAU:profile:RDA
             has bibliographic format (RDA 3.12):      http://rdaregistry.info/Elements/m/P30197
             has details of bibliographic format (RDA 3.12.1.4):      http://rdaregistry.info/Elements/m/P30218
             has binding of manifestation:      http://rdaregistry.info/Elements/m/P30310
+            manifestation has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has book designer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30069
             has book designer collective agent:      http://rdaregistry.info/Elements/m/P30378
             has book designer corporate body:      http://rdaregistry.info/Elements/m/P30407
@@ -5708,7 +5827,7 @@ WAU:profile:RDA
             has caster corporate body:      http://rdaregistry.info/Elements/m/P30411
             has caster family:      http://rdaregistry.info/Elements/m/P30440
             has caster person:      http://rdaregistry.info/Elements/m/P30353
-            has category of manifestation:      http://rdaregistry.info/Elements/m/P30335
+            has category of manifestation (Lookup for genres applicable to expressions):      http://rdaregistry.info/Elements/m/P30335
             has title of manifestation (RDA 2.3):      http://rdaregistry.info/Elements/m/P30134
             has variant title of manifestation (RDA 2.3.6):      http://rdaregistry.info/Elements/m/P30128
             has collotyper agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30077
@@ -5831,9 +5950,9 @@ WAU:profile:RDA
             has details of projection characteristic of motion picture film (RDA 3.17.1.4):      http://rdaregistry.info/Elements/m/P30241
             has fingerprint:      http://rdaregistry.info/Elements/m/P30296
             has first alphanumeric designation of alternative sequence (RDA 2.6.6):      http://rdaregistry.info/Elements/m/P30097
-            has first alphanumeric designation of sequence (RDA 2.6.2):      http://rdaregistry.info/Elements/m/P30147
+            has numeric and/or alphabetic designation of first issue or part of sequence (RDA 2.6.2):      http://rdaregistry.info/Elements/m/P30147
             has first chronological designation of alternative sequence (RDA 2.6.7):      http://rdaregistry.info/Elements/m/P30099
-            has first chronological designation of sequence (RDA 2.6.3):      http://rdaregistry.info/Elements/m/P30149
+            has chronological designation of first issue or part of sequence (RDA 2.6.3):      http://rdaregistry.info/Elements/m/P30149
             has font point size:      http://rdaregistry.info/Elements/m/P30306
             has generation (RDA 3.10):      http://rdaregistry.info/Elements/m/P30191
             has details of generation (RDA 3.10.1.4):      http://rdaregistry.info/Elements/m/P30252
@@ -5883,6 +6002,7 @@ WAU:profile:RDA
             has name of publisher (RDA 2.8.4):      http://rdaregistry.info/Elements/m/P30176
             is issued with (RDA 24.5):      http://rdaregistry.info/Elements/m/P30035
             has mode of issuance (RDA 2.13):      http://rdaregistry.info/Elements/m/P30003
+            has mode of issuance (RDA 2.13):      http://rdaregistry.info/Elements/m/P30003
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
             has encoding format (RDA 3.19.3):      http://rdaregistry.info/Elements/m/P30096
             has details of encoding format (RDA 3.19.3.4):      http://rdaregistry.info/Elements/m/P30224
@@ -5893,7 +6013,7 @@ WAU:profile:RDA
             has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
             has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
             has last alphanumeric designation of alternative sequence (RDA 2.6.8):      http://rdaregistry.info/Elements/m/P30098
-            has last alphanumeric designation of sequence (RDA 2.6.4):      http://rdaregistry.info/Elements/m/P30148
+            has numeric and/or alphabetic designation of last issue or part of sequence (RDA 2.6.4):      http://rdaregistry.info/Elements/m/P30148
             has last chronological designation of alternative sequence (RDA 2.6.9):      http://rdaregistry.info/Elements/m/P30100
             has last chronological designation of sequence (RDA 2.6.5):      http://rdaregistry.info/Elements/m/P30150
             has playing speed (RDA 3.16.4):      http://rdaregistry.info/Elements/m/P30201
@@ -5925,6 +6045,7 @@ WAU:profile:RDA
             has other title information (RDA 2.3.4):      http://rdaregistry.info/Elements/m/P30142
             has material:      http://rdaregistry.info/Elements/m/P30304
             has note on title (RDA 2.17.2):      http://rdaregistry.info/Elements/m/datatype/P30063
+            has note on frequency (RDA 2.17.2):      http://rdaregistry.info/Elements/m/datatype/P30056
             has note on copyright date (RDA 2.17.10):      http://rdaregistry.info/Elements/m/P30059
             has note on manufacture statement (RDA 2.17.9):      http://rdaregistry.info/Elements/m/P30053
             has note on carrier (RDA 3.21):      http://rdaregistry.info/Elements/m/P30214
@@ -5934,6 +6055,7 @@ WAU:profile:RDA
             has note on identifier for manifestation (RDA 2.17.14):      http://rdaregistry.info/Elements/m/P30260
             has note on dimensions of manifestation (RDA 3.21.3):      http://rdaregistry.info/Elements/m/P30060
             has note on manifestation (RDA 2.17):      http://rdaregistry.info/Elements/m/P30137
+            has University of Washington-specific note on manifestation (RDA 2.17):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has note on extent of manifestation (RDA 3.21.2):      http://rdaregistry.info/Elements/m/P30061
             has note on production statement (RDA 2.17.6):      http://rdaregistry.info/Elements/m/P30054
             has note on series statement (RDA 2.17.11):      http://rdaregistry.info/Elements/m/P30058
@@ -5941,6 +6063,7 @@ WAU:profile:RDA
             has note on statement of responsibility (RDA 2.17.3):      http://rdaregistry.info/Elements/m/datatype/P30057
             has note on distribution statement (RDA 2.17.8):      http://rdaregistry.info/Elements/m/P30052
             is accompanied by manifestation (RDA 24.5):      http://rdaregistry.info/Elements/m/P30027
+            has frequency (RDA 2.14):      http://rdaregistry.info/Elements/m/P30168
             has identifier for manifestation (RDA 2.15):      http://rdaregistry.info/Elements/m/datatype/P30004
             is manifestation reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/m/P30259
             is manifestation critiqued in (RDA 23.5):      http://rdaregistry.info/Elements/m/P30257
@@ -5973,6 +6096,8 @@ WAU:profile:RDA
             has papermaker person:      http://rdaregistry.info/Elements/m/P30364
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
             has parallel other title information (RDA 2.3.5):      http://rdaregistry.info/Elements/m/P30151
+            has earlier title proper (RDA 2.3.7):      http://rdaregistry.info/Elements/m/P30130
+            has later title proper (RDA 2.3.8):      http://rdaregistry.info/Elements/m/P30129
             has parallel name of producer (RDA 2.7.5):      http://rdaregistry.info/Elements/m/P30094
             has parallel name of manufacturer (RDA 2.10.5):      http://rdaregistry.info/Elements/m/P30049
             has parallel name of publisher (RDA 2.8.5):      http://rdaregistry.info/Elements/m/P30095
@@ -6076,10 +6201,19 @@ WAU:profile:RDA
             has video characteristic (RDA 3.18):      http://rdaregistry.info/Elements/m/P30126
             has details of video characteristic (RDA 3.18.1.4):      http://rdaregistry.info/Elements/m/P30250
             has plate number for notated music (RDA 2.15.3):      http://rdaregistry.info/Elements/m/P30066
+            manifestation has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            manifestation held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
+            manifestation has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            manifestation has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            manifestation has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            manifestation has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
+            manifestation has LC Geographic Classification:      https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification
+            manifestation has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
 
     WAU:RT:RDA:Item
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has access point for item:      http://rdaregistry.info/Elements/i/P40080
+            item has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has annotator (RDA 18.5):      http://rdaregistry.info/Elements/i/P40015
             has appellation of item:      http://rdaregistry.info/Elements/i/P40081
             has authorized access point for item:      http://rdaregistry.info/Elements/i/P40083
@@ -6215,6 +6349,15 @@ WAU:profile:RDA
             has title of item:      http://rdaregistry.info/Elements/i/P40082
             has variant access point for item:      http://rdaregistry.info/Elements/i/P40084
             has variant title of item:      http://rdaregistry.info/Elements/i/P40086
+            item held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
+            item has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            item has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            item has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            item has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
+            item has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
+            item has physical location:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation
+            item has physical sublocation:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation
+            item has barcode:      https://doi.org/10.6069/uwlib.55.d.4#hasBarcode
 
     WAU:RT:RDA:Agent
             Administrative Metadata for Agent:      http://id.loc.gov/ontologies/bibframe/adminMetadata
@@ -7553,6 +7696,33 @@ WAU:profile:RDA
             is year degree granted of:      http://rdaregistry.info/Elements/t/P70046
             has owner:      http://rdaregistry.info/Elements/u/P60404
 
+    WAU:RT:BF2:BFLC:AdminMetadata
+            Your cataloger ID (UW netid):      http://id.loc.gov/ontologies/bflc/catalogerID
+            Record status:      http://id.loc.gov/ontologies/bibframe/status
+            Encoding level:      http://id.loc.gov/ontologies/bflc/encodingLevel
+            Description conventions:      http://id.loc.gov/ontologies/bibframe/descriptionConventions
+            Source of cataloging:      http://id.loc.gov/ontologies/bibframe/source
+            Description language:      http://id.loc.gov/ontologies/bibframe/descriptionLanguage
+            Data creation date (EDTF):      http://id.loc.gov/ontologies/bibframe/creationDate
+            Data change date (EDTF):      http://id.loc.gov/ontologies/bibframe/changeDate
+            Description authentication:      http://id.loc.gov/ontologies/bibframe/descriptionAuthentication
+
+    WAU:RT:BF2:BFLC:AdminMetadata:Status
+            Code:      http://id.loc.gov/ontologies/bibframe/code
+
+    WAU:RT:MADSRDF:complexSubject
+            Component List:      http://www.loc.gov/mads/rdf/v1#componentList
+            Pre-coordinate Subject:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+            Label:      http://www.w3.org/2000/01/rdf-schema#label
+
+    WAU:RT:MADSRDF:simpleSubject
+            Authoritative Label:      http://www.loc.gov/mads/rdf/v1#authoritativeLabel
+            Subject Search:      http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+    WAU:RT:RDF:list
+            Subject:      http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+            Add another subject:      http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+
 
 
 
@@ -7560,31 +7730,35 @@ WAU:profile:RDA:map
 
     WAU:RT:RDA:Work:map
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for work (RDA 6.1.2):      http://rdaregistry.info/Elements/w/P10328
+            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
             has authorized access point for work:      http://rdaregistry.info/Elements/w/P10331
-            has title of work (RDA 6.2):      http://rdaregistry.info/Elements/w/P10088
+            is same as LC NAF work:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for work:      http://rdaregistry.info/Elements/w/P10332
             has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
             has variant title of work (RDA 6.2.3):      http://rdaregistry.info/Elements/w/P10086
             has key title:      http://rdaregistry.info/Elements/w/P10367
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
             has date of work (RDA 6.4):      http://rdaregistry.info/Elements/w/P10219
             has place of origin of work (RDA 6.5):      http://rdaregistry.info/Elements/w/P10218
-            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
-            has nature of content (RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (This is a note)(RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
             has coverage of content (RDA 7.3):      http://rdaregistry.info/Elements/w/P10216
             has coordinates of cartographic content (RDA 7.4):      http://rdaregistry.info/Elements/w/P10024
+            has creator characteristic:      https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic
             has dissertation or thesis information (RDA 7.9):      http://rdaregistry.info/Elements/w/P10209
             has academic degree (RDA 7.9.2):      http://rdaregistry.info/Elements/w/P10077
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
-            has illustrations work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10093
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
+            has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has ISSN:      http://rdaregistry.info/Elements/w/P10366
             has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
             is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
-            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
+            work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has cartographer agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10052
             has compiler agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10055
+            has designer agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10051
             has commissioning body agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10287
             has consultant agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10071
             has dedicatee agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10069
@@ -7592,7 +7766,6 @@ WAU:profile:RDA:map
             has degree committee member (RDA 18.5):      http://rdaregistry.info/Elements/w/P10284
             has degree granting institution (RDA 18.5):      http://rdaregistry.info/Elements/w/P10006
             has degree supervisor (RDA 18.5):      http://rdaregistry.info/Elements/w/P10041
-            has director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10066
             has founding agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10299
             has honouree agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10049
             has hosting institution (RDA 18.5):      http://rdaregistry.info/Elements/w/P10007
@@ -7603,22 +7776,79 @@ WAU:profile:RDA:map
             has researcher agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10293
             has related agent of work:      http://rdaregistry.info/Elements/w/P10311
             has sponsoring agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10067
+            work has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has numbering of part (RDA 24.6):      http://rdaregistry.info/Elements/w/P10012
+            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
             has related work of work:      http://rdaregistry.info/Elements/w/P10198
             has related expression of work:      http://rdaregistry.info/Elements/w/P10308
+            has related manifestation of work:      http://rdaregistry.info/Elements/w/P10309
+            has related item of work:      http://rdaregistry.info/Elements/w/P10310
+            is based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10190
+            is adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10142
+            is expanded version of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10184
+            is imitation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10196
+            is remake of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10185
+            is summary of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10179
+            has derivative work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10148
+            is expanded as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10119
+            is indexed in work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10090
+            is inspiration for (RDA 24.5):      http://rdaregistry.info/Elements/w/P10291
+            is inspired by (RDA 24.5):      http://rdaregistry.info/Elements/w/P10290
+            is remade as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10032
+            has commemoration (RDA 24.5):      http://rdaregistry.info/Elements/w/P10294
+            is commemoration of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10295
+            is augmentation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10192
+            is addenda to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10177
+            is appendix to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10151
+            has appendix work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10123
+            has index work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10158
+            is supplement to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10154
+            is augmented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10108
+            has addenda work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10112
+            has catalogue work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10110
+            has errata work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10092
+            has guide work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10124
+            has supplement work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10172
+            is complemented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10103
+            is absorption in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10225
+            is absorption of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10224
+            is merger of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10213
+            is replacement in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10206
+            is separated from work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10169
+            is absorbed by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10145
+            is absorbed in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10146
+            is merged to form work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10212
+            is replaced in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10021
+            is split into work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10211
+            is parodied as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10144
             has subject (RDA 23.4):      http://rdaregistry.info/Elements/w/P10256
+            is work described in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10118
+            is work analysed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10121
+            is work commentary in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10116
+            is work critiqued in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10115
+            is work evaluated in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10120
+            is work reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10114
+            is description of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10100
+            is evaluation of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10153
+            is review of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10274
+            is part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10019
+            has part work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10147
 
     WAU:RT:RDA:Expression:map
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for expression:      http://rdaregistry.info/Elements/e/P20310
+            is same as LC NAF expression:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for expression:      http://rdaregistry.info/Elements/e/P20314
             has authorized access point for expression:      http://rdaregistry.info/Elements/e/P20313
+            has category of expression (Lookup for genres applicable to expressions):      http://rdaregistry.info/Elements/e/P20331
             has intended audience of expression:      http://rdaregistry.info/Elements/e/P20322
             has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
             has details of cartographic content (RDA 7.27):      http://rdaregistry.info/Elements/e/P20210
             has colour content (RDA 7.17):      http://rdaregistry.info/Elements/e/P20224
+            expression has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            expression has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             has content type (RDA 6.9):      http://rdaregistry.info/Elements/e/P20001
             has date of expression (RDA 6.10):      http://rdaregistry.info/Elements/e/P20214
-            has title of expression:      http://rdaregistry.info/Elements/e/P20312
+            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has variant title of expression:      http://rdaregistry.info/Elements/e/P20316
             has language of expression (RDA 6.11):      http://rdaregistry.info/Elements/e/P20006
             has identifier for expression (RDA 6.13):      http://rdaregistry.info/Elements/e/P20002
@@ -7627,15 +7857,14 @@ WAU:profile:RDA:map
             has details of form of tactile notation (RDA 7.13.4.4):      http://rdaregistry.info/Elements/e/P20265
             has relief type:      http://rdaregistry.info/Elements/e/P20318
             has projection of cartographic content (RDA 7.26):      http://rdaregistry.info/Elements/e/P20216
-            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has accessibility content (RDA 7.14):      http://rdaregistry.info/Elements/e/P20208
             has supplementary content (RDA 7.16):      http://rdaregistry.info/Elements/e/P20206
             has scale (RDA 7.25):      http://rdaregistry.info/Elements/e/P20228
             has note on expression (RDA 7.29):      http://rdaregistry.info/Elements/e/P20071
+            has University of Washington-specific note on expression (RDA 7.29):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has related agent of expression:      http://rdaregistry.info/Elements/e/P20301
-            has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
-            has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
+            expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has colourist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20283
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has translator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20037
@@ -7643,12 +7872,19 @@ WAU:profile:RDA:map
             has writer of added text (RDA 18.5):      http://rdaregistry.info/Elements/e/P20030
             has letterer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20259
             has reviser agent:      http://rdaregistry.info/Elements/e/P20327
+            has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
+            has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has related manifestation of expression:      http://rdaregistry.info/Elements/e/P20299
+            is revision of (RDA 24.5):      http://rdaregistry.info/Elements/e/P20189
+            is revised as (RDA 24.5):      http://rdaregistry.info/Elements/e/P20211
+            is augmented by expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20105
+            expression has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            is expression reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/e/P20274
 
     WAU:RT:RDA:Manifestation:map
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
+            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
             has other title information (RDA 2.3.4):      http://rdaregistry.info/Elements/m/P30142
@@ -7695,6 +7931,7 @@ WAU:profile:RDA:map
             has mode of issuance (RDA 2.13):      http://rdaregistry.info/Elements/m/P30003
             has identifier for manifestation (RDA 2.15):      http://rdaregistry.info/Elements/m/datatype/P30004
             has note on manifestation (RDA 2.17):      http://rdaregistry.info/Elements/m/P30137
+            has University of Washington-specific note on manifestation (RDA 2.17):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
             has carrier type (RDA 3.3):      http://rdaregistry.info/Elements/m/P30001
             has extent of manifestation (RDA 3.4):      http://rdaregistry.info/Elements/m/P30182
@@ -7703,7 +7940,6 @@ WAU:profile:RDA:map
             has applied material (RDA 3.7):      http://rdaregistry.info/Elements/m/P30084
             has mount (RDA 3.8):      http://rdaregistry.info/Elements/m/P30186
             has production method (RDA 3.9):      http://rdaregistry.info/Elements/m/P30187
-            has generation (RDA 3.10):      http://rdaregistry.info/Elements/m/P30191
             has layout (RDA 3.11):      http://rdaregistry.info/Elements/m/P30155
             has font size (RDA 3.13):      http://rdaregistry.info/Elements/m/P30199
             has polarity (RDA 3.14):      http://rdaregistry.info/Elements/m/P30196
@@ -7711,13 +7947,15 @@ WAU:profile:RDA:map
             has digital representation of cartographic content (RDA 3.19.8):      http://rdaregistry.info/Elements/m/P30102
             has details of digital representation of cartographic content (RDA 3.19.8.4):      http://rdaregistry.info/Elements/m/P30222
             has equipment or system requirement (RDA 3.20):      http://rdaregistry.info/Elements/m/P30162
-            has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
             has term of availability (RDA 4.2):      http://rdaregistry.info/Elements/m/P30160
-            has contact information (RDA 4.3):      http://rdaregistry.info/Elements/m/P30141
             has restriction on use of manifestation (RDA 4.5):      http://rdaregistry.info/Elements/m/P30146
+            manifestation has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            manifestation has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            manifestation has LC Geographic Classification:      https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification
+            manifestation has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
             has uniform resource locator (RDA 4.6):      http://rdaregistry.info/Elements/m/P30154
-            has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            manifestation has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
+            has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
             has surveyor agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30312
             has producer agent of unpublished manifestation (RDA 21.2):      http://rdaregistry.info/Elements/m/P30081
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
@@ -7730,30 +7968,42 @@ WAU:profile:RDA:map
             has papermaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30215
             has platemaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30075
             has printer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30078
+            has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
+            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
+            manifestation has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            manifestation held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
     WAU:RT:RDA:Item:map
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has restriction on use of item (RDA 4.5):      http://rdaregistry.info/Elements/i/P40048
+            item has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
+            item has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            item has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
+            item has physical location:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation
+            item has physical sublocation:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation
+            item has barcode:      https://doi.org/10.6069/uwlib.55.d.4#hasBarcode
             has immediate source of acquisition of item (RDA 2.19):      http://rdaregistry.info/Elements/i/P40050
             is bound with (RDA 24.5):      http://rdaregistry.info/Elements/i/P40032
             is accompanied by item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40029
             has related item of item:      http://rdaregistry.info/Elements/i/P40046
             is container of item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40034
             is contained in item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40009
-            has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
+            item has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has depositor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40006
             has former owner agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40019
             has donor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40007
             has seller agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40008
             has related agent of item (RDA 22.4):      http://rdaregistry.info/Elements/i/P40072
-            has annotator (RDA 18.5):      http://rdaregistry.info/Elements/i/P40015
             has autographer (RDA 18.5):      http://rdaregistry.info/Elements/i/P40016
             has binder agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40013
             has illuminator agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40012
             has inscriber (RDA 18.5):      http://rdaregistry.info/Elements/i/P40014
             has restorationist agent of item (RDA 18.5):      http://rdaregistry.info/Elements/i/P40024
+            has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
+            item held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
 
 
@@ -7762,47 +8012,46 @@ WAU:profile:RDA:monograph
 
     WAU:RT:RDA:Work:monograph
             Administrative Metadata for Work:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for work (RDA 6.1.2):      http://rdaregistry.info/Elements/w/P10328
+            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
             has authorized access point for work:      http://rdaregistry.info/Elements/w/P10331
-            has title of work (RDA 6.2):      http://rdaregistry.info/Elements/w/P10088
+            is same as LC NAF work:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for work:      http://rdaregistry.info/Elements/w/P10332
             has preferred title of work (RDA 6.2.2):      http://rdaregistry.info/Elements/w/P10223
             has variant title of work (RDA 6.2.3):      http://rdaregistry.info/Elements/w/P10086
-            has category of work (RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
+            has category of work (Genre lookup)(RDA 6.3):      http://rdaregistry.info/Elements/w/P10004
             has date of work (RDA 6.4):      http://rdaregistry.info/Elements/w/P10219
             has place of origin of work (RDA 6.5):      http://rdaregistry.info/Elements/w/P10218
-            has identifier for work (RDA 6.8):      http://rdaregistry.info/Elements/w/P10002
-            has nature of content (RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
+            has nature of content (This is a note)(RDA 7.2):      http://rdaregistry.info/Elements/w/P10222
             has coverage of content (RDA 7.3):      http://rdaregistry.info/Elements/w/P10216
+            has creator characteristic:      https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic
             has dissertation or thesis information (RDA 7.9):      http://rdaregistry.info/Elements/w/P10209
             has academic degree (RDA 7.9.2):      http://rdaregistry.info/Elements/w/P10077
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
-            has illustrations work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10093
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
+            has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has ISSN:      http://rdaregistry.info/Elements/w/P10366
             has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
             is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
+            work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            work has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
+            has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has sculptor agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10202
-            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
             has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has architect agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10062
-            has landscape architect agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10200
             has artist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10058
             has book artist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10254
             has calligrapher agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10253
-            has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has librettist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10205
             has lyricist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10204
             has rapporteur agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10255
             has screenwriter agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10203
-            has cartographer agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10052
-            has choreographer agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10060
             has compiler agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10055
-            has composer agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10053
             has designer agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10051
             has enacting jurisdiction (RDA 18.5):      http://rdaregistry.info/Elements/w/P10017
             has interviewee agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10059
             has interviewer agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10057
-            has inventor agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10054
             has photographer agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10056
             has praeses (RDA 18.5):      http://rdaregistry.info/Elements/w/P10045
             has programmer agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10050
@@ -7812,7 +8061,6 @@ WAU:profile:RDA:monograph
             has appellant person (RDA 18.5):      http://rdaregistry.info/Elements/w/P10042
             has appellee person (RDA 18.5):      http://rdaregistry.info/Elements/w/P10035
             has appellee corporate body (RDA 18.5):      http://rdaregistry.info/Elements/w/P10005
-            has casting director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10305
             has commissioning body agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10287
             has consultant agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10071
             has court governed (RDA 18.5):      http://rdaregistry.info/Elements/w/P10011
@@ -7823,8 +8071,6 @@ WAU:profile:RDA:monograph
             has degree committee member (RDA 18.5):      http://rdaregistry.info/Elements/w/P10284
             has degree granting institution (RDA 18.5):      http://rdaregistry.info/Elements/w/P10006
             has degree supervisor (RDA 18.5):      http://rdaregistry.info/Elements/w/P10041
-            has director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10066
-            has director agent of photography (RDA 18.5):      http://rdaregistry.info/Elements/w/P10068
             has editorial director agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10298
             has founding agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10299
             has honouree agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10049
@@ -7843,41 +8089,192 @@ WAU:profile:RDA:monograph
             has researcher agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10293
             has related agent of work:      http://rdaregistry.info/Elements/w/P10311
             has sponsoring agent of work (RDA 18.5):      http://rdaregistry.info/Elements/w/P10067
+            work has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has abridger agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20049
             has numbering of part (RDA 24.6):      http://rdaregistry.info/Elements/w/P10012
+            has expression of work (RDA 17.5):      http://rdaregistry.info/Elements/w/P10078
             has related work of work:      http://rdaregistry.info/Elements/w/P10198
             has related expression of work:      http://rdaregistry.info/Elements/w/P10308
+            has related manifestation of work:      http://rdaregistry.info/Elements/w/P10309
+            has related item of work:      http://rdaregistry.info/Elements/w/P10310
+            is based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10190
+            is abridgement of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10125
+            is abstract of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10126
+            is abstracts for work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10193
+            is adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10142
+            is choreographic adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10183
+            is dramatization of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10127
+            is graphic novelization of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10252
+            is libretto based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10189
+            is musical theatre adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10233
+            is novelization of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10130
+            is opera adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10234
+            is radio script based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10137
+            is screenplay based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10133
+            is motion picture screenplay based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10134
+            is television screenplay based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10135
+            is video screenplay based on work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10136
+            is verse adaptation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10128
+            is digest of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10139
+            is expanded version of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10184
+            is free translation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10143
+            is imitation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10196
+            is parody of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10197
+            is paraphrase of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10186
+            is summary of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10179
+            has derivative work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10148
+            is abridged as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10167
+            is abstracted as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10107
+            is abstracted in work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10089
+            is adapted as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10155
+            is adapted as graphic novel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10251
+            is adapted as libretto work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10113
+            is adapted as motion picture work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10025
+            is adapted as musical theatre work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10235
+            is adapted as novel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10034
+            is adapted as opera work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10236
+            is adapted as oratorio work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10289
+            is adapted as radio program work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10076
+            is adapted as radio script work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10098
+            is adapted as motion picture screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10094
+            is adapted as screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10095
+            is screenplay for motion picture work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10173
+            is adapted as video screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10097
+            is adapted as video work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10087
+            is adapted as video game work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10249
+            is adapted in verse as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10023
+            is dramatized as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10016
+            is digested as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10171
+            is expanded as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10119
+            is freely translated as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10099
+            is indexed in work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10090
+            is inspiration for (RDA 24.5):      http://rdaregistry.info/Elements/w/P10291
+            is inspired by (RDA 24.5):      http://rdaregistry.info/Elements/w/P10290
+            is paraphrased as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10166
+            is summarized as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10109
+            has commemoration (RDA 24.5):      http://rdaregistry.info/Elements/w/P10294
+            is commemoration of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10295
+            is augmentation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10192
+            is addenda to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10177
+            is appendix to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10151
+            has appendix work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10123
+            is catalogue of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10180
+            is concordance to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10181
+            is errata to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10149
+            is guide to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10150
+            is index to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10188
+            has index work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10158
+            is supplement to work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10154
+            is augmented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10108
+            has addenda work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10112
+            has catalogue work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10110
+            has concordance work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10111
+            has errata work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10092
+            has guide work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10124
+            has supplement work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10172
+            is complemented by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10103
+            has choreography work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10247
+            is choreography for work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10248
+            is lyrics for work:      http://rdaregistry.info/Elements/w/P10369
+            is libretto for work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10030
+            has music work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10237
+            is screenplay for work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10105
+            is screenplay for television program work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10174
+            is script for radio program work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10176
+            is screenplay for video work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10175
+            is preceded by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10156
+            is absorption in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10225
+            is absorption of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10224
+            is continuation of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10226
+            is merger of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10213
+            has prequel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10122
+            is replacement in part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10206
+            is replacement of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10207
+            is separated from work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10169
+            has sequel work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10020
+            is succeeded by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10170
+            is absorbed by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10145
+            is absorbed in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10146
+            is continued by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10191
+            is merged to form work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10212
+            is replaced by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10022
+            is replaced in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10021
+            is split into work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10211
+            is adapted as choreography work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10091
+            is parodied as work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10144
+            is special issue of:      http://rdaregistry.info/Elements/w/P10411
             has subject (RDA 23.4):      http://rdaregistry.info/Elements/w/P10256
+            is work described in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10118
+            is work analysed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10121
+            is work commentary in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10116
+            is work critiqued in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10115
+            is work evaluated in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10120
+            is work reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10114
+            is description of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10100
+            is analysis of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10140
+            is commentary on work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10187
+            is critique of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10182
+            is evaluation of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10153
+            is review of work (RDA 23.5):      http://rdaregistry.info/Elements/w/P10178
+            is description of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10277
+            is analysis of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10278
+            is commentary on expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10282
+            is critique of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10281
+            is evaluation of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10279
+            is review of expression (RDA 23.5):      http://rdaregistry.info/Elements/w/P10280
+            is description of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10271
+            is analysis of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10272
+            is commentary on manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10276
+            is critique of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10275
+            is evaluation of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10273
+            is review of manifestation (RDA 23.5):      http://rdaregistry.info/Elements/w/P10274
+            is description of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10265
+            is analysis of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10266
+            is commentary on item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10270
+            is critique of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10269
+            is evaluation of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10267
+            is review of item (RDA 23.5):      http://rdaregistry.info/Elements/w/P10268
+            is description of person (RDA 23.5):      http://rdaregistry.info/Elements/w/P10325
+            is evaluation of RDA entity:      http://rdaregistry.info/Elements/w/P10361
+            is description of RDA entity:      http://rdaregistry.info/Elements/w/P10360
+            is description of agent:      http://rdaregistry.info/Elements/w/P10338
+            is description of family (RDA 23.5):      http://rdaregistry.info/Elements/w/P10327
+            is description of place:      http://rdaregistry.info/Elements/w/P10601
+            is part of work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10019
+            has part work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10147
+            is adapted as television screenplay work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10096
 
     WAU:RT:RDA:Expression:monograph
             Administrative Metadata for Expression:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for expression:      http://rdaregistry.info/Elements/e/P20310
+            is same as LC NAF expression:      http://www.w3.org/2004/02/skos/core#exactMatch
+            has variant access point for expression:      http://rdaregistry.info/Elements/e/P20314
             has authorized access point for expression:      http://rdaregistry.info/Elements/e/P20313
+            has category of expression (Lookup for genres applicable to expressions):      http://rdaregistry.info/Elements/e/P20331
             has intended audience of expression:      http://rdaregistry.info/Elements/e/P20322
             has summarization of content (RDA 7.10):      http://rdaregistry.info/Elements/e/P20069
             has colour content (RDA 7.17):      http://rdaregistry.info/Elements/e/P20224
+            expression has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            expression has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            expression has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            expression has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
             has content type (RDA 6.9):      http://rdaregistry.info/Elements/e/P20001
             has date of expression (RDA 6.10):      http://rdaregistry.info/Elements/e/P20214
-            has title of expression:      http://rdaregistry.info/Elements/e/P20312
+            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has variant title of expression:      http://rdaregistry.info/Elements/e/P20316
             has language of expression (RDA 6.11):      http://rdaregistry.info/Elements/e/P20006
             has identifier for expression (RDA 6.13):      http://rdaregistry.info/Elements/e/P20002
             has script (RDA 7.13.2):      http://rdaregistry.info/Elements/e/P20065
             has form of tactile notation (RDA 7.13.4):      http://rdaregistry.info/Elements/e/P20061
             has details of form of tactile notation (RDA 7.13.4.4):      http://rdaregistry.info/Elements/e/P20265
-            has preferred title of expression:      http://rdaregistry.info/Elements/e/P20315
             has accessibility content (RDA 7.14):      http://rdaregistry.info/Elements/e/P20208
             has supplementary content (RDA 7.16):      http://rdaregistry.info/Elements/e/P20206
             has award (RDA 7.28):      http://rdaregistry.info/Elements/e/P20005
             has note on expression (RDA 7.29):      http://rdaregistry.info/Elements/e/P20071
-            has note on changes in content characteristics (RDA 7.29.2):      http://rdaregistry.info/Elements/e/P20010
+            has University of Washington-specific note on expression (RDA 7.29):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has related agent of expression:      http://rdaregistry.info/Elements/e/P20301
-            has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
-            has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
-            has related expression of expression:      http://rdaregistry.info/Elements/e/P20205
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
+            expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has abridger agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20049
-            has animator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20028
             has arranger agent of music (RDA 18.5):      http://rdaregistry.info/Elements/e/P20029
             has art director agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20038
             has censor agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20287
@@ -7918,12 +8315,21 @@ WAU:profile:RDA:monograph
             has writer of preface (RDA 18.5):      http://rdaregistry.info/Elements/e/P20041
             has letterer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20259
             has reviser agent:      http://rdaregistry.info/Elements/e/P20327
+            has work expressed (RDA 17.6):      http://rdaregistry.info/Elements/e/P20231
+            has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
+            has related expression of expression:      http://rdaregistry.info/Elements/e/P20205
             has related manifestation of expression:      http://rdaregistry.info/Elements/e/P20299
+            is revision of (RDA 24.5):      http://rdaregistry.info/Elements/e/P20189
+            is dramatized as expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20073
+            is revised as (RDA 24.5):      http://rdaregistry.info/Elements/e/P20211
+            is augmented by expression (RDA 24.5):      http://rdaregistry.info/Elements/e/P20105
+            expression has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            is expression reviewed in (RDA 23.5):      http://rdaregistry.info/Elements/e/P20274
 
     WAU:RT:RDA:Manifestation:monograph
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
-            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
+            has access point for manifestation:      http://rdaregistry.info/Elements/m/P30276
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
             has other title information (RDA 2.3.4):      http://rdaregistry.info/Elements/m/P30142
@@ -7969,41 +8375,29 @@ WAU:profile:RDA:monograph
             has mode of issuance (RDA 2.13):      http://rdaregistry.info/Elements/m/P30003
             has identifier for manifestation (RDA 2.15):      http://rdaregistry.info/Elements/m/datatype/P30004
             has note on manifestation (RDA 2.17):      http://rdaregistry.info/Elements/m/P30137
-            has note on title (RDA 2.17.2):      http://rdaregistry.info/Elements/m/datatype/P30063
-            has note on statement of responsibility (RDA 2.17.3):      http://rdaregistry.info/Elements/m/datatype/P30057
-            has note on edition statement (RDA 2.17.4):      http://rdaregistry.info/Elements/m/datatype/P30064
-            has note on numbering of sequence (RDA 2.17.5):      http://rdaregistry.info/Elements/m/P30062
-            has note on production statement (RDA 2.17.6):      http://rdaregistry.info/Elements/m/P30054
-            has note on publication statement (RDA 2.17.7):      http://rdaregistry.info/Elements/m/P30055
-            has note on distribution statement (RDA 2.17.8):      http://rdaregistry.info/Elements/m/P30052
-            has note on manufacture statement (RDA 2.17.9):      http://rdaregistry.info/Elements/m/P30053
-            has note on copyright date (RDA 2.17.10):      http://rdaregistry.info/Elements/m/P30059
-            has note on series statement (RDA 2.17.11):      http://rdaregistry.info/Elements/m/P30058
+            has University of Washington-specific note on manifestation (RDA 2.17):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
             has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13):      http://rdaregistry.info/Elements/m/P30050
-            has note on identifier for manifestation (RDA 2.17.14):      http://rdaregistry.info/Elements/m/P30260
             has media type (RDA 3.2):      http://rdaregistry.info/Elements/m/P30002
             has carrier type (RDA 3.3):      http://rdaregistry.info/Elements/m/P30001
             has extent of manifestation (RDA 3.4):      http://rdaregistry.info/Elements/m/P30182
             has dimensions (RDA 3.5):      http://rdaregistry.info/Elements/m/P30169
             has base material (RDA 3.6):      http://rdaregistry.info/Elements/m/P30208
             has applied material (RDA 3.7):      http://rdaregistry.info/Elements/m/P30084
-            has mount (RDA 3.8):      http://rdaregistry.info/Elements/m/P30186
             has production method (RDA 3.9):      http://rdaregistry.info/Elements/m/P30187
-            has generation (RDA 3.10):      http://rdaregistry.info/Elements/m/P30191
             has layout (RDA 3.11):      http://rdaregistry.info/Elements/m/P30155
             has bibliographic format (RDA 3.12):      http://rdaregistry.info/Elements/m/P30197
             has font size (RDA 3.13):      http://rdaregistry.info/Elements/m/P30199
-            has note on extent of manifestation (RDA 3.21.2):      http://rdaregistry.info/Elements/m/P30061
-            has note on dimensions of manifestation (RDA 3.21.3):      http://rdaregistry.info/Elements/m/P30060
-            has note on changes in carrier characteristics (RDA 3.21.4):      http://rdaregistry.info/Elements/m/P30051
             has type of binding:      http://rdaregistry.info/Elements/m/P30309
-            has contributor agent of text:      http://rdaregistry.info/Elements/m/P30328
-            has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
             has term of availability (RDA 4.2):      http://rdaregistry.info/Elements/m/P30160
-            has contact information (RDA 4.3):      http://rdaregistry.info/Elements/m/P30141
-            has uniform resource locator (RDA 4.6):      http://rdaregistry.info/Elements/m/P30154
-            has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has restriction on use of manifestation (RDA 4.5):      http://rdaregistry.info/Elements/m/P30146
+            manifestation has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            manifestation has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            manifestation has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
+            manifestation has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            manifestation has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
+            manifestation has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
+            has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
+            has contributor agent of text:      http://rdaregistry.info/Elements/m/P30328
             has surveyor agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30312
             has producer agent of unpublished manifestation (RDA 21.2):      http://rdaregistry.info/Elements/m/P30081
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
@@ -8020,12 +8414,25 @@ WAU:profile:RDA:monograph
             has platemaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30075
             has printer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30078
             has printmaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30072
+            has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
+            has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
+            manifestation has subject (RDA 23.4):      http://rdaregistry.info/Elements/u/P60001
+            manifestation held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
 
     WAU:RT:RDA:Item:monograph
             Administrative Metadata for Item:      http://id.loc.gov/ontologies/bibframe/adminMetadata
+            has restriction on use of item (RDA 4.5):      http://rdaregistry.info/Elements/i/P40048
+            item has SuDoc Classification Number:      https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber
+            item has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
+            item has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
+            item has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
+            item has NLM Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB
             has note on item (RDA 2.21):      http://rdaregistry.info/Elements/i/P40028
+            item has physical location:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation
+            item has physical sublocation:      https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation
+            item has barcode:      https://doi.org/10.6069/uwlib.55.d.4#hasBarcode
             has immediate source of acquisition of item (RDA 2.19):      http://rdaregistry.info/Elements/i/P40050
             is bound with (RDA 24.5):      http://rdaregistry.info/Elements/i/P40032
             is accompanied by item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40029
@@ -8033,18 +8440,33 @@ WAU:profile:RDA:monograph
             is container of item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40034
             is contained in item (RDA 24.5):      http://rdaregistry.info/Elements/i/P40009
             has restriction on access to item (RDA 4.4):      http://rdaregistry.info/Elements/i/P40047
-            has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
+            item has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has depositor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40006
             has former owner agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40019
             has donor agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40007
             has seller agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40008
             has related agent of item (RDA 22.4):      http://rdaregistry.info/Elements/i/P40072
-            has annotator (RDA 18.5):      http://rdaregistry.info/Elements/i/P40015
             has autographer (RDA 18.5):      http://rdaregistry.info/Elements/i/P40016
             has binder agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40013
             has illuminator agent (RDA 18.5):      http://rdaregistry.info/Elements/i/P40012
             has inscriber (RDA 18.5):      http://rdaregistry.info/Elements/i/P40014
             has restorationist agent of item (RDA 18.5):      http://rdaregistry.info/Elements/i/P40024
+            has manifestation exemplified (RDA 17.12):      http://rdaregistry.info/Elements/i/P40049
+            item held by:      https://doi.org/10.6069/uwlib.55.d.4#heldBy
+
+    WAU:RT:BF2:BFLC:AdminMetadata:monograph
+            Your cataloger ID (UW netid):      http://id.loc.gov/ontologies/bflc/catalogerID
+            Record status:      http://id.loc.gov/ontologies/bibframe/status
+            Encoding level:      http://id.loc.gov/ontologies/bflc/encodingLevel
+            Description conventions:      http://id.loc.gov/ontologies/bibframe/descriptionConventions
+            Source of cataloging:      http://id.loc.gov/ontologies/bibframe/source
+            Description language:      http://id.loc.gov/ontologies/bibframe/descriptionLanguage
+            Data creation date (EDTF):      http://id.loc.gov/ontologies/bibframe/creationDate
+            Data change date (EDTF):      http://id.loc.gov/ontologies/bibframe/changeDate
+            Description authentication:      http://id.loc.gov/ontologies/bibframe/descriptionAuthentication
+
+    WAU:RT:BF2:BFLC:AdminMetadata:Status:monograph
+            Code:      http://id.loc.gov/ontologies/bibframe/code
 
 
 
