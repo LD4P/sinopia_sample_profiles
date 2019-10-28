@@ -1,0 +1,68 @@
+{
+  "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/degree",
+      "propertyLabel": "Degree",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "valueConstraint": {
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+        },
+        "useValuesFrom": [],
+        "valueTemplateRefs": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/grantingInstitution",
+      "propertyLabel": "Granting Institution",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+      "propertyLabel": "Date",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:Note"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+      "propertyLabel": "Dissertation note",
+      "resourceTemplates": []
+    }
+  ],
+  "id": "UChicago:RT:bf2:Monograph:Dissertation",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/Dissertation",
+  "resourceLabel": "UChicago Dissertation",
+  "remark": "based on LC's ld4p:RT:bf2:Monograph:Dissertation",
+  "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
+  "date": "2019-08-19",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+}
