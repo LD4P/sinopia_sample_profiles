@@ -1,0 +1,38 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "propertyLabel": "Transcribed Title",
+            "remark": "Used with Work, Instance or Item"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Title",
+        "resourceLabel": "UChicago Transcribed Title",
+        "remark": "Developing a bibframe 2.0 test",
+        "id": "UChicago:RT:bf2:TranscribedTitle",
+        "author": "jlambertson (lambertson@uchicago.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "UChicago:RT:bf2:Transcribed_Title",
+    "title": "Transcribed Title (BIBFRAME 2.0)",
+    "author": "jlambertson (lambertson@uchicago.edu)",
+    "date": "2019-10-22",
+    "remark": "Attempting to update Transcribed title for BF2",
+    "description": "UChicago Transcribed Title Attempt",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}
