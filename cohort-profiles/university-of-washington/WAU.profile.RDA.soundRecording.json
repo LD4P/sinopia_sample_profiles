@@ -2,15 +2,15 @@
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
         "date": "2019-11-05",
-        "description": "Resource templates for monographs",
-        "id": "WAU:profile:RDA:monograph",
-        "title": "WAU Profile RDA for monographs",
+        "description": "Resource templates for sound recording",
+        "id": "WAU:profile:RDA:soundRecording",
+        "title": "WAU Profile RDA sound recording",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json",
         "resourceTemplates": [
             {
-                "id": "WAU:RT:RDA:Work:monograph",
+                "id": "WAU:RT:RDA:Work:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
-                "resourceLabel": "WAU RT RDA Work monographs",
+                "resourceLabel": "WAU RT RDA Work sound recording",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -215,34 +215,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "work has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
                         "propertyLabel": "has author agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10061",
                         "mandatory": "false",
@@ -251,17 +223,6 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has sculptor agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10202",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
                     },
                     {
@@ -276,17 +237,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "has architect agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10062",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has artist agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10058",
                         "mandatory": "false",
@@ -295,34 +245,6 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has book artist agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10254",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has calligrapher agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10253",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
                         }
                     },
                     {
@@ -354,28 +276,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "has rapporteur agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10255",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has screenwriter agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10203",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has compiler agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10055",
                         "mandatory": "false",
@@ -390,31 +290,14 @@
                         }
                     },
                     {
-                        "propertyLabel": "has designer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10051",
+                        "propertyLabel": "has composer agent of work (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10053",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has enacting jurisdiction (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10017",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:organization",
-                                "urn:ld4p:qa:names:geographic"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
                     },
                     {
@@ -440,8 +323,19 @@
                         }
                     },
                     {
-                        "propertyLabel": "has photographer agent of work (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10056",
+                        "propertyLabel": "has remix artist agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10306",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has casting director agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10305",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -451,86 +345,6 @@
                                 "urn:ld4p:qa:names:person",
                                 "urn:ld4p:qa:names:organization"
                             ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has programmer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10050",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has respondent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10001",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has addressee agent (RDA 19.3)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10070",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/19.3.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has appellant corporate body (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10009",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has appellant person (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10042",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has appellee person (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10035",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has appellee corporate body (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10005",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:organization"]
                         }
                     },
                     {
@@ -559,41 +373,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has court governed (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10011",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has dedicatee agent of work (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10069",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has defendant corporate body (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10285",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has defendant person (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10286",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -622,6 +403,34 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has radio director agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10014",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has television director agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10015",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
                         }
                     },
                     {
@@ -683,28 +492,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "has judge (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10044",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has jurisdiction governed (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10018",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:geographic"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has organizer agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10297",
                         "mandatory": "false",
@@ -716,8 +503,22 @@
                         }
                     },
                     {
-                        "propertyLabel": "has participant in treaty (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10292",
+                        "propertyLabel": "has producer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10064",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has audio producer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10304",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -727,36 +528,42 @@
                         }
                     },
                     {
-                        "propertyLabel": "has plaintiff person (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10043",
+                        "propertyLabel": "has radio producer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10074",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
                         }
                     },
                     {
-                        "propertyLabel": "has plaintiff corporate body (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10010",
+                        "propertyLabel": "has television producer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10075",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has production company (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10008",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:organization"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has researcher agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10293",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
                     },
                     {
@@ -783,17 +590,6 @@
                     {
                         "propertyLabel": "work has contributor agent (RDA 18.5)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has abridger agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20049",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -884,28 +680,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "is abstract of work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10126",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is abstracts for work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10193",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is adaptation of work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10142",
                         "mandatory": "false",
@@ -928,30 +702,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is graphic novelization of work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10252",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is libretto based on work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10189",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is musical theatre adaptation of work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10233",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -983,8 +735,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is radio script based on work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10137",
+                        "propertyLabel": "is oratorio adaptation of work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10288",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -994,41 +746,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay based on work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10133",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is motion picture screenplay based on work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10134",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is television screenplay based on work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10135",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is video screenplay based on work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10136",
+                        "propertyLabel": "is radio adaptation of work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10131",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1040,17 +759,6 @@
                     {
                         "propertyLabel": "is verse adaptation of work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10128",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is digest of work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10139",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1104,12 +812,20 @@
                         }
                     },
                     {
-                        "propertyLabel": "is musical setting of work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10161",
+                        "propertyLabel": "has serial number of musical work (RDA 6.16.1.3.1)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10334",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.16.1.3.1.html"
+                    },
+                    {
+                        "propertyLabel": "has numeric designation of musical work (RDA 6.16)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10079",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "remark": "http://access.rdatoolkit.org/6.16.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
@@ -1126,8 +842,30 @@
                         }
                     },
                     {
+                        "propertyLabel": "is remake of work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10185",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "is summary of work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10179",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is variations based on work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10027",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1150,28 +888,6 @@
                     {
                         "propertyLabel": "is abridged as work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10167",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is abstracted as work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10107",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is abstracted in work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10089",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1291,39 +1007,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "is adapted as motion picture screenplay work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10094",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is adapted as screenplay work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10095",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is screenplay for motion picture work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10173",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is adapted as video screenplay work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10097",
                         "mandatory": "false",
@@ -1370,17 +1053,6 @@
                     {
                         "propertyLabel": "is dramatized as work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10016",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is digested as work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10171",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1445,8 +1117,30 @@
                         }
                     },
                     {
+                        "propertyLabel": "is modified by variation as work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10028",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "is paraphrased as work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10166",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is remade as work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10032",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1522,17 +1216,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "is appendix to work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10151",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has appendix work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10123",
                         "mandatory": "false",
@@ -1544,30 +1227,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is catalogue of work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10180",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is concordance to work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10181",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is errata to work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10149",
+                        "propertyLabel": "is cadenza composed for work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10029",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1579,17 +1240,6 @@
                     {
                         "propertyLabel": "is guide to work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10150",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is index to work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10188",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1643,6 +1293,17 @@
                         }
                     },
                     {
+                        "propertyLabel": "has cadenza work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10026",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has catalogue work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10110",
                         "mandatory": "false",
@@ -1654,30 +1315,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has concordance work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10111",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has errata work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10092",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has guide work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10124",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1709,6 +1348,17 @@
                         }
                     },
                     {
+                        "propertyLabel": "has libretto work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10165",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "is lyrics for work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10369",
                         "mandatory": "false",
@@ -1717,6 +1367,24 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
+                    },
+                    {
+                        "propertyLabel": "has lyrics work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10370",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has opus number (RDA 6.16.1.3.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10333",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.16.1.3.2.html"
                     },
                     {
                         "propertyLabel": "is libretto for work (RDA 24.5)",
@@ -1730,8 +1398,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10105",
+                        "propertyLabel": "has incidental music work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10031",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1741,8 +1409,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for television program work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10174",
+                        "propertyLabel": "has radio program music work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10243",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1752,8 +1420,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is script for radio program work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10176",
+                        "propertyLabel": "has television program music work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10241",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -1763,8 +1431,94 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for video work (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10175",
+                        "propertyLabel": "is music for work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10238",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is sounds for work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10376",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is spoken word for work",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10375",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is incidental music for work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10106",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:qa:ld4p:dbpedia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is music for motion picture work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10245",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is music for radio program work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10244",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is music for television program work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10242",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is music for video work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10240",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has radio script work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10162",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2250,52 +2004,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is analysis of item (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10266",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is commentary on item (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10270",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is critique of item (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10269",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is evaluation of item (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10267",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is review of item (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10268",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2327,6 +2037,17 @@
                         }
                     },
                     {
+                        "propertyLabel": "has television screenplay work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10163",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "is adapted as television program work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10085",
                         "mandatory": "false",
@@ -2347,13 +2068,24 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
+                    },
+                    {
+                        "propertyLabel": "is imitated as work (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10117",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
                     }
                 ]
             },
             {
-                "id": "WAU:RT:RDA:Expression:monograph",
+                "id": "WAU:RT:RDA:Expression:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
-                "resourceLabel": "WAU RT RDA Expression monographs",
+                "resourceLabel": "WAU RT RDA Expression sound recording",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -2438,56 +2170,6 @@
                         "remark": "http://access.rdatoolkit.org/7.10.html"
                     },
                     {
-                        "propertyLabel": "has illustrative content (RDA 7.15)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20207",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.15.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has colour content (RDA 7.17)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20224",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.17.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:colour_content"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
                         "propertyLabel": "has content type (RDA 6.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
@@ -2498,10 +2180,21 @@
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:content_type"],
                             "defaults": [
                                 {
-                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1020",
-                                    "defaultLiteral": "text"
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAContentType/1012",
+                                    "defaultLiteral": "sounds"
                                 }
                             ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has medium of performance of musical content (RDA 7.21)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20215",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/7.21.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:performance"]
                         }
                     },
                     {
@@ -2546,6 +2239,33 @@
                         "remark": "http://access.rdatoolkit.org/6.13.html"
                     },
                     {
+                        "propertyLabel": "has place of capture (RDA 7.11.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20218",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/7.11.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:geographic"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has date of capture (RDA 7.11.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20004",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.11.3.html"
+                    },
+                    {
+                        "propertyLabel": "has note on capture (RDA 7.11.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20309",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.11.4.html"
+                    },
+                    {
                         "propertyLabel": "has script (RDA 7.13.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
@@ -2555,25 +2275,6 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
-                    },
-                    {
-                        "propertyLabel": "has form of tactile notation (RDA 7.13.4)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20061",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.13.4.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:form_of_tactile_notation"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has details of form of tactile notation (RDA 7.13.4.4)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20265",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.13.4.4.html"
                     },
                     {
                         "propertyLabel": "has accessibility content (RDA 7.14)",
@@ -2593,6 +2294,22 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
+                    },
+                    {
+                        "propertyLabel": "has duration (RDA 7.22)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20219",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.22.html"
+                    },
+                    {
+                        "propertyLabel": "has details of duration (RDA 7.22.1.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20278",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.22.1.5.html"
                     },
                     {
                         "propertyLabel": "has award (RDA 7.28)",
@@ -2676,8 +2393,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has art director agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20038",
+                        "propertyLabel": "has audio engineer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20292",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2701,8 +2418,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has colourist agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20283",
+                        "propertyLabel": "has DJ agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20296",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2715,22 +2432,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has costume designer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20036",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has court reporter agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20040",
+                        "propertyLabel": "has mixing engineer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20293",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2740,41 +2443,14 @@
                         }
                     },
                     {
-                        "propertyLabel": "has draftsman agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20033",
+                        "propertyLabel": "has recording engineer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20050",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has editor agent of text",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20330",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has illustrator (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20051",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
                         }
                     },
                     {
@@ -2800,8 +2476,44 @@
                         }
                     },
                     {
-                        "propertyLabel": "has minute taker agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20058",
+                        "propertyLabel": "has music programmer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20294",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has musical director agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20035",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has performer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20039",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has voice actor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20070",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -2822,6 +2534,39 @@
                         }
                     },
                     {
+                        "propertyLabel": "has conductor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20011",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has choral conductor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20285",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has instrumental conductor agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20286",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
                         "propertyLabel": "has host agent (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20016",
                         "mandatory": "false",
@@ -2832,6 +2577,20 @@
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:organization",
                                 "urn:ld4p:qa:names:person"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has instrumentalist agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20020",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
                             ]
                         }
                     },
@@ -2869,17 +2628,25 @@
                         }
                     },
                     {
-                        "propertyLabel": "has puppeteer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20018",
+                        "propertyLabel": "has singer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20025",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has speaker agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20024",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
                     },
                     {
@@ -2905,8 +2672,58 @@
                         }
                     },
                     {
-                        "propertyLabel": "has transcriber agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20034",
+                        "propertyLabel": "has presenter agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20054",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has production designer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20056",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has recordist agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20052",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has restorationist agent of expression (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20289",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:person",
+                                "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has sound designer agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20276",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3004,42 +2821,6 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has writer of postface (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20238",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has writer of preface (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20041",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has letterer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20259",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
                         }
                     },
                     {
@@ -3146,28 +2927,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "is abstract of expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20122",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is abstracts for expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20193",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is adaptation of expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20152",
                         "mandatory": "false",
@@ -3181,28 +2940,6 @@
                     {
                         "propertyLabel": "is dramatization of expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20123",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is graphic novelization of expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20256",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is libretto based on expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20190",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3234,8 +2971,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is radio script based on expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20133",
+                        "propertyLabel": "is opera adaptation of expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20240",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3245,8 +2982,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay based on expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20129",
+                        "propertyLabel": "is oratorio adaptation of expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20281",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3256,30 +2993,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is motion picture screenplay based on expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20130",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is television screenplay based on expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20131",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is video screenplay based on expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20132",
+                        "propertyLabel": "is radio adaptation of expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20127",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3300,15 +3015,15 @@
                         }
                     },
                     {
-                        "propertyLabel": "is digest of expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20135",
+                        "propertyLabel": "is arrangement of (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20139",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        },
+                        "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
                         "propertyLabel": "is expanded version of expression (RDA 24.5)",
@@ -3355,8 +3070,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is indexing for expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20194",
+                        "propertyLabel": "is musical setting of expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20159",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3366,8 +3081,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is paraphrase of expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20186",
+                        "propertyLabel": "is remake of expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20185",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3388,8 +3103,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is summary of expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20179",
+                        "propertyLabel": "is translation of (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20141",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3399,8 +3114,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is translation of (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20141",
+                        "propertyLabel": "is variations based on expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20081",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3423,28 +3138,6 @@
                     {
                         "propertyLabel": "is abridged as expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20166",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is abstracted in expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20090",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is abstracted as expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20104",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3597,17 +3290,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "is adapted as video screenplay expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20098",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is adapted as television program expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20066",
                         "mandatory": "false",
@@ -3643,6 +3325,17 @@
                     {
                         "propertyLabel": "is dramatized as expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20073",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is arranged as (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20165",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3718,8 +3411,30 @@
                         }
                     },
                     {
+                        "propertyLabel": "is modified by variation as expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20082",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
                         "propertyLabel": "is paraphrased as expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20164",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is remade as expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20086",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3784,52 +3499,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is addenda to expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20177",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is appendix to expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20089",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is catalogue of expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20180",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is concordance to expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20181",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is errata to expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20146",
+                        "propertyLabel": "is cadenza composed for expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20083",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3841,28 +3512,6 @@
                     {
                         "propertyLabel": "is guide to expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20147",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is illustrations for expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20148",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is index to expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20188",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3905,8 +3554,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has appendix expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20118",
+                        "propertyLabel": "has cadenza expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20080",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -3927,41 +3576,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has concordance expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20108",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has errata expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20093",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has guide expression (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20120",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has illustrations expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20094",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4004,8 +3620,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "has libretto expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20163",
+                        "propertyLabel": "has choreography expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20253",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4015,8 +3631,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is libretto for expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20084",
+                        "propertyLabel": "has libretto expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20163",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4037,8 +3653,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20102",
+                        "propertyLabel": "has incidental music expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20085",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4048,8 +3664,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for motion picture expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20173",
+                        "propertyLabel": "has radio program music expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20249",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4059,8 +3675,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for television program expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20174",
+                        "propertyLabel": "is music for expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20244",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4070,8 +3686,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is screenplay for video expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20175",
+                        "propertyLabel": "is incidental music for expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20103",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4081,8 +3697,41 @@
                         }
                     },
                     {
-                        "propertyLabel": "is script for radio program expression (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20176",
+                        "propertyLabel": "is music for motion picture expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20252",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is music for radio program expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20250",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is music for television program expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20248",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has radio script expression (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20160",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -4383,9 +4032,9 @@
                 ]
             },
             {
-                "id": "WAU:RT:RDA:Manifestation:monograph",
+                "id": "WAU:RT:RDA:Manifestation:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
-                "resourceLabel": "WAU RT RDA Manifestation monographs",
+                "resourceLabel": "WAU RT RDA Manifestation sound recording",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -4847,8 +4496,8 @@
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:media_type"],
                             "defaults": [
                                 {
-                                    "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1007",
-                                    "defaultLiteral": "unmediated"
+                                    "defaultURI": "http://rdaregistry.info/termList/RDAMediaType/1001",
+                                    "defaultLiteral": "audio"
                                 }
                             ]
                         }
@@ -4861,13 +4510,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008",
-                                    "defaultLiteral": "volume"
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"]
                         }
                     },
                     {
@@ -4887,38 +4530,62 @@
                         "remark": "http://access.rdatoolkit.org/3.5.html"
                     },
                     {
-                        "propertyLabel": "has base material (RDA 3.6)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30208",
+                        "propertyLabel": "has tape configuration (RDA 3.16.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30185",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.16.7.html"
+                    },
+                    {
+                        "propertyLabel": "has track configuration (RDA 3.16.6)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30161",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/3.6.html",
+                        "remark": "http://access.rdatoolkit.org/3.16.6.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:material"],
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1025",
-                                    "defaultLiteral": "paper"
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:track_config"]
                         }
                     },
                     {
-                        "propertyLabel": "has applied material (RDA 3.7)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30084",
+                        "propertyLabel": "has groove characteristic (RDA 3.16.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30164",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/3.7.html",
+                        "remark": "http://access.rdatoolkit.org/3.16.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:material"],
-                            "defaults": [
-                                {
-                                    "defaultURI": "http://rdaregistry.info/termList/RDAMaterial/1017",
-                                    "defaultLiteral": "Ink"
-                                }
-                            ]
+                            "useValuesFrom": ["https://id.loc.gov/vocabulary/mgroove"]
                         }
+                    },
+                    {
+                        "propertyLabel": "has groove pitch",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30307",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:groove_pitch"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has groove width",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30308",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:groove_width"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has playing speed (RDA 3.16.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30201",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.16.4.html"
                     },
                     {
                         "propertyLabel": "has production method (RDA 3.9)",
@@ -4932,44 +4599,106 @@
                         }
                     },
                     {
-                        "propertyLabel": "has layout (RDA 3.11)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30155",
+                        "propertyLabel": "has generation (RDA 3.10)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30191",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/3.11.html",
+                        "remark": "http://access.rdatoolkit.org/3.10.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:layout"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:generation"]
                         }
                     },
                     {
-                        "propertyLabel": "has bibliographic format (RDA 3.12)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30197",
+                        "propertyLabel": "has type of recording (RDA 3.16.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
+                        "mandatory": "true",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.16.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:type_of_recording"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has recording medium (RDA 3.16.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30206",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/3.12.html",
+                        "remark": "http://access.rdatoolkit.org/3.16.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:bibliographic_format"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:recording_medium"]
                         }
                     },
                     {
-                        "propertyLabel": "has font size (RDA 3.13)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30199",
+                        "propertyLabel": "has configuration of playback channels (RDA 3.16.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30184",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/3.13.html",
+                        "remark": "http://access.rdatoolkit.org/3.16.8.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:font_size"]
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:config_playback_channels"],
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/configPlayback/1002",
+                                    "defaultLiteral": "stereo"
+                                }
+                            ]
                         }
                     },
                     {
-                        "propertyLabel": "has type of binding",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30309",
+                        "propertyLabel": "has special playback characteristic (RDA 3.16.9)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal"
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.16.9.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:special_playback"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has file type (RDA 3.19.2)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30018",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/3.19.2.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:file_type"],
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://rdaregistry.info/termList/fileType/1001",
+                                    "defaultLiteral": "audio file"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has encoding format (RDA 3.19.3)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30096",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.19.3.html"
+                    },
+                    {
+                        "propertyLabel": "has file size (RDA 3.19.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30183",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.19.4.html"
+                    },
+                    {
+                        "propertyLabel": "has equipment or system requirement (RDA 3.20)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30162",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/3.20.html"
                     },
                     {
                         "propertyLabel": "has restriction on use of manifestation (RDA 4.5)",
@@ -4980,36 +4709,8 @@
                         "remark": "http://access.rdatoolkit.org/4.5.html"
                     },
                     {
-                        "propertyLabel": "manifestation has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
                         "propertyLabel": "manifestation has SuDoc Classification Number",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
@@ -5086,6 +4787,20 @@
                         }
                     },
                     {
+                        "propertyLabel": "has broadcaster agent (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30067",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names:organization",
+                                "urn:ld4p:qa:names:person"
+                            ]
+                        }
+                    },
+                    {
                         "propertyLabel": "has distributor agent (RDA 21.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30080",
                         "mandatory": "false",
@@ -5105,157 +4820,6 @@
                         "remark": "http://access.rdatoolkit.org/21.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has book designer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30069",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has braille embosser agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30071",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has caster agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30073",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has collotyper agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30077",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has engraver agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30070",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has etcher agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30076",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has lithographer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30074",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has papermaker agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30215",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has platemaker agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30075",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has printer agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30078",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has printmaker agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30072",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
                         }
                     },
                     {
@@ -5344,8 +4908,18 @@
                         }
                     },
                     {
-                        "propertyLabel": "is reprinted as manifestation (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30038",
+                        "propertyLabel": "is electronic reproduction of item of",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30299",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
+                    },
+                    {
+                        "propertyLabel": "is electronic reproduction of manifestation of (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30136",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -5368,17 +4942,6 @@
                     {
                         "propertyLabel": "has facsimile of manifestation (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30031",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has preservation facsimile of manifestation (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30021",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -5465,11 +5028,15 @@
                         }
                     },
                     {
-                        "propertyLabel": "has binding of manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30310",
+                        "propertyLabel": "is on disc with manifestation (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30036",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal"
+                        "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                        }
                     },
                     {
                         "propertyLabel": "is facsimile of item of",
@@ -5506,63 +5073,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is manifestation described in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30254",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is manifestation analysed in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30255",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "is manifestation commentary in (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30256",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is manifestation critiqued in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30257",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is manifestation evaluated in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30258",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is manifestation reviewed in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30259",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
@@ -5590,9 +5102,9 @@
                 ]
             },
             {
-                "id": "WAU:RT:RDA:Item:monograph",
+                "id": "WAU:RT:RDA:Item:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
-                "resourceLabel": "WAU RT RDA Item monographs",
+                "resourceLabel": "WAU RT RDA Item sound recording",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "date": "2019-11-03",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
@@ -5634,31 +5146,10 @@
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "item has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
+                        "propertyLabel": "item has call number",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasCallNumber",
                         "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "item has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "item has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "item has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal"
                     },
                     {
@@ -5697,17 +5188,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.19.html"
-                    },
-                    {
-                        "propertyLabel": "is bound with (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40032",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
                     },
                     {
                         "propertyLabel": "is accompanied by item (RDA 24.5)",
@@ -5830,64 +5310,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "has annotator (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40015",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has autographer (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40016",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has binder agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40013",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has illuminator agent (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40012",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has inscriber (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40014",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has restorationist agent of item (RDA 18.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40024",
                         "mandatory": "false",
@@ -5933,16 +5355,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "is reprinted as item",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40091",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
                         "propertyLabel": "has electronic reproduction of item",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40088",
                         "mandatory": "false",
@@ -5963,45 +5375,12 @@
                         }
                     },
                     {
-                        "propertyLabel": "is item analysed in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40063",
+                        "propertyLabel": "is on disc with item (RDA 24.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/i/P40035",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is item critiqued in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40065",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is item evaluated in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40066",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is item reviewed in (RDA 23.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/i/P40067",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/23.5.html",
+                        "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }

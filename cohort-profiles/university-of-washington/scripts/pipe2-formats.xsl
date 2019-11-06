@@ -47,7 +47,7 @@
             <xsl:otherwise>error</xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
-    <xsl:variable name="formatEnum">
+  <!--  <xsl:variable name="formatEnum">
         <xsl:choose>
             <xsl:when test="$format='monograph'">
                 <xsl:text>monograph</xsl:text>
@@ -64,9 +64,12 @@
             <xsl:when test="$format='adminMetadata'">
                 <xsl:text>adminMetadata</xsl:text>
             </xsl:when>
+            <xsl:when test="$format='adminMetadata'">
+                <xsl:text>adminMetadata</xsl:text>
+            </xsl:when>
             <xsl:otherwise>error</xsl:otherwise>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable> -->
     <xsl:variable name="profileDesc">
         <xsl:text>Resource templates for</xsl:text>
     </xsl:variable>
@@ -175,7 +178,7 @@
                 0 (undetermined) first, 
                 everything else next -->
             <xsl:sort select="j:number[@key = 'uwFormOrder']" data-type="number"/>
-            <xsl:if test="j:array[@key = 'usedInProfile']/j:string = $formatEnum">
+            <xsl:if test="j:array[@key = 'usedInProfile']/j:string = $format">
                 <map>
                     <!-- activate uwFormOrder below only to check accuracy of sort; otherwise suppress in this transform using comment -->
                     <!-- <string key="uwFormOrderValue"><xsl:value-of select="j:number[@key = 'uwFormOrder']"/></string> -->
