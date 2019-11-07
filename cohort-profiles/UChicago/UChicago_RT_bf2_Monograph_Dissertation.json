@@ -61,7 +61,7 @@
   "id": "UChicago:RT:bf2:Monograph:Dissertation",
   "resourceURI": "http://id.loc.gov/ontologies/bibframe/Dissertation",
   "resourceLabel": "UChicago Dissertation",
-  "remark": "based on LC's ld4p:RT:bf2:Monograph:Dissertation",
+  "remark": "based on LC template ld4p:RT:bf2:Monograph:Dissertation",
   "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
   "date": "2019-08-19",
   "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
