@@ -1,0 +1,23 @@
+table {
+    margin-bottom: 25px ; 
+}
+thead {
+    background-color: #808080 ;
+}
+tbody tr:nth-child(odd) {
+    background-color: #D3D3D3 ;
+}
+tbody tr:nth-child(even) {
+    background-color: #F8F8F8 ;
+}
+html {
+    font-family: monospace ;
+}
+.rtAttrs {
+    padding-left: 25px ;
+}
+.ptAttrs {
+    padding-left: 50px ;
+}
+
+
