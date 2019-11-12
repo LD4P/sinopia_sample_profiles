@@ -1,13 +1,4 @@
-# Ransom Center test profiles
-
-This directory includes HRC profiles created for testing purposes. 
-
->Profiles on this test folder are subject to changes without keeping track of version.
-
-
-#### HRC Agents test
-*High level JSON profile test for Agents linked to resource descriptions. This profile modifies the LC canonical profile by having just a lookup (LCNAF and ULAN) and a literal property for preferred form of the name for each named entity.* 
-
+# Ransom Center test profiles using the ARM ontology
 
 #### HRC Bibliographic Citation test
 *High level JSON profile for the [ARM bibliographic citation modeling](https://github.com/LD4P/arm/blob/master/modeling_recommendations/bibliographic_citations.md) following the USE CASE 2 (Citation located, cataloger adds commentary on citation)*
@@ -75,41 +66,3 @@ Standing Questions:
 Standing questions:
 
 1. Is this the right way of linking to the item? Should an RT for bound-with item be created within this profile to include precedes and follows properties, and how would that link to the more generic item RT?
-
-
-
-# Tips and tricks
-
-### Atom packages installed
-
-**Pretty-json** (https://atom.io/packages/pretty-json)  
-The Sinopia Profile Editor exports not formated JSON files, which makes it hard to review on a text editor. This package allows to format the json file when opening it with Atom.
-
-
-### Validating a profile in Command Promp using the Sinopia JSON schemasand AJV (Windows)
-
-**AJV** (Another JSON Schema Validator) requires **Node.js** , so that would be the first step. 
-
-1. Installed **Node.js** (https://nodejs.org/en/)
-
-2. Installed **AJV** (https://ajv.js.org/) using command promp
-
-`npm install -g ajv-cli`
-
-
-
-3. Downloaded the **Sinopia JSON schemas v0.1.0** (https://ld4p.github.io/sinopia/schemas) to a local folder
-
-4. In command promp typed:
-
-`ajv validate -s [schemas_folder]/profile -r "[schemas_folder]/*.json" -d "[profiles_folder]/*.json"`
-
-
-
->`-s` --- indicates the JSON-schema to validate against (only takes one schema!).
->
->`-r` --- indicates all the referenced schemas (which would be the rest of the Sinopia JSON-schemas v0.1.0 downloaded to a local directory).
->
->`-d` --- indicates the JSON profiles (it takes multiple files, so the wild card will allow to validate all the profiles in the given folder). 
-
-
