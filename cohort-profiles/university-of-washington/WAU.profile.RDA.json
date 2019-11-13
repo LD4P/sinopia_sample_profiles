@@ -7276,7 +7276,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects:place"
+                                "urn:ld4p:qa:subjects"
                             ]
                         },
                         "uwFormOrder": 14,
@@ -12022,7 +12022,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects:place"
+                                "urn:ld4p:qa:subjects"
                             ]
                         },
                         "uwFormOrder": 17,
@@ -68086,7 +68086,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:subjects:place",
+                                "urn:ld4p:qa:subjects",
                                 "urn:ld4p:qa:names:place"
                             ]
                         }
@@ -68124,7 +68124,6 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
-                                "urn:ld4p:qa:subjects:place",
                                 "urn:ld4p:qa:names:place"
                             ]
                         }

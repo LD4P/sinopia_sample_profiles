@@ -8,7 +8,7 @@
         <!-- Map element?? -->
         <map xmlns="http://www.w3.org/2005/xpath-functions">
             <!-- Need to generate filename based on source XML -->
-            <xsl:result-document href="../html/WAU.profile.RDA.html">
+            <xsl:result-document href="../html/{translate(j:map/j:map[@key = 'Profile']/j:string[@key = 'id'], ':', '.')}.html">
                 <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="profile"/>
             </xsl:result-document>
         </map>
@@ -34,7 +34,7 @@
         </html>
     </xsl:template>
     <xsl:template match="." mode="profileAttrs">
-        <table class="profileAttrs">
+        <table>
             <thead>
                 <xsl:text>Profile Information for </xsl:text>
                 <xsl:value-of select="j:string[@key = 'title']"/>
@@ -80,33 +80,41 @@
                 </tr>
             </tbody>
         </table>
-        <br/>
+        <table>
+            <thead>
+                <xsl:text>Resource Templates in </xsl:text>
+                <xsl:value-of select="j:string[@key = 'title']"/>
+            </thead>
+            <xsl:for-each
+                select="j:array[@key = 'resourceTemplates']/j:map/j:string[@key = 'resourceLabel']">
+                <tr>
+                    <th scope="row">
+                        <xsl:value-of select="."/>
+                    </th>
+                    <td>
+                        <a href="#{translate(., ' ', '')}">GO TO RESOURCE TEMPLATE</a>
+                    </td>
+                </tr>
+            </xsl:for-each>
+        </table>
         <xsl:apply-templates select="j:array[@key = 'resourceTemplates']/j:map" mode="rtAttrs"/>
     </xsl:template>
     <xsl:template match="j:map" mode="rtAttrs">
-        <table class="rtAttrs">
+        <table class="rtAttrs" id="{translate(j:string[@key = 'resourceLabel'], ' ', '')}">
             <thead>
-                <!-- Not happy with table heads; they should be indented to match table body -->
+                <xsl:text>Resource template: </xsl:text>
                 <xsl:value-of select="j:string[@key = 'resourceLabel']"/>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">Resource IRI</th>
                     <td>
-                        <!-- Need condition here to separate multiple IRIs (agent) -->
+                        <!-- Need condition here to separate multiple IRIs for Agent RT) -->
                         <a href="{j:string[@key='resourceURI']}">
                             <xsl:value-of select="j:string[@key = 'resourceURI']"/>
                         </a>
                     </td>
                 </tr>
-                <!--
-                    We don't need the label again if it is at the top of each table
-                <tr>
-                    <th scope="row">Resource Label</th>
-                    <td>
-                        <xsl:value-of select="j:string[@key = 'resourceLabel']"/>
-                    </td>
-                </tr> -->
                 <tr>
                     <th scope="row">ID</th>
                     <td>
@@ -138,6 +146,7 @@
     <xsl:template match="j:map" mode="ptAttrs">
         <table class="ptAttrs">
             <thead>
+                <xsl:text>Property template: </xsl:text>
                 <xsl:value-of select="j:string[@key = 'propertyLabel']"/>
             </thead>
             <tbody>
@@ -150,7 +159,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"/>
+                    <td/>
                     <td>
                         <xsl:choose>
                             <xsl:when test="j:string[@key = 'mandatory'] = 'true'">
@@ -166,7 +175,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"/>
+                    <td/>
                     <td>
                         <xsl:choose>
                             <xsl:when test="j:string[@key = 'repeatable'] = 'true'">
@@ -200,10 +209,25 @@
                     <th scope="row">
                         <xsl:text>Value constraints</xsl:text>
                     </th>
-                    <td/>
+                    <xsl:choose>
+                        <xsl:when test="j:map[@key = 'valueConstraint']/descendant::text()">
+                            <xsl:apply-templates select="j:map[@key = 'valueConstraint']" mode="vc"
+                            />
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <td>
+                                <xsl:text>N/A</xsl:text>
+                            </td>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </tr>
-                <xsl:apply-templates select="j:map[@key = 'valueConstraint']" mode="vc"/>
-                <!-- Still need better navigation; at minimum return to page top OR RT top -->
+                <tr>
+                    <th scope="row">
+                        <a href="#{translate(../../j:string[@key = 'resourceLabel'], ' ', '')}">
+                            <xsl:text>RETURN TO RESOURCE TEMPLATE TOP</xsl:text>
+                        </a>
+                    </th>
+                </tr>
                 <tr>
                     <th scope="row">
                         <a href="#profileTop">RETURN TO PAGE TOP</a>
@@ -214,7 +238,7 @@
     </xsl:template>
     <xsl:template match="j:map[@key = 'valueConstraint']" mode="vc">
         <xsl:choose>
-            <xsl:when test="j:array[@key = 'valueTemplateRefs'][node()]">
+            <xsl:when test="j:array[@key = 'valueTemplateRefs']/descendant::text()">
                 <tr>
                     <td/>
                     <th scope="row">
@@ -230,7 +254,7 @@
             <xsl:otherwise/>
         </xsl:choose>
         <xsl:choose>
-            <xsl:when test="j:array[@key = 'useValuesFrom'][node()]">
+            <xsl:when test="j:array[@key = 'useValuesFrom']/descendant::text()">
                 <tr>
                     <td/>
                     <th scope="row">
@@ -256,10 +280,51 @@
                     <xsl:for-each
                         select="j:map[@key = 'valueDataType']/j:string[@key = 'dataTypeURI']">
                         <td>
-                            <xsl:value-of select="."/>
+                            <a href="{.}">
+                                <xsl:value-of select="."/>
+                            </a>
                         </td>
                     </xsl:for-each>
                 </tr>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+        <xsl:choose>
+            <xsl:when test="j:array[@key = 'defaults']/descendant::text()">
+                <tr>
+                    <td/>
+                    <th scope="row">
+                        <xsl:text>Defaults</xsl:text>
+                    </th>
+                </tr>
+                <xsl:for-each
+                    select="j:array[@key = 'defaults']/j:map/j:string[@key = 'defaultURI']/text()">
+                    <tr>
+                        <td/>
+                        <td/>
+                        <th scope="row">
+                            <xsl:text>Default IRI</xsl:text>
+                        </th>
+                        <td>
+                            <a href="{.}">
+                                <xsl:value-of select="."/>
+                            </a>
+                        </td>
+                    </tr>
+                </xsl:for-each>
+                <xsl:for-each
+                    select="j:array[@key = 'defaults']/j:map/j:string[@key = 'defaultLiteral']/text()">
+                    <tr>
+                        <td/>
+                        <td/>
+                        <th scope="row">
+                            <xsl:text>Default Literal</xsl:text>
+                        </th>
+                        <td>
+                            <xsl:value-of select="."/>
+                        </td>
+                    </tr>
+                </xsl:for-each>
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>

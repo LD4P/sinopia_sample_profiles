@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="XHTML" xsi:schemaLocation="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>WAU Profile RDA for administrative metadata</title>
+      <link href="profiles.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <h1 id="profileTop">WAU Profile RDA for administrative metadata</h1>
+      <table xmlns="http://www.w3.org/2005/xpath-functions">
+         <thead>Profile Information for WAU Profile RDA for administrative metadata</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Title</th>
+               <td>WAU Profile RDA for administrative metadata</td>
+            </tr>
+            <tr>
+               <th scope="row">ID</th>
+               <td>WAU:profile:RDA:adminMetadata</td>
+            </tr>
+            <tr>
+               <th scope="row">Author</th>
+               <td>Crystal Clements (cec23@uw.edu)</td>
+            </tr>
+            <tr>
+               <th scope="row">Last Updated</th>
+               <td>2019-11-05</td>
+            </tr>
+            <tr>
+               <th scope="row">Description</th>
+               <td>Resource templates for administrative metadata</td>
+            </tr>
+            <tr>
+               <th scope="row">Schema</th>
+               <td>
+                  <a href="https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json">https://ld4p.github.io/sinopia/schemas/0.2.1/profile.json</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions">
+         <thead>Resource Templates in WAU Profile RDA for administrative metadata</thead>
+         <tr>
+            <th scope="row">WAU RT BF2 BFLC Admin Metadata</th>
+            <td>
+               <a href="#WAURTBF2BFLCAdminMetadata">GO TO RESOURCE TEMPLATE</a>
+            </td>
+         </tr>
+         <tr>
+            <th scope="row">WAU RT BF2 BFLC Admin Metadata Status</th>
+            <td>
+               <a href="#WAURTBF2BFLCAdminMetadataStatus">GO TO RESOURCE TEMPLATE</a>
+            </td>
+         </tr>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="rtAttrs" id="WAURTBF2BFLCAdminMetadata">
+         <thead>Resource template: WAU RT BF2 BFLC Admin Metadata</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Resource IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/AdminMetadata">http://id.loc.gov/ontologies/bibframe/AdminMetadata</a>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">ID</th>
+               <td>WAU:RT:BF2:BFLC:AdminMetadata</td>
+            </tr>
+            <tr>
+               <th scope="row">Last Updated</th>
+               <td>2019-11-03</td>
+            </tr>
+            <tr>
+               <th scope="row">Author</th>
+               <td>Crystal Clements (cec23@uw.edu)</td>
+            </tr>
+            <tr>
+               <th scope="row">Schema</th>
+               <td>https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json</td>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Your cataloger ID (UW netid)</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bflc/catalogerID">http://id.loc.gov/ontologies/bflc/catalogerID</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>literal</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <td>N/A</td>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Record status</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/status">http://id.loc.gov/ontologies/bibframe/status</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Not repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>resource</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Value template references</th>
+                  <td>WAU:RT:BF2:BFLC:AdminMetadata:Status</td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Encoding level</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bflc/encodingLevel">http://id.loc.gov/ontologies/bflc/encodingLevel</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Not repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>lookup</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Use values from</th>
+                  <td>https://id.loc.gov/vocabulary/menclvl</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Value datatype</th>
+                  <td>
+                     <a href="http://id.loc.gov/ontologies/bflc/EncodingLevel">http://id.loc.gov/ontologies/bflc/EncodingLevel</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Defaults</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default IRI</th>
+                  <td>
+                     <a href="https://id.loc.gov/vocabulary/menclvl/f">https://id.loc.gov/vocabulary/menclvl/f</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default Literal</th>
+                  <td>full</td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Description conventions</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/descriptionConventions">http://id.loc.gov/ontologies/bibframe/descriptionConventions</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>lookup</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Use values from</th>
+                  <td>https://id.loc.gov/vocabulary/descriptionConventions</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Value datatype</th>
+                  <td>
+                     <a href="http://id.loc.gov/ontologies/bibframe/DescriptionConventions">http://id.loc.gov/ontologies/bibframe/DescriptionConventions</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Defaults</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default IRI</th>
+                  <td>
+                     <a href="https://id.loc.gov/vocabulary/descriptionConventions/rda">https://id.loc.gov/vocabulary/descriptionConventions/rda</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default Literal</th>
+                  <td>Resource Description and Access</td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Source of cataloging</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/source">http://id.loc.gov/ontologies/bibframe/source</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>lookup</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Use values from</th>
+                  <td>urn:ld4p:qa:names:organization</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Defaults</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default IRI</th>
+                  <td>
+                     <a href="https://id.loc.gov/vocabulary/organizations/wau">https://id.loc.gov/vocabulary/organizations/wau</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default Literal</th>
+                  <td>WAU</td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Description language</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/descriptionLanguage">http://id.loc.gov/ontologies/bibframe/descriptionLanguage</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Not repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>lookup</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Use values from</th>
+                  <td>https://id.loc.gov/vocabulary/languages</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Value datatype</th>
+                  <td>
+                     <a href="http://id.loc.gov/ontologies/bibframe/Language">http://id.loc.gov/ontologies/bibframe/Language</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Defaults</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default IRI</th>
+                  <td>
+                     <a href="https://id.loc.gov/vocabulary/languages/eng">https://id.loc.gov/vocabulary/languages/eng</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default Literal</th>
+                  <td>English</td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Data creation date (EDTF)</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/creationDate">http://id.loc.gov/ontologies/bibframe/creationDate</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Not repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>literal</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <td>N/A</td>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Data change date (EDTF)</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/changeDate">http://id.loc.gov/ontologies/bibframe/changeDate</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Optional</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Not repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>literal</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <td>N/A</td>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Description authentication</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/descriptionAuthentication">http://id.loc.gov/ontologies/bibframe/descriptionAuthentication</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Optional</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>lookup</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Use values from</th>
+                  <td>https://id.loc.gov/vocabulary/marcauthen</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <th scope="row">Value datatype</th>
+                  <td>
+                     <a href="http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication">http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication</a>
+                  </td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadata">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="rtAttrs" id="WAURTBF2BFLCAdminMetadataStatus">
+         <thead>Resource template: WAU RT BF2 BFLC Admin Metadata Status</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Resource IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/Status">http://id.loc.gov/ontologies/bibframe/Status</a>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">ID</th>
+               <td>WAU:RT:BF2:BFLC:AdminMetadata:Status</td>
+            </tr>
+            <tr>
+               <th scope="row">Last Updated</th>
+               <td>2019-11-03</td>
+            </tr>
+            <tr>
+               <th scope="row">Author</th>
+               <td>Crystal Clements (cec23@uw.edu)</td>
+            </tr>
+            <tr>
+               <th scope="row">Schema</th>
+               <td>https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json</td>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptAttrs">
+         <thead>Property template: Code</thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://id.loc.gov/ontologies/bibframe/code">http://id.loc.gov/ontologies/bibframe/code</a>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Mandatory</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>literal</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <tr>
+                  <td></td>
+                  <th scope="row">Defaults</th>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <th scope="row">Default Literal</th>
+                  <td>n</td>
+               </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTBF2BFLCAdminMetadataStatus">RETURN TO RESOURCE TEMPLATE TOP</a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">RETURN TO PAGE TOP</a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

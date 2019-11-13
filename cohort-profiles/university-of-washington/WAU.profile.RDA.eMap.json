@@ -119,7 +119,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects:place"
+                                "urn:ld4p:qa:subjects"
                             ]
                         }
                     },
@@ -141,7 +141,7 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects:place"
+                                "urn:ld4p:qa:subjects"
                             ]
                         }
                     },

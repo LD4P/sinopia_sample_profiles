@@ -1,5 +1,6 @@
 table {
     margin-bottom: 25px ; 
+    border-spacing: 10px ;
 }
 thead {
     background-color: #808080 ;
