@@ -1,0 +1,4222 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:sinopia"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/1",
+      "propertyLabel" : "Sinopia resources"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:sinopia:bibframe:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/2",
+      "propertyLabel" : "Sinopia BIBFRAME instance resources"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:sinopia:bibframe:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/3",
+      "propertyLabel" : "Sinopia BIBFRAME work resources"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:agrovoc"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/4",
+      "propertyLabel" : "AGROVOC (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:dbpedia"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/5",
+      "propertyLabel" : "DBPEDIA_(QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:discogs"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/6",
+      "propertyLabel" : "Discogs"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:discogs:release"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/7",
+      "propertyLabel" : "Discogs Releases"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:discogs:master"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/8",
+      "propertyLabel" : "Discogs Masters"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/9",
+      "propertyLabel" : "GEONAMES_all (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:area"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/10",
+      "propertyLabel" : "GEONAMES_area (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:place"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/11",
+      "propertyLabel" : "GEONAMES_place (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:area_and_place"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/12",
+      "propertyLabel" : "GEONAMES_area_and_place (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:water"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/13",
+      "propertyLabel" : "GEONAMES_water (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:park"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/14",
+      "propertyLabel" : "GEONAMES_park (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:road"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/15",
+      "propertyLabel" : "GEONAMES_road (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:spot"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/16",
+      "propertyLabel" : "GEONAMES_spot (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:terrain"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/17",
+      "propertyLabel" : "GEONAMES_terrain (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:undersea"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/18",
+      "propertyLabel" : "GEONAMES_undersea (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:geonames:vegetation"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/19",
+      "propertyLabel" : "GEONAMES_vegetation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/20",
+      "propertyLabel" : "GETTY_AAT all terms (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Activities"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/21",
+      "propertyLabel" : "GETTY_AAT Activities (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Activities__Disciplines"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/22",
+      "propertyLabel" : "GETTY_AAT Activities__Disciplines (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Activities__Events"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/23",
+      "propertyLabel" : "GETTY_AAT Activities__Events (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Activities__Functions"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/24",
+      "propertyLabel" : "GETTY_AAT Activities__Functions (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Activities__Physical_and_Mental"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/25",
+      "propertyLabel" : "GETTY_AAT Activities__Physical_and_Mental (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Activities__Processes_and_Techniques"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/26",
+      "propertyLabel" : "GETTY_AAT Activities__Processes_and_Techniques (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Agents"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/27",
+      "propertyLabel" : "GETTY_AAT Agents (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Agents__Living_Organisms"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/28",
+      "propertyLabel" : "GETTY_AAT Agents__Living_Organisms (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Agents__Organizations"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/29",
+      "propertyLabel" : "GETTY_AAT Agents__Organizations (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Agents__People"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/30",
+      "propertyLabel" : "GETTY_AAT Agents__People (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Associated_Concepts"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/31",
+      "propertyLabel" : "GETTY_AAT Associated_Concepts (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Associated_Concepts__Associated_Concepts"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/32",
+      "propertyLabel" : "GETTY_AAT Associated_Concepts__Associated_Concepts (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Brand_Names"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/33",
+      "propertyLabel" : "GETTY_AAT Brand_Names (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Brand_Names__Brand_Names"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/34",
+      "propertyLabel" : "GETTY_AAT Brand_Names__Brand_Names (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Materials"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/35",
+      "propertyLabel" : "GETTY_AAT Materials (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Materials__Materials"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/36",
+      "propertyLabel" : "GETTY_AAT Materials__Materials (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/37",
+      "propertyLabel" : "GETTY_AAT Objects (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects__Built_Environment"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/38",
+      "propertyLabel" : "GETTY_AAT Objects__Built_Environment (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects__Components"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/39",
+      "propertyLabel" : "GETTY_AAT Objects__Components (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects__Furnishings_and_Equipment"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/40",
+      "propertyLabel" : "GETTY_AAT Objects__Furnishings_and_Equipment (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects__Object_Genres"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/41",
+      "propertyLabel" : "GETTY_AAT Objects__Object_Genres (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects__Object_Groupings and Systems"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/42",
+      "propertyLabel" : "GETTY_AAT Objects__Object_Groupings and Systems (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Objects__Visual_and_Verbal_Communication"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/43",
+      "propertyLabel" : "GETTY_AAT Objects__Visual_and_Verbal_Communication (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Physical_Attributes"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/44",
+      "propertyLabel" : "GETTY_AAT Physical_Attributes (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Physical_Attributes__Attributes_and_Properties"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/45",
+      "propertyLabel" : "GETTY_AAT Physical_Attributes__Attributes_and_Properties (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Physical_Attributes__Color"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/46",
+      "propertyLabel" : "GETTY_AAT Physical_Attributes__Color (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Physical_Attributes__Conditions_and_Effects"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/47",
+      "propertyLabel" : "GETTY_AAT Physical_Attributes__Conditions_and_Effects (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Physical_Attributes__Design_Elements"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/48",
+      "propertyLabel" : "GETTY_AAT Physical_Attributes__Design_Elements (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/49",
+      "propertyLabel" : "GETTY_AAT  (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Styles_and_Periods"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/50",
+      "propertyLabel" : "GETTY_AAT Styles_and_Periods (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyaat:Styles_and_Periods__Styles_and_Periods"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/51",
+      "propertyLabel" : "GETTY_AAT Styles_and_Periods__Styles_and_Periods (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettytgn"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/52",
+      "propertyLabel" : "GETTY_TGN (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyulan"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/53",
+      "propertyLabel" : "GETTY_ULAN (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyulan:person"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/54",
+      "propertyLabel" : "GETTY_ULAN person (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:gettyulan:organization"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/55",
+      "propertyLabel" : "GETTY_ULAN organization (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:demographics"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/56",
+      "propertyLabel" : "LOC demographics (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:performance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/57",
+      "propertyLabel" : "LOC performance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:genres"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/58",
+      "propertyLabel" : "LOC all genres (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:genres:active"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/59",
+      "propertyLabel" : "LOC active [genres] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:genres:deprecated"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/60",
+      "propertyLabel" : "LOC deprecated [genres] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:names"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/61",
+      "propertyLabel" : "LOC all names (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:names:person"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/62",
+      "propertyLabel" : "LOC person [names (rwo)] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:names:organization"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/63",
+      "propertyLabel" : "LOC organization [names (rwo)] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:names:family"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/64",
+      "propertyLabel" : "LOC family [names (rwo)] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:names:geographic"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/65",
+      "propertyLabel" : "LOC geographic [names] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:names:conference"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/66",
+      "propertyLabel" : "LOC conference [names] (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:subjects"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/67",
+      "propertyLabel" : "LOC all subjects (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:mesh"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/68",
+      "propertyLabel" : "MESH (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:nalt"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/69",
+      "propertyLabel" : "NALT (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/70",
+      "propertyLabel" : "OCLCFAST (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:concept"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/71",
+      "propertyLabel" : "OCLCFAST concept (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:event"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/72",
+      "propertyLabel" : "OCLCFAST event (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:person"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/73",
+      "propertyLabel" : "OCLCFAST person (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:organization"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/74",
+      "propertyLabel" : "OCLCFAST organization (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:place"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/75",
+      "propertyLabel" : "OCLCFAST place (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:intangible"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/76",
+      "propertyLabel" : "OCLCFAST intangible (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:fast:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/77",
+      "propertyLabel" : "OCLCFAST work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:topic"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/78",
+      "propertyLabel" : "OCLCFAST topic (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:geographic"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/79",
+      "propertyLabel" : "OCLCFAST geographic (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:event_name"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/80",
+      "propertyLabel" : "OCLCFAST event_name (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:personal_name"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/81",
+      "propertyLabel" : "OCLCFAST personal_name (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:corporate_name"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/82",
+      "propertyLabel" : "OCLCFAST corporate_name (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:uniform_title"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/83",
+      "propertyLabel" : "OCLCFAST uniform_title (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:period"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/84",
+      "propertyLabel" : "OCLCFAST period (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:form"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/85",
+      "propertyLabel" : "OCLCFAST form (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:oclc_fast:alt_lc"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/86",
+      "propertyLabel" : "OCLCFAST alt_lc (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:aspect_ratio"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/87",
+      "propertyLabel" : "RDA Registry aspect ratio designation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:bibliographic_format"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/88",
+      "propertyLabel" : "RDA Registry bibliographic format (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:broadcast_standard"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/89",
+      "propertyLabel" : "RDA Registry broadcast standard (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/90",
+      "propertyLabel" : "RDA Registry carrier type (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:cartographic_data_type"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/91",
+      "propertyLabel" : "RDA Registry cartographic data type (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:colour_content"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/92",
+      "propertyLabel" : "RDA Registry colour content (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:config_playback_channels"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/93",
+      "propertyLabel" : "RDA Registry configuration of playback channels (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:content_type"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/94",
+      "propertyLabel" : "RDA Registry content type (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:file_type"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/95",
+      "propertyLabel" : "RDA Registry file type (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:font_size"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/96",
+      "propertyLabel" : "RDA Registry font size (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:form_of_musical_notation"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/97",
+      "propertyLabel" : "RDA Registry form of musical notation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:form_of_notated_movement"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/98",
+      "propertyLabel" : "RDA Registry form of notated movement (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:form_of_tactile_notation"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/99",
+      "propertyLabel" : "RDA Registry form of tactile notation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:format_of_notated_music"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/100",
+      "propertyLabel" : "RDA Registry format of notated music (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:frequency"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/101",
+      "propertyLabel" : "RDA Registry frequency (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:gender"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/102",
+      "propertyLabel" : "RDA Registry gender (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:generation"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/103",
+      "propertyLabel" : "RDA Registry generation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:groove_pitch"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/104",
+      "propertyLabel" : "RDA Registry groove pitch of an analog cylinder (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:groove_width"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/105",
+      "propertyLabel" : "RDA Registry groove width of an analog disc (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:illustrative_content"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/106",
+      "propertyLabel" : "RDA Registry illustrative content (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:layout"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/107",
+      "propertyLabel" : "RDA Registry layout (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:material"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/108",
+      "propertyLabel" : "RDA Registry material (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:media_type"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/109",
+      "propertyLabel" : "RDA Registry media type (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:mode_of_issuance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/110",
+      "propertyLabel" : "RDA Registry mode of issuance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:polarity"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/111",
+      "propertyLabel" : "RDA Registry polarity (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:presentation_format"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/112",
+      "propertyLabel" : "RDA Registry presentation format (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:production_method"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/113",
+      "propertyLabel" : "RDA Registry production method (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:recording_medium"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/114",
+      "propertyLabel" : "RDA Registry recording medium (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:recording_sources"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/115",
+      "propertyLabel" : "RDA Registry recording sources (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:reduction_ratio"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/116",
+      "propertyLabel" : "RDA Registry reduction ratio designation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:regional_encoding"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/117",
+      "propertyLabel" : "RDA Registry regional encoding (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:scale_designation"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/118",
+      "propertyLabel" : "RDA Registry scale designation (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:sound_content"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/119",
+      "propertyLabel" : "RDA Registry sound content (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:special_playback"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/120",
+      "propertyLabel" : "RDA Registry special playback characteristics (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:status_of_identification"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/121",
+      "propertyLabel" : "RDA Registry status of identification (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:terms"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/122",
+      "propertyLabel" : "RDA Registry terms (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:track_config"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/123",
+      "propertyLabel" : "RDA Registry track configuration (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:type_of_binding"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/124",
+      "propertyLabel" : "RDA Registry type of binding (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:type_of_recording"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/125",
+      "propertyLabel" : "RDA Registry type of recording (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:rda_registry_ld4l_cache:video_format"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/126",
+      "propertyLabel" : "RDA Registry video format (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_alberta_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/127",
+      "propertyLabel" : "SHAREVDE ALBERTA (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_alberta_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/128",
+      "propertyLabel" : "SHAREVDE ALBERTA work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_alberta_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/129",
+      "propertyLabel" : "SHAREVDE ALBERTA superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_alberta_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/130",
+      "propertyLabel" : "SHAREVDE ALBERTA instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_chicago_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/131",
+      "propertyLabel" : "SHAREVDE CHICAGO (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_chicago_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/132",
+      "propertyLabel" : "SHAREVDE CHICAGO work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_chicago_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/133",
+      "propertyLabel" : "SHAREVDE CHICAGO superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_chicago_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/134",
+      "propertyLabel" : "SHAREVDE CHICAGO instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cornell_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/135",
+      "propertyLabel" : "SHAREVDE CORNELL (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cornell_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/136",
+      "propertyLabel" : "SHAREVDE CORNELL work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cornell_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/137",
+      "propertyLabel" : "SHAREVDE CORNELL superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cornell_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/138",
+      "propertyLabel" : "SHAREVDE CORNELL instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cuboulder_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/139",
+      "propertyLabel" : "SHAREVDE CU BOULDER (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cuboulder_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/140",
+      "propertyLabel" : "SHAREVDE CU BOULDER work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cuboulder_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/141",
+      "propertyLabel" : "SHAREVDE CU BOULDER superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_cuboulder_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/142",
+      "propertyLabel" : "SHAREVDE CU BOULDER instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_duke_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/143",
+      "propertyLabel" : "SHAREVDE DUKE (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_duke_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/144",
+      "propertyLabel" : "SHAREVDE DUKE work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_duke_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/145",
+      "propertyLabel" : "SHAREVDE DUKE superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_duke_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/146",
+      "propertyLabel" : "SHAREVDE DUKE instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_frick_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/147",
+      "propertyLabel" : "SHAREVDE FRICK (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_frick_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/148",
+      "propertyLabel" : "SHAREVDE FRICK work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_frick_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/149",
+      "propertyLabel" : "SHAREVDE FRICK superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_frick_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/150",
+      "propertyLabel" : "SHAREVDE FRICK instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harryransom_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/151",
+      "propertyLabel" : "SHAREVDE HARRYRANSOM (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harryransom_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/152",
+      "propertyLabel" : "SHAREVDE HARRYRANSOM work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harryransom_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/153",
+      "propertyLabel" : "SHAREVDE HARRYRANSOM superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harryransom_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/154",
+      "propertyLabel" : "SHAREVDE HARRYRANSOM instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harvard_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/155",
+      "propertyLabel" : "SHAREVDE HARVARD (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harvard_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/156",
+      "propertyLabel" : "SHAREVDE HARVARD work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harvard_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/157",
+      "propertyLabel" : "SHAREVDE HARVARD superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_harvard_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/158",
+      "propertyLabel" : "SHAREVDE HARVARD instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_michigan_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/159",
+      "propertyLabel" : "SHAREVDE MICHIGAN (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_michigan_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/160",
+      "propertyLabel" : "SHAREVDE MICHIGAN work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_michigan_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/161",
+      "propertyLabel" : "SHAREVDE MICHIGAN superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_michigan_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/162",
+      "propertyLabel" : "SHAREVDE MICHIGAN instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_minnesota_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/163",
+      "propertyLabel" : "SHAREVDE MINNESOTA (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_minnesota_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/164",
+      "propertyLabel" : "SHAREVDE MINNESOTA work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_minnesota_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/165",
+      "propertyLabel" : "SHAREVDE MINNESOTA superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_minnesota_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/166",
+      "propertyLabel" : "SHAREVDE MINNESOTA instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_nlm_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/167",
+      "propertyLabel" : "SHAREVDE NLM (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_nlm_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/168",
+      "propertyLabel" : "SHAREVDE NLM work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_nlm_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/169",
+      "propertyLabel" : "SHAREVDE NLM superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_nlm_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/170",
+      "propertyLabel" : "SHAREVDE NLM instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_northwestern_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/171",
+      "propertyLabel" : "SHAREVDE NORTHWESTERN (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_northwestern_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/172",
+      "propertyLabel" : "SHAREVDE NORTHWESTERN work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_northwestern_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/173",
+      "propertyLabel" : "SHAREVDE NORTHWESTERN superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_northwestern_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/174",
+      "propertyLabel" : "SHAREVDE NORTHWESTERN instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_princeton_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/175",
+      "propertyLabel" : "SHAREVDE PRINCETON (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_princeton_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/176",
+      "propertyLabel" : "SHAREVDE PRINCETON work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_princeton_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/177",
+      "propertyLabel" : "SHAREVDE PRINCETON superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_princeton_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/178",
+      "propertyLabel" : "SHAREVDE PRINCETON instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_stanford_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/179",
+      "propertyLabel" : "SHAREVDE STANFORD (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_stanford_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/180",
+      "propertyLabel" : "SHAREVDE STANFORD work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_stanford_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/181",
+      "propertyLabel" : "SHAREVDE STANFORD superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_stanford_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/182",
+      "propertyLabel" : "SHAREVDE STANFORD instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_texasam_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/183",
+      "propertyLabel" : "SHAREVDE TEXASAM (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_texasam_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/184",
+      "propertyLabel" : "SHAREVDE TEXASAM work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_texasam_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/185",
+      "propertyLabel" : "SHAREVDE TEXASAM superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_texasam_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/186",
+      "propertyLabel" : "SHAREVDE TEXASAM instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucdavis_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/187",
+      "propertyLabel" : "SHAREVDE UCDAVIS work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucdavis_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/188",
+      "propertyLabel" : "SHAREVDE UCDAVIS superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucdavis_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/189",
+      "propertyLabel" : "SHAREVDE UCDAVIS instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucsd_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/190",
+      "propertyLabel" : "SHAREVDE UCSD (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucsd_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/191",
+      "propertyLabel" : "SHAREVDE UCSD work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucsd_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/192",
+      "propertyLabel" : "SHAREVDE UCSD superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_ucsd_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/193",
+      "propertyLabel" : "SHAREVDE UCSD instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_upenn_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/194",
+      "propertyLabel" : "SHAREVDE UPENN (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_upenn_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/195",
+      "propertyLabel" : "SHAREVDE UPENN work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_upenn_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/196",
+      "propertyLabel" : "SHAREVDE UPENN superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_upenn_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/197",
+      "propertyLabel" : "SHAREVDE UPENN instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_uwashington_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/198",
+      "propertyLabel" : "SHAREVDE UWASHINGTON (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_uwashington_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/199",
+      "propertyLabel" : "SHAREVDE UWASHINGTON work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_uwashington_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/200",
+      "propertyLabel" : "SHAREVDE UWASHINGTON superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_uwashington_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/201",
+      "propertyLabel" : "SHAREVDE UWASHINGTON instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_yale_ld4l_cache:all"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/202",
+      "propertyLabel" : "SHAREVDE YALE (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_yale_ld4l_cache:work"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/203",
+      "propertyLabel" : "SHAREVDE YALE work (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_yale_ld4l_cache:superwork"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/204",
+      "propertyLabel" : "SHAREVDE YALE superwork (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:qa:sharevde_yale_ld4l_cache:instance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/205",
+      "propertyLabel" : "SHAREVDE YALE instance (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:wikidata"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/206",
+      "propertyLabel" : "Wikidata (QA)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/relators"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/207",
+      "propertyLabel" : "MARC relator terms"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/carriers"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/208",
+      "propertyLabel" : "carrier"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/classSchemes"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/209",
+      "propertyLabel" : "class schedule used"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mcolor"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/210",
+      "propertyLabel" : "color"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/contentTypes"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/211",
+      "propertyLabel" : "content type"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/marcauthen"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/212",
+      "propertyLabel" : "description authentication"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/descriptionConventions"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/213",
+      "propertyLabel" : "description conventions"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/menclvl"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/214",
+      "propertyLabel" : "encoding level"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/millus"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/215",
+      "propertyLabel" : "illustrative content"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/maudience"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/216",
+      "propertyLabel" : "intended audience"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/languages"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/217",
+      "propertyLabel" : "language"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mediaTypes"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/218",
+      "propertyLabel" : "media type"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/issuance"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/219",
+      "propertyLabel" : "mode of issuance"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mmaterial"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/220",
+      "propertyLabel" : "material"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/maspect"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/221",
+      "propertyLabel" : "aspect ratio"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mbroadstd"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/222",
+      "propertyLabel" : "broadcast standard"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/organizations"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/223",
+      "propertyLabel" : "Cultural Heritage Organizations (LOC)"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mfiletype"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/224",
+      "propertyLabel" : "file type"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mmusnotation"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/225",
+      "propertyLabel" : "form of musical notation"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mmusicformat"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/226",
+      "propertyLabel" : "format of notated music"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/frequencies"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/227",
+      "propertyLabel" : "frequency"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mgeneration"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/228",
+      "propertyLabel" : "generation"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/genreFormSchemes"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/229",
+      "propertyLabel" : "genre/form scheme"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mgroove"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/230",
+      "propertyLabel" : "groove characteristics"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mlayout"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/231",
+      "propertyLabel" : "layout"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mplayback"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/232",
+      "propertyLabel" : "playback channels"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mplayspeed"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/233",
+      "propertyLabel" : "playing speed"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mpolarity"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/234",
+      "propertyLabel" : "polarity"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mpresformat"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/235",
+      "propertyLabel" : "presentation format"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mprojection"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/236",
+      "propertyLabel" : "projection"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mproduction"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/237",
+      "propertyLabel" : "production method"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mrecmedium"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/238",
+      "propertyLabel" : "recording medium"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mregencoding"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/239",
+      "propertyLabel" : "regional encoding"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mrelief"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/240",
+      "propertyLabel" : "relief"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mscale"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/241",
+      "propertyLabel" : "scale"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mcapturestorage"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/242",
+      "propertyLabel" : "sound capture and storage"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/msoundcontent"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/243",
+      "propertyLabel" : "sound content"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mspecplayback"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/244",
+      "propertyLabel" : "special playback characteristics"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/subjectSchemes"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/245",
+      "propertyLabel" : "subject schemes"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mstatus"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/246",
+      "propertyLabel" : "status"
+    }
+,
+ {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/mrectype"
+      ],
+      "defaults": [],
+      "valueDataType": {}
+      },
+      "propertyURI" : "http://lookuptest/247",
+      "propertyLabel" : "type of recording"
+    }
+   ],
+        "id": "Harvard:rt:test:lookups:fulllist",
+        "resourceLabel": "QA look-ups from authorityConfig.json file as of 11/20/2019",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Work",
+        "remark": "Not for production purposes",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "author": "Marc McGee (mmcgee@fas.harvard.edu)"
+      }
+    ],
+    "id": "Harvard:profile:test:lookups:fullList",
+    "title": "Harvard Profile for QA testing look-ups",
+    "description": "Harvard Profile for testing QA look-ups",
+    "author": "Marc McGee (mmcgee@fas.harvard.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2019-11-20",
+    "remark": "Harvard RT for testing QA look-ups; full list from authorityConfig.json file as of 11/20/19",
+    "adherence": "Not for production purposes"
+  }
+}
