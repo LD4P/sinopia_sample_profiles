@@ -23,8 +23,29 @@
             </xsl:when>
             <xsl:when test="$format='adminMetadata'">
                 <xsl:text> for administrative metadata</xsl:text>
+            </xsl:when> 
+            <xsl:when test="$format='serial'">
+                <xsl:text> for serials</xsl:text>
             </xsl:when>
-            <xsl:otherwise>error</xsl:otherwise>
+            <xsl:when test="$format='eBook'">
+                <xsl:text> for electronic books</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='graphic'">
+                <xsl:text> for graphic materials</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='soundRecording'">
+                 <xsl:text> for sound recordings</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='eMap'">
+                <xsl:text> for electronic maps</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='eSerial'">
+                <xsl:text> for electronic serials</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='eGraphic'">
+                <xsl:text> for electronic graphic materials</xsl:text>
+            </xsl:when>
+            <xsl:otherwise> formatTitle error</xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
     <xsl:variable name="formatLabel">
@@ -43,8 +64,29 @@
             </xsl:when>
             <xsl:when test="$format='adminMetadata'">
                 <xsl:text> administrative metadata</xsl:text>
+            </xsl:when> 
+            <xsl:when test="$format='serial'">
+                <xsl:text> serials</xsl:text>
             </xsl:when>
-            <xsl:otherwise>error</xsl:otherwise>
+            <xsl:when test="$format='eBook'">
+                <xsl:text> electronic books</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='graphic'">
+                <xsl:text> graphic materials</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='soundRecording'">
+                <xsl:text> sound recordings</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='eMap'">
+                <xsl:text> electronic maps</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='eSerial'">
+                <xsl:text> electronic serials</xsl:text>
+            </xsl:when>
+            <xsl:when test="$format='eGraphic'">
+                <xsl:text> electronic graphic materials</xsl:text>
+            </xsl:when>
+            <xsl:otherwise> formatLabel error</xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
   <!--  <xsl:variable name="formatEnum">
@@ -110,7 +152,7 @@
         <!-- Specify RTs to push through to profile below -->
       <xsl:if test="not($format='adminMetadata')">  
         <xsl:for-each
-            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')]">
+            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')][j:array[@key='propertyTemplates']/j:map/j:array[@key='usedInProfile']/j:string=$format]">
             <map>
                 <string key="id">
                     <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>

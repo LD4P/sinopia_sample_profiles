@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-05",
+        "date": "2019-11-22",
         "description": "Resource templates for DVD Videos",
         "id": "WAU:profile:RDA:dvdVideo",
         "title": "WAU Profile RDA for DVD Videos",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -187,35 +187,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/5.9.html"
-                    },
-                    {
-                        "propertyLabel": "has ISSN",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10366",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "has subseries (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is subseries of (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
                     },
                     {
                         "propertyLabel": "has author agent (RDA 18.5)",
@@ -1985,7 +1956,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -2059,7 +2030,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2259,11 +2230,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.13.2.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html"
                     },
                     {
                         "propertyLabel": "has accessibility content (RDA 7.14)",
@@ -2529,16 +2497,6 @@
                                 "urn:ld4p:qa:names:person",
                                 "urn:ld4p:qa:names:organization"
                             ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has editor agent of text",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20330",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
                     },
                     {
@@ -4174,7 +4132,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -4197,20 +4155,6 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
-                    },
-                    {
-                        "propertyLabel": "has authorized access point for manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30294",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "has variant access point for manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30295",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has intended audience of manifestation",
@@ -4535,6 +4479,14 @@
                         "remark": "http://access.rdatoolkit.org/2.12.3.html"
                     },
                     {
+                        "propertyLabel": "has series statement (RDA 2.12)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30106",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.html"
+                    },
+                    {
                         "propertyLabel": "has other title information of series (RDA 2.12.4)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30143",
                         "mandatory": "false",
@@ -4725,7 +4677,7 @@
                     {
                         "propertyLabel": "has type of recording (RDA 3.16.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
-                        "mandatory": "true",
+                        "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/3.16.2.html",
@@ -4778,10 +4730,9 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30138",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
+                        "type": "literal",
                         "remark": "http://access.rdatoolkit.org/3.16.9.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:special_playback"],
                             "defaults": [
                                 {"defaultLiteral": "5.1 Dolby Digital"}
                             ]
@@ -5050,6 +5001,19 @@
                         }
                     },
                     {
+                        "propertyLabel": "has related work of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30265",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:sinopia"
+                            ]
+                        }
+                    },
+                    {
                         "propertyLabel": "has related expression of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30266",
                         "mandatory": "false",
@@ -5301,7 +5265,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item DVD Videos",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {

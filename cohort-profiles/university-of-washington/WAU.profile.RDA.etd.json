@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-05",
+        "date": "2019-11-22",
         "description": "Resource templates for electronic theses and dissertations",
         "id": "WAU:profile:RDA:etd",
         "title": "WAU Profile RDA for electronic theses and dissertations",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -187,28 +187,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/5.9.html"
-                    },
-                    {
-                        "propertyLabel": "has subseries (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10080",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "is subseries of (RDA 24.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/w/P10101",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/24.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
                     },
                     {
                         "propertyLabel": "has author agent (RDA 18.5)",
@@ -877,7 +855,7 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
+                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
                         }
                     },
                     {
@@ -898,7 +876,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1065,11 +1043,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20065",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.13.2.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html"
                     },
                     {
                         "propertyLabel": "has accessibility content (RDA 7.14)",
@@ -1752,7 +1727,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic theses and dissertations",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-03",
+                "date": "2019-11-20",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1775,20 +1750,6 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         }
-                    },
-                    {
-                        "propertyLabel": "has authorized access point for manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30294",
-                        "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "has variant access point for manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30295",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has intended audience of manifestation",
@@ -2017,6 +1978,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.12.3.html"
+                    },
+                    {
+                        "propertyLabel": "has series statement (RDA 2.12)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30106",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.12.html"
                     },
                     {
                         "propertyLabel": "has other title information of series (RDA 2.12.4)",
@@ -2270,6 +2239,19 @@
                             "useValuesFrom": [
                                 "urn:ld4p:qa:names:person",
                                 "urn:ld4p:qa:names:organization"
+                            ]
+                        }
+                    },
+                    {
+                        "propertyLabel": "has related work of manifestation",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30265",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:names",
+                                "urn:ld4p:sinopia"
                             ]
                         }
                     },
