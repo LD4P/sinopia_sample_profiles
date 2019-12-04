@@ -5057,9 +5057,6 @@ WAU:profile:RDA:dvdVideo
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has artist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10058
@@ -5269,7 +5266,6 @@ WAU:profile:RDA:dvdVideo
             has DJ agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20296
             has recording engineer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20050
             has dubbing director agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20295
-            has editor agent of text:      http://rdaregistry.info/Elements/e/P20330
             has editor agent of moving image work (RDA 18.5):      http://rdaregistry.info/Elements/e/P20055
             has interviewee agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20047
             has interviewer agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20032
@@ -5419,8 +5415,6 @@ WAU:profile:RDA:dvdVideo
     WAU:RT:RDA:Manifestation:dvdVideo
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -5460,6 +5454,7 @@ WAU:profile:RDA:dvdVideo
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -5505,6 +5500,7 @@ WAU:profile:RDA:dvdVideo
             has film distributor agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30068
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -5581,9 +5577,6 @@ WAU:profile:RDA:eBook
             has academic degree (RDA 7.9.2):      http://rdaregistry.info/Elements/w/P10077
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
             work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
@@ -5810,7 +5803,7 @@ WAU:profile:RDA:eBook
             has costume designer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20036
             has court reporter agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20040
             has draftsman agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20033
-            has editor agent of text:      http://rdaregistry.info/Elements/e/P20330
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has interviewee agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20047
             has interviewer agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20032
@@ -5960,8 +5953,6 @@ WAU:profile:RDA:eBook
     WAU:RT:RDA:Manifestation:eBook
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -6000,6 +5991,7 @@ WAU:profile:RDA:eBook
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -6034,6 +6026,7 @@ WAU:profile:RDA:eBook
             has distributor agent (RDA 21.4):      http://rdaregistry.info/Elements/m/P30080
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
             has book designer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30069
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -6079,9 +6072,6 @@ WAU:profile:RDA:eGraphic
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
             work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
@@ -6207,6 +6197,7 @@ WAU:profile:RDA:eGraphic
             has censor agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20287
             has colourist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20283
             has costume designer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20036
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has lighting designer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20277
             has makeup artist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20284
@@ -6292,8 +6283,6 @@ WAU:profile:RDA:eGraphic
     WAU:RT:RDA:Manifestation:eGraphic
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -6332,6 +6321,7 @@ WAU:profile:RDA:eGraphic
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -6365,6 +6355,7 @@ WAU:profile:RDA:eGraphic
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
             has distributor agent (RDA 21.4):      http://rdaregistry.info/Elements/m/P30080
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -6412,9 +6403,6 @@ WAU:profile:RDA:eMap
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
             work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
@@ -6529,6 +6517,7 @@ WAU:profile:RDA:eMap
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
             expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has colourist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20283
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has translator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20037
             has writer of supplementary textual content (RDA 18.5):      http://rdaregistry.info/Elements/e/P20046
@@ -6603,8 +6592,6 @@ WAU:profile:RDA:eMap
     WAU:RT:RDA:Manifestation:eMap
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -6644,6 +6631,7 @@ WAU:profile:RDA:eMap
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -6679,6 +6667,7 @@ WAU:profile:RDA:eMap
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
             has distributor agent (RDA 21.4):      http://rdaregistry.info/Elements/m/P30080
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -6784,7 +6773,7 @@ WAU:profile:RDA:eSerial
             is replaced in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10021
             is split into work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10211
             is special issue of:      http://rdaregistry.info/Elements/w/P10411
-            has special issue:      http://rdaregistry.info/Elements/w/P10410
+            has special issue:      http://rdaregistry.info/Elements/w/P10256
             has subject (RDA 23.4):      http://rdaregistry.info/Elements/w/P10256
             is work analysed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10121
             is work commentary in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10116
@@ -6825,6 +6814,7 @@ WAU:profile:RDA:eSerial
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
             expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has censor agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20287
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has translator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20037
             has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has related expression of expression:      http://rdaregistry.info/Elements/e/P20205
@@ -6892,8 +6882,6 @@ WAU:profile:RDA:eSerial
     WAU:RT:RDA:Manifestation:eSerial
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -6938,6 +6926,7 @@ WAU:profile:RDA:eSerial
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -6975,6 +6964,7 @@ WAU:profile:RDA:eSerial
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
             has distributor agent (RDA 21.4):      http://rdaregistry.info/Elements/m/P30080
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -7019,8 +7009,6 @@ WAU:profile:RDA:etd
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has respondent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10001
@@ -7168,8 +7156,6 @@ WAU:profile:RDA:etd
     WAU:RT:RDA:Manifestation:etd
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -7196,6 +7182,7 @@ WAU:profile:RDA:etd
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -7221,6 +7208,7 @@ WAU:profile:RDA:etd
             manifestation has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has related agent of manifestation:      http://rdaregistry.info/Elements/m/P30267
             has publisher agent (RDA 21.3):      http://rdaregistry.info/Elements/m/P30083
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -7262,9 +7250,6 @@ WAU:profile:RDA:graphic
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
             work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
@@ -7390,6 +7375,7 @@ WAU:profile:RDA:graphic
             has censor agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20287
             has colourist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20283
             has costume designer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20036
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has lighting designer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20277
             has makeup artist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20284
@@ -7475,8 +7461,6 @@ WAU:profile:RDA:graphic
     WAU:RT:RDA:Manifestation:graphic
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -7516,6 +7500,7 @@ WAU:profile:RDA:graphic
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -7560,6 +7545,7 @@ WAU:profile:RDA:graphic
             has printer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30078
             has printmaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30072
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -8354,7 +8340,7 @@ WAU:profile:RDA
             has dubbing director family:      http://rdaregistry.info/Elements/e/P20570
             has dubbing director person:      http://rdaregistry.info/Elements/e/P20393
             has editor agent of moving image work (RDA 18.5):      http://rdaregistry.info/Elements/e/P20055
-            has editor agent of text:      http://rdaregistry.info/Elements/e/P20330
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has editor collective agent of moving image work:      http://rdaregistry.info/Elements/e/P20449
             has editor collective agent of text:      http://rdaregistry.info/Elements/e/P20397
             has editor corporate body of moving image work:      http://rdaregistry.info/Elements/e/P20508
@@ -10762,9 +10748,6 @@ WAU:profile:RDA:map
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
             work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
@@ -10881,7 +10864,7 @@ WAU:profile:RDA:map
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
             expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has colourist agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20283
-            has editor agent of text:      http://rdaregistry.info/Elements/e/P20330
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has translator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20037
             has writer of supplementary textual content (RDA 18.5):      http://rdaregistry.info/Elements/e/P20046
@@ -10957,8 +10940,6 @@ WAU:profile:RDA:map
     WAU:RT:RDA:Manifestation:map
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -10999,6 +10980,7 @@ WAU:profile:RDA:map
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -11046,6 +11028,7 @@ WAU:profile:RDA:map
             has platemaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30075
             has printer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30078
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -11142,9 +11125,6 @@ WAU:profile:RDA:monograph
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             work has LC Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA
             work has LC Classification Number Part B:      https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB
             work has NLM Classification Number Part A:      https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA
@@ -11379,7 +11359,7 @@ WAU:profile:RDA:monograph
             has costume designer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20036
             has court reporter agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20040
             has draftsman agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20033
-            has editor agent of text:      http://rdaregistry.info/Elements/e/P20330
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has illustrator (RDA 18.5):      http://rdaregistry.info/Elements/e/P20051
             has interviewee agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20047
             has interviewer agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20032
@@ -11530,8 +11510,6 @@ WAU:profile:RDA:monograph
     WAU:RT:RDA:Manifestation:monograph
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -11571,6 +11549,7 @@ WAU:profile:RDA:monograph
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -11618,6 +11597,7 @@ WAU:profile:RDA:monograph
             has printer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30078
             has printmaker agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30072
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -11776,7 +11756,7 @@ WAU:profile:RDA:serial
             is replaced in part by work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10021
             is split into work (RDA 24.5):      http://rdaregistry.info/Elements/w/P10211
             is special issue of:      http://rdaregistry.info/Elements/w/P10411
-            has special issue:      http://rdaregistry.info/Elements/w/P10410
+            has special issue:      http://rdaregistry.info/Elements/w/P10256
             has subject (RDA 23.4):      http://rdaregistry.info/Elements/w/P10256
             is work analysed in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10121
             is work commentary in (RDA 23.5):      http://rdaregistry.info/Elements/w/P10116
@@ -11819,7 +11799,7 @@ WAU:profile:RDA:serial
             has creator agent of expression (RDA 20.2):      http://rdaregistry.info/Elements/e/P20053
             expression has contributor agent (RDA 18.5):      https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent
             has censor agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20287
-            has editor agent of text:      http://rdaregistry.info/Elements/e/P20330
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has translator agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20037
             has manifestation of expression (RDA 17.9):      http://rdaregistry.info/Elements/e/P20059
             has related expression of expression:      http://rdaregistry.info/Elements/e/P20205
@@ -11887,8 +11867,6 @@ WAU:profile:RDA:serial
     WAU:RT:RDA:Manifestation:serial
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -11933,6 +11911,7 @@ WAU:profile:RDA:serial
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -11977,6 +11956,7 @@ WAU:profile:RDA:serial
             has lithographer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30074
             has printer agent (RDA 18.5):      http://rdaregistry.info/Elements/m/P30078
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
@@ -12063,9 +12043,6 @@ WAU:profile:RDA:soundRecording
             has year degree granted (RDA 7.9.4):      http://rdaregistry.info/Elements/w/P10215
             has note on work (RDA 5.9):      http://rdaregistry.info/Elements/w/P10330
             has University of Washington-specific note on work (RDA 5.9):      https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote
-            has ISSN:      http://rdaregistry.info/Elements/w/P10366
-            has subseries (RDA 24.5):      http://rdaregistry.info/Elements/w/P10080
-            is subseries of (RDA 24.5):      http://rdaregistry.info/Elements/w/P10101
             has author agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10061
             has creator agent of work (RDA 19.2):      http://rdaregistry.info/Elements/w/P10065
             has artist agent (RDA 18.5):      http://rdaregistry.info/Elements/w/P10058
@@ -12272,6 +12249,7 @@ WAU:profile:RDA:soundRecording
             has DJ agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20296
             has mixing engineer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20293
             has recording engineer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20050
+            has editor agent:      http://rdaregistry.info/Elements/e/P20330
             has interviewee agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20047
             has interviewer agent of expression (RDA 18.5):      http://rdaregistry.info/Elements/e/P20032
             has music programmer agent (RDA 18.5):      http://rdaregistry.info/Elements/e/P20294
@@ -12418,8 +12396,6 @@ WAU:profile:RDA:soundRecording
     WAU:RT:RDA:Manifestation:soundRecording
             Administrative Metadata for Manifestation:      http://id.loc.gov/ontologies/bibframe/adminMetadata
             has expression manifested (RDA 17.10):      http://rdaregistry.info/Elements/m/P30139
-            has authorized access point for manifestation:      http://rdaregistry.info/Elements/m/P30294
-            has variant access point for manifestation:      http://rdaregistry.info/Elements/m/P30295
             has intended audience of manifestation:      http://rdaregistry.info/Elements/m/P30305
             has title proper (RDA 2.3.2):      http://rdaregistry.info/Elements/m/P30156
             has parallel title proper (RDA 2.3.3):      http://rdaregistry.info/Elements/m/P30203
@@ -12459,6 +12435,7 @@ WAU:profile:RDA:soundRecording
             has copyright date (RDA 2.11):      http://rdaregistry.info/Elements/m/P30007
             has title of series (RDA 2.12.2):      http://rdaregistry.info/Elements/m/P30157
             has parallel title of series (RDA 2.12.3):      http://rdaregistry.info/Elements/m/P30204
+            has series statement (RDA 2.12):      http://rdaregistry.info/Elements/m/P30106
             has other title information of series (RDA 2.12.4):      http://rdaregistry.info/Elements/m/P30143
             has parallel other title information of series (RDA 2.12.5):      http://rdaregistry.info/Elements/m/P30152
             has statement of responsibility relating to series (RDA 2.12.6):      http://rdaregistry.info/Elements/m/P30119
@@ -12501,6 +12478,7 @@ WAU:profile:RDA:soundRecording
             has distributor agent (RDA 21.4):      http://rdaregistry.info/Elements/m/P30080
             has manufacturer agent (RDA 21.5):      http://rdaregistry.info/Elements/m/P30082
             has exemplar of manifestation (RDA 17.11):      http://rdaregistry.info/Elements/m/P30103
+            has related work of manifestation:      http://rdaregistry.info/Elements/m/P30265
             has related expression of manifestation:      http://rdaregistry.info/Elements/m/P30266
             has related item of manifestation:      http://rdaregistry.info/Elements/m/P30140
             has related manifestation of manifestation:      http://rdaregistry.info/Elements/m/P30048
