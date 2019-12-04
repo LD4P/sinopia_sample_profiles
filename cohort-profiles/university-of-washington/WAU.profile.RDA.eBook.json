@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-22",
+        "date": "2019-11-27",
         "description": "Resource templates for electronic books",
         "id": "WAU:profile:RDA:eBook",
         "title": "WAU Profile RDA for electronic books",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic books",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-27",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -84,7 +84,8 @@
                         "valueConstraint": {
                             "useValuesFrom": [
                                 "urn:ld4p:qa:genres",
-                                "urn:ld4p:qa:gettyaat"
+                                "urn:ld4p:qa:gettyaat",
+                                "urn:ld4p:qa:subjects"
                             ]
                         }
                     },
@@ -123,14 +124,8 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10216",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.3.html",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:geographic",
-                                "urn:ld4p:qa:subjects"
-                            ]
-                        }
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.3.html"
                     },
                     {
                         "propertyLabel": "has creator characteristic",
@@ -168,6 +163,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/5.9.html"
+                    },
+                    {
+                        "propertyLabel": "has history of work (RDA 6.7)",
+                        "propertyURI": "http://rdaregistry.info/Elements/w/P10210",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.7.html"
                     },
                     {
                         "propertyLabel": "work has LC Classification Number Part A",
@@ -2249,7 +2252,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic books",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-27",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2354,6 +2357,14 @@
                         }
                     },
                     {
+                        "propertyLabel": "has details of colour content (RDA 7.17.1.4)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20261",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.17.1.4.html"
+                    },
+                    {
                         "propertyLabel": "expression has LC Classification Number Part A",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
                         "mandatory": "false",
@@ -2445,7 +2456,12 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/7.13.2.html"
+                        "remark": "http://access.rdatoolkit.org/7.13.2.html",
+                        "valueConstraint": {
+                            "defaults": [
+                                {"defaultLiteral": "Latin"}
+                            ]
+                        }
                     },
                     {
                         "propertyLabel": "has accessibility content (RDA 7.14)",
@@ -2483,6 +2499,14 @@
                         "remark": "http://access.rdatoolkit.org/7.29.html"
                     },
                     {
+                        "propertyLabel": "has other distinguishing characteristic of expression (RDA 6.12)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20003",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/6.12.html"
+                    },
+                    {
                         "propertyLabel": "has University of Washington-specific note on expression (RDA 7.29)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote",
                         "mandatory": "false",
@@ -2496,17 +2520,6 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
-                    {
-                        "propertyLabel": "has creator agent of expression (RDA 20.2)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20053",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/20.2.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         }
@@ -2620,6 +2633,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "lookup",
+                        "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         }
@@ -4234,7 +4248,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic books",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-20",
+                "date": "2019-11-27",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -4613,7 +4627,7 @@
                         "remark": "http://access.rdatoolkit.org/2.12.7.html"
                     },
                     {
-                        "propertyLabel": "has numbering within sequence (RDA 2.12.9)",
+                        "propertyLabel": "has numbering within series (RDA 2.12.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30014",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -4665,7 +4679,7 @@
                         "propertyLabel": "has note on issue, part, or iteration used as basis for identification of manifestation (RDA 2.17.13)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30050",
                         "mandatory": "false",
-                        "repeatable": "false",
+                        "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.17.13.html"
                     },
@@ -4825,30 +4839,7 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    {
-                        "propertyLabel": "has creator agent of manifestation",
-                        "propertyURI": "http://rdaregistry.info/Elements/m/P30329",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": [
-                                "urn:ld4p:qa:names:person",
-                                "urn:ld4p:qa:names:organization"
-                            ]
-                        }
-                    },
-                    {
-                        "propertyLabel": "manifestation has contributor agent (RDA 18.5)",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/18.5.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names"]
-                        }
-                    },
+                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",
@@ -5151,7 +5142,7 @@
                             "defaults": [
                                 {
                                     "defaultURI": "https://id.loc.gov/vocabulary/organizations/wau",
-                                    "defaultLiteral": "WAU"
+                                    "defaultLiteral": "WaU"
                                 }
                             ]
                         }

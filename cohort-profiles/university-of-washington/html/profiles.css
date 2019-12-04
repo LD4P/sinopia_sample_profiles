@@ -1,9 +1,9 @@
+html {
+    font-family: monospace ;
+}
 table {
     margin-bottom: 25px ; 
     border-spacing: 10px ;
-}
-thead {
-    background-color: #808080 ;
 }
 tbody tr:nth-child(odd) {
     background-color: #D3D3D3 ;
@@ -11,14 +11,31 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: #F8F8F8 ;
 }
-html {
-    font-family: monospace ;
+.profileAttrs thead {
+    font-size: 120% ;
+    background-color: #66CDAA ;
 }
-.rtAttrs {
+.rtsHead {
     padding-left: 25px ;
 }
-.ptAttrs {
+.rtsAttrs {
+    padding-left: 25px ;
+}
+.rtsAttrs thead {
+    font-size: 120% ;
+    background-color: #98FB98 ;
+}
+.propsHead {
+    padding-left: 30px ;
+}
+.ptsAttrs {
     padding-left: 50px ;
 }
+.ptsAttrs thead {
+    font-size: 120% ;
+    background-color: #C0C0C0 ;
+}
+
+
 
 

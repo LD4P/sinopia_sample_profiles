@@ -8,7 +8,8 @@
         <!-- Map element?? -->
         <map xmlns="http://www.w3.org/2005/xpath-functions">
             <!-- Need to generate filename based on source XML -->
-            <xsl:result-document href="../html/{translate(j:map/j:map[@key = 'Profile']/j:string[@key = 'id'], ':', '.')}.html">
+            <xsl:result-document
+                href="../html/{translate(j:map/j:map[@key = 'Profile']/j:string[@key = 'id'], ':', '.')}.html">
                 <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="profile"/>
             </xsl:result-document>
         </map>
@@ -34,10 +35,14 @@
         </html>
     </xsl:template>
     <xsl:template match="." mode="profileAttrs">
-        <table>
+        <table class="profileAttrs">
             <thead>
-                <xsl:text>Profile Information for </xsl:text>
-                <xsl:value-of select="j:string[@key = 'title']"/>
+                <tr>
+                    <th>
+                        <xsl:text>Profile Information for </xsl:text>
+                        <xsl:value-of select="j:string[@key = 'title']"/>
+                    </th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -80,30 +85,33 @@
                 </tr>
             </tbody>
         </table>
-        <table>
-            <thead>
+        <section class="rtsHead">
+            <h2>
                 <xsl:text>Resource Templates in </xsl:text>
                 <xsl:value-of select="j:string[@key = 'title']"/>
-            </thead>
-            <xsl:for-each
-                select="j:array[@key = 'resourceTemplates']/j:map/j:string[@key = 'resourceLabel']">
-                <tr>
-                    <th scope="row">
-                        <xsl:value-of select="."/>
-                    </th>
-                    <td>
-                        <a href="#{translate(., ' ', '')}">GO TO RESOURCE TEMPLATE</a>
-                    </td>
-                </tr>
-            </xsl:for-each>
-        </table>
-        <xsl:apply-templates select="j:array[@key = 'resourceTemplates']/j:map" mode="rtAttrs"/>
+            </h2>
+            <ul>
+                <xsl:for-each
+                    select="j:array[@key = 'resourceTemplates']/j:map/j:string[@key = 'resourceLabel']">
+                    <li>
+                        <a href="#{translate(., ' ', '')}">
+                            <xsl:value-of select="."/>
+                        </a>
+                    </li>
+                </xsl:for-each>
+            </ul>
+        </section>
+        <xsl:apply-templates select="j:array[@key = 'resourceTemplates']/j:map" mode="rtsAttrs"/>
     </xsl:template>
-    <xsl:template match="j:map" mode="rtAttrs">
-        <table class="rtAttrs" id="{translate(j:string[@key = 'resourceLabel'], ' ', '')}">
+    <xsl:template match="j:map" mode="rtsAttrs">
+        <table class="rtsAttrs" id="{translate(j:string[@key = 'resourceLabel'], ' ', '')}">
             <thead>
-                <xsl:text>Resource template: </xsl:text>
-                <xsl:value-of select="j:string[@key = 'resourceLabel']"/>
+                <tr>
+                    <th>
+                        <xsl:text>Resource template: </xsl:text>
+                        <xsl:value-of select="j:string[@key = 'resourceLabel']"/>
+                    </th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -141,13 +149,46 @@
                 </tr>
             </tbody>
         </table>
-        <xsl:apply-templates select="j:array[@key = 'propertyTemplates']/j:map" mode="ptAttrs"/>
+        <section class="propsHead">
+            <h3>
+                <xsl:text>Properties in </xsl:text>
+                <xsl:value-of select="j:string[@key = 'resourceLabel']"/>
+            </h3>
+            <ul>
+                <xsl:for-each select="j:array[@key = 'propertyTemplates']/j:map">
+                    <li>
+                        <a href="#{translate(j:string[@key='propertyLabel'], ' ', '')}">
+                            <xsl:value-of select="j:string[@key = 'propertyLabel']"/>
+                        </a>
+                    </li>
+                </xsl:for-each>
+                <li>
+                    <a href="#{translate(j:string[@key = 'resourceLabel'], ' ', '')}">
+                        <i class="strong">
+                            <xsl:text>RETURN TO RESOURCE TEMPLATE TOP</xsl:text>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#profileTop">
+                        <i class="strong">
+                            <xsl:text>RETURN TO PAGE TOP</xsl:text>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <xsl:apply-templates select="j:array[@key = 'propertyTemplates']/j:map" mode="ptsAttrs"/>
     </xsl:template>
-    <xsl:template match="j:map" mode="ptAttrs">
-        <table class="ptAttrs">
+    <xsl:template match="j:map" mode="ptsAttrs">
+        <table class="ptsAttrs" id="{translate(j:string[@key='propertyLabel'], ' ', '')}">
             <thead>
-                <xsl:text>Property template: </xsl:text>
-                <xsl:value-of select="j:string[@key = 'propertyLabel']"/>
+                <tr>
+                    <th>
+                        <xsl:text>Property template: </xsl:text>
+                        <xsl:value-of select="j:string[@key = 'propertyLabel']"/>
+                    </th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -224,13 +265,19 @@
                 <tr>
                     <th scope="row">
                         <a href="#{translate(../../j:string[@key = 'resourceLabel'], ' ', '')}">
-                            <xsl:text>RETURN TO RESOURCE TEMPLATE TOP</xsl:text>
+                            <i class="strong">
+                                <xsl:text>RETURN TO RESOURCE TEMPLATE TOP</xsl:text>
+                            </i>
                         </a>
                     </th>
                 </tr>
                 <tr>
                     <th scope="row">
-                        <a href="#profileTop">RETURN TO PAGE TOP</a>
+                        <a href="#profileTop">
+                            <i class="strong">
+                                <xsl:text>RETURN TO PROFILE TOP</xsl:text>
+                            </i>
+                        </a>
                     </th>
                 </tr>
             </tbody>
