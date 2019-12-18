@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-27",
+        "date": "2019-12-12",
         "description": "Resource templates for electronic books",
         "id": "WAU:profile:RDA:eBook",
         "title": "WAU Profile RDA for electronic books",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic books",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -42,8 +42,8 @@
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "is same as LC NAF work",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF work authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -171,34 +171,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/6.7.html"
-                    },
-                    {
-                        "propertyLabel": "work has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has author agent (RDA 18.5)",
@@ -2252,7 +2224,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic books",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2277,8 +2249,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is same as LC NAF expression",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF expression authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -2365,34 +2337,6 @@
                         "remark": "http://access.rdatoolkit.org/7.17.1.4.html"
                     },
                     {
-                        "propertyLabel": "expression has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
                         "propertyLabel": "has content type (RDA 6.9)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20001",
                         "mandatory": "false",
@@ -2475,12 +2419,9 @@
                         "propertyLabel": "has supplementary content (RDA 7.16)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20206",
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.16.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
                     {
                         "propertyLabel": "has award (RDA 7.28)",
@@ -4248,7 +4189,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic books",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -4444,6 +4385,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.7.6.html"
+                    },
+                    {
+                        "propertyLabel": "has publication statement (RDA 2.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30111",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.html"
                     },
                     {
                         "propertyLabel": "has place of publication (RDA 2.8.2)",
@@ -4795,41 +4744,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.5.html"
-                    },
-                    {
-                        "propertyLabel": "manifestation has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has SuDoc Classification Number",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has uniform resource locator (RDA 4.6)",

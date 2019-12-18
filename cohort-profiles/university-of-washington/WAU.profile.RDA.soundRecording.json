@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-27",
+        "date": "2019-12-12",
         "description": "Resource templates for sound recordings",
         "id": "WAU:profile:RDA:soundRecording",
         "title": "WAU Profile RDA for sound recordings",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work sound recordings",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -42,8 +42,8 @@
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "is same as LC NAF work",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF work authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -2061,7 +2061,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression sound recordings",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2086,8 +2086,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is same as LC NAF expression",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF expression authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -2264,12 +2264,9 @@
                         "propertyLabel": "has supplementary content (RDA 7.16)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20206",
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.16.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
                     {
                         "propertyLabel": "has duration (RDA 7.22)",
@@ -4020,7 +4017,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation sound recordings",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -4216,6 +4213,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.7.6.html"
+                    },
+                    {
+                        "propertyLabel": "has publication statement (RDA 2.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30111",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.html"
                     },
                     {
                         "propertyLabel": "has place of publication (RDA 2.8.2)",
@@ -5074,7 +5079,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item sound recordings",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {

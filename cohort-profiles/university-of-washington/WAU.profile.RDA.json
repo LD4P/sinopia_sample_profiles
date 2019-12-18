@@ -3,7 +3,7 @@
         "title": "WAU Profile RDA",
         "id": "WAU:profile:RDA",
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-27",
+        "date": "2019-12-12",
         "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan, Administrative Metadata, Status, Complex Subject, Simple Type, RDF List",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
@@ -11,7 +11,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work",
                 "id": "WAU:RT:RDA:Work",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -67,8 +67,8 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "is same as LC NAF work",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF work authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -13101,84 +13101,16 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "work has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
+                        "propertyLabel": "work has LC Geographic Classification",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 118,
+                        "uwFormOrder": 118.51,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map",
-                            "serial",
-                            "eBook",
-                            "graphic",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic"
-                        ]
-                    },
-                    {
-                        "propertyLabel": "work has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 118.1,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map",
-                            "serial",
-                            "eBook",
-                            "graphic",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic"
-                        ]
-                    },
-                    {
-                        "propertyLabel": "work has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 119,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
-                        ]
-                    },
-                    {
-                        "propertyLabel": "work has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 119.1,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
-                        ]
+                        "usedInProfile": ["map", "eMap"]
                     }
                 ]
             },
@@ -13186,7 +13118,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression",
                 "id": "WAU:RT:RDA:Expression",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -13218,8 +13150,8 @@
                         ]
                     },
                     {
-                        "propertyLabel": "is same as LC NAF expression",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF expression authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -15246,7 +15178,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": ,
+                        "uwFormOrder": "",
                         "statusUw": "done",
                         "noteUw": ["New RDA"],
                         "qUw": [],
@@ -17513,11 +17445,8 @@
                         "propertyLabel": "has supplementary content (RDA 7.16)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20206",
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        },
+                        "repeatable": "true",
+                        "type": "literal",
                         "uwFormOrder": 126,
                         "statusUw": "done",
                         "noteUw": [],
@@ -24231,86 +24160,6 @@
                             "graphic"
                         ],
                         "remark": "http://access.rdatoolkit.org/23.4.html"
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 118.2,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map",
-                            "eMap",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
-                        ]
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 118.3,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "map",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic",
-                            "serial",
-                            "eBook",
-                            "graphic"
-                        ]
-                    },
-                    {
-                        "propertyLabel": "expression has NLM Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 119.2,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
-                        ]
-                    },
-                    {
-                        "propertyLabel": "expression has NLM Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 119.3,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "serial",
-                            "eSerial",
-                            "eBook",
-                            "graphic",
-                            "eGraphic"
-                        ]
                     }
                 ]
             },
@@ -24318,7 +24167,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation",
                 "id": "WAU:RT:RDA:Manifestation",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -28934,25 +28783,26 @@
                     {
                         "propertyLabel": "has publication statement (RDA 2.8)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30111",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
-                        "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
-                        },
-                        "uwFormOrder": -1,
-                        "statusUw": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "uwFormOrder": 51.9,
+                        "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                            "etd",
+                            "map",
+                            "eMap",
+                            "eBook",
+                            "serial",
+                            "eSerial",
+                            "graphic",
+                            "eGraphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                        ],
                         "remark": "http://access.rdatoolkit.org/2.8.html"
                     },
                     {
@@ -33641,12 +33491,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "map",
-                            "eMap",
-                            "eBook",
                             "serial",
-                            "eSerial",
                             "graphic",
-                            "eGraphic",
                             "monograph"
                         ]
                     },
@@ -33662,12 +33508,8 @@
                         "qUw": [],
                         "usedInProfile": [
                             "map",
-                            "eMap",
-                            "eBook",
                             "serial",
-                            "eSerial",
                             "graphic",
-                            "eGraphic",
                             "monograph"
                         ]
                     },
@@ -33682,11 +33524,8 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "eBook",
                             "serial",
-                            "eSerial",
                             "graphic",
-                            "eGraphic",
                             "monograph"
                         ]
                     },
@@ -33701,25 +33540,10 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "eBook",
                             "serial",
-                            "eSerial",
                             "graphic",
-                            "eGraphic",
                             "monograph"
                         ]
-                    },
-                    {
-                        "propertyLabel": "manifestation has LC Geographic Classification",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal",
-                        "uwFormOrder": 118.51,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": ["map", "eMap"]
                     },
                     {
                         "propertyLabel": "manifestation has SuDoc Classification Number",
@@ -33733,15 +33557,9 @@
                         "qUw": [],
                         "usedInProfile": [
                             "map",
-                            "eMap",
-                            "eBook",
                             "serial",
-                            "eSerial",
                             "graphic",
-                            "eGraphic",
-                            "dvdVideo",
-                            "monograph",
-                            "soundRecording"
+                            "monograph"
                         ]
                     }
                 ]
@@ -33750,7 +33568,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item",
                 "id": "WAU:RT:RDA:Item",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -36892,10 +36710,10 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
                             "map",
                             "serial",
-                            "graphic"
+                            "graphic",
+                            "monograph"
                         ]
                     },
                     {
@@ -36909,10 +36727,10 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
-                            "monograph",
                             "map",
                             "serial",
-                            "graphic"
+                            "graphic",
+                            "monograph"
                         ]
                     },
                     {
@@ -36973,13 +36791,13 @@
                         "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": 118.54,
-                        "statusUW": "attention",
-                        "noteUW": ["Needs to be added to extension ontology...not a real property"],
+                        "statusUW": "done",
+                        "noteUW": [],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo", "soundRecording"]
                     },
                     {
-                        "propertyLabel": "item has physical location",
+                        "propertyLabel": "item has physical location (example: suzzallen)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -36998,7 +36816,7 @@
                         ]
                     },
                     {
-                        "propertyLabel": "item has physical sublocation",
+                        "propertyLabel": "item has physical sublocation (example: szstx)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -37041,7 +36859,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10002 http://rdaregistry.info/Elements/c/C10011 http://rdaregistry.info/Elements/c/C10005 http://rdaregistry.info/Elements/c/C10008 http://rdaregistry.info/Elements/c/C10004",
                 "resourceLabel": "WAU RT RDA Agent",
                 "id": "WAU:RT:RDA:Agent",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -61432,7 +61250,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10012",
                 "resourceLabel": "WAU RT RDA Nomen",
                 "id": "WAU:RT:RDA:Nomen",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -65229,7 +65047,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10009",
                 "resourceLabel": "WAU RT RDA Place",
                 "id": "WAU:RT:RDA:Place",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -66431,7 +66249,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10010",
                 "resourceLabel": "WAU RT RDA Timespan",
                 "id": "WAU:RT:RDA:Timespan",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
@@ -67773,7 +67591,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67955,7 +67773,7 @@
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -67984,7 +67802,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#ComplexSubject",
                 "resourceLabel": "WAU RT MADS RDF Complex Subject",
                 "id": "WAU:RT:MADSRDF:complexSubject",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -68025,7 +67843,7 @@
                 "resourceURI": "http://www.loc.gov/mads/rdf/v1#SimpleType",
                 "resourceLabel": "WAU RT MADS RDF Subject",
                 "id": "WAU:RT:MADSRDF:simpleSubject",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
@@ -68055,7 +67873,7 @@
                 "resourceURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
                 "resourceLabel": "WAU RT RDF List",
                 "id": "WAU:RT:RDF:list",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "author": "Crystal Clements (cec23@uw.edu)",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [

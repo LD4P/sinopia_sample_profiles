@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-11-27",
+        "date": "2019-12-12",
         "description": "Resource templates for maps",
         "id": "WAU:profile:RDA:map",
         "title": "WAU Profile RDA for maps",
@@ -12,7 +12,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -42,8 +42,8 @@
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "is same as LC NAF work",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF work authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -210,15 +210,8 @@
                         "remark": "http://access.rdatoolkit.org/6.7.html"
                     },
                     {
-                        "propertyLabel": "work has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "work has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
+                        "propertyLabel": "work has LC Geographic Classification",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
@@ -1096,7 +1089,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1121,8 +1114,8 @@
                         }
                     },
                     {
-                        "propertyLabel": "is same as LC NAF expression",
-                        "propertyURI": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                        "propertyLabel": "is identified by LC NAF expression authority",
+                        "propertyURI": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority",
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "lookup",
@@ -1207,20 +1200,6 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/7.17.1.4.html"
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part A",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "expression has LC Classification Number Part B",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has content type (RDA 6.9)",
@@ -1345,12 +1324,9 @@
                         "propertyLabel": "has supplementary content (RDA 7.16)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20206",
                         "mandatory": "false",
-                        "repeatable": "false",
-                        "type": "lookup",
-                        "remark": "http://access.rdatoolkit.org/7.16.html",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia"]
-                        }
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/7.16.html"
                     },
                     {
                         "propertyLabel": "has scale (RDA 7.25)",
@@ -2252,7 +2228,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2456,6 +2432,14 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/2.7.6.html"
+                    },
+                    {
+                        "propertyLabel": "has publication statement (RDA 2.8)",
+                        "propertyURI": "http://rdaregistry.info/Elements/m/P30111",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal",
+                        "remark": "http://access.rdatoolkit.org/2.8.html"
                     },
                     {
                         "propertyLabel": "has place of publication (RDA 2.8.2)",
@@ -2875,13 +2859,6 @@
                     {
                         "propertyLabel": "manifestation has LC Classification Number Part B",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
-                        "propertyLabel": "manifestation has LC Geographic Classification",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
@@ -3452,7 +3429,7 @@
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item maps",
                 "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-11-27",
+                "date": "2019-12-12",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
