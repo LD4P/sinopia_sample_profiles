@@ -171,6 +171,6 @@
   "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
   "remark": "based on LC template ld4p:RT:bf2:Monograph:Item",
   "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
-  "date": "2019-08-19",
+  "date": "2019-12-11",
   "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
 }
