@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-12",
+        "date": "2019-12-22",
         "description": "Resource templates for sound recordings",
         "id": "WAU:profile:RDA:soundRecording",
         "title": "WAU Profile RDA for sound recordings",
@@ -1996,7 +1996,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": [
+                                "urn:ld4p:sinopia",
+                                "urn:ld4p:qa:names"
+                            ]
                         }
                     },
                     {
@@ -4692,13 +4695,6 @@
                         "remark": "http://access.rdatoolkit.org/4.5.html"
                     },
                     {
-                        "propertyLabel": "manifestation has SuDoc Classification Number",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
                         "propertyLabel": "has uniform resource locator (RDA 4.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30154",
                         "mandatory": "false",
@@ -4706,7 +4702,6 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",
@@ -5134,14 +5129,14 @@
                         "remark": "http://access.rdatoolkit.org/2.21.html"
                     },
                     {
-                        "propertyLabel": "item has physical location",
+                        "propertyLabel": "item has physical location (example: suzzallen)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "item has physical sublocation",
+                        "propertyLabel": "item has physical sublocation (example: szstx)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation",
                         "mandatory": "false",
                         "repeatable": "true",

@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-12",
+        "date": "2019-12-22",
         "description": "Resource templates for electronic books",
         "id": "WAU:profile:RDA:eBook",
         "title": "WAU Profile RDA for electronic books",
@@ -2181,7 +2181,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": [
+                                "urn:ld4p:sinopia",
+                                "urn:ld4p:qa:names"
+                            ]
                         }
                     },
                     {
@@ -4753,7 +4756,6 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",

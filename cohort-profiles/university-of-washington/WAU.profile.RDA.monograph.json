@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-12",
+        "date": "2019-12-22",
         "description": "Resource templates for monographs",
         "id": "WAU:profile:RDA:monograph",
         "title": "WAU Profile RDA for monographs",
@@ -2258,7 +2258,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": [
+                                "urn:ld4p:sinopia",
+                                "urn:ld4p:qa:names"
+                            ]
                         }
                     },
                     {
@@ -5584,14 +5587,14 @@
                         "remark": "http://access.rdatoolkit.org/2.21.html"
                     },
                     {
-                        "propertyLabel": "item has physical location",
+                        "propertyLabel": "item has physical location (example: suzzallen)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal"
                     },
                     {
-                        "propertyLabel": "item has physical sublocation",
+                        "propertyLabel": "item has physical sublocation (example: szstx)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation",
                         "mandatory": "false",
                         "repeatable": "true",

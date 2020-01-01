@@ -30027,7 +30027,7 @@
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     },
                     {
-                        "propertyLabel": "has note on frequency (RDA 2.17.2)",
+                        "propertyLabel": "has note on frequency (RDA 2.17.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30056",
                         "mandatory": "false",
                         "repeatable": "true",
@@ -30037,7 +30037,7 @@
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": ["serial", "eSerial"],
-                        "remark": "http://access.rdatoolkit.org/2.17.2.html"
+                        "remark": "http://access.rdatoolkit.org/2.17.12.html"
                     },
                     {
                         "propertyLabel": "has note on copyright date (RDA 2.17.10)",

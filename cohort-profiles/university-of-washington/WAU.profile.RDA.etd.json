@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-12",
+        "date": "2019-12-22",
         "description": "Resource templates for electronic theses and dissertations",
         "id": "WAU:profile:RDA:etd",
         "title": "WAU Profile RDA for electronic theses and dissertations",
@@ -82,7 +82,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:genres",
+                                "urn:ld4p:qa:subjects"
+                            ],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026039",
@@ -245,7 +248,13 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/18.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:organization"]
+                            "useValuesFrom": ["urn:ld4p:qa:names:organization"],
+                            "defaults": [
+                                {
+                                    "defaultURI": "http://id.loc.gov/authorities/names/n79054596",
+                                    "defaultLiteral": "University of Washington"
+                                }
+                            ]
                         }
                     },
                     {
@@ -857,7 +866,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": [
+                                "urn:ld4p:sinopia",
+                                "urn:ld4p:qa:names"
+                            ]
                         }
                     },
                     {
@@ -2211,7 +2223,6 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",

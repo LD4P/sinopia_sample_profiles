@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-12",
+        "date": "2019-12-22",
         "description": "Resource templates for electronic maps",
         "id": "WAU:profile:RDA:eMap",
         "title": "WAU Profile RDA for electronic maps",
@@ -208,6 +208,13 @@
                         "repeatable": "true",
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/6.7.html"
+                    },
+                    {
+                        "propertyLabel": "work has LC Geographic Classification",
+                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "literal"
                     },
                     {
                         "propertyLabel": "has author agent (RDA 18.5)",
@@ -999,13 +1006,6 @@
                         }
                     },
                     {
-                        "propertyLabel": "work has LC Geographic Classification",
-                        "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "literal"
-                    },
-                    {
                         "propertyLabel": "is work analysed in (RDA 23.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10121",
                         "mandatory": "false",
@@ -1068,7 +1068,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": [
+                                "urn:ld4p:sinopia",
+                                "urn:ld4p:qa:names"
+                            ]
                         }
                     },
                     {
@@ -2774,7 +2777,6 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",

@@ -1,48 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns="http://www.w3.org/2005/xpath-functions" xmlns:j="http://www.w3.org/2005/xpath-functions"
+    xmlns:my="http://theo-namespace.edu"
     exclude-result-prefixes="j" version="3.0">
     <xsl:strip-space elements="*"/>
 
-    <xsl:param name="format"/>
-    <xsl:variable name="formatID" select="concat(':',$format)">
+    <xsl:param name="my:format"/>
+    <xsl:variable name="formatID" select="concat(':',$my:format)">
     </xsl:variable>
     <xsl:variable name="formatTitle">
         <xsl:choose>
-            <xsl:when test="$format='monograph'">
+            <xsl:when test="$my:format='monograph'">
                 <xsl:text> for monographs</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='etd'">
+            <xsl:when test="$my:format='etd'">
                 <xsl:text> for electronic theses and dissertations</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='dvdVideo'">
+            <xsl:when test="$my:format='dvdVideo'">
                 <xsl:text> for DVD Videos</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='map'">
+            <xsl:when test="$my:format='map'">
                 <xsl:text> for maps</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='adminMetadata'">
+            <xsl:when test="$my:format='adminMetadata'">
                 <xsl:text> for administrative metadata</xsl:text>
             </xsl:when> 
-            <xsl:when test="$format='serial'">
+            <xsl:when test="$my:format='serial'">
                 <xsl:text> for serials</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eBook'">
+            <xsl:when test="$my:format='eBook'">
                 <xsl:text> for electronic books</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='graphic'">
+            <xsl:when test="$my:format='graphic'">
                 <xsl:text> for graphic materials</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='soundRecording'">
+            <xsl:when test="$my:format='soundRecording'">
                  <xsl:text> for sound recordings</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eMap'">
+            <xsl:when test="$my:format='eMap'">
                 <xsl:text> for electronic maps</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eSerial'">
+            <xsl:when test="$my:format='eSerial'">
                 <xsl:text> for electronic serials</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eGraphic'">
+            <xsl:when test="$my:format='eGraphic'">
                 <xsl:text> for electronic graphic materials</xsl:text>
             </xsl:when>
             <xsl:otherwise> formatTitle error</xsl:otherwise>
@@ -50,40 +51,40 @@
     </xsl:variable>
     <xsl:variable name="formatLabel">
         <xsl:choose>
-            <xsl:when test="$format='monograph'">
+            <xsl:when test="$my:format='monograph'">
                 <xsl:text> monographs</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='etd'">
+            <xsl:when test="$my:format='etd'">
                 <xsl:text> electronic theses and dissertations</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='dvdVideo'">
+            <xsl:when test="$my:format='dvdVideo'">
                 <xsl:text> DVD Videos</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='map'">
+            <xsl:when test="$my:format='map'">
                 <xsl:text> maps</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='adminMetadata'">
+            <xsl:when test="$my:format='adminMetadata'">
                 <xsl:text> administrative metadata</xsl:text>
             </xsl:when> 
-            <xsl:when test="$format='serial'">
+            <xsl:when test="$my:format='serial'">
                 <xsl:text> serials</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eBook'">
+            <xsl:when test="$my:format='eBook'">
                 <xsl:text> electronic books</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='graphic'">
+            <xsl:when test="$my:format='graphic'">
                 <xsl:text> graphic materials</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='soundRecording'">
+            <xsl:when test="$my:format='soundRecording'">
                 <xsl:text> sound recordings</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eMap'">
+            <xsl:when test="$my:format='eMap'">
                 <xsl:text> electronic maps</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eSerial'">
+            <xsl:when test="$my:format='eSerial'">
                 <xsl:text> electronic serials</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='eGraphic'">
+            <xsl:when test="$my:format='eGraphic'">
                 <xsl:text> electronic graphic materials</xsl:text>
             </xsl:when>
             <xsl:otherwise> formatLabel error</xsl:otherwise>
@@ -91,22 +92,22 @@
     </xsl:variable>
   <!--  <xsl:variable name="formatEnum">
         <xsl:choose>
-            <xsl:when test="$format='monograph'">
+            <xsl:when test="$my:format='monograph'">
                 <xsl:text>monograph</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='etd'">
+            <xsl:when test="$my:format='etd'">
                 <xsl:text>etd</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='dvdVideo'">
+            <xsl:when test="$my:format='dvdVideo'">
                 <xsl:text>dvdVideo</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='map'">
+            <xsl:when test="$my:format='map'">
                 <xsl:text>map</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='adminMetadata'">
+            <xsl:when test="$my:format='adminMetadata'">
                 <xsl:text>adminMetadata</xsl:text>
             </xsl:when>
-            <xsl:when test="$format='adminMetadata'">
+            <xsl:when test="$my:format='adminMetadata'">
                 <xsl:text>adminMetadata</xsl:text>
             </xsl:when>
             <xsl:otherwise>error</xsl:otherwise>
@@ -150,9 +151,9 @@
     </xsl:template>
     <xsl:template match="j:array[@key = 'resourceTemplates']">
         <!-- Specify RTs to push through to profile below -->
-      <xsl:if test="not($format='adminMetadata')">  
+      <xsl:if test="not($my:format='adminMetadata')">  
         <xsl:for-each
-            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')][j:array[@key='propertyTemplates']/j:map/j:array[@key='usedInProfile']/j:string=$format]">
+            select="j:map[matches(j:string[@key = 'id'], 'Work|Expression|Manifestation|Item')][j:array[@key='propertyTemplates']/j:map/j:array[@key='usedInProfile']/j:string=$my:format]">
             <map>
                 <string key="id">
                     <xsl:value-of select="concat(j:string[@key = 'id'], $formatID)"/>
@@ -181,7 +182,7 @@
             </map>
         </xsl:for-each>
         </xsl:if>
-        <xsl:if test="$format='adminMetadata'">
+        <xsl:if test="$my:format='adminMetadata'">
             <xsl:for-each
                 select="j:map[matches(j:string[@key = 'id'], 'AdminMetadata|Status')]">
                 <map>
@@ -220,7 +221,7 @@
                 0 (undetermined) first, 
                 everything else next -->
             <xsl:sort select="j:number[@key = 'uwFormOrder']" data-type="number"/>
-            <xsl:if test="j:array[@key = 'usedInProfile']/j:string = $format">
+            <xsl:if test="j:array[@key = 'usedInProfile']/j:string = $my:format">
                 <map>
                     <!-- activate uwFormOrder below only to check accuracy of sort; otherwise suppress in this transform using comment -->
                     <!-- <string key="uwFormOrderValue"><xsl:value-of select="j:number[@key = 'uwFormOrder']"/></string> -->

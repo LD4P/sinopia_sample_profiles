@@ -1,7 +1,7 @@
 {
     "Profile": {
         "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-12",
+        "date": "2019-12-22",
         "description": "Resource templates for electronic serials",
         "id": "WAU:profile:RDA:eSerial",
         "title": "WAU Profile RDA for electronic serials",
@@ -89,7 +89,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/6.3.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:genres", "urn:ld4p:qa:subjects"],
+                            "useValuesFrom": [
+                                "urn:ld4p:qa:genres",
+                                "urn:ld4p:qa:subjects"
+                            ],
                             "defaults": [
                                 {
                                     "defaultURI": "http://id.loc.gov/authorities/genreForms/gf2014026174",
@@ -895,7 +898,10 @@
                         "type": "lookup",
                         "remark": "http://access.rdatoolkit.org/24.5.html",
                         "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:sinopia", "urn:ld4p:qa:names"]
+                            "useValuesFrom": [
+                                "urn:ld4p:sinopia",
+                                "urn:ld4p:qa:names"
+                            ]
                         }
                     },
                     {
@@ -2384,12 +2390,12 @@
                         "remark": "http://access.rdatoolkit.org/2.17.2.html"
                     },
                     {
-                        "propertyLabel": "has note on frequency (RDA 2.17.2)",
+                        "propertyLabel": "has note on frequency (RDA 2.17.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30056",
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "remark": "http://access.rdatoolkit.org/2.17.2.html"
+                        "remark": "http://access.rdatoolkit.org/2.17.12.html"
                     },
                     {
                         "propertyLabel": "has note on numbering of sequence (RDA 2.17.5)",
@@ -2528,7 +2534,6 @@
                         "type": "literal",
                         "remark": "http://access.rdatoolkit.org/4.6.html"
                     },
-                    
                     {
                         "propertyLabel": "has related agent of manifestation",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30267",
