@@ -1,7 +1,7 @@
 {
     "Profile": {
-        "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-22",
+        "author": "Ben Riesenberg (ries07@uw.edu)",
+        "date": "2020-01-07",
         "description": "Resource templates for graphic materials",
         "id": "WAU:profile:RDA:graphic",
         "title": "WAU Profile RDA for graphic materials",
@@ -11,8 +11,8 @@
                 "id": "WAU:RT:RDA:Work:graphic",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work graphic materials",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1158,8 +1158,8 @@
                 "id": "WAU:RT:RDA:Expression:graphic",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression graphic materials",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2405,8 +2405,8 @@
                 "id": "WAU:RT:RDA:Manifestation:graphic",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation graphic materials",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -3539,8 +3539,8 @@
                 "id": "WAU:RT:RDA:Item:graphic",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item graphic materials",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {

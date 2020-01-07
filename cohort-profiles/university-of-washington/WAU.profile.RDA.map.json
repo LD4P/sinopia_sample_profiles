@@ -1,7 +1,7 @@
 {
     "Profile": {
-        "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-22",
+        "author": "Ben Riesenberg (ries07@uw.edu)",
+        "date": "2020-01-07",
         "description": "Resource templates for maps",
         "id": "WAU:profile:RDA:map",
         "title": "WAU Profile RDA for maps",
@@ -11,8 +11,8 @@
                 "id": "WAU:RT:RDA:Work:map",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1091,8 +1091,8 @@
                 "id": "WAU:RT:RDA:Expression:map",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2230,8 +2230,8 @@
                 "id": "WAU:RT:RDA:Manifestation:map",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -3430,8 +3430,8 @@
                 "id": "WAU:RT:RDA:Item:map",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {

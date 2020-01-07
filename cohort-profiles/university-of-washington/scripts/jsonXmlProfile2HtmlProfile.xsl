@@ -86,7 +86,7 @@
             </tbody>
         </table>
         <section class="rtsHead">
-            <h2>
+            <h2 id="rtList">
                 <xsl:text>Resource Templates in </xsl:text>
                 <xsl:value-of select="j:string[@key = 'title']"/>
             </h2>
@@ -144,8 +144,19 @@
                 <tr>
                     <th scope="row">Schema</th>
                     <td>
-                        <xsl:value-of select="j:string[@key = 'schema']"/>
+                        <a href="{j:string[@key = 'schema']}">
+                            <xsl:value-of select="j:string[@key = 'schema']"/>
+                        </a>
                     </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <a href="#rtList">
+                            <i class="strong">
+                                <xsl:text>RETURN TO RESOURCE TEMPLATE LIST</xsl:text>
+                            </i>
+                        </a>
+                    </th>
                 </tr>
             </tbody>
         </table>

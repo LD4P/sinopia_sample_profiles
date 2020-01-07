@@ -1,7 +1,7 @@
 {
     "Profile": {
-        "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-22",
+        "author": "Ben Riesenberg (ries07@uw.edu)",
+        "date": "2020-01-07",
         "description": "Resource templates for electronic maps",
         "id": "WAU:profile:RDA:eMap",
         "title": "WAU Profile RDA for electronic maps",
@@ -11,8 +11,8 @@
                 "id": "WAU:RT:RDA:Work:eMap",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work electronic maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -1091,8 +1091,8 @@
                 "id": "WAU:RT:RDA:Expression:eMap",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression electronic maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2197,8 +2197,8 @@
                 "id": "WAU:RT:RDA:Manifestation:eMap",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation electronic maps",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {

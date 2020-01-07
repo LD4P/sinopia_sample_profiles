@@ -1,7 +1,7 @@
 {
     "Profile": {
-        "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-22",
+        "author": "Ben Riesenberg (ries07@uw.edu)",
+        "date": "2020-01-07",
         "description": "Resource templates for sound recordings",
         "id": "WAU:profile:RDA:soundRecording",
         "title": "WAU Profile RDA for sound recordings",
@@ -11,8 +11,8 @@
                 "id": "WAU:RT:RDA:Work:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10001",
                 "resourceLabel": "WAU RT RDA Work sound recordings",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -2063,8 +2063,8 @@
                 "id": "WAU:RT:RDA:Expression:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10006",
                 "resourceLabel": "WAU RT RDA Expression sound recordings",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -4019,8 +4019,8 @@
                 "id": "WAU:RT:RDA:Manifestation:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10007",
                 "resourceLabel": "WAU RT RDA Manifestation sound recordings",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -5073,8 +5073,8 @@
                 "id": "WAU:RT:RDA:Item:soundRecording",
                 "resourceURI": "http://rdaregistry.info/Elements/c/C10003",
                 "resourceLabel": "WAU RT RDA Item sound recordings",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {

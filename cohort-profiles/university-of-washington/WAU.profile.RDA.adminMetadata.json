@@ -1,7 +1,7 @@
 {
     "Profile": {
-        "author": "Crystal Clements (cec23@uw.edu)",
-        "date": "2019-12-22",
+        "author": "Ben Riesenberg (ries07@uw.edu)",
+        "date": "2020-01-07",
         "description": "Resource templates for administrative metadata",
         "id": "WAU:profile:RDA:adminMetadata",
         "title": "WAU Profile RDA for administrative metadata",
@@ -11,8 +11,8 @@
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
@@ -130,8 +130,8 @@
                 "id": "WAU:RT:BF2:BFLC:AdminMetadata:Status",
                 "resourceURI": "http://id.loc.gov/ontologies/bibframe/Status",
                 "resourceLabel": "WAU RT BF2 BFLC Admin Metadata Status",
-                "author": "Crystal Clements (cec23@uw.edu)",
-                "date": "2019-12-12",
+                "author": "Ben Riesenberg (ries07@uw.edu)",
+                "date": "2020-01-07",
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.2.1/resource-template.json",
                 "propertyTemplates": [
                     {
