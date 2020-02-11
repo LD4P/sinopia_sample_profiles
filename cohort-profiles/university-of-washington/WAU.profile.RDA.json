@@ -16,7 +16,7 @@
                 "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwScahemas/v009base/uw-resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Administrative Metadata for Work",
+                        "propertyLabel": "Administrative Metadata for Work (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -990,7 +990,7 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has authorized access point for work",
+                        "propertyLabel": "has authorized access point for work (*)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10331",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -8053,7 +8053,7 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has preferred title of work (RDA 6.2.2)",
+                        "propertyLabel": "has preferred title of work (*) (RDA 6.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -14037,7 +14037,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 123,
+                        "uwFormOrder": 0.1,
                         "statusUw": "attention",
                         "noteUw": ["This is insufficient due to lack of typing"],
                         "qUw": [],
@@ -28576,7 +28576,7 @@
                         "remark": "http://access.rdatoolkit.org/3.19.5.html"
                     },
                     {
-                        "propertyLabel": "has type of recording (RDA 3.16.2)",
+                        "propertyLabel": "has type of recording (*) (RDA 3.16.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -28598,7 +28598,7 @@
                         "remark": "http://access.rdatoolkit.org/3.16.2.html"
                     },
                     {
-                        "propertyLabel": "has type of recording (RDA 3.16.2)",
+                        "propertyLabel": "has type of recording (*) (RDA 3.16.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30172",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -31097,7 +31097,7 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 97,
+                        "uwFormOrder": 0.1,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -34202,7 +34202,7 @@
                         ]
                     },
                     {
-                        "propertyLabel": "has title proper (RDA 2.3.2)",
+                        "propertyLabel": "has title proper (*) (RDA 2.3.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30156",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -34418,7 +34418,7 @@
                         "remark": "http://access.rdatoolkit.org/23.4.html"
                     },
                     {
-                        "propertyLabel": "manifestation held by",
+                        "propertyLabel": "manifestation held by (*)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -37628,7 +37628,7 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "item held by",
+                        "propertyLabel": "item held by (*)",
                         "propertyURI": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -45060,7 +45060,7 @@
                         "remark": "http://access.rdatoolkit.org/10.10.html"
                     },
                     {
-                        "propertyLabel": "has preferred name of family (RDA 10.2.2)",
+                        "propertyLabel": "has preferred name of family (*) (RDA 10.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50065",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -60378,7 +60378,7 @@
                         "remark": "http://access.rdatoolkit.org/9.4.html"
                     },
                     {
-                        "propertyLabel": "has preferred name of person (RDA 9.2.2)",
+                        "propertyLabel": "has preferred name of person (*) (RDA 9.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50117",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -61220,7 +61220,7 @@
                         "remark": "http://access.rdatoolkit.org/11.4.5.html"
                     },
                     {
-                        "propertyLabel": "has preferred name of corporate body (RDA 11.2.2)",
+                        "propertyLabel": "has preferred name of corporate body (*) (RDA 11.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/a/P50041",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -68555,7 +68555,7 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Your cataloger ID (UW netid)",
+                        "propertyLabel": "Your cataloger ID (UW netid) (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerID",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -68567,7 +68567,7 @@
                         "usedInProfile": ["adminMetadata"]
                     },
                     {
-                        "propertyLabel": "Record status",
+                        "propertyLabel": "Record status (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -68582,7 +68582,7 @@
                         "usedInProfile": ["adminMetadata"]
                     },
                     {
-                        "propertyLabel": "Encoding level",
+                        "propertyLabel": "Encoding level (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -68604,7 +68604,7 @@
                         "usedInProfile": ["adminMetadata"]
                     },
                     {
-                        "propertyLabel": "Description conventions",
+                        "propertyLabel": "Description conventions (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -68626,7 +68626,7 @@
                         "usedInProfile": ["adminMetadata"]
                     },
                     {
-                        "propertyLabel": "Source of cataloging",
+                        "propertyLabel": "Source of cataloging (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -68647,7 +68647,7 @@
                         "usedInProfile": ["adminMetadata"]
                     },
                     {
-                        "propertyLabel": "Description language",
+                        "propertyLabel": "Description language (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -68669,7 +68669,7 @@
                         "usedInProfile": ["adminMetadata"]
                     },
                     {
-                        "propertyLabel": "Data creation date (EDTF)",
+                        "propertyLabel": "Data creation date (*) (EDTF)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
                         "mandatory": "true",
                         "repeatable": "false",
@@ -68719,7 +68719,7 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Code",
+                        "propertyLabel": "Code (*)",
                         "propertyURI": "http://id.loc.gov/ontologies/bibframe/code",
                         "mandatory": "true",
                         "repeatable": "true",
@@ -68817,7 +68817,7 @@
                 "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
                 "propertyTemplates": [
                     {
-                        "propertyLabel": "Subject",
+                        "propertyLabel": "Subject (*)",
                         "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
                         "mandatory": "true",
                         "repeatable": "false",

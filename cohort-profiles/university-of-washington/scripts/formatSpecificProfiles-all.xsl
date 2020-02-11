@@ -17,7 +17,7 @@
     -->
     
     <xsl:template match="/">
-    <!-- create template for all processes; matchong is meaningless; oXygen transform scenario can input this .xsl -->
+    <!-- create template for all processes; matching is meaningless; oXygen transform scenario can input this .xsl -->
         <xsl:for-each select="('adminMetadata', 'dvdVideo', 'eBook', 'eGraphic', 'eMap', 'eSerial', 'etd', 'graphic', 'map', 'monograph', 'serial', 'soundRecording')">
         <!-- wrap everything in a for each; select each format as a string -->
             <xsl:variable name="fmat" select="."/>

@@ -27,7 +27,7 @@
             </tr>
             <tr>
                <th scope="row">Last Updated</th>
-               <td>2020-01-23</td>
+               <td>2020-02-10</td>
             </tr>
             <tr>
                <th scope="row">Description</th>
@@ -102,7 +102,7 @@
          <h3>Properties in WAU RT RDA Work serials</h3>
          <ul>
             <li>
-               <a href="#AdministrativeMetadataforWork">Administrative Metadata for Work</a>
+               <a href="#AdministrativeMetadataforWork(*)">Administrative Metadata for Work (*)</a>
             </li>
             <li>
                <a href="#hasidentifierforwork(RDA6.8)">has identifier for work (RDA 6.8)</a>
@@ -111,13 +111,13 @@
                <a href="#isidentifiedbyLCNAFworkauthority">is identified by LC NAF work authority</a>
             </li>
             <li>
-               <a href="#hasauthorizedaccesspointforwork">has authorized access point for work</a>
+               <a href="#hasauthorizedaccesspointforwork(*)">has authorized access point for work (*)</a>
             </li>
             <li>
                <a href="#hasvariantaccesspointforwork">has variant access point for work</a>
             </li>
             <li>
-               <a href="#haspreferredtitleofwork(RDA6.2.2)">has preferred title of work (RDA 6.2.2)</a>
+               <a href="#haspreferredtitleofwork(*)(RDA6.2.2)">has preferred title of work (*) (RDA 6.2.2)</a>
             </li>
             <li>
                <a href="#hasvarianttitleofwork(RDA6.2.3)">has variant title of work (RDA 6.2.3)</a>
@@ -311,10 +311,10 @@
             </li>
          </ul>
       </section>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="AdministrativeMetadataforWork">
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="AdministrativeMetadataforWork(*)">
          <thead>
             <tr>
-               <th>Property template: Administrative Metadata for Work</th>
+               <th>Property template: Administrative Metadata for Work (*)</th>
             </tr>
          </thead>
          <tbody>
@@ -455,10 +455,10 @@
             </tr>
          </tbody>
       </table>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="hasauthorizedaccesspointforwork">
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="hasauthorizedaccesspointforwork(*)">
          <thead>
             <tr>
-               <th>Property template: has authorized access point for work</th>
+               <th>Property template: has authorized access point for work (*)</th>
             </tr>
          </thead>
          <tbody>
@@ -541,10 +541,10 @@
             </tr>
          </tbody>
       </table>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="haspreferredtitleofwork(RDA6.2.2)">
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="haspreferredtitleofwork(*)(RDA6.2.2)">
          <thead>
             <tr>
-               <th>Property template: has preferred title of work (RDA 6.2.2)</th>
+               <th>Property template: has preferred title of work (*) (RDA 6.2.2)</th>
             </tr>
          </thead>
          <tbody>
@@ -3442,6 +3442,9 @@
                <a href="#hasworkexpressed(RDA17.6)">has work expressed (RDA 17.6)</a>
             </li>
             <li>
+               <a href="#hasidentifierforexpression(RDA6.13)">has identifier for expression (RDA 6.13)</a>
+            </li>
+            <li>
                <a href="#isidentifiedbyLibraryofCongressNameAuthorityFileexpressionauthority">is identified by Library of Congress Name Authority File expression authority</a>
             </li>
             <li>
@@ -3481,9 +3484,6 @@
             </li>
             <li>
                <a href="#haslanguageofexpression(RDA6.11)">has language of expression (RDA 6.11)</a>
-            </li>
-            <li>
-               <a href="#hasidentifierforexpression(RDA6.13)">has identifier for expression (RDA 6.13)</a>
             </li>
             <li>
                <a href="#hasscript(RDA7.13.2)">has script (RDA 7.13.2)</a>
@@ -3754,6 +3754,49 @@
                   <th scope="row">Use values from</th>
                   <td>urn:ld4p:sinopia</td>
                </tr>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#WAURTRDAExpressionserials">
+                     <i class="strong">RETURN TO RESOURCE TEMPLATE TOP</i>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th scope="row">
+                  <a href="#profileTop">
+                     <i class="strong">RETURN TO PROFILE TOP</i>
+                  </a>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="hasidentifierforexpression(RDA6.13)">
+         <thead>
+            <tr>
+               <th>Property template: has identifier for expression (RDA 6.13)</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th scope="row">Property IRI</th>
+               <td>
+                  <a href="http://rdaregistry.info/Elements/e/P20002">http://rdaregistry.info/Elements/e/P20002</a>
+               </td>
+            </tr>
+            <tr>
+               <td>Optional</td>
+            </tr>
+            <tr>
+               <td>Repeatable</td>
+            </tr>
+            <tr>
+               <th scope="row">Property type</th>
+               <td>literal</td>
+            </tr>
+            <tr>
+               <th scope="row">Value constraints</th>
+               <td>N/A</td>
             </tr>
             <tr>
                <th scope="row">
@@ -4359,49 +4402,6 @@
                   <th scope="row">Use values from</th>
                   <td>https://id.loc.gov/vocabulary/languages</td>
                </tr>
-            </tr>
-            <tr>
-               <th scope="row">
-                  <a href="#WAURTRDAExpressionserials">
-                     <i class="strong">RETURN TO RESOURCE TEMPLATE TOP</i>
-                  </a>
-               </th>
-            </tr>
-            <tr>
-               <th scope="row">
-                  <a href="#profileTop">
-                     <i class="strong">RETURN TO PROFILE TOP</i>
-                  </a>
-               </th>
-            </tr>
-         </tbody>
-      </table>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="hasidentifierforexpression(RDA6.13)">
-         <thead>
-            <tr>
-               <th>Property template: has identifier for expression (RDA 6.13)</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <th scope="row">Property IRI</th>
-               <td>
-                  <a href="http://rdaregistry.info/Elements/e/P20002">http://rdaregistry.info/Elements/e/P20002</a>
-               </td>
-            </tr>
-            <tr>
-               <td>Optional</td>
-            </tr>
-            <tr>
-               <td>Repeatable</td>
-            </tr>
-            <tr>
-               <th scope="row">Property type</th>
-               <td>literal</td>
-            </tr>
-            <tr>
-               <th scope="row">Value constraints</th>
-               <td>N/A</td>
             </tr>
             <tr>
                <th scope="row">
@@ -7274,7 +7274,7 @@
                <a href="#hasintendedaudienceofmanifestation">has intended audience of manifestation</a>
             </li>
             <li>
-               <a href="#hastitleproper(RDA2.3.2)">has title proper (RDA 2.3.2)</a>
+               <a href="#hastitleproper(*)(RDA2.3.2)">has title proper (*) (RDA 2.3.2)</a>
             </li>
             <li>
                <a href="#hasparalleltitleproper(RDA2.3.3)">has parallel title proper (RDA 2.3.3)</a>
@@ -7562,7 +7562,7 @@
                <a href="#hasbindingofmanifestation">has binding of manifestation</a>
             </li>
             <li>
-               <a href="#manifestationheldby">manifestation held by</a>
+               <a href="#manifestationheldby(*)">manifestation held by (*)</a>
             </li>
             <li>
                <a href="#WAURTRDAManifestationserials">
@@ -7766,10 +7766,10 @@
             </tr>
          </tbody>
       </table>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="hastitleproper(RDA2.3.2)">
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="hastitleproper(*)(RDA2.3.2)">
          <thead>
             <tr>
-               <th>Property template: has title proper (RDA 2.3.2)</th>
+               <th>Property template: has title proper (*) (RDA 2.3.2)</th>
             </tr>
          </thead>
          <tbody>
@@ -11982,10 +11982,10 @@
             </tr>
          </tbody>
       </table>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="manifestationheldby">
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="manifestationheldby(*)">
          <thead>
             <tr>
-               <th>Property template: manifestation held by</th>
+               <th>Property template: manifestation held by (*)</th>
             </tr>
          </thead>
          <tbody>
@@ -12184,7 +12184,7 @@
                <a href="#hasfacsimileofitem">has facsimile of item</a>
             </li>
             <li>
-               <a href="#itemheldby">item held by</a>
+               <a href="#itemheldby(*)">item held by (*)</a>
             </li>
             <li>
                <a href="#WAURTRDAItemserials">
@@ -13611,10 +13611,10 @@
             </tr>
          </tbody>
       </table>
-      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="itemheldby">
+      <table xmlns="http://www.w3.org/2005/xpath-functions" class="ptsAttrs" id="itemheldby(*)">
          <thead>
             <tr>
-               <th>Property template: item held by</th>
+               <th>Property template: item held by (*)</th>
             </tr>
          </thead>
          <tbody>
