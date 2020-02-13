@@ -9074,7 +9074,18 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                            "map",
+                            "eMap",
+                            "eBook",
+                            "serial",
+                            "eSerial",
+                            "graphic",
+                            "eGraphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                        ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -13028,7 +13039,18 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                            "map",
+                            "eMap",
+                            "eBook",
+                            "serial",
+                            "eSerial",
+                            "graphic",
+                            "eGraphic",
+                            "dvdVideo",
+                            "monograph",
+                            "soundRecording"
+                        ],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
@@ -19142,9 +19164,9 @@
                         "remark": "http://access.rdatoolkit.org/24.5.html"
                     },
                     {
-                        "propertyLabel": "has work expressed (RDA 17.6)",
+                        "propertyLabel": "has work expressed (*) (RDA 17.6)",
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20231",
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
@@ -30013,9 +30035,9 @@
                         "remark": "http://access.rdatoolkit.org/2.13.html"
                     },
                     {
-                        "propertyLabel": "has expression manifested (RDA 17.10)",
+                        "propertyLabel": "has expression manifested (*) (RDA 17.10)",
                         "propertyURI": "http://rdaregistry.info/Elements/m/P30139",
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
@@ -37536,9 +37558,9 @@
                         "usedInProfile": []
                     },
                     {
-                        "propertyLabel": "has manifestation exemplified (RDA 17.12)",
+                        "propertyLabel": "has manifestation exemplified (*) (RDA 17.12)",
                         "propertyURI": "http://rdaregistry.info/Elements/i/P40049",
-                        "mandatory": "false",
+                        "mandatory": "true",
                         "repeatable": "true",
                         "type": "lookup",
                         "valueConstraint": {
