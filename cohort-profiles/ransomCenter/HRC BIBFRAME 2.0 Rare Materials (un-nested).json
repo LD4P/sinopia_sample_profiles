@@ -246,14 +246,13 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:bf2:RelatedWork",
-                "ld4p:RT:bf2:RelatedInstance"
+                "ld4p:RT:bf2:RelatedWork"
               ],
               "useValuesFrom": [],
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
-            "propertyLabel": "Related Work/Expression(s) and Instance(s)"
+            "propertyLabel": "Related Work/Expression(s)"
           },
           {
             "mandatory": "false",
@@ -594,14 +593,13 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:bf2:RelatedWork",
                 "ld4p:RT:bf2:RelatedInstance"
               ],
               "useValuesFrom": [],
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
-            "propertyLabel": "Related Work/Expression(s) and Instance(s)",
+            "propertyLabel": "Related Instance(s)",
             "resourceTemplates": [],
             "remark": "Repeat field for each related resource or citation"
           },
@@ -612,7 +610,7 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:bf2:RareMat:RefInstance"
+                "hrc:RT:bf2:RareMat:RefInstance"
               ]
             },
             "propertyLabel": "Bibliographic References",
@@ -791,7 +789,7 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:bf2:RareMat:RefInstance"
+                "hrc:RT:bf2:RareMat:RefInstance"
               ],
               "useValuesFrom": [],
               "valueDataType": {},
