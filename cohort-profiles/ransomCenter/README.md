@@ -8,9 +8,9 @@ Colating profile for un-nested resource templates used for the description of Ra
 
 Includes the following Resource templates:
 
-- HRC Rare Materials Work (BF2) Un-Nested (hrc:RT:bf2:RareMat:Work)
-- HRC Rare Materials Instance (BF2) Un-Nested (hrc:RT:bf2:RareMat:Instance)
-- HRC Rare Materials Item (BF2) Un-Nested (hrc:RT:bf2:RareMat:Item)
+- HRC Rare Materials Work (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Work]())
+- HRC Rare Materials Instance (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Instance]())
+- HRC Rare Materials Item (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Item]())
 
 > *Current version: v.0.0.1*
 
@@ -19,7 +19,7 @@ Profile used to register administrative metadata for Works, Instances and Items 
 
 Includes the following resource template:
 
-- HRC Admin Metadata (hrc:RT:bf2:AdminMetadata)
+- HRC Admin Metadata ([hrc:RT:bf2:AdminMetadata](https://stage.sinopia.io/editor/hrc:RT:bf2:AdminMetadata))
 
 > *Current version: v.0.0.1*
 
