@@ -3,7 +3,7 @@
 This directory includes HRC profiles being used on the stage environment
 
 
-**HRC BIBFRAME 2.0 Rare Materials (un-nested)**
+**HRC BF2 Rare Materials (un-nested)**
 Colating profile for un-nested resource templates used for the description of Rare Materials Works, Instances and Items at the Harry Ransom Center.
 
 Includes the following Resource templates:
@@ -14,7 +14,7 @@ Includes the following Resource templates:
 
 > *Current version: v.0.0.1*
 
-**HRC BIBFRAME 2.0 Admin Metadata**
+**HRC BF2 Admin Metadata**
 Profile used to register administrative metadata for Works, Instances and Items described at the Harry Ransom Center.
 
 Includes the following resource template:
