@@ -8,9 +8,9 @@ Colating profile for un-nested resource templates used for the description of Ra
 
 Includes the following Resource templates:
 
-- HRC Rare Materials Work (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Work]())
-- HRC Rare Materials Instance (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Instance]())
-- HRC Rare Materials Item (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Item]())
+- HRC Rare Materials Work (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Work](https://stage.sinopia.io/editor/hrc:RT:bf2:RareMat:Work))
+- HRC Rare Materials Instance (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Instance](https://stage.sinopia.io/editor/hrc:RT:bf2:RareMat:Instance))
+- HRC Rare Materials Item (BF2) Un-Nested ([hrc:RT:bf2:RareMat:Item](https://stage.sinopia.io/editor/hrc:RT:bf2:RareMat:Item))
 
 > *Current version: v.0.0.1*
 
