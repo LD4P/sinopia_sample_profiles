@@ -1,0 +1,101 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Citation:SCF"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Standard Citation Form",
+            "resourceTemplates": []
+          },
+          {
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Citation:Entry"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasSource",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "structured citation entry",
+            "resourceTemplates": []
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          },
+          {
+            "remark": "Catalog the resource (reference source) in which the citation appears and look up the Expression-level resource to link here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:sinopia:bibframe:work"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/partOf",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "contained in (Expression)"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:bf2:AdminMetadata"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "admin metadata"
+          }
+        ],
+        "resourceLabel": "HRC Bibliographic Citation (ARM)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "id": "hrc:RT:ARM:Citation",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Citation",
+        "remark": "Use to describe bibliographic citations at the HRC (Based on Yale:RT:ARM:Citation"
+      }
+    ],
+    "id": "hrc:profile:ARM:citation",
+    "title": "HRC ARM Citation",
+    "description": "Use to describe bibliographic citations at the HRC.",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-02-24",
+    "adherence": "ARM",
+    "remark": "Based on Yale:RT:ARM:Citation"
+  }
+}

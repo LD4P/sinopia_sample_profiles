@@ -1,0 +1,73 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Accessioning",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:ClaimOfOwnership",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Deaccessioning",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Deposit",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Destruction",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Discarding",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Donation",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Inheritance",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Loan",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Loss",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Offer",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Ownership",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Recovery",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Repatriation",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Sale",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Theft",
+                "Yale:RT:ARM:CustodialHistory:CustodialEvent:Transfer"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Custodial event",
+            "remark": "Linking to Yale's RTs (testing)"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:bf2:AdminMetadata"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Administrative metadata"
+          }
+        ],
+        "resourceLabel": "HRC Custodial History (ARM)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu",
+        "date": "2020-01-29",
+        "id": "hrc:RT:ARM:CustodialHistory",
+        "resourceURI": "https://w3id.org/arm/custodial_history/ontology/0.1/CustodialHistory",
+        "remark": "Use to describe custodial History for materials at the HRC (Based on Yale:RT:ARM:CustodialHistory:CtY)"
+      }
+    ],
+    "id": "hrc:profile:ARM:CustodialHistory",
+    "title": "HRC ARM Custodial History",
+    "description": "Use to describe custodial History for materials at the HRC",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-02-24",
+    "remark": "Based on Yale:RT:ARM:CustodialHistory:CtY"
+  }
+}

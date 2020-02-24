@@ -1,0 +1,164 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "description of binding"
+          },
+          {
+            "remark": "Look up a term in AAT, or paste in a URI from the RBMS vocabs or Ligatus (https://www.ligatus.org.uk/lob/).",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "type"
+          },
+          {
+            "remark": "Link to a term from a controlled vocabulary (e.g., \"boards (binding components)\": http://vocab.getty.edu/aat/300202819).",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "binding components"
+          },
+          {
+            "remark": "Link to Yale's RT Material (testing)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60596",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "base material"
+          },
+          {
+            "remark": "Link to Yale's RT Material (testing)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60159",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "applied material"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "physical condition",
+            "remark": "Link to Yale's RT physical condition (testing)"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:BF2:Contribution:Agent:Basic"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "contribution"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Markings:BindersTicket"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "binder's ticket",
+            "remark": "Linking to Yale's RT Binders Tickets"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          }
+        ],
+        "resourceLabel": "HRC Binding (ARM)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2020-02-13",
+        "id": "HRC:RT:ARM:Binding",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Binding",
+        "remark": "Use to describe bindings for materials at the HRC (Based on Yale:RT:ARM:Binding)."
+      }
+    ],
+    "id": "hrc:profile:ARM:Binding",
+    "title": "HRC ARM Binding",
+    "description": "Use to describe bindings for materials at the HRC.",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-02-24",
+    "remark": "Based on Yale:RT:ARM:Binding."
+  }
+}
