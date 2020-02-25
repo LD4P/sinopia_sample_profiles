@@ -148,7 +148,7 @@
         "resourceLabel": "HRC Binding (ARM)",
         "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
         "date": "2020-02-13",
-        "id": "HRC:RT:ARM:Binding",
+        "id": "hrc:RT:ARM:Binding",
         "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Binding",
         "remark": "Use to describe bindings for materials at the HRC (Based on Yale:RT:ARM:Binding)."
       }

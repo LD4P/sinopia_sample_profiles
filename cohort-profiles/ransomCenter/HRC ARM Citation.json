@@ -38,7 +38,7 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:BF2:Note"
+                "ld4p:RT:bf2:Note"
               ],
               "defaults": [],
               "useValuesFrom": []
