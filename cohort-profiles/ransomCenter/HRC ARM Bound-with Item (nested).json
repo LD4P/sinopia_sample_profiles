@@ -125,7 +125,7 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "HRC:RT:ARM:Binding"
+                "hrc:RT:ARM:Binding"
               ],
               "useValuesFrom": [],
               "valueDataType": {},
@@ -213,7 +213,7 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "HRC:RT:ARM:Citation"
+                "hrc:RT:ARM:Citation"
               ],
               "useValuesFrom": [],
               "valueDataType": {},
