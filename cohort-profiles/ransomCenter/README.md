@@ -3,18 +3,35 @@
 This directory includes HRC profiles being used on the stage environment. HRC's profiles use un-nested resource temaplates to facilitate data articulation and reuse. The **main profiles** correspond to different starting points for the description of the main Bibliographic entities represented in the Center's LD4P2 project. The **auxiliar profiles** correspond to all the relevant resource templates needed for the description of those bibliographic entities. 
 
 
-## Main Profiles
+## Main Resource Templates
 
-**HRC BF2 Rare Materials Profiles**
-Un-nested resource templates used for the description of Rare Materials Works, Instances and Items at the Harry Ransom Center.
+**HRC BF2 Rare Work**
+Un-nested resource templates used for the description of Rare Materials Works at the Harry Ransom Center.
 
-Include the following Resource templates:
+Resource templates:
 
 - HRC Rare Materials Work (BF2) ([hrc:RT:bf2:RareMat:Work](https://stage.sinopia.io/editor/hrc:RT:bf2:RareMat:Work))
+
+> *Current version: v.0.0.1*
+
+**HRC BF2 Rare Materials Instance**
+Un-nested resource templates used for the description of Rare Materials Instances at the Harry Ransom Center.
+
+Resource templates:
+
 - HRC Rare Materials Instance (BF2) ([hrc:RT:bf2:RareMat:Instance](https://stage.sinopia.io/editor/hrc:RT:bf2:RareMat:Instance))
+
+> *Current version: v.0.0.1*
+
+**HRC BF2 Rare Materials Item**
+Un-nested resource templates used for the description of Rare Materials Items at the Harry Ransom Center.
+
+Resource templates:
+
 - HRC Rare Materials Item (BF2) ([hrc:RT:bf2:RareMat:Item](https://stage.sinopia.io/editor/hrc:RT:bf2:RareMat:Item))
 
 > *Current version: v.0.0.1*
+
 
 **HRC ARM Bound-with**
 Un-nested resource templates used for the description of a bound-with object at the HRC (Based on Yale:RT:ARM:BoundWith:CtY)
