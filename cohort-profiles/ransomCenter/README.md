@@ -5,7 +5,7 @@ This directory includes HRC profiles being used on the stage environment. HRC's 
 
 ## Main Resource Templates
 
-**HRC BF2 Rare Work**
+**HRC BF2 Rare Materials Work**
 Un-nested resource templates used for the description of Rare Materials Works at the Harry Ransom Center.
 
 Resource templates:
