@@ -11,6 +11,9 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: #F8F8F8 ;
 }
+.profileAttrs {
+	text-align: center ;
+}
 .profileAttrs thead {
     font-size: 120% ;
     background-color: #66CDAA ;
@@ -20,6 +23,7 @@ tbody tr:nth-child(even) {
 }
 .rtsAttrs {
     padding-left: 25px ;
+	text-align: center ;
 }
 .rtsAttrs thead {
     font-size: 120% ;
@@ -30,6 +34,7 @@ tbody tr:nth-child(even) {
 }
 .ptsAttrs {
     padding-left: 50px ;
+	text-align: left ;
 }
 .ptsAttrs thead {
     font-size: 120% ;

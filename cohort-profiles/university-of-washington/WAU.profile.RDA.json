@@ -4,7 +4,7 @@
         "id": "WAU:profile:RDA",
         "author": "Ben Riesenberg (ries07@uw.edu)",
         "date": "2020-01-22",
-        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, Timespan, Administrative Metadata, Status, Complex Subject, Simple Type, RDF List",
+        "description": "RDA Work, Expression, Manifestation, Item, Agent, Nomen, Place, and Timespan; BFLC Administrative Metadata and Status; MADS RDF Complex Subject and Subject; RDF List",
         "schema": "https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/uwSchemas/v009base/uw-profile.json",
         "resourceTemplates": [
             {
@@ -25,7 +25,7 @@
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"],
                             "valueDataType": {"dataTypeURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"}
                         },
-                        "uwFormOrder": 0,
+                        "uwFormOrder": 0.001,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -656,7 +656,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 164,
+                        "uwFormOrder": 0.012,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -901,7 +901,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names"]
                         },
-                        "uwFormOrder": 160.1,
+                        "uwFormOrder": 0.008,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -995,7 +995,7 @@
                         "mandatory": "true",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 10.41,
+                        "uwFormOrder": 0.002,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1412,7 +1412,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 173,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1640,7 +1640,7 @@
                                 "urn:ld4p:qa:subjects"
                             ]
                         },
-                        "uwFormOrder": 12,
+                        "uwFormOrder": 0.007,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -1794,7 +1794,7 @@
                                 "urn:ld4p:qa:subjects"
                             ]
                         },
-                        "uwFormOrder": 18.1,
+                        "uwFormOrder": 0.009,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -2112,7 +2112,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 175,
+                        "uwFormOrder": 0.017,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -2230,6 +2230,25 @@
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
                         "uwFormOrder": 176,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "dvdVideo",
+                            "soundRecording"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
+                    },
+                    {
+                        "propertyLabel": "has composer of expression (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20026",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        },
+                        "uwFormOrder": 0.020,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -2712,7 +2731,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 13,
+                        "uwFormOrder": 0.010,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -3268,13 +3287,14 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 211,
+                        "uwFormOrder": 0.020,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "graphic",
-                            "eGraphic"
+                            "eGraphic",
+                            "dvdVideo"
                         ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
@@ -3803,7 +3823,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 208,
+                        "uwFormOrder": 0.014,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -3913,7 +3933,7 @@
                         },
                         "uwFormOrder": 388,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -4061,7 +4081,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 227,
+                        "uwFormOrder": 0.018,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -4171,7 +4191,7 @@
                         },
                         "uwFormOrder": 388.1,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -5597,7 +5617,7 @@
                         },
                         "uwFormOrder": 378,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -5875,7 +5895,7 @@
                         },
                         "uwFormOrder": 531.1,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -6644,7 +6664,7 @@
                         },
                         "uwFormOrder": 380,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -6681,7 +6701,7 @@
                         },
                         "uwFormOrder": 341,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -7139,7 +7159,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 11.5,
+                        "uwFormOrder": 0.005,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -7213,7 +7233,7 @@
                                 "urn:ld4p:qa:subjects"
                             ]
                         },
-                        "uwFormOrder": 14,
+                        "uwFormOrder": 0.011,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -7637,7 +7657,7 @@
                         },
                         "uwFormOrder": 377,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -7935,7 +7955,7 @@
                         },
                         "uwFormOrder": 344,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph"
@@ -8058,7 +8078,7 @@
                         "mandatory": "true",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 11,
+                        "uwFormOrder": 0.004,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -8165,7 +8185,7 @@
                         },
                         "uwFormOrder": 342,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8216,7 +8236,7 @@
                         },
                         "uwFormOrder": 379,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -8259,9 +8279,9 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 346,
+                        "uwFormOrder": 0.023,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8277,7 +8297,7 @@
                         },
                         "uwFormOrder": 350,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "dvdVideo",
@@ -8364,7 +8384,7 @@
                         },
                         "uwFormOrder": 351,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "soundRecording"
@@ -8382,7 +8402,7 @@
                         },
                         "uwFormOrder": 348,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -8587,7 +8607,7 @@
                         },
                         "uwFormOrder": 357,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8700,7 +8720,7 @@
                         },
                         "uwFormOrder": 358,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -8720,7 +8740,7 @@
                         },
                         "uwFormOrder": 359,
                         "statusUw": "done",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -8728,23 +8748,15 @@
                     {
                         "propertyLabel": "is video game adaptation of work (RDA 24.5)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10250",
-                        "mandatory": "",
-                        "repeatable": "",
-                        "type": "",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
                         "valueConstraint": {
-                            "valueTemplateRefs": [],
-                            "useValuesFrom": [],
-                            "valueDataType": {"dataTypeURI": ""},
-                            "defaults": [
-                                {
-                                    "defaultURI": "",
-                                    "defaultLiteral": ""
-                                }
-                            ]
+                            "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
                         "uwFormOrder": -1,
                         "statusUw": "",
-                        "noteUw": [],
+                        "noteUw": [""],
                         "qUw": [],
                         "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
@@ -9290,7 +9302,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 749,
+                        "uwFormOrder": 0.021,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -9712,7 +9724,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:organization"]
                         },
-                        "uwFormOrder": 230,
+                        "uwFormOrder": 0.022,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -10791,7 +10803,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 172,
+                        "uwFormOrder": 0.013,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -11797,10 +11809,10 @@
                             "useValuesFrom": [
                                 "urn:ld4p:qa:subjects",
                                 "urn:ld4p:qa:names",
-                                "urn:ld4p:qa:mesh"
+                                "urn:ld4p:qa:mesh:subject"
                             ]
                         },
-                        "uwFormOrder": 159.1,
+                        "uwFormOrder": 0.006,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12063,7 +12075,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 210,
+                        "uwFormOrder": 0.016,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12176,7 +12188,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 229,
+                        "uwFormOrder": 0.019,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -12833,7 +12845,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.42,
+                        "uwFormOrder": 0.003,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -13119,7 +13131,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
-                        "uwFormOrder": 0,
+                        "uwFormOrder": 0.001,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -13325,7 +13337,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 261,
+                        "uwFormOrder": 0.016,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -13867,7 +13879,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 522,
+                        "uwFormOrder": 0.027,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -14035,7 +14047,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.41,
+                        "uwFormOrder": 0.003,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -15766,7 +15778,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 250,
+                        "uwFormOrder": 0.022,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -15782,7 +15794,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 249,
+                        "uwFormOrder": 0.012,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -16143,7 +16155,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 562,
+                        "uwFormOrder": 0.029,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -16171,7 +16183,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 524,
+                        "uwFormOrder": 0.028,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -16201,7 +16213,7 @@
                                 {"defaultLiteral": "Latin"}
                             ]
                         },
-                        "uwFormOrder": 124,
+                        "uwFormOrder": 0.009,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -16682,7 +16694,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/millus"]
                         },
-                        "uwFormOrder": 26,
+                        "uwFormOrder": 0.010,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -17149,7 +17161,7 @@
                                 "urn:ld4p:qa:demographics"
                             ]
                         },
-                        "uwFormOrder": 18.5,
+                        "uwFormOrder": 0.024,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -18014,7 +18026,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 121,
+                        "uwFormOrder": 0.011,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -18489,7 +18501,7 @@
                         },
                         "uwFormOrder": 335.93,
                         "statusUw": "done",
-                        "noteUw": [""],
+                        "noteUw": [],
                         "qUw": [],
                         "usedInProfile": [
                             "monograph",
@@ -18681,7 +18693,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/languages"]
                         },
-                        "uwFormOrder": 122,
+                        "uwFormOrder": 0.008,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -19172,7 +19184,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 0.01,
+                        "uwFormOrder": 0.002,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -20302,7 +20314,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 126.5,
+                        "uwFormOrder": 0.017,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -21462,7 +21474,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 260,
+                        "uwFormOrder": 0.023,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -21570,23 +21582,11 @@
                         "mandatory": "false",
                         "repeatable": "false",
                         "type": "literal",
-                        "uwFormOrder": 121.5,
+                        "uwFormOrder": 0.005,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial",
-                            "eBook",
-                            "graphic",
-                            "soundRecording",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has prequel expression",
@@ -22029,7 +22029,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 251,
+                        "uwFormOrder": 0.013,
                         "statusUW": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -22320,7 +22320,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/mrelief"]
                         },
-                        "uwFormOrder": 124.42,
+                        "uwFormOrder": 0.018,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -23541,7 +23541,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:colour_content"]
                         },
-                        "uwFormOrder": 27.5,
+                        "uwFormOrder": 0.007,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -23571,7 +23571,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 27.5,
+                        "uwFormOrder": 0.007,
                         "statusUw": "done",
                         "noteUw": ["Has default for polychrome"],
                         "qUw": [],
@@ -23667,7 +23667,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 23,
+                        "uwFormOrder": 0.025,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -23701,7 +23701,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 120,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -23729,7 +23729,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 120,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -23751,7 +23751,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 120,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -23776,7 +23776,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 120,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -23801,7 +23801,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 120,
+                        "uwFormOrder": 0.015,
                         "statusUW": "done",
                         "usedInProfile": ["soundRecording"],
                         "remark": "http://access.rdatoolkit.org/6.9.html"
@@ -23895,7 +23895,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["https://id.loc.gov/vocabulary/mprojection"]
                         },
-                        "uwFormOrder": 124.43,
+                        "uwFormOrder": 0.021,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -24130,7 +24130,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 289,
+                        "uwFormOrder": 0.014,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -24323,7 +24323,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 10.42,
+                        "uwFormOrder": 0.004,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -24346,23 +24346,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 121.6,
+                        "uwFormOrder": 0.006,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "monograph",
-                            "dvdVideo",
-                            "etd",
-                            "map",
-                            "serial",
-                            "eBook",
-                            "graphic",
-                            "soundRecording",
-                            "eMap",
-                            "eSerial",
-                            "eGraphic"
-                        ]
+                        "usedInProfile": []
                     },
                     {
                         "propertyLabel": "has aspect ratio (RDA 7.19)",
@@ -24500,7 +24488,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 292,
+                        "uwFormOrder": 0.026,
                         "statusUw": "done",
                         "noteUw": ["deprecated in RDA registry but catalogers are still using old Toolkit so we need this"],
                         "usedInProfile": [
@@ -24767,7 +24755,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:names:person"]
                         },
-                        "uwFormOrder": 262,
+                        "uwFormOrder": 0.019,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -25099,7 +25087,7 @@
                         "valueConstraint": {
                             "valueTemplateRefs": ["WAU:RT:BF2:BFLC:AdminMetadata"]
                         },
-                        "uwFormOrder": 0,
+                        "uwFormOrder": 0.001,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -26022,7 +26010,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 36,
+                        "uwFormOrder": 0.004,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -27314,7 +27302,7 @@
                                 {"defaultLiteral": "©"}
                             ]
                         },
-                        "uwFormOrder": 66,
+                        "uwFormOrder": 0.012,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -27663,7 +27651,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 101.01,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -27821,7 +27809,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 160,
+                        "uwFormOrder": 0.016,
                         "statusUw": "done",
                         "noteUw": ["type should be resource, as we're looking for an IRI, but this broke Sinopia. Crystal asked Michelle about it on 2019-11-05"],
                         "qUw": [],
@@ -29242,7 +29230,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 99,
+                        "uwFormOrder": 0.028,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29267,7 +29255,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 99,
+                        "uwFormOrder": 0.028,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29289,7 +29277,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 99,
+                        "uwFormOrder": 0.028,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29315,7 +29303,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 99,
+                        "uwFormOrder": 0.028,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29331,7 +29319,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"]
                         },
-                        "uwFormOrder": 99,
+                        "uwFormOrder": 0.028,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29675,7 +29663,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 52,
+                        "uwFormOrder": 0.006,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29717,7 +29705,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 56,
+                        "uwFormOrder": 0.010,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29742,7 +29730,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 51.9,
+                        "uwFormOrder": 0.007,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29767,7 +29755,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 39,
+                        "uwFormOrder": 0.011,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29912,7 +29900,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 54,
+                        "uwFormOrder": 0.008,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -29991,7 +29979,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 83,
+                        "uwFormOrder": 0.026,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -30024,7 +30012,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 83,
+                        "uwFormOrder": 0.026,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -30043,7 +30031,7 @@
                         "valueConstraint": {
                             "useValuesFrom": ["urn:ld4p:sinopia"]
                         },
-                        "uwFormOrder": 0.02,
+                        "uwFormOrder": 0.002,
                         "statusUw": "done",
                         "noteUw": [""],
                         "qUw": [],
@@ -30176,7 +30164,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 98,
+                        "uwFormOrder": 0.027,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -30203,7 +30191,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 98,
+                        "uwFormOrder": 0.027,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -30225,7 +30213,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 98,
+                        "uwFormOrder": 0.027,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -30253,7 +30241,7 @@
                                 }
                             ]
                         },
-                        "uwFormOrder": 98,
+                        "uwFormOrder": 0.027,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -30939,7 +30927,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 34,
+                        "uwFormOrder": 0.018,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31145,7 +31133,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 85,
+                        "uwFormOrder": 0.014,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31315,7 +31303,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 84,
+                        "uwFormOrder": 0.009,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31666,7 +31654,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 101,
+                        "uwFormOrder": 0.015,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31814,7 +31802,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 73,
+                        "uwFormOrder": 0.020,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -31977,7 +31965,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 35,
+                        "uwFormOrder": 0.022,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -32221,7 +32209,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 33,
+                        "uwFormOrder": 0.021,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -32971,7 +32959,7 @@
                                 "urn:ld4p:qa:names:organization"
                             ]
                         },
-                        "uwFormOrder": 301,
+                        "uwFormOrder": 0.023,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -33428,7 +33416,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 68.9,
+                        "uwFormOrder": 0.024,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -33452,7 +33440,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 69,
+                        "uwFormOrder": 0.025,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -33861,7 +33849,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 37,
+                        "uwFormOrder": 0.005,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -33937,7 +33925,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 100,
+                        "uwFormOrder": 0.013,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [
@@ -34150,7 +34138,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 67,
+                        "uwFormOrder": 0.019,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -34229,7 +34217,7 @@
                         "mandatory": "true",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 32,
+                        "uwFormOrder": 0.003,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -34478,7 +34466,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 118.4,
+                        "uwFormOrder": 0.0171,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
@@ -34495,7 +34483,7 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 118.5,
+                        "uwFormOrder": 0.0172,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],

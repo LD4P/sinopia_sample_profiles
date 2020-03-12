@@ -5,11 +5,12 @@
     exclude-result-prefixes="j" version="3.0">
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
-        <!-- Map element?? -->
+        <!-- Don't completely understand the function of the map element here. Matches root element in source... -->
         <map xmlns="http://www.w3.org/2005/xpath-functions">
-            <!-- Need to generate filename based on source XML -->
+            <!-- Generate filename based on source XML -->
             <xsl:result-document
                 href="../html/{translate(j:map/j:map[@key = 'Profile']/j:string[@key = 'id'], ':', '.')}.html">
+                <!-- Why did we use a moded template here again?? -->
                 <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="profile"/>
             </xsl:result-document>
         </map>
@@ -28,7 +29,9 @@
             </head>
             <body>
                 <h1 id="profileTop">
-                    <xsl:value-of select="j:string[@key = 'title']"/>
+                    <xsl:value-of
+                        select="concat(j:string[@key = 'title'], ': ', j:string[@key = 'description'])"
+                    />
                 </h1>
                 <xsl:apply-templates select="." mode="profileAttrs"/>
             </body>
@@ -39,8 +42,7 @@
             <thead>
                 <tr>
                     <th>
-                        <xsl:text>Profile Information for </xsl:text>
-                        <xsl:value-of select="j:string[@key = 'title']"/>
+                        <xsl:text>Profile Information</xsl:text>
                     </th>
                 </tr>
             </thead>
@@ -108,7 +110,7 @@
             <thead>
                 <tr>
                     <th>
-                        <xsl:text>Resource template: </xsl:text>
+                        <xsl:text>Resource template information: </xsl:text>
                         <xsl:value-of select="j:string[@key = 'resourceLabel']"/>
                     </th>
                 </tr>
@@ -116,8 +118,8 @@
             <tbody>
                 <tr>
                     <th scope="row">Resource IRI</th>
+                    <!-- Currently multiple RT URIs for Agent in source RDA profile; unsightly HTML created here -->
                     <td>
-                        <!-- Need condition here to separate multiple IRIs for Agent RT) -->
                         <a href="{j:string[@key='resourceURI']}">
                             <xsl:value-of select="j:string[@key = 'resourceURI']"/>
                         </a>
@@ -203,7 +205,6 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Property IRI</th>
                     <td>
                         <a href="{j:string[@key = 'propertyURI']}">
                             <xsl:value-of select="j:string[@key = 'propertyURI']"/>
@@ -241,12 +242,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">
-                        <xsl:text>Property type</xsl:text>
-                    </th>
                     <td>
                         <xsl:choose>
                             <xsl:when test="j:string[@key = 'type'][text()]">
+                                <xsl:text>Type: </xsl:text>
                                 <xsl:value-of select="j:string[@key = 'type']"/>
                             </xsl:when>
                             <xsl:otherwise>
@@ -384,5 +383,18 @@
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
+        <xsl:apply-templates select="../j:array[@key = 'usedInProfile']"/>
+    </xsl:template>
+    <xsl:template match="j:array[@key = 'usedInProfile']">
+        <tr>
+            <th scope="row">
+                <xsl:text>Used in format profiles: </xsl:text>
+            </th>
+            <td/>
+            <td/>
+            <xsl:for-each select="j:string">
+                <td>TEST HERE</td>
+            </xsl:for-each>
+        </tr>
     </xsl:template>
 </xsl:stylesheet>

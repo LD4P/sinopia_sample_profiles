@@ -39,7 +39,7 @@
                 />
             <!-- What's done in the sequence:
                  (1) use fn:transform()
-                 (2) fn:transform retuens a map; store it in var $t
+                 (2) fn:transform returns a map; store it in var $t
                  (3) create a map to input the fn:transform() options
                  (4) the fn:transform() option are 
                     (a) stylesheet location = path to a .xsl file
