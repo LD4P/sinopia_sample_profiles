@@ -18,13 +18,14 @@
             "propertyLabel": "description of binding"
           },
           {
-            "remark": "Look up a term in AAT, or paste in a URI from the RBMS vocabs or Ligatus (https://www.ligatus.org.uk/lob/).",
+            "remark": "",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
               "defaults": [],
               "useValuesFrom": [
-                "urn:ld4p:qa:gettyaat:Objects"
+                "urn:ld4p:qa:gettyaat:Objects",
+                "urn:ld4p:qa:ligatus"
               ]
             },
             "repeatable": "true",
@@ -40,7 +41,8 @@
               "valueTemplateRefs": [],
               "defaults": [],
               "useValuesFrom": [
-                "urn:ld4p:qa:gettyaat:Objects__Components"
+                "urn:ld4p:qa:gettyaat:Objects__Components",
+                "urn:ld4p:qa:ligatus"
               ]
             },
             "repeatable": "true",
