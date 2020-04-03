@@ -317,7 +317,7 @@
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
-            "propertyLabel": "Genre/form",
+            "propertyLabel": "Genre/form of the Item",
             "resourceTemplates": [],
             "remark": "Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://www.tat2.io/basex2/ld4p/2019/lookups"
           },

@@ -84,7 +84,7 @@
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
-            "propertyLabel": "Form(s) of Work",
+            "propertyLabel": "Genre/Form of Work",
             "resourceTemplates": [],
             "remark": "Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://rbmsvocabs.github.io/"
           },
