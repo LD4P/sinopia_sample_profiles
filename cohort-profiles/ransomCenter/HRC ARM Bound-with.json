@@ -1,1 +1,419 @@
-{"Profile":{"resourceTemplates":[{"propertyTemplates":[{"mandatory":"false","repeatable":"true","type":"resource","valueConstraint":{"valueTemplateRefs":["ld4p:RT:bf2:Title:VarTitle"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/title","propertyLabel":"Title or label","resourceTemplates":[],"remark":"If the aggregate items bound together have a collective title or label, enter it here."},{"mandatory":"false","repeatable":"false","type":"resource","valueConstraint":{"valueTemplateRefs":[],"valueDataType":{"dataTypeURI":"http://id.loc.gov/ontologies/bibframe/Agent"},"useValuesFrom":[],"defaults":[{"defaultURI":"http://id.loc.gov/vocabulary/organizations/txauhrh","defaultLiteral":"TxAuHRH"}]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/heldBy","propertyLabel":"Held by","resourceTemplates":[]},{"mandatory":"false","repeatable":"true","type":"resource","valueConstraint":{"valueTemplateRefs":["ld4p:RT:bf2:Identifiers:LC","ld4p:RT:bf2:Identifiers:DDC","ld4p:RT:bf2:Identifiers:Shelfmark"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/shelfMark","propertyLabel":"Shelfmark(s)","resourceTemplates":[]},{"mandatory":"false","repeatable":"false","type":"literal","propertyURI":"http://id.loc.gov/ontologies/bibframe/sublocation","propertyLabel":"Location code","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":[],"useValuesFrom":[],"defaults":[]},"remark":"Use the 5 letter location code. For more information, check here: https://wikis.utexas.edu/display/HRCPrintedAndPublishedMedia/Codes+and+locations"},{"mandatory":"false","repeatable":"true","type":"resource","valueConstraint":{"valueTemplateRefs":["ld4p:RT:bf2:Item:Access","ld4p:RT:bf2:Item:Use","ld4p:RT:bf2:Item:Retention"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy","propertyLabel":"Usage and access policy","resourceTemplates":[]},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["Yale:RT:BF2:Contents"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/tableOfContents","propertyLabel":"Contents","remark":"Link to Yale's RT (testing)"},{"mandatory":"false","repeatable":"true","type":"literal","propertyURI":"http://id.loc.gov/ontologies/bibframe/custodialHistory","propertyLabel":"Custodial History","remark":"http://access.rdatoolkit.org/2.18.html","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":[],"useValuesFrom":[],"defaults":[]}},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["hrc:RT:ARM:CustodialHistory"],"useValuesFrom":[],"defaults":[]},"propertyURI":"https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory","propertyLabel":"ARM custodial history"},{"mandatory":"false","repeatable":"true","type":"resource","valueConstraint":{"valueTemplateRefs":["ld4p:RT:BF2:Contribution:Agent:Basic"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/contribution","propertyLabel":"Associated agent(s)","resourceTemplates":[]},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["Yale:RT:ARM:SlipCase","Yale:RT:ARM:Wrapper","Yale:RT:ARM:DustJacket","Yale:RT:ARM:WrapAroundBand","Yale:RT:ARM:Enclosure:Item:CtY"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"http://purl.org/dc/terms/relation","propertyLabel":"Enclosure","remark":"Linking to Yale's RT enclosure (testing)"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["hrc:RT:ARM:Binding"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyLabel":"ARM binding","propertyURI":"http://purl.org/dc/terms/hasPart"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["Yale:RT:ARM:Markings:Autograph","Yale:RT:ARM:Markings:Label","Yale:RT:ARM:Markings:Seal","Yale:RT:ARM:Markings:Watermark","Yale:RT:ARM:Markings:Inscription","Yale:RT:ARM:Markings:Marking","Yale:RT:ARM:Markings:Stamp"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"https://w3id.org/arm/core/ontology/0.1/markedBy","propertyLabel":"ARM Marking(s)","remark":"Links to Yale RTs for markings (testing)"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["Yale:RT:ARM:PhysicalCondition"],"useValuesFrom":[],"defaults":[]},"propertyURI":"https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition","propertyLabel":"ARM physical condition","remark":"Links to Yale physical condition RT (testing)"},{"mandatory":"false","repeatable":"true","type":"lookup","propertyURI":"http://id.loc.gov/ontologies/bibframe/partOf","propertyLabel":"Associated collection","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":[],"useValuesFrom":["urn:ld4p:sinopia"],"defaults":[]}},{"mandatory":"false","repeatable":"true","type":"lookup","valueConstraint":{"valueTemplateRefs":[],"useValuesFrom":["urn:ld4p:qa:gettyaat:Objects__Object_Genres","urn:ld4p:qa:genres"],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/genreForm","propertyLabel":"Genre/form","resourceTemplates":[],"remark":"Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://www.tat2.io/basex2/ld4p/2019/lookups"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["hrc:RT:bf2:RareMat:RefInstance"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bflc/indexedIn","propertyLabel":"Bibliographic References (BF2)"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["hrc:RT:ARM:Citation"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"https://w3id.org/arm/core/ontology/0.1/hasCitation","propertyLabel":"ARM Bibliographic citation"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["Yale:RT:BF2:Structured:Date"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://www.europeana.eu/schemas/edm/occurredAt","propertyLabel":"Associated date(s)","remark":"Link to Yale's RT for associated dates using an europeana property (testing)"},{"mandatory":"false","repeatable":"true","type":"literal","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":[],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/hasReproduction","propertyLabel":"Digital surrogate","remark":"If the item has been digitized, add the CONTENTdm URL here"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["Yale:RT:ARM:MeasurementGroup"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyLabel":"ARM dimensions","propertyURI":"https://w3id.org/arm/measurement/ontology/0.1/hasMeasurementGroup","remark":"Link to Yale RT for dimensions (testing)"},{"mandatory":"false","repeatable":"true","type":"resource","valueConstraint":{"valueTemplateRefs":["ld4p:RT:bf2:Note"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/note","propertyLabel":"Note(s) about the aggregate items bound together","resourceTemplates":[]},{"mandatory":"false","repeatable":"true","type":"resource","valueConstraint":{"valueTemplateRefs":["ld4p:RT:bf2:Item:ImmAcqSource"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/immediateAcquisition","propertyLabel":"Immediate Source of Acquisition","resourceTemplates":[]},{"mandatory":"false","repeatable":"true","type":"literal","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":[],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/hasEquivalent","propertyLabel":"ALMA MMS ID","remark":"Record the ALMA MMS ID for the bound-with"},{"mandatory":"true","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["hrc:RT:bf2:AdminMetadata"],"useValuesFrom":[],"defaults":[]},"propertyURI":"http://id.loc.gov/ontologies/bibframe/adminMetadata","propertyLabel":"Administrative metadata"}],"id":"hrc:RT:ARM:BoundWith","resourceURI":"https://w3id.org/arm/core/ontology/0.1/BoundCollection","resourceLabel":"HRC Bound-with (ARM)","remark":"Use to describe a bound-with object at the HRC (Based on Yale:RT:ARM:BoundWith:CtY)","author":"Paloma Graciani (paloma.graciani@austin.utexas.edu)","date":"2019-08-19","schema":"https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"}],"id":"hrc:profile:ARM:BoundWith","title":"HRC ARM Bound-with","description":"Use to describe a bound-with object at the HRC","date":"2020-02-24","author":"Paloma Graciani (paloma.graciani@austin.utexas.edu)","schema":"https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json","adherence":"Bibframe 2.0; ARM","remark":"Based on Yale:RT:ARM:BoundWith:CtY"}}
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Title:VarTitle"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "propertyLabel": "Title or label",
+            "resourceTemplates": [],
+            "remark": "If the aggregate items bound together have a collective title or label, enter it here."
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Agent"
+              },
+              "useValuesFrom": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/txauhrh",
+                  "defaultLiteral": "TxAuHRH"
+                }
+              ]
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+            "propertyLabel": "Held by",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Identifiers:LC",
+                "ld4p:RT:bf2:Identifiers:DDC",
+                "ld4p:RT:bf2:Identifiers:Shelfmark"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMark",
+            "propertyLabel": "Shelfmark(s)",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+            "propertyLabel": "Location code",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "remark": "Use the 5 letter location code. For more information, check here: https://wikis.utexas.edu/display/HRCPrintedAndPublishedMedia/Codes+and+locations"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Item:Access",
+                "ld4p:RT:bf2:Item:Use",
+                "ld4p:RT:bf2:Item:Retention"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+            "propertyLabel": "Usage and access policy",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Contents"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/tableOfContents",
+            "propertyLabel": "Contents",
+            "remark": "Link to Yale's RT (testing)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/custodialHistory",
+            "propertyLabel": "Custodial History",
+            "remark": "http://access.rdatoolkit.org/2.18.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:ARM:CustodialHistory"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
+            "propertyLabel": "ARM custodial history"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:BF2:Contribution:Agent:Basic"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "propertyLabel": "Associated agent(s)",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:SlipCase",
+                "Yale:RT:ARM:Wrapper",
+                "Yale:RT:ARM:DustJacket",
+                "Yale:RT:ARM:WrapAroundBand",
+                "Yale:RT:ARM:Enclosure:Item:CtY"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "propertyLabel": "Enclosure",
+            "remark": "Linking to Yale's RT enclosure (testing)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:ARM:Binding"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyLabel": "ARM binding",
+            "propertyURI": "http://purl.org/dc/terms/hasPart"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Markings:Autograph",
+                "Yale:RT:ARM:Markings:Label",
+                "Yale:RT:ARM:Markings:Seal",
+                "Yale:RT:ARM:Markings:Watermark",
+                "Yale:RT:ARM:Markings:Inscription",
+                "Yale:RT:ARM:Markings:Marking",
+                "Yale:RT:ARM:Markings:Stamp"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "ARM Marking(s)",
+            "remark": "Links to Yale RTs for markings (testing)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "propertyLabel": "ARM physical condition",
+            "remark": "Links to Yale physical condition RT (testing)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/partOf",
+            "propertyLabel": "Associated collection",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:sinopia"
+              ],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Object_Genres",
+                "urn:ld4p:qa:genres"
+              ],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
+            "propertyLabel": "Genre/form",
+            "resourceTemplates": [],
+            "remark": "Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://www.tat2.io/basex2/ld4p/2019/lookups"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:bf2:RareMat:RefInstance"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/indexedIn",
+            "propertyLabel": "Bibliographic References (BF2)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:ARM:Citation"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
+            "propertyLabel": "ARM Bibliographic citation"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Structured:Date"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.europeana.eu/schemas/edm/occurredAt",
+            "propertyLabel": "Associated date(s)",
+            "remark": "Link to Yale's RT for associated dates using an europeana property (testing)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasReproduction",
+            "propertyLabel": "Digital surrogate",
+            "remark": "If the item has been digitized, add the CONTENTdm URL here"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:MeasurementGroup"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyLabel": "ARM dimensions",
+            "propertyURI": "https://w3id.org/arm/measurement/ontology/0.1/hasMeasurementGroup",
+            "remark": "Link to Yale RT for dimensions (testing)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Note"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Note(s) about the aggregate items bound together",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Item:ImmAcqSource"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/immediateAcquisition",
+            "propertyLabel": "Immediate Source of Acquisition",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasEquivalent",
+            "propertyLabel": "ALMA MMS ID",
+            "remark": "Record the ALMA MMS ID for the bound-with"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:bf2:AdminMetadata"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+            "propertyLabel": "Administrative metadata"
+          }
+        ],
+        "id": "hrc:RT:ARM:BoundWith",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/BoundCollection",
+        "resourceLabel": "HRC Bound-with (ARM)",
+        "remark": "Use to describe a bound-with object at the HRC (Based on Yale:RT:ARM:BoundWith:CtY)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-08-19",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "hrc:profile:ARM:BoundWith",
+    "title": "HRC ARM Bound-with",
+    "description": "Use to describe a bound-with object at the HRC",
+    "date": "2020-02-24",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "adherence": "Bibframe 2.0; ARM",
+    "remark": "Based on Yale:RT:ARM:BoundWith:CtY"
+  }
+}
