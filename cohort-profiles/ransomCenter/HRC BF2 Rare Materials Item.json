@@ -1,4 +1,4 @@
-{
+''''{
   "Profile": {
     "resourceTemplates": [
       {
@@ -415,4 +415,4 @@
     "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
     "adherence": "Bibframe 2.0; ARM"
   }
-}
+}'''
