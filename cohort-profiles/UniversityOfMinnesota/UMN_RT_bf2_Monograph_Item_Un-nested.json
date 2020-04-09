@@ -1,0 +1,213 @@
+{
+  "id": "UMN:RT:bf2:Monograph:Item:Un-nested",
+  "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": [
+        {"defaultURI": "http://id.loc.gov/vocabulary/organizations/mnu",
+            "defaultLiteral": "University of Minnesota"
+            }
+            ],
+        "valueDataType": {}
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+      "propertyLabel": "Held By"
+    },
+    {
+      "propertyLabel": "LC Call Number",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMarkLcc",
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": []
+    },
+    {
+      "propertyLabel": "DDC Call Number",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMarkDdc",
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": []
+    },
+    {
+      "propertyLabel": "NLM Call Number",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMarkNlm",
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": []
+    },
+    {
+      "propertyLabel": "Shelving control number",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/shelfMark",
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": []
+    },
+    {
+      "propertyLabel": "Electronic location",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "propertyLabel": "Held in sublocation",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/sublocation",
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "propertyLabel": "Barcode",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:Identifiers:Barcode"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": []
+    },
+    {
+      "propertyLabel": "Notes about the Item",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:Note"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": []
+    },
+    {
+      "propertyLabel": "Lending, Reproduction, and Retention Policies",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:Item:Access",
+          "ld4p:RT:bf2:Item:Use",
+          "ld4p:RT:bf2:Item:Retention"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:Item:Enumeration",
+          "ld4p:RT:bf2:Item:Chronology"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyLabel": "Enumeration And Chronology of Item",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/enumerationAndChronology",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "remark": "http://access.rdatoolkit.org/2.18.html",
+      "propertyLabel": "Custodial History of Item",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/custodialHistory",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:Item:ImmAcqSource"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/immediateAcquisition",
+      "propertyLabel": "Immediate Source of Acquisition of Item",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": [],
+        "valueDataType": {}
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemOf",
+      "propertyLabel": "Holding For (Item of)"
+    }
+  ],
+  "resourceLabel": "UMN Monograph Item (BF2) Un-Nested",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
+  "remark": "based on LC template ld4p:RT:bf2:Monograph:Item",
+  "author": "Christine DeZelar-Tiedman (dezel002@umn.edu)",
+  "date": "2020-03-30",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+}
