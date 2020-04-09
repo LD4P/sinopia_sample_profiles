@@ -1,4 +1,7 @@
 {
+  "Profile": {
+    "resourceTemplates": [
+{
   "id": "UMN:RT:bf2:Monograph:Item:Un-nested",
   "propertyTemplates": [
     {
@@ -210,4 +213,13 @@
   "author": "Christine DeZelar-Tiedman (dezel002@umn.edu)",
   "date": "2020-03-30",
   "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+}
+],
+ "id": "thisisatestanditdoesntmatter",
+    "title": "profiletitle",
+    "description": "description",
+    "author": "someone",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2019-07-19"
+  }
 }
