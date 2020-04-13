@@ -13,6 +13,10 @@
                 <!-- Why did we use a moded template here again?? -->
                 <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="profile"/>
             </xsl:result-document>
+            <xsl:result-document
+                href="//netid/lib/Resources/wwwlib/public/cams/profiles/{translate(j:map/j:map[@key = 'Profile']/j:string[@key = 'id'], ':', '.')}.html">
+                <xsl:apply-templates select="j:map/j:map[@key = 'Profile']" mode="profile"/>
+            </xsl:result-document>
         </map>
     </xsl:template>
     <xsl:template match="j:map[@key = 'Profile']" mode="profile">
@@ -383,9 +387,9 @@
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
-        <xsl:apply-templates select="../j:array[@key = 'usedInProfile']"/>
+        <!-- <xsl:apply-templates select="../j:array[@key = 'usedInProfile']"/> -->
     </xsl:template>
-    <xsl:template match="j:array[@key = 'usedInProfile']">
+    <!-- <xsl:template match="j:array[@key = 'usedInProfile']">
         <tr>
             <th scope="row">
                 <xsl:text>Used in format profiles: </xsl:text>
@@ -396,5 +400,5 @@
                 <td>TEST HERE</td>
             </xsl:for-each>
         </tr>
-    </xsl:template>
+    </xsl:template> -->
 </xsl:stylesheet>

@@ -2240,25 +2240,6 @@
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
-                        "propertyLabel": "has composer of expression (RDA 18.5)",
-                        "propertyURI": "http://rdaregistry.info/Elements/e/P20026",
-                        "mandatory": "false",
-                        "repeatable": "true",
-                        "type": "lookup",
-                        "valueConstraint": {
-                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
-                        },
-                        "uwFormOrder": 0.020,
-                        "statusUw": "done",
-                        "noteUw": [],
-                        "qUw": [],
-                        "usedInProfile": [
-                            "dvdVideo",
-                            "soundRecording"
-                        ],
-                        "remark": "http://access.rdatoolkit.org/18.5.html"
-                    },
-                    {
                         "propertyLabel": "has composer collective agent of work",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10489",
                         "mandatory": "",
@@ -8076,7 +8057,7 @@
                         "propertyLabel": "has preferred title of work (*) (RDA 6.2.2)",
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10223",
                         "mandatory": "true",
-                        "repeatable": "true",
+                        "repeatable": "false",
                         "type": "literal",
                         "uwFormOrder": 0.004,
                         "statusUw": "done",
@@ -13148,6 +13129,25 @@
                             "monograph",
                             "soundRecording"
                         ]
+                    },
+                    {
+                        "propertyLabel": "has composer of expression (RDA 18.5)",
+                        "propertyURI": "http://rdaregistry.info/Elements/e/P20026",
+                        "mandatory": "false",
+                        "repeatable": "true",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                        },
+                        "uwFormOrder": 0.020,
+                        "statusUw": "done",
+                        "noteUw": [],
+                        "qUw": [],
+                        "usedInProfile": [
+                            "dvdVideo",
+                            "soundRecording"
+                        ],
+                        "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
                         "propertyLabel": "is identified by Library of Congress Name Authority File expression authority",
@@ -21586,7 +21586,9 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": [
+                            "dvdVideo"
+                        ]
                     },
                     {
                         "propertyLabel": "has prequel expression",
@@ -24350,7 +24352,9 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": []
+                        "usedInProfile": [
+                            "dvdVideo"
+                        ]
                     },
                     {
                         "propertyLabel": "has aspect ratio (RDA 7.19)",
@@ -29225,7 +29229,7 @@
                             "useValuesFrom": ["urn:ld4p:qa:rda_registry_ld4l_cache:carrier_type"],
                             "defaults": [
                                 {
-                                    "defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1008",
+                                    "defaultURI": "http://www.rdaregistry.info/termList/RDACarrierType/1049",
                                     "defaultLiteral": "volume"
                                 }
                             ]

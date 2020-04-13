@@ -69,7 +69,7 @@
                          the formatting retained all escaping; use oXygen indent-->
             <xsl:result-document href="../WAU.profile.RDA.{$fmat}.json"
                 omit-xml-declaration="yes">
-                <xsl:sequence select="xml-to-json($create-json.xml-profile)"/>
+                <xsl:value-of select="xml-to-json($create-json.xml-profile, map {'indent': true()})"/>
             </xsl:result-document>
             <!-- all result documents should be manually validated, and the json should be indented using oXygen-->
         </xsl:for-each>
