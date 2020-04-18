@@ -345,13 +345,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "hrc:RT:bf2:AdminMetadata"
-              ],
-              "useValuesFrom": [],
-              "defaults": [
-                {
-                  "defaultURI": "",
-                  "defaultLiteral": ""
-                }
               ]
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
