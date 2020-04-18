@@ -36,22 +36,6 @@
             "type": "resource",
             "propertyLabel": "Custodial event",
             "remark": "Linking to Yale's RTs (testing)"
-          },
-          {
-            "remark": "",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                "hrc:RT:bf2:AdminMetadata"
-              ],
-              "defaults": [],
-              "useValuesFrom": []
-            },
-            "repeatable": "true",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-            "mandatory": "true",
-            "type": "resource",
-            "propertyLabel": "Administrative metadata"
           }
         ],
         "resourceLabel": "HRC Custodial History (ARM)",

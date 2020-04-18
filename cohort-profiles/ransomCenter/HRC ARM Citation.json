@@ -8,13 +8,6 @@
             "valueConstraint": {
               "valueTemplateRefs": [
                 "Yale:RT:ARM:Citation:SCF"
-              ],
-              "useValuesFrom": [],
-              "defaults": [
-                {
-                  "defaultURI": "",
-                  "defaultLiteral": ""
-                }
               ]
             },
             "repeatable": "false",
