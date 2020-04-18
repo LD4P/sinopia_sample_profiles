@@ -33,7 +33,7 @@
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
-            "propertyLabel": "Item Title",
+            "propertyLabel": "Item title",
             "resourceTemplates": [],
             "remark": "Fill out only if different from manifestation title"
           },
@@ -93,16 +93,18 @@
             "mandatory": "false",
             "repeatable": "true",
             "type": "lookup",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/partOf",
-            "propertyLabel": "Associated collection",
-            "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [
-                "urn:ld4p:sinopia"
+                "urn:ld4p:qa:gettyaat:Objects__Object_Genres",
+                "urn:ld4p:qa:genres"
               ],
               "defaults": []
-            }
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
+            "propertyLabel": "Genre/form",
+            "resourceTemplates": [],
+            "remark": "Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://www.tat2.io/basex2/ld4p/2019/lookups"
           },
           {
             "mandatory": "false",
@@ -116,24 +118,23 @@
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
-            "propertyLabel": "Associated agent",
+            "propertyLabel": "Contribution",
             "resourceTemplates": []
           },
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
+            "type": "lookup",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/partOf",
+            "propertyLabel": "Named Collection",
             "resourceTemplates": [],
             "valueConstraint": {
-              "valueTemplateRefs": [
-                "Yale:RT:BF2:Structured:Date"
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:sinopia"
               ],
-              "useValuesFrom": [],
               "defaults": []
-            },
-            "propertyURI": "http://www.europeana.eu/schemas/edm/occurredAt",
-            "propertyLabel": "Associated date",
-            "remark": "Link to Yale's RT for associated dates using an europeana property (testing)"
+            }
           },
           {
             "mandatory": "false",
@@ -226,22 +227,6 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "hrc:RT:bf2:RareMat:RefInstance"
-              ],
-              "useValuesFrom": [],
-              "valueDataType": {},
-              "defaults": []
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bflc/indexedIn",
-            "propertyLabel": "Bibliographic reference (BF2)"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "resource",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
                 "hrc:RT:ARM:Citation"
               ],
               "useValuesFrom": [],
@@ -286,7 +271,7 @@
               "defaults": []
             },
             "propertyURI": "http://purl.org/dc/terms/relation",
-            "propertyLabel": "Enclosure",
+            "propertyLabel": "Enclosure (ARM)",
             "remark": "Linking to Yale's RT enclosure (testing)"
           },
           {
@@ -303,23 +288,6 @@
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasReproduction",
             "propertyLabel": "Digital surrogate",
             "remark": "If the item has been digitized, add the CONTENTdm URL here"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [
-                "urn:ld4p:qa:gettyaat:Objects__Object_Genres",
-                "urn:ld4p:qa:genres"
-              ],
-              "defaults": []
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
-            "propertyLabel": "Genre/form",
-            "resourceTemplates": [],
-            "remark": "Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://www.tat2.io/basex2/ld4p/2019/lookups"
           },
           {
             "mandatory": "false",
