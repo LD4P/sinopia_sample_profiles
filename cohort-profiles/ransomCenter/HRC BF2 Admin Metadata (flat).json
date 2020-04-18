@@ -1,0 +1,204 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
+            "propertyLabel": "Your Sinopia ID",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/txauhrh",
+                  "defaultLiteral": "txauhrh"
+                }
+              ],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "propertyLabel": "Assigning Agency",
+            "remark": "Use only when creating a new resource description. Add the URI from Code List for Cultural Heritage Organizations"
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://www.w3.org/2001/XMLSchema#date"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyLabel": "Creation date",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
+            "resourceTemplates": [],
+            "remark": "Use only when creating a new resource description."
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/descriptionConventions"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/rda",
+                  "defaultLiteral": "RDA"
+                },
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/dcrmb",
+                  "defaultLiteral": "DCRM(B)"
+                }
+              ],
+              "valueTemplateRefs": []
+            },
+            "propertyLabel": "Description conventions",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/languages"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
+              },
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/languages/eng",
+                  "defaultLiteral": "English"
+                }
+              ],
+              "valueTemplateRefs": []
+            },
+            "propertyLabel": "Description language",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/menclvl"
+              ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/EncodingLevel"
+              },
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyLabel": "Encoding level",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "true",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/profile",
+            "propertyLabel": "Profile",
+            "remark": "Include profile id used for the description of the resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:AdminMetadata:Status"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+            "propertyLabel": "Status",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier",
+            "propertyLabel": "Description Modifier",
+            "remark": "Use only when modifying an existing resource description. Add the URI from Code List for Cultural Heritage Organizations"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://www.w3.org/2001/XMLSchema#date"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
+            "propertyLabel": "Change date",
+            "resourceTemplates": [],
+            "remark": "Use only when modifying an existing resource description."
+          }
+        ],
+        "id": "hrc:RT:bf2:AdminMetadata",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+        "resourceLabel": "HRC Admin Metadata",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "remark": "Use to register administrative metadata for works, instances and items descriptions created or modified by the HRC. Add a new Admin Metadata set each time the resource description gets modified.",
+        "date": "2020-02-21",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "hrc:profile:bf2:AdminMetadata",
+    "title": "HRC BF2 Admin Metadata",
+    "description": "Use to register administrative metadata for works, instances and items described at the HRC",
+    "date": "2019-08-19",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "BIBFRAME 2.0",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "remark": "Based on the ld4p admin metadata base profile"
+  }
+}
