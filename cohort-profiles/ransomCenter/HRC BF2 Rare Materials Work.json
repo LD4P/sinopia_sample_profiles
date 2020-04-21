@@ -287,21 +287,6 @@
             },
             "propertyLabel": "Administrative metadata",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "lookup",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [
-                "urn:ld4p:sinopia:bibframe:work"
-              ],
-              "defaults": []
-            },
-            "propertyLabel": "Has series",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries"
           }
         ],
         "id": "hrc:RT:bf2:RareMat:Work",
