@@ -1,0 +1,79 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/count",
+            "propertyLabel": "Count",
+            "remark": "Enter just the integer number associated with the unit (e.g.: \"7\" for \"7 leaves\").",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {
+                "dataTypeURI": "http://www.w3.org/2001/XMLSchema#integer"
+              },
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/unit",
+            "propertyLabel": "Unit",
+            "remark": "Enter the type of extent unit (e.g. pages, leaves, columns, etc...)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyLabel": "Extent transcription",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyLabel": "Note",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Extent",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "id": "hrc:RT:BF2:Extent",
+        "resourceLabel": "HRC Extent (BF2)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "BF2",
+    "id": "hrc:profile:BF2:Extent",
+    "title": "HRC Extent (BF2)",
+    "date": "2020-04-18",
+    "description": "Profile that articulates the description for a rare books extent",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}
