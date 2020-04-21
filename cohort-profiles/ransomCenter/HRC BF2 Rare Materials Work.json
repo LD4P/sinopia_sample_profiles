@@ -41,24 +41,41 @@
           {
             "mandatory": "false",
             "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/originDate",
+            "propertyLabel": "Date of Work",
+            "remark": "http://access.rdatoolkit.org/6.4.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
             "type": "lookup",
             "valueConstraint": {
               "useValuesFrom": [
-                "urn:ld4p:qa:names",
-                "urn:ld4p:qa:subjects"
+                "urn:ld4p:qa:names:geographic",
+                "urn:ld4p:qa:geonames:area_and_place"
               ],
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Place"
+              },
               "valueTemplateRefs": [],
               "defaults": []
             },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
-            "propertyLabel": "Subject of the Work",
-            "remark": "http://access.rdatoolkit.org/rdachp23_rda23-11.html",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/originPlace",
+            "propertyLabel": "Place of Origin of the Work",
+            "remark": "http://access.rdatoolkit.org/6.5.html",
             "resourceTemplates": []
           },
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
+            "type": "lookup",
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [
@@ -71,6 +88,56 @@
             "propertyLabel": "Genre/Form",
             "resourceTemplates": [],
             "remark": "Use the QA service to retrieve AAT and LCGFT concept URIs. To use the RBMS vocabularies, copy/paste the concept URI provided here: https://rbmsvocabs.github.io/"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:names",
+                "urn:ld4p:qa:subjects",
+                "urn:ld4p:qa:oclc_fast:topic",
+                "urn:ld4p:qa:oclc_fast:geographic",
+                "urn:ld4p:qa:fast:event"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/subject",
+            "propertyLabel": "Subject of the Work",
+            "remark": "http://access.rdatoolkit.org/rdachp23_rda23-11.html",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:geographic",
+                "urn:ld4p:qa:geonames:area_and_place"
+              ],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/geographicCoverage",
+            "propertyLabel": "(Geographic) Coverage of the Content",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/temporalCoverage",
+            "propertyLabel": "(Time) Coverage of the Content",
+            "remark": "http://access.rdatoolkit.org/7.3.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
           },
           {
             "mandatory": "false",
@@ -253,7 +320,23 @@
               "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
-            "propertyLabel": "Related Work/Expression",
+            "propertyLabel": "Related Work",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:RelatedExpression"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasExpression",
+            "propertyLabel": "Related Expressions",
+            "remark": "http://access.rdatoolkit.org/rdachp26_rda26-25.html",
             "resourceTemplates": []
           },
           {
