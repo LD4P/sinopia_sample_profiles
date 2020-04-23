@@ -1,0 +1,52 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "propertyLabel": "Signature Statement",
+            "remark": ""
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Notes",
+            "remark": "Note about the signature statement"
+          }
+        ],
+        "id": "hrc:RT:ARM:SignatureStatement",
+        "resourceLabel": "HRC Signature Statement (ARM)",
+        "remark": "Use for description signature statements",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/SignatureStatement",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "hrc:profile:ARM:SignatureStatement",
+    "title": "HRC ARM Signature Statement",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "adherence": "ARM",
+    "date": "2020-04-23",
+    "description": "Rare Materials profile template for description of signature statements",
+    "remark": "",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

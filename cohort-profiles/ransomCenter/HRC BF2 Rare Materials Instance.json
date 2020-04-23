@@ -307,7 +307,7 @@
             "resourceTemplates": []
           },
           {
-            "propertyLabel": "Extent",
+            "propertyLabel": "Extent (BF2)",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/extent",
             "valueConstraint": {
               "valueTemplateRefs": [
@@ -352,6 +352,21 @@
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/bookFormat",
             "propertyLabel": "Book Format (BF2)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:ARM:SignatureStatement"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasSignatureStatement",
+            "propertyLabel": "Signature Statement (ARM)"
           },
           {
             "mandatory": "false",
@@ -450,8 +465,9 @@
               "useValuesFrom": [],
               "defaults": []
             },
-            "propertyLabel": "Signature Statement",
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note"
+            "propertyLabel": "Notes",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "remark": "Notes about the format"
           }
         ],
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/BookFormat",
