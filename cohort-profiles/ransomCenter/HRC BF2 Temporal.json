@@ -1,0 +1,66 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "propertyLabel": "Label",
+            "remark": "Paste the proper label from PeriodO (https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0kh9ds&periodID=p0kh9ds3whd)."
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/target",
+            "propertyLabel": "URI",
+            "remark": "Paste the proper URI from PeriodO (https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0kh9ds&periodID=p0kh9ds3whd)."
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "propertyLabel": "Notes",
+            "remark": "Notes about the temporal coverage"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Temporal",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "id": "hrc:RT:bf2:Temporal",
+        "resourceLabel": "HRC Temporal (BF2)",
+        "remark": "Use for description of temporal periods",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "title": "HRC BF2 Temporal",
+    "id": "hrc:profile:bf2:Temporal",
+    "adherence": "BF2",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "description": "Use to describe temporal periods",
+    "date": "2020-04-23",
+    "remark": "Use for description of temporal periods",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}
