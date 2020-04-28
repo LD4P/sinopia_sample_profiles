@@ -133,20 +133,16 @@
       "resourceTemplates": [],
       "valueConstraint": {
         "valueTemplateRefs": [],
-        "defaults": [
-          {
-            "defaultURI": "http://id.loc.gov/vocabulary/organizations/mnu",
-            "defaultLiteral": "MnU"
-          }
-        ],
+        "defaults": [],
         "useValuesFrom": [],
         "valueDataType": {}
       },
       "repeatable": "false",
       "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier",
-      "mandatory": "true",
+      "mandatory": "false",
       "type": "resource",
-      "propertyLabel": "Description Modifier"
+      "propertyLabel": "Description Modifier",
+      "remark": "Add the URI from Code List for Cultural Heritage Organizations"
     },
     {
       "mandatory": "false",
