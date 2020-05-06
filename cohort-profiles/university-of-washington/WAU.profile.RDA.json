@@ -3469,13 +3469,11 @@
                         "mandatory": "false",
                         "repeatable": "true",
                         "type": "literal",
-                        "uwFormOrder": 19,
+                        "uwFormOrder": -1,
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [
-                            "etd"
-                        ],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/7.9.html"
                     },
                     {
@@ -6917,7 +6915,16 @@
                         "propertyURI": "http://rdaregistry.info/Elements/w/P10002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                              "urn:ld4p:qa:dbpedia",
+                              "urn:ld4p:qa:isni",
+                              "urn:ld4p:qa:names",
+                              "urn:ld4p:qa:fast:work",
+                              "urn:wikidata"
+                            ]
+                        },
                         "uwFormOrder": 0.1,
                         "statusUw": "attention",
                         "noteUw": ["This is not sufficient due to lack of typing. Need properties for each kind of identifier like we have for ISSN"],
@@ -14070,7 +14077,16 @@
                         "propertyURI": "http://rdaregistry.info/Elements/e/P20002",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                              "urn:ld4p:qa:dbpedia",
+                              "urn:ld4p:qa:isni",
+                              "urn:ld4p:qa:names",
+                              "urn:ld4p:qa:fast:work",
+                              "urn:wikidata"
+                            ]
+                        },
                         "uwFormOrder": 0.1,
                         "statusUw": "attention",
                         "noteUw": ["This is insufficient due to lack of typing"],
@@ -16145,6 +16161,27 @@
                         "qUw": [],
                         "usedInProfile": ["dvdVideo"],
                         "remark": "http://access.rdatoolkit.org/24.5.html"
+                    },
+                    {
+                      "propertyLabel": "has photographer of expression",
+                      "propertyURI": "http://rdaregistry.info/Elements/e/P20288",
+                      "mandatory": "false",
+                      "repeatable": "true",
+                      "type": "lookup",
+                      "valueConstraint": {
+                          "useValuesFrom": ["urn:ld4p:qa:names:person"]
+                      },
+                      "uwFormOrder": 279.1,
+                      "statusUw": "",
+                      "noteUw": "Deprecated property",
+                      "qUw": [],
+                      "usedInProfile": [
+                        "monograph",
+                        "eBook",
+                        "graphic",
+                        "eGraphic",
+                        "etd"
+                      ]
                     },
                     {
                         "propertyLabel": "is translated as (RDA 24.5)",
@@ -19762,7 +19799,12 @@
                         "statusUw": "done",
                         "noteUw": [],
                         "qUw": [],
-                        "usedInProfile": [],
+                        "usedInProfile": [
+                          "eBook",
+                          "eGraphic",
+                          "graphic",
+                          "monograph"
+                        ],
                         "remark": "http://access.rdatoolkit.org/18.5.html"
                     },
                     {
@@ -31306,7 +31348,16 @@
                         "propertyURI": "http://rdaregistry.info/Elements/m/datatype/P30004",
                         "mandatory": "false",
                         "repeatable": "true",
-                        "type": "literal",
+                        "type": "lookup",
+                        "valueConstraint": {
+                            "useValuesFrom": [
+                              "urn:ld4p:qa:dbpedia",
+                              "urn:ld4p:qa:isni",
+                              "urn:ld4p:qa:names",
+                              "urn:ld4p:qa:fast:work",
+                              "urn:wikidata"
+                            ]
+                        },
                         "uwFormOrder": 0.009,
                         "statusUw": "done",
                         "noteUw": [],
@@ -38599,9 +38650,9 @@
                         "type": "literal",
                         "uwFormOrder": 145,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.3.html"
                     },
                     {
@@ -45092,9 +45143,9 @@
                         },
                         "uwFormOrder": 137,
                         "statusUw": "AM 2019-5-13",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/10.2.2.html"
                     },
                     {
@@ -45807,9 +45858,9 @@
                         "type": "literal",
                         "uwFormOrder": 144,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.2.html"
                     },
                     {
@@ -53649,9 +53700,9 @@
                         "type": "literal",
                         "uwFormOrder": 146,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.4.html"
                     },
                     {
@@ -54722,9 +54773,9 @@
                         "type": "literal",
                         "uwFormOrder": 149,
                         "statusUw": "CEC 2019-05-02",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.6.html"
                     },
                     {
@@ -55908,9 +55959,9 @@
                         },
                         "uwFormOrder": 143,
                         "statusUw": "AM 2019-05-13",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.3.2.html"
                     },
                     {
@@ -60386,9 +60437,9 @@
                         "type": "literal",
                         "uwFormOrder": 131,
                         "statusUw": "CEC 2019-05-10",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/9.4.html"
                     },
                     {
@@ -61228,9 +61279,9 @@
                         "type": "literal",
                         "uwFormOrder": 147,
                         "statusUw": "CEC 2019-05-10",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.4.5.html"
                     },
                     {
@@ -61252,9 +61303,9 @@
                         },
                         "uwFormOrder": 142,
                         "statusUw": "AM 2019-05-13",
-                        "noteUw": [],
+                        "noteUw": ["Property was marked for use in mono profile"],
                         "qUw": [],
-                        "usedInProfile": ["monograph"],
+                        "usedInProfile": [],
                         "remark": "http://access.rdatoolkit.org/11.2.2.html"
                     },
                     {

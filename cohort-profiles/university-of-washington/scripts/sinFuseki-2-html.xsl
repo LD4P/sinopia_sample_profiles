@@ -14,7 +14,7 @@
     -->
     <xsl:key name="rda" match="pro:array[@key = 'propertyTemplates']/pro:map"
         use="tokenize(pro:string[@key = 'propertyURI'], '/')[last()]"/>
-    <xsl:variable name="profile" select="document('WAU.profile.RDA.xml')"/>
+    <xsl:variable name="profile" select="document('https://raw.githubusercontent.com/CECSpecialistI/UWLibCatProfiles/master/xml/WAU.profile.RDA.xml')"/>
     <xsl:template match="/">
         <html>
             <xsl:apply-templates select="rdf:RDF"/>

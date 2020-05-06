@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-04-13",
+      "date" : "2020-05-06",
       "description" : "Resource templates for electronic theses and dissertations",
       "id" : "WAU:profile:RDA:etd",
       "title" : "WAU Profile RDA for electronic theses and dissertations",
@@ -111,8 +111,15 @@
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/w\/P10002",
               "mandatory" : "false",
               "repeatable" : "true",
-              "type" : "literal",
-              "remark" : "http:\/\/access.rdatoolkit.org\/6.8.html" },
+              "type" : "lookup",
+              "remark" : "http:\/\/access.rdatoolkit.org\/6.8.html",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:dbpedia",
+                  "urn:ld4p:qa:isni",
+                  "urn:ld4p:qa:names",
+                  "urn:ld4p:qa:fast:work",
+                  "urn:wikidata" ] } },
             
             { "propertyLabel" : "has category of work (Genre lookup)(RDA 6.3)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/w\/P10004",
@@ -141,13 +148,6 @@
               "repeatable" : "true",
               "type" : "literal",
               "remark" : "http:\/\/access.rdatoolkit.org\/7.3.html" },
-            
-            { "propertyLabel" : "has dissertation or thesis information (RDA 7.9)",
-              "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/w\/P10209",
-              "mandatory" : "false",
-              "repeatable" : "true",
-              "type" : "literal",
-              "remark" : "http:\/\/access.rdatoolkit.org\/7.9.html" },
             
             { "propertyLabel" : "has academic degree (RDA 7.9.2)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/w\/P10077",
@@ -725,6 +725,15 @@
               "type" : "literal",
               "remark" : "http:\/\/access.rdatoolkit.org\/6.12.html" },
             
+            { "propertyLabel" : "has photographer of expression",
+              "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20288",
+              "mandatory" : "false",
+              "repeatable" : "true",
+              "type" : "lookup",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:names:person" ] } },
+            
             { "propertyLabel" : "has manifestation of expression (RDA 17.9)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20059",
               "mandatory" : "false",
@@ -1003,8 +1012,15 @@
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/m\/datatype\/P30004",
               "mandatory" : "false",
               "repeatable" : "true",
-              "type" : "literal",
-              "remark" : "http:\/\/access.rdatoolkit.org\/2.15.html" },
+              "type" : "lookup",
+              "remark" : "http:\/\/access.rdatoolkit.org\/2.15.html",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:dbpedia",
+                  "urn:ld4p:qa:isni",
+                  "urn:ld4p:qa:names",
+                  "urn:ld4p:qa:fast:work",
+                  "urn:wikidata" ] } },
             
             { "propertyLabel" : "has date of publication (RDA 2.8.6)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/m\/P30011",

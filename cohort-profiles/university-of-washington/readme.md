@@ -1,6 +1,6 @@
 # UWLibCatProfiles
 
-Profiles for RDA cataloging in Sinopia, being developed locally at the University of Washington for use in the LD4P2 project.
+Profiles for RDA cataloging in Sinopia, being developed locally at the University of Washington for use in the LD4P2 project. Web views of all Sinopia profiles currently in use at UW are available [here](https://www.lib.washington.edu/cams/ld) (see "RDA profiles for cataloging in the Sinopia Linked Data Editor").
 
 ### Naming Conventions for University of Washington Sinopia Profiles and Resource Templates
 
@@ -11,7 +11,7 @@ Profiles for RDA cataloging in Sinopia, being developed locally at the Universit
    - Examples: `WAU:profile:RDA[...]`, `WAU:RT:RDA[...]`
 - Next is a term or multiple terms for the contents of the profile or resource template (this can include specific RDF classes and formats of materials being described by the resource and property templates)
    - Examples: `WAU:profile:RDA:monograph`, `WAU:RT:RDA:Work:monograph`
-   
+
 **Note that:**
 - Terms for RDF classes described in resource templates (such as "Work") are *always* capitalized.
 - Terms for formats described in a profile or resource template (such as "monograph") are controlled by a local schema and are *never* capitalized.

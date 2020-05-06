@@ -1,7 +1,7 @@
 
   { "Profile" : 
     { "author" : "Ben Riesenberg (ries07@uw.edu)",
-      "date" : "2020-04-13",
+      "date" : "2020-05-06",
       "description" : "Resource templates for graphic materials",
       "id" : "WAU:profile:RDA:graphic",
       "title" : "WAU Profile RDA for graphic materials",
@@ -161,8 +161,15 @@
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/w\/P10002",
               "mandatory" : "false",
               "repeatable" : "true",
-              "type" : "literal",
-              "remark" : "http:\/\/access.rdatoolkit.org\/6.8.html" },
+              "type" : "lookup",
+              "remark" : "http:\/\/access.rdatoolkit.org\/6.8.html",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:dbpedia",
+                  "urn:ld4p:qa:isni",
+                  "urn:ld4p:qa:names",
+                  "urn:ld4p:qa:fast:work",
+                  "urn:wikidata" ] } },
             
             { "propertyLabel" : "is identified by LC NAF work authority",
               "propertyURI" : "http:\/\/www.loc.gov\/mads\/rdf\/v1#isIdentifiedByAuthority",
@@ -959,8 +966,15 @@
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20002",
               "mandatory" : "false",
               "repeatable" : "true",
-              "type" : "literal",
-              "remark" : "http:\/\/access.rdatoolkit.org\/6.13.html" },
+              "type" : "lookup",
+              "remark" : "http:\/\/access.rdatoolkit.org\/6.13.html",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:dbpedia",
+                  "urn:ld4p:qa:isni",
+                  "urn:ld4p:qa:names",
+                  "urn:ld4p:qa:fast:work",
+                  "urn:wikidata" ] } },
             
             { "propertyLabel" : "is identified by Library of Congress Name Authority File expression authority",
               "propertyURI" : "http:\/\/www.loc.gov\/mads\/rdf\/v1#isIdentifiedByAuthority",
@@ -1121,6 +1135,15 @@
               { "useValuesFrom" : 
                 [ "urn:ld4p:qa:names:person" ] } },
             
+            { "propertyLabel" : "has photographer of expression",
+              "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20288",
+              "mandatory" : "false",
+              "repeatable" : "true",
+              "type" : "lookup",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:names:person" ] } },
+            
             { "propertyLabel" : "has restorationist agent of expression (RDA 18.5)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20289",
               "mandatory" : "false",
@@ -1151,6 +1174,17 @@
               "valueConstraint" : 
               { "useValuesFrom" : 
                 [ "urn:ld4p:qa:names:person" ] } },
+            
+            { "propertyLabel" : "has letterer agent (RDA 18.5)",
+              "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20259",
+              "mandatory" : "false",
+              "repeatable" : "true",
+              "type" : "lookup",
+              "remark" : "http:\/\/access.rdatoolkit.org\/18.5.html",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:names:person",
+                  "urn:ld4p:qa:names:organization" ] } },
             
             { "propertyLabel" : "has reviser agent",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/e\/P20327",
@@ -1611,8 +1645,15 @@
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/m\/datatype\/P30004",
               "mandatory" : "false",
               "repeatable" : "true",
-              "type" : "literal",
-              "remark" : "http:\/\/access.rdatoolkit.org\/2.15.html" },
+              "type" : "lookup",
+              "remark" : "http:\/\/access.rdatoolkit.org\/2.15.html",
+              "valueConstraint" : 
+              { "useValuesFrom" : 
+                [ "urn:ld4p:qa:dbpedia",
+                  "urn:ld4p:qa:isni",
+                  "urn:ld4p:qa:names",
+                  "urn:ld4p:qa:fast:work",
+                  "urn:wikidata" ] } },
             
             { "propertyLabel" : "has date of publication (RDA 2.8.6)",
               "propertyURI" : "http:\/\/rdaregistry.info\/Elements\/m\/P30011",

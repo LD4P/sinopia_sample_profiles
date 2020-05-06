@@ -8,8 +8,9 @@
              This transform is an XSLT3 pipeline.
              This transform is to produce all format-specific profiles at the same time.
              The profiles will be saved in the xml/ directory.
-             The input json data is taken from github. 
+             The input json data is taken from a local file*. 
                  This can be changed by changing information in the source-node parameter of fn:transform.
+                 *Currently source-node takes data from local file, but source-node value could be changed to take data from GitHub.
              To produce selected format-specific profiles: edit the @select of the xsl:for-each.
                  Be sure to save the edited file using "Save As."
              Each format-specific json profile should be manually validated and indented before pushing to Github.

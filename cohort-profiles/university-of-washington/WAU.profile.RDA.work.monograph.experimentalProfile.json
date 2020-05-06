@@ -393,6 +393,14 @@
                 ]
             },
             "remark": "http://access.rdatoolkit.org/24.5.html"
+          },
+          {
+            "propertyLabel": "Link to Expression Monograph Resource Template (do NOT enter value)",
+            "propertyURI": "http://fake.gov/NotAProperty",
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "remark": "https://sinopia.io/editor/WAU:RT:RDA:Expression:monograph"
           }
         ]
       },
