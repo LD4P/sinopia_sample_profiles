@@ -138,7 +138,7 @@
             "remark": "Link to Yale's RT (testing)"
           },
           {
-            "remark": "Paste in the URIs for the Items in the bound-with. Create a separate resource using \"hrc:RT:ARM:BoundWith:Item\" in Sinopia and link it here.",
+            "remark": "Paste in the URIs for the first Item in the bound-with. Create a separate resource using \"hrc:RT:ARM:BoundWith:Item\" in Sinopia and link it here.",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -146,10 +146,24 @@
               "useValuesFrom": []
             },
             "repeatable": "true",
-            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyURI": "https://library.yale.edu/ld4p/terms/hasFirst",
             "mandatory": "true",
             "type": "resource",
-            "propertyLabel": "Bound-with Items"
+            "propertyLabel": "first bound-with item"
+          },
+          {
+            "remark": "Paste in the URIs for the component parts of the bound-with. Create separate resources (\"hrc:RT:ARM:BoundWith:Item\") in Sinopia and link them here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://library.yale.edu/ld4p/terms/hasPart",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "remaining bound-with items"
           },
           {
             "mandatory": "false",
