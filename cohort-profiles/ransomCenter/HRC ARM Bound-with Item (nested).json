@@ -54,6 +54,21 @@
           {
             "mandatory": "false",
             "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:ARM:CustodialHistory"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
+            "propertyLabel": "Custodial history (ARM)"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
             "type": "lookup",
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -139,22 +154,6 @@
             },
             "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
             "propertyLabel": "Bibliographic citation (ARM)"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "resource",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                "hrc:RT:bf2:RareMat:RefInstance"
-              ],
-              "useValuesFrom": [],
-              "valueDataType": {},
-              "defaults": []
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bflc/indexedIn",
-            "propertyLabel": "Bibliographic citation (BF2)"
           },
           {
             "mandatory": "false",

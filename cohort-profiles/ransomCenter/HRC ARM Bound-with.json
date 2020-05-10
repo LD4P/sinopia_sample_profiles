@@ -138,6 +138,20 @@
             "remark": "Link to Yale's RT (testing)"
           },
           {
+            "remark": "Paste in the URIs for the Items in the bound-with. Create a separate resource using \"hrc:RT:ARM:BoundWith:Item\" in Sinopia and link it here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Bound-with Items"
+          },
+          {
             "mandatory": "false",
             "repeatable": "true",
             "type": "literal",
@@ -304,22 +318,6 @@
             },
             "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
             "propertyLabel": "Bibliographic citation (ARM)"
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "resource",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [
-                "hrc:RT:bf2:RareMat:RefInstance"
-              ],
-              "useValuesFrom": [],
-              "valueDataType": {},
-              "defaults": []
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bflc/indexedIn",
-            "propertyLabel": "Bibliographic citation (BF2)"
           },
           {
             "mandatory": "false",
