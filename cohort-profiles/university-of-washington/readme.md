@@ -1,6 +1,6 @@
 # UWLibCatProfiles
 
-Profiles for RDA cataloging in Sinopia, being developed locally at the University of Washington for use in the LD4P2 project. Web views of all Sinopia profiles currently in use at UW are available [here](https://www.lib.washington.edu/cams/ld) (see "RDA profiles for cataloging in the Sinopia Linked Data Editor").
+Profiles for RDA cataloging in Sinopia, being developed locally at the University of Washington for use in the LD4P2 project. Web views of all Sinopia profiles currently in use at UW are available [here](https://uwlib-cams.github.io/webviews/) (see "RDA-in-RDF Application Profiles").
 
 ### Naming Conventions for University of Washington Sinopia Profiles and Resource Templates
 
