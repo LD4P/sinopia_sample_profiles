@@ -1,0 +1,822 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "If the bound-with has a collective title or label, enter it here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Title:Collection"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Title or Label"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                },
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton Library"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/heldBy",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Held By"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Access:InLibrary",
+                "harvard:RT:BF2:Use:houghton"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Access and Use"
+          },
+          {
+            "remark": "table of contents",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Contents"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/tableOfContents",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contents"
+          },
+          {
+            "remark": "Paste in the URIs for the first Item in the bound-with. Create a separate resource using \"harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith\" in Sinopia and link it here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://library.yale.edu/ld4p/terms/hasFirst",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "First Bound-With Item"
+          },
+          {
+            "remark": "Paste in the URIs for the component parts of the bound-with (the Items bound together or the binding itself). Create separate resources (\"harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith\") in Sinopia and link them here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://library.yale.edu/ld4p/terms/hasPart",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Remaining Bound-With Items"
+          },
+          {
+            "remark": "Record any other relevant relationship to a related resource (Instance or Item)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Relationship"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Related Resource (Instance or Item)"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Identifiers:Barcode",
+                "harvard:RT:BF2:Identifiers:Local",
+                "harvard:RT:BF2:Identifiers:Local:LC",
+                "harvard:arm:identifiers:accessionNumber"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Item Call Numbers and Identifiers"
+          },
+          {
+            "remark": "Record a related Custodial History resource. This field is used to fulfill the function of local headings such as \"Smith, Jane--Presentation inscription to ...\" in the current MARC environment.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:custodialHistory"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Custodial History"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/2.18.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/custodialHistory",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Custodial History Note"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Agents:Contribution:Item"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "remark": "If the Item is housed in an enclosure (e.g., an envelope), record information about the enclosure here, if applicable.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:Enclosure:Item",
+                "harvard:RT:ARM:DustJacket",
+                "harvard:RT:ARM:SlipCase",
+                "harvard:RT:ARM:WrapAroundBand",
+                "harvard:RT:ARM:Wrapper"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Enclosures"
+          },
+          {
+            "remark": "Provide a structured description of the binding.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:bindings"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Binding Information"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:arm:markings:autographText",
+                "harvard:arm:markings:inscription",
+                "harvard:arm:markings:stamp",
+                "harvard:arm:markings:label",
+                "harvard:RT:arm:markings:marking",
+                "harvard:arm:markings:watermark",
+                "harvard:arm:markings:seal"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Markings"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "remark": "This is a lookup field. Create a related Collection resource (\"Yale:RT:BF2:Collection\") in Sinopia and look it up to link it here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:sinopia"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/partOf",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Part of Named Collection"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Form:sammelbands"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Genre/Form"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:Citation"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Bibliographic Citation"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Structured:Date"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.europeana.eu/schemas/edm/occurredAt",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Associated Date(s)"
+          },
+          {
+            "remark": "Record a URL if the item has been digitized.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Digital Surrogate"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Item:Enumeration",
+                "Yale:RT:BF2:Item:Chronology"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/enumerationAndChronology",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Enumeration and Chronology"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Harvard:RT:BF2:AdminMetadata:Body:Houghton"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Administrative Metadata"
+          }
+        ],
+        "resourceLabel": "Bound-With (Houghton)",
+        "author": "Harvard",
+        "date": "2020-07-22",
+        "id": "harvard:RT:ARM:BoundWith:Houghton",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/BoundCollection"
+      },
+      {
+        "remark": "Use for bound-withs or multipart monographs",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "Look up the related Instance in Sinopia.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:sinopia:bibframe:instance"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemOf",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Item of (link to Instance)"
+          },
+          {
+            "remark": "For bound-withs, record items from first to last. Paste in the URI for the next Item in the sequence.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Next Item in Bound-With"
+          },
+          {
+            "remark": "Record any other relevant relationship to a related resource (Instance or Item)",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Relationship"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/relationship",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Related Resource (Instance or Item)"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Identifiers:Barcode",
+                "harvard:RT:BF2:Identifiers:Local",
+                "harvard:RT:BF2:Identifiers:Local:LC"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Item Call Numbers and Identifiers"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Title:Item"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Title Information"
+          },
+          {
+            "remark": "Record a related Custodial History resource. This field is used to fulfill the function of local headings such as \"Smith, Jane--Presentation inscription to ...\" in the current MARC environment.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:custodialHistory"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/custodial_history/ontology/0.1/hasCustodialHistory",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Custodial History"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/2.18.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/custodialHistory",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Custodial History Note"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Agents:Contribution:Item"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "remark": "If the Item is housed in an enclosure (e.g., an envelope), record information about the enclosure here, if applicable.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:Enclosure:Item",
+                "harvard:RT:ARM:DustJacket",
+                "harvard:RT:ARM:SlipCase",
+                "harvard:RT:ARM:WrapAroundBand",
+                "harvard:RT:ARM:Wrapper"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Enclosures"
+          },
+          {
+            "remark": "Provide a structured description of the binding.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:bindings"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Binding Information"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:arm:markings:autographText",
+                "harvard:arm:markings:inscription",
+                "harvard:arm:markings:stamp",
+                "harvard:arm:markings:label",
+                "harvard:RT:arm:markings:marking",
+                "harvard:arm:markings:watermark",
+                "harvard:arm:markings:seal"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Markings"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Form:sammelbands"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/genreForm",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Genre/Form"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:Citation"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasCitation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Bibliographic Citation"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Structured:Date"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.europeana.eu/schemas/edm/occurredAt",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Associated Date(s)"
+          },
+          {
+            "remark": "Record a URL if the item has been digitized.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Digital Surrogate"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/3.5.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:MeasurementGroup"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/measurement/ontology/0.1/hasMeasurementGroup",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Dimensions"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Item:Enumeration",
+                "Yale:RT:BF2:Item:Chronology"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/enumerationAndChronology",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Enumeration and Chronology"
+          },
+          {
+            "remark": "Add items contained within this item.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasItem",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Nested Items"
+          },
+          {
+            "remark": "Add a price paid for the Item.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:Schema:Price"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://schema.org/priceSpecification",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Price"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Harvard:RT:BF2:AdminMetadata:Body:Houghton"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Administrative Metadata"
+          }
+        ],
+        "resourceLabel": "Harvard Bound-With Monograph Item (Houghton)",
+        "author": "Harvard",
+        "date": "2020-07-15",
+        "id": "harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "Restrictions on Access",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultLiteral": "In-library use only"
+                }
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Restrictions on Access"
+          }
+        ],
+        "resourceLabel": "Restrictions on Access",
+        "author": "Harvard",
+        "date": "2020-07-20",
+        "id": "harvard:RT:BF2:Access:InLibrary",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/AccessPolicy"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Terms Governing Use and Reproduction"
+          }
+        ],
+        "resourceLabel": "Terms Governing Use and Reproduction",
+        "author": "Harvard",
+        "date": "2020-07-21",
+        "id": "harvard:RT:BF2:Use:houghton",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/UsePolicy"
+      }
+    ],
+    "id": "harvard:profile:bf2:RareMat:boundwith",
+    "title": "Harvard Bound With Items for Rare Materials, based on Yale profiles",
+    "description": "Harvard LD4P BIBFRAME 2.0 Rare Materials Bound With Items",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-07-22"
+  }
+}

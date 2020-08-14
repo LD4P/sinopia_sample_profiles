@@ -1,0 +1,481 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
+            "mandatory": "true",
+            "type": "literal",
+            "propertyLabel": "Cataloger Code"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Identifiers:Local:Bib:hou",
+                "harvard:RT:BF2:Identifiers:OCLC:hou"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "System Identifiers"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton"
+                },
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Cataloging Agency"
+          },
+          {
+            "remark": "Cataloging rules used to describe the target resources.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+                  "defaultLiteral": "rda"
+                }
+              ],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/descriptionConventions"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Description Conventions"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/languages/eng",
+                  "defaultLiteral": "English"
+                }
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Language of Description"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton"
+                },
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Description Modifier"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/menclvl/f",
+                  "defaultLiteral": "Full"
+                }
+              ],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/menclvl"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Encoding Level"
+          }
+        ],
+        "resourceLabel": "Houghton Administrative Metadata Properties - Instance",
+        "author": "Harvard",
+        "date": "2020-07-29",
+        "id": "Harvard:RT:BF2:AdminMetadata:Instance:Body:Houghton",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
+            "mandatory": "true",
+            "type": "literal",
+            "propertyLabel": "Cataloger Code"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Identifiers:Local:holding:hou"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "System Identifiers"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton"
+                },
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Cataloging Agency"
+          },
+          {
+            "remark": "Cataloging rules used to describe the target resources.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+                  "defaultLiteral": "rda"
+                }
+              ],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/descriptionConventions"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Description Conventions"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/languages/eng",
+                  "defaultLiteral": "English"
+                }
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Language of Description"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton"
+                },
+                {
+                  "defaultURI": "https://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Description Modifier"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/menclvl/f",
+                  "defaultLiteral": "Full"
+                }
+              ],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/menclvl"
+              ],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+            "mandatory": "true",
+            "type": "lookup",
+            "propertyLabel": "Encoding Level"
+          }
+        ],
+        "resourceLabel": "Houghton Administrative Metadata Properties - Item",
+        "author": "Harvard",
+        "date": "2020-07-29",
+        "id": "Harvard:RT:BF2:AdminMetadata:Item:Body:Houghton",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Alma ID"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Alma MMSID Holding Record (if a record exists)",
+        "author": "Harvard",
+        "date": "2020-07-29",
+        "id": "harvard:RT:BF2:Identifiers:Local:holding:hou",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Alma ID"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Alma MMSID Bib Record (if a record exists)",
+        "author": "Harvard",
+        "date": "2020-07-29",
+        "id": "harvard:RT:BF2:Identifiers:Local:Bib:hou",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "number"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/ocolc",
+                  "defaultLiteral": "OCLC"
+                }
+              ],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          }
+        ],
+        "resourceLabel": "OCLC Number (for derived metadata)",
+        "author": "Harvard",
+        "date": "2020-07-14",
+        "id": "harvard:RT:BF2:Identifiers:OCLC:hou",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Identifier"
+      }
+    ],
+    "id": "Harvard:Profile:BF:AdminMetadata:Houghton",
+    "title": "Houghton Library Administrative Metadata Profile",
+    "description": "Houghton Library Administrative Metadata Profile",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-07-27"
+  }
+}

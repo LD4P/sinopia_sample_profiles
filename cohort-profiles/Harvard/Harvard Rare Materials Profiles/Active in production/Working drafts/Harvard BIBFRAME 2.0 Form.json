@@ -1,0 +1,39 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:genres",
+                "urn:ld4p:qa:gettyaat:Objects"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyLabel": "Search Form/Genre",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+            "remark": "http://access.rdatoolkit.org/6.3.html",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "harvard:RT:bf2:Form",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+        "resourceLabel": "Form/Genre",
+        "author": "Harvard",
+        "date": "2020-06-15",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "harvard:profile:bf2:Form",
+    "title": "Harvard BIBFRAME 2.0 Form",
+    "description": "Form of Work, based on LC profile as of Aug-07-2019",
+    "date": "2020-06-15",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

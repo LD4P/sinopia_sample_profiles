@@ -1,0 +1,432 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Accession Number",
+            "remark": "Text field to indicate the Accession Number.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+            "propertyLabel": "Accession Number Status",
+            "remark": "An ARM Status Vocabulary exists that has not yet been requested as a lookup. Leaving it as a literal by now, with the recommendation to use the ARM vocabulary term (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html). Alternativelly, there is a the LC status vocabulary that has actually been requested as a controlled list in Sinopia",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          }
+        ],
+        "id": "harvard:arm:identifiers:accessionNumber",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/AccessionNumber",
+        "resourceLabel": "Accession Number",
+        "author": "Harvard",
+        "date": "2020-03-18",
+        "remark": "Numeric, alphanumeric, or other identifying codes assigned when an art object, book, or other item enters the collection of a museum, library, or other repository. Such codes are unique within the set of codes, and specifically identify the particular item at hand. The numbers may be marked on the objects or not.",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyLabel": "Shelf Mark",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "remark": "Location on the Harvard stacks",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/status",
+            "propertyLabel": "Shelf Mark Status",
+            "remark": "An ARM Status Vocabulary exists that has not yet been requested as a lookup. Leaving it as a literal by now, with the recommendation to use the ARM vocabulary term (https://ld4p.github.io/arm/core/vocabularies/status/0.1/status.html). Alternativelly, there is a the LC status vocabulary that has actually been requested as a controlled list in Sinopia",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          }
+        ],
+        "id": "harvard:arm:identifiers:shelfMark",
+        "resourceLabel": "Shelf Mark",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMark",
+        "author": "Harvard",
+        "date": "2020-03-18",
+        "remark": "Item identifier, such as a call or other type of number",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "remark": "unique to each item/piece",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "barcode"
+          }
+        ],
+        "resourceLabel": "Barcode",
+        "author": "Harvard",
+        "date": "2020-07-08",
+        "id": "harvard:RT:BF2:Identifiers:Barcode",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Barcode"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "local LC call number"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                },
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton Library"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          }
+        ],
+        "resourceLabel": "Local LC Call Number",
+        "author": "Harvard",
+        "date": "2020-07-08",
+        "id": "harvard:RT:BF2:Identifiers:Local:LC",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "local Harvard call number"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                },
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mhh",
+                  "defaultLiteral": "Houghton Library"
+                }
+              ],
+              "useValuesFrom": [
+                "urn:ld4p:qa:names:organization"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          }
+        ],
+        "resourceLabel": "Local Harvard Call Number",
+        "author": "Harvard",
+        "date": "2020-07-08",
+        "id": "harvard:RT:BF2:Identifiers:Local",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Held in Sublocation"
+          }
+        ],
+        "id": "harvard:RT:BF2:sublocation",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Sublocation",
+        "resourceLabel": "Held in Sublocation",
+        "remark": "",
+        "author": "Harvard",
+        "date": "2020-07-28",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Alma ID"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Alma MMSID Holding Record (if a record exists)",
+        "author": "Harvard",
+        "date": "2020-07-29",
+        "id": "harvard:RT:BF2:Identifiers:Local:holding:hou",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Alma ID"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/mh",
+                  "defaultLiteral": "Harvard University"
+                }
+              ],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Alma MMSID Bib Record (if a record exists)",
+        "author": "Harvard",
+        "date": "2020-07-29",
+        "id": "harvard:RT:BF2:Identifiers:Local:Bib:hou",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Local"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "number"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [
+                {
+                  "defaultURI": "http://id.loc.gov/vocabulary/organizations/ocolc",
+                  "defaultLiteral": "OCLC"
+                }
+              ],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "source"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          }
+        ],
+        "resourceLabel": "OCLC Number (for derived metadata)",
+        "author": "Harvard",
+        "date": "2020-07-14",
+        "id": "harvard:RT:BF2:Identifiers:OCLC:hou",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Identifier"
+      }
+    ],
+    "description": "Profile to define RTs for identifiers to be used in rare materials items at the Harvard Library",
+    "id": "harvard:profile:arm:identifiers",
+    "author": "Harvard",
+    "adherence": "ARM BF2 dcterms",
+    "title": "Harvard Identifiers Profile",
+    "date": "2020-08-04",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

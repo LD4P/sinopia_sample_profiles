@@ -1,0 +1,116 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl"
+              ],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "CERL QA"
+          }
+        ],
+        "id": "harvard:RT:CERL:contributor",
+        "resourceLabel": "CERL QA",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "author": "Harvard",
+        "date": "2020-05-28"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:person"
+              ],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "CERL person (QA)"
+          }
+        ],
+        "id": "harvard:RT:CERL:person",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
+        "resourceLabel": "CERL person (QA)",
+        "author": "Harvard",
+        "date": "2020-05-28",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:corporate"
+              ],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "CERL corporate_body (QA)"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
+        "id": "harvard:RT:CERL:corporateBody",
+        "author": "Harvard",
+        "date": "2020-05-28",
+        "resourceLabel": "CERL corporate_body (QA)",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:imprint"
+              ],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "CERL imprint (QA)"
+          }
+        ],
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Agent",
+        "author": "Harvard",
+        "date": "2020-05-28",
+        "resourceLabel": "CERL imprint (QA)",
+        "id": "harvard:RT:CERL:imprint",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "harvard:profile:CERL:contributor",
+    "title": "Harvard CERL Contributor",
+    "description": "Harvard CERL Contributor",
+    "date": "2020-05-28",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

@@ -1,0 +1,663 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:arm:markings:autographText",
+                "harvard:arm:markings:inscription",
+                "harvard:arm:markings:stamp",
+                "harvard:arm:markings:label",
+                "harvard:RT:arm:markings:marking",
+                "harvard:arm:markings:watermark",
+                "harvard:arm:markings:seal"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "Marking(s)",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "harvard:arm:markings",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Marking",
+        "resourceLabel": "Markings Information",
+        "author": "Harvard",
+        "date": "2020-07-09",
+        "remark": "Use to describe markings on Rare Materials Items",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Autograph Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Autograph Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Agent/Role Associated with the Autograph",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with the Autograph",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with the Autograph (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Autograph",
+        "id": "harvard:arm:markings:autographText",
+        "resourceLabel": "Autograph(s)",
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "remark": "",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Inscription Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Inscription Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Agent/Role Associated with the Inscription",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with custodial Inscription",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with the Inscription (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "harvard:arm:markings:inscription",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Inscription",
+        "resourceLabel": "Inscription(s)",
+        "author": "Harvard",
+        "date": "2020-07-08",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Binder's Ticket Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Binder's Ticket Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/BindersTicket",
+        "resourceLabel": "Binder's Ticket(s)",
+        "id": "harvard:arm:markings:bindersTicket",
+        "author": "Harvard",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Stamp Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Stamp Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Agent/Role Associated with the Stamp",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with the Stamp",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with the Stamp (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Stamp",
+        "id": "harvard:arm:markings:stamp",
+        "resourceLabel": "Stamp(s)",
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Label Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Label Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Agent/Role Associated with the Label",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with the Label",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with the Label (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Label",
+        "resourceLabel": "Bookplate(s) and Label(s)",
+        "id": "harvard:arm:markings:label",
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Watermark Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyLabel": "Watermark Description",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyLabel": "Agent/Role Associated with the Watermark",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with the Watermark",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with cthe Watermark (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Watermark",
+        "id": "harvard:arm:markings:watermark",
+        "resourceLabel": "Watermark(s)",
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Seal Text",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "literal",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "propertyLabel": "Seal Description",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyLabel": "Agent/Role Associated with the Seal",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with the Seal",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with the Seal (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Seal",
+        "id": "harvard:arm:markings:seal",
+        "resourceLabel": "Seal(s)",
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Marking text"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Marking Description"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Agent/Role Associated with the Marking"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "propertyLabel": "Place associated with the Marking",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date associated with the Marking (EDTF)",
+            "remark": "Use EDTF format: https://www.loc.gov/standards/datetime/edtf.html",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceLabel": "Marking(s)",
+        "author": "Harvard",
+        "date": "2020-07-09",
+        "id": "harvard:RT:arm:markings:marking",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Marking"
+      }
+    ],
+    "id": "harvard:profile:arm:markings",
+    "description": "Profile for modeling markings for Rare Materials at the Harvard Library",
+    "title": "Harvard Markings Profile",
+    "author": "Harvard",
+    "adherence": "ARM BF2 RBMS AAT",
+    "date": "2020-07-09",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

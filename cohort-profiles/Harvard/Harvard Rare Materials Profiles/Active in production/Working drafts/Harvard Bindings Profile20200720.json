@@ -1,0 +1,263 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Materials__Materials"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasMaterial",
+            "propertyLabel": "Binding Material(s)",
+            "remark": "Currently the lookup only points to AAT. This property should eventually allow to add RBMS Binding Terms (http://rbms.info/vocabularies/binding/alphabetical_list.htm) as a URI or add the lookup for RBMS whenever it get published as RDF.",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "propertyLabel": "Binding Part(s)",
+            "remark": "Currently the lookup only points to AAT. This property should eventually allow to add RBMS Binding Terms (http://rbms.info/vocabularies/binding/alphabetical_list.htm) as a URI or add the lookup for RBMS whenever it get published as RDF.",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "lookup",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "propertyLabel": "Binding Type",
+            "remark": "Look up a term in AAT or Ligatus, or paste in a URI from the RBMS vocabs",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects",
+                "urn:ld4p:qa:ligatus"
+              ],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Binding Description",
+            "remark": "Use to describe the resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:bindings:binder",
+                "harvard:RT:ARM:bindings:designer"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/activity/ontology/0.1/hasActivity",
+            "propertyLabel": "Agent/Role Associated with the Binding",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:test:arm:markings:bindersTicket"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/markedBy",
+            "propertyLabel": "Binder's Ticket(s)",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "propertyLabel": "Physical Condition",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:MeasurementGroup"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyURI": "https://w3id.org/arm/measurement/ontology/0.1/hasMeasurementGroup",
+            "propertyLabel": "Dimensions",
+            "remark": "http://access.rdatoolkit.org/3.5.html"
+          }
+        ],
+        "id": "harvard:RT:ARM:bindings",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Binding",
+        "resourceLabel": "Binding Information",
+        "author": "Harvard",
+        "date": "2020-07-14",
+        "remark": "Use with rare monographs",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyLabel": "Agent/Role Associated with the Binding",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date Associated with the Binding (EDTF)",
+            "remark": "Use EDTF formating",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+            "propertyLabel": "Place Associated with the binding",
+            "resourceTemplates": []
+          }
+        ],
+        "id": "harvard:RT:ARM:bindings:binder",
+        "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/BinderActivity",
+        "resourceLabel": "Binder Activity",
+        "author": "Harvard",
+        "date": "2020-07-21",
+        "remark": "Use to provide information about the binder/related agent",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "propertyLabel": "Binding Designer",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "valueConstraint": {
+              "valueDataType": {
+                "dataTypeURI": "http://id.loc.gov/datatypes/edtf"
+              },
+              "useValuesFrom": [],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/date",
+            "propertyLabel": "Date",
+            "remark": "EDTF format date",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Place"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/place",
+            "propertyLabel": "Place of Binding Design",
+            "resourceTemplates": []
+          }
+        ],
+        "resourceURI": "https://w3id.org/arm/activity/ontology/0.1/DesignerActivity",
+        "id": "harvard:RT:ARM:bindings:designer",
+        "resourceLabel": "Designer Information",
+        "author": "Harvard",
+        "date": "2020-03-02",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "harvard:profile:ARM:bindings",
+    "description": "Profile for modeling bindings for Rare Materials at the Harvard Library",
+    "title": "Harvard Bindings Profile",
+    "author": "ARM",
+    "adherence": "ARM BF2 RBMS AAT",
+    "date": "2020-07-21",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution",
+        "id": "harvard:RT:bf2:Agents:Contribution:byEntity",
+        "resourceLabel": "Harvard Contribution by Entity (includes CERL)",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "Contributor (only one per contribution node!)",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agent:Person:SearchOnly",
+                "harvard:RT:bf2:Agent:Family:SearchOnly",
+                "harvard:RT:bf2:Agent:CorporateBody:SearchOnly",
+                "harvard:RT:bf2:Agent:Jurisdiction:SearchOnly",
+                "harvard:RT:bf2:Agent:Conference:SearchOnly"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "type": "resource",
+            "mandatory": "false",
+            "repeatable": "false",
+            "resourceTemplates": []
+          },
+          {
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
+            "propertyLabel": "Relationship Designator (RDA Appendix I)",
+            "type": "lookup",
+            "mandatory": "false",
+            "repeatable": "true",
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/relators"
+              ],
+              "defaults": []
+            },
+            "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html",
+            "resourceTemplates": []
+          }
+        ],
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "harvard:profile:bf2:Agents:Contribution:byEntity",
+    "title": "Harvard BIBFRAME 2.0 Agents Contribution by Entity",
+    "date": "2020-06-01",
+    "description": "Contributors divided by agent type, but with no attribute properties",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "remark": "Used to record bibliographic citations for rare materials.",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Citation:SCF"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Standard Citation Form",
+            "resourceTemplates": []
+          },
+          {
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:ARM:Citation:Entry"
+              ],
+              "useValuesFrom": [],
+              "defaults": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasSource",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Structured Citation Entry",
+            "resourceTemplates": []
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Bibliographic Citation",
+        "author": "Harvard",
+        "date": "2020-07-31",
+        "id": "harvard:RT:ARM:Citation",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Citation"
+      },
+      {
+        "remark": "Used to record the entry for a citation within a reference source.",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "Input the entry identifier for the citation (e.g., \"IB 8615\").",
+            "valueConstraint": {
+              "valueTemplateRefs": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Citation Entry Identifier"
+          },
+          {
+            "remark": "Enter the page number (numeric value) for the citation.",
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Citation:Page"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Page Number"
+          },
+          {
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Note"
+          },
+          {
+            "remark": "Record a URL associated with the Citation Entry.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/electronicLocator",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "URL"
+          }
+        ],
+        "resourceLabel": "Citation Entry",
+        "date": "2020-07-31",
+        "author": "Harvard",
+        "id": "harvard:RT:ARM:Citation:Entry",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Citation"
+      }
+    ],
+    "id": "harvard:profile:arm:bibliographicCitation",
+    "title": "Harvard Bibligraphic Citation Profile",
+    "date": "2020-07-31",
+    "description": "Profile for modeling Bibliographic Citations for Rare Materials at the Harvard Library",
+    "author": "Harvard",
+    "adherence": "ARM BIBFRAME dcterms RDF",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

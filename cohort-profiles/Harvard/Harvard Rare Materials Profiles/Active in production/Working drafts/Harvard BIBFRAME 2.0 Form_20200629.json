@@ -1,0 +1,68 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "propertyTemplates": [
+          {
+            "mandatory": "false",
+            "repeatable": "false",
+            "type": "lookup",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:genres",
+                "urn:ld4p:qa:gettyaat"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyLabel": "Form/Genre from look-up or add URI from other source thesaurus",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+            "remark": "http://access.rdatoolkit.org/6.3.html",
+            "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyLabel": "Form/Genre term label from other source thesaurus",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyLabel": "URI for other source thesaurus",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+            "remark": "URI for source thesaurus"
+          }
+        ],
+        "id": "harvard:RT:bf2:Form",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+        "resourceLabel": "Form/Genre",
+        "author": "Harvard",
+        "date": "2020-06-29",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "id": "harvard:profile:bf2:Form",
+    "title": "Harvard BIBFRAME 2.0 Form",
+    "description": "Form of Work, based on LC profile as of Aug-07-2019",
+    "date": "2020-06-29",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

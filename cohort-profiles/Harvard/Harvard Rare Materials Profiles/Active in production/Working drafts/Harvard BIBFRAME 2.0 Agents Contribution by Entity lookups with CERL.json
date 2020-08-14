@@ -1,0 +1,146 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person",
+        "id": "harvard:RT:bf2:Agent:Person:SearchOnly",
+        "resourceLabel": "Person",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "Name of Person",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:person",
+                "urn:ld4p:qa:cerl:imprint",
+                "urn:ld4p:qa:names"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "type": "lookup",
+            "mandatory": "false",
+            "repeatable": "true",
+            "resourceTemplates": [],
+            "remark": ""
+          }
+        ],
+        "author": "Harvard",
+        "date": "2020-06-04",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Family",
+        "id": "harvard:RT:bf2:Agent:Family:SearchOnly",
+        "resourceLabel": "Family",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "Name of Family",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:names"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "type": "lookup",
+            "mandatory": "false",
+            "repeatable": "true",
+            "resourceTemplates": [],
+            "remark": ""
+          }
+        ],
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization",
+        "id": "harvard:RT:bf2:Agent:CorporateBody:SearchOnly",
+        "resourceLabel": "Corporate Body",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "Name of Corporate Body",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:corporate",
+                "urn:ld4p:qa:cerl:imprint",
+                "urn:ld4p:qa:names"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "type": "lookup",
+            "mandatory": "false",
+            "repeatable": "true",
+            "resourceTemplates": [],
+            "remark": ""
+          }
+        ],
+        "author": "Harvard",
+        "date": "2020-06-04",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+        "id": "harvard:RT:bf2:Agent:Jurisdiction:SearchOnly",
+        "resourceLabel": "Jurisdiction",
+        "propertyTemplates": [
+          {
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "propertyLabel": "Name of Jurisdiction",
+            "type": "lookup",
+            "mandatory": "false",
+            "repeatable": "true",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:names"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "resourceTemplates": [],
+            "remark": ""
+          }
+        ],
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      },
+      {
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Meeting",
+        "id": "harvard:RT:bf2:Agent:Conference:SearchOnly",
+        "resourceLabel": "Conference",
+        "propertyTemplates": [
+          {
+            "propertyLabel": "Name of Conference",
+            "valueConstraint": {
+              "useValuesFrom": [
+                "urn:ld4p:qa:names"
+              ],
+              "valueTemplateRefs": [],
+              "defaults": []
+            },
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "type": "lookup",
+            "mandatory": "false",
+            "repeatable": "true",
+            "resourceTemplates": [],
+            "remark": ""
+          }
+        ],
+        "author": "Harvard",
+        "date": "2020-06-01",
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
+      }
+    ],
+    "author": "Harvard",
+    "id": "harvard:profile:Contribution:byEntity:CERL",
+    "title": "Harvard BIBFRAME 2.0 Agents Contribution by Entity lookups with CERL",
+    "description": "Contribution Agent look-ups with CERL",
+    "date": "2020-06-04",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:CERL:Agent:Person",
+                "harvard:RT:BF2:CERL:Agent:CorporateBody",
+                "Yale:RT:BF2:Agent:Conference",
+                "Yale:RT:BF2:Agent:Family"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "contributor"
+          },
+          {
+            "remark": "Enter a consistent value or a URI",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:Local:Evidence"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/relation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "evidence"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/relators"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "role"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "RDA relationship term"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Agent:Place"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "place"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/rdachp2_rda2-6290.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Structured:Date"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.europeana.eu/schemas/edm/occurredAt",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "associated date(s)"
+          }
+        ],
+        "resourceLabel": "Contribution",
+        "author": "Harvard",
+        "date": "2020-07-27",
+        "id": "harvard:RT:BF2:Agents:Contribution:Item",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:person",
+                "urn:ld4p:qa:cerl:imprint",
+                "urn:ld4p:qa:names:person"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2002/07/owl#sameAs",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "search"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/rdachp9_rda9-822.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Authorized Access Point"
+          }
+        ],
+        "resourceLabel": "Person",
+        "author": "Harvard",
+        "date": "2020-06-04",
+        "id": "harvard:RT:BF2:CERL:Agent:Person",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Person"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:cerl:corporate",
+                "urn:ld4p:qa:cerl:imprint",
+                "urn:ld4p:qa:names:organization"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2002/07/owl#sameAs",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "search"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/rdachp11_rda11-1207.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Authorized Access Point"
+          }
+        ],
+        "resourceLabel": "Corporate Body",
+        "author": "Harvard",
+        "date": "2020-06-04",
+        "id": "harvard:RT:BF2:CERL:Agent:CorporateBody",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Organization"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "Record the textual content of the evidence",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "false",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "transcribed value"
+          },
+          {
+            "remark": "Enter a consistent value, such as \"ms. notes\" (in lower case), to indicate the type of evidence.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "https://library.yale.edu/ld4p/terms/evidenceLabel",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "evidence (label)"
+          },
+          {
+            "remark": "Enter a URI from a controlled vocabulary (e.g., \"https://rbmsvocabs.github.io/vocabulary/provenance/0.1/rbprov4\" for \"Annotations\") to indicate the type of evidence.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "https://library.yale.edu/ld4p/terms/evidenceURI",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "evidence (URI)"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "note"
+          }
+        ],
+        "resourceLabel": "Evidence",
+        "author": "Harvard",
+        "date": "2020-07-27",
+        "id": "harvard:RT:Local:Evidence",
+        "resourceURI": "https://library.yale.edu/ld4p/terms/Evidence"
+      }
+    ],
+    "id": "harvard:profile:bf2:Contribution:Item",
+    "title": "Harvard BIBFRAME 2.0 Contribution - Item",
+    "description": "Contribution for item copied from Yale, but adding CERL lookups for agents",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-07-27"
+  }
+}

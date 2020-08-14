@@ -1,0 +1,766 @@
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "remark": "Enter a consistent value (e.g., \"envelope,\" \"box\") to record the type of enclosure.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Type"
+          },
+          {
+            "remark": "If the enclosure has a collective title or label, enter it here.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Title:Collection"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/title",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Title or Label"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Identifiers:Barcode",
+                "harvard:RT:BF2:Identifiers:Local",
+                "harvard:RT:BF2:Identifiers:Local:LC",
+                "harvard:arm:identifiers:accessionNumber"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/identifiedBy",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Item Call Numbers and Identifiers"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/3.5.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:MeasurementGroup:Instance"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/measurement/ontology/0.1/hasMeasurementGroup",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Dimensions"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Agents:Contribution:Item"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Description of Enclosure"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Enclosure (Harvard)",
+        "author": "Harvard",
+        "date": "2020-08-10",
+        "id": "harvard:RT:ARM:Enclosure:Item",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Enclosure"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Description of Dust Jacket"
+          },
+          {
+            "remark": "Look up a term in AAT, or paste in a URI from the RBMS vocabs or Ligatus (https://www.ligatus.org.uk/lob/).",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Type"
+          },
+          {
+            "remark": "Link to a term from a controlled vocabulary.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Binding Components"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60596",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Base Materials"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60159",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Applied Material"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Enclosures:Agents:Contribution"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Dust Jacket",
+        "author": "Harvard",
+        "date": "2020-08-10",
+        "id": "harvard:RT:ARM:DustJacket",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/DustJacket"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Description of Slipcase"
+          },
+          {
+            "remark": "Look up a term in AAT, or paste in a URI from the RBMS vocabs or Ligatus (https://www.ligatus.org.uk/lob/).",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Type"
+          },
+          {
+            "remark": "Link to a term from a controlled vocabulary.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Binding Components"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60596",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Base Material"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60159",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Applied Material"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Enclosures:Agents:Contribution"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Slipcase",
+        "author": "Harvard",
+        "date": "2020-08-10",
+        "id": "harvard:RT:ARM:SlipCase",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/SlipCase"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Description of Wrap-Around Band"
+          },
+          {
+            "remark": "Look up a term in AAT, or paste in a URI from the RBMS vocabs or Ligatus (https://www.ligatus.org.uk/lob/).",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Type"
+          },
+          {
+            "remark": "Link to a term from a controlled vocabulary.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Binding Components"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60596",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Base Material"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60159",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Applied Material"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Enclosures:Agents:Contribution"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Wrap-Around Band",
+        "author": "Harvard",
+        "date": "2020-08-10",
+        "id": "harvard:RT:ARM:WrapAroundBand",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/WrapAroundBand"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/description",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Description of Wrapper"
+          },
+          {
+            "remark": "Look up a term in AAT, or paste in a URI from the RBMS vocabs or Ligatus (https://www.ligatus.org.uk/lob/).",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Type"
+          },
+          {
+            "remark": "Link to a term from a controlled vocabulary.",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "urn:ld4p:qa:gettyaat:Objects__Components"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://purl.org/dc/terms/hasPart",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Binding Components"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60596",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Base Material"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:Material"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://rdaregistry.info/Elements/u/P60159",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Applied Material"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:ARM:PhysicalCondition"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/hasPhysicalCondition",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Physical Condition"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:BF2:Enclosures:Agents:Contribution"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contribution"
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Note"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Note"
+          }
+        ],
+        "resourceLabel": "Wrapper",
+        "author": "Harvard",
+        "date": "2020-08-10",
+        "id": "harvard:RT:ARM:Wrapper",
+        "resourceURI": "https://w3id.org/arm/core/ontology/0.1/Wrapper"
+      },
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "harvard:RT:bf2:Agent:Person:SearchOnly",
+                "harvard:RT:bf2:Agent:CorporateBody:SearchOnly"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/agent",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Contributor"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [
+                "https://id.loc.gov/vocabulary/relators"
+              ]
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/role",
+            "mandatory": "false",
+            "type": "lookup",
+            "propertyLabel": "Role"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/rdaappi_rdai-34.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.w3.org/2000/01/rdf-schema#label",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "RDA relationship term"
+          },
+          {
+            "remark": "",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Agent:Place"
+              ],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "true",
+            "propertyURI": "https://w3id.org/arm/core/ontology/0.1/atLocation",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Place"
+          },
+          {
+            "remark": "http://access.rdatoolkit.org/rdachp2_rda2-6290.html",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "Yale:RT:BF2:Structured:Date"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://www.europeana.eu/schemas/edm/occurredAt",
+            "mandatory": "false",
+            "type": "resource",
+            "propertyLabel": "Associated Date(s)"
+          }
+        ],
+        "resourceLabel": "Contribution",
+        "author": "Harvard",
+        "date": "2020-08-10",
+        "id": "harvard:RT:BF2:Enclosures:Agents:Contribution",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Contribution"
+      }
+    ],
+    "id": "harvard:profile:arm:enclosures",
+    "title": "Harvard Enclosures Profile",
+    "description": "Profile for modeling Enclosures for Rare Materials at the Harvard Library",
+    "author": "Harvard",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-08-10"
+  }
+}
