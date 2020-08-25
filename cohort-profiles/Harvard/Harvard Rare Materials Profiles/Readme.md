@@ -1,10 +1,10 @@
 # Harvard Library, Houghton Library Rare Materials/Incunables Sinopia Profiles
 
-This page includes Sinopia Editor profiles and resource templates created and customized to support linked data description of incunables resources at the Houghton Library, Harvard University.  These profiles and resource templates were largely derived from LD4P set of core resource templates (https://github.com/LD4P/ld4ptemplates) and rare materials specific profile and resource template work developed by Yale University and the Harry Ransom Center at the University of Texas.
+This page includes Sinopia Editor profiles and resource templates created and customized to support linked data description of incunables resources at the Houghton Library, Harvard University.  These profiles and resource templates were largely derived from the LD4P set of core resource templates (https://github.com/LD4P/ld4ptemplates) and rare materials-specific profile and resource template work developed by Yale University and the Harry Ransom Center at the University of Texas.  The profiles and resource templates include BIBFRAME modeling based on Library of Congress profiles and integrates Art and Rare Materials (ARM) BIBFRAME Ontology Extension (https://github.com/Art-and-Rare-Materials-BF-Ext/ARM-ontology/) modeling as needed.
 
-## Starting-point templates
+## Starting-point Resource Templates
 
-The following starting-point templates are available in production Sinopia as of August 2020:
+The following starting-point Resource Templates are available in production Sinopia as of August 2020:
 
 * Harvard Rare Materials Work (BIBFRAME) - unnested  
 rt id: harvard:RT:bf2:RareMat:Work:unnested  
@@ -31,7 +31,17 @@ https://sinopia.io/editor/harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWit
 
 ## Contact
 
-For more information about this work, please contact: mmcgee [at] fas [dot] harvard [dot] edu
+For more information about this work, please contact: 
+
+Houghton Library Incunables project Sinopia descriptions and cataloging work:  
+* Linda Isaac - linda [underscore] isaac [at] harvard [dot] edu
+* Jennifer Dunlap - jennifer [underscore] dunlap [at] harvard [dot] edu
+
+Sinopia profile and resource template development for the Houghton Incunables project:
+* Marc McGee - mmcgee [at] fas [dot] harvard [dot] edu
+
+LD4P2 work at Harvard:
+* Christine Eslao - eslao [at] fas [dot] harvard [dot] edu
 
 
 
