@@ -7,19 +7,21 @@ This page includes Sinopia Editor profiles and resource templates created and cu
 The following starting-point templates are available in production Sinopia as of August 2020:
 
 * Harvard Rare Materials Work (BIBFRAME) - unnested
-harvard:RT:bf2:RareMat:Work:unnested
+(harvard:RT:bf2:RareMat:Work:unnested)
+https://sinopia.io/editor/harvard:RT:bf2:RareMat:Work:unnested 
 
 * Harvard Rare Materials Instance (BIBFRAME+ARM) - unnested
 harvard:RT:bf2:RareMat:Instance:unnested
 
-*Harvard Rare Materials Item (BIBFRAME+ARM) - unnested
+* Harvard Rare Materials Item (BIBFRAME+ARM) - unnested
 harvard:RT:bf2:RareMat:item:unnested
 
-*Bound-With (Houghton)
+* Bound-With (Houghton)
 harvard:RT:ARM:BoundWith:Houghton
 
-*Harvard Bound-With Monograph Item (Houghton)
+* Harvard Bound-With Monograph Item (Houghton)
 harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith
+
 
 
 ## Notes about process
