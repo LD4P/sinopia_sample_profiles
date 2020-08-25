@@ -29,7 +29,10 @@ https://sinopia.io/editor/harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWit
 
 ## Notes about process
 
-## Contact
+* To view an Inventory of top-level Profiles and Resource Templates used for the Houghton Library Incunables project, please see the following [google sheet](https://docs.google.com/spreadsheets/d/1XqShE3he-OWBgs1w9i-JhTTWKNTXpLxkHhy42KPmFS4/edit?usp=sharing).
+
+
+## Contacts
 
 For more information about this work, please contact: 
 
