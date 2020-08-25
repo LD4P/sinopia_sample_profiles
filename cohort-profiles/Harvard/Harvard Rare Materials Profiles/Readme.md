@@ -14,16 +14,16 @@ https://sinopia.io/editor/harvard:RT:bf2:RareMat:Work:unnested
 rt id: harvard:RT:bf2:RareMat:Instance:unnested  
 https://sinopia.io/editor/harvard:RT:bf2:RareMat:Instance:unnested
 
-* Harvard Rare Materials Item (BIBFRAME+ARM) - unnested
-rt id: harvard:RT:bf2:RareMat:item:unnested
+* Harvard Rare Materials Item (BIBFRAME+ARM) - unnested  
+rt id: harvard:RT:bf2:RareMat:item:unnested  
 https://sinopia.io/editor/harvard:RT:bf2:RareMat:item:unnested
 
-* Bound-With (Houghton)
-rt id: harvard:RT:ARM:BoundWith:Houghton
+* Bound-With (Houghton)  
+rt id: harvard:RT:ARM:BoundWith:Houghton  
 https://sinopia.io/editor/harvard:RT:ARM:BoundWith:Houghton 
 
-* Harvard Bound-With Monograph Item (Houghton)
-rt id: harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith
+* Harvard Bound-With Monograph Item (Houghton)  
+rt id: harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith  
 https://sinopia.io/editor/harvard:RT:BF2:Monograph:Item-Houghton:Nested:BoundWith
 
 
