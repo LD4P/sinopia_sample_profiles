@@ -1,1 +1,89 @@
-{"Profile":{"resourceTemplates":[{"schema":"https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json","propertyTemplates":[{"resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":[],"defaults":[],"useValuesFrom":[],"valueDataType":{}},"repeatable":"false","propertyURI":"http://id.loc.gov/ontologies/bibframe/mainTitle","mandatory":"false","type":"literal","propertyLabel":"Collection Title","remark":"Indicate main title for the book collection"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["ld4p:RT:BF2:Contribution:Agent:Basic"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyLabel":"Contribution","propertyURI":"http://id.loc.gov/ontologies/bibframe/contribution","remark":"Indicate any agent associated with the collection"},{"mandatory":"false","repeatable":"true","type":"resource","resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["ld4p:RT:bf2:Note"],"useValuesFrom":[],"valueDataType":{},"defaults":[]},"propertyLabel":"Note","propertyURI":"http://id.loc.gov/ontologies/bibframe/note","remark":"Indicate any relevant notes about the collection."},{"resourceTemplates":[],"valueConstraint":{"valueTemplateRefs":["hrc:RT:bf2:AdminMetadata"],"defaults":[],"useValuesFrom":[]},"repeatable":"true","propertyURI":"http://id.loc.gov/ontologies/bibframe/adminMetadata","mandatory":"true","type":"resource","propertyLabel":"Administrative metadata"}],"resourceLabel":"HRC Collection (BF2)","author":"Paloma Graciani (paloma.graciani@austin.utexas.edu)","date":"2019-09-18","id":"hrc:RT:BF2:Collection","resourceURI":"http://id.loc.gov/ontologies/bibframe/Collection","remark":"Use to describe named collections at the HRC (Based on Yale:RT:BF2:Collection:CtY)"}],"id":"hrc:profile:BF2:Collection","title":"HRC BF2 Collection","description":"Use to describe named collections at the HRC","author":"Paloma Graciani (paloma.graciani@austin.utexas.edu)","schema":"https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json","date":"2020-02-24","remark":"Based on Yale:RT:BF2:Collection:CtY","adherence":"BF2; ARM"}}
+{
+  "Profile": {
+    "resourceTemplates": [
+      {
+        "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+        "propertyTemplates": [
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "defaults": [],
+              "useValuesFrom": [],
+              "valueDataType": {}
+            },
+            "repeatable": "false",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/mainTitle",
+            "mandatory": "false",
+            "type": "literal",
+            "propertyLabel": "Collection Title",
+            "remark": "Indicate main title for the book collection"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Agents:Contribution:byEntity"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyLabel": "Contribution",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+            "remark": "Indicate any agent associated with the collection"
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Note"
+              ],
+              "useValuesFrom": [],
+              "valueDataType": {},
+              "defaults": []
+            },
+            "propertyLabel": "Note",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
+            "remark": "Indicate any relevant notes about the collection."
+          },
+          {
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [
+                "hrc:RT:bf2:AdminMetadata"
+              ],
+              "defaults": [],
+              "useValuesFrom": []
+            },
+            "repeatable": "true",
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+            "mandatory": "true",
+            "type": "resource",
+            "propertyLabel": "Administrative metadata"
+          }
+        ],
+        "resourceLabel": "HRC Collection (BF2)",
+        "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+        "date": "2019-09-18",
+        "id": "hrc:RT:BF2:Collection",
+        "resourceURI": "http://id.loc.gov/ontologies/bibframe/Collection",
+        "remark": "Use to describe named collections at the HRC (Based on Yale:RT:BF2:Collection:CtY)"
+      }
+    ],
+    "id": "hrc:profile:BF2:Collection",
+    "title": "HRC BF2 Collection",
+    "description": "Use to describe named collections at the HRC",
+    "author": "Paloma Graciani (paloma.graciani@austin.utexas.edu)",
+    "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
+    "date": "2020-02-24",
+    "remark": "Based on Yale:RT:BF2:Collection:CtY",
+    "adherence": "BF2; ARM"
+  }
+}
