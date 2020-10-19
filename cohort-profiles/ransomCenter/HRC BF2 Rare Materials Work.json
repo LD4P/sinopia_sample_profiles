@@ -9,11 +9,9 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:BF2:Contribution:Agent:Basic"
+                "ld4p:RT:bflc:Agents:PrimaryContribution:byEntity",
+                "ld4p:RT:bf2:Agents:Contribution:byEntity"
               ],
-              "valueDataType": {
-                "dataTypeURI": "http://id.loc.gov/ontologies/bflc/PrimaryContribution"
-              },
               "useValuesFrom": [],
               "defaults": []
             },
