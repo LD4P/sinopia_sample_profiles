@@ -104,7 +104,7 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:BF2:Contribution:Agent:Basic"
+                "ld4p:RT:bf2:Agents:Contribution:byEntity"
               ],
               "defaults": [],
               "useValuesFrom": []
@@ -119,7 +119,13 @@
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [
-                "Yale:RT:ARM:Markings:BindersTicket"
+                "Yale:RT:ARM:Markings:BindersTicket",
+                "Yale:RT:ARM:Markings:Autograph",
+                "Yale:RT:ARM:Markings:Label",
+                "Yale:RT:ARM:Markings:Seal",
+                "Yale:RT:ARM:Markings:Inscription",
+                "Yale:RT:ARM:Markings:Marking",
+                "Yale:RT:ARM:Markings:Stamp"
               ],
               "defaults": [],
               "useValuesFrom": []
