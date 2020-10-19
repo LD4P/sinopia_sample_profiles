@@ -215,7 +215,7 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "ld4p:RT:BF2:Contribution:Agent:Basic"
+                "ld4p:RT:bf2:Agents:Contribution:byEntity"
               ],
               "useValuesFrom": [],
               "defaults": []
